@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Privacy e cookie · Magrini Gelati</title>
+<meta name="description" content="Informativa privacy e cookie del sito magrinigelati.it di Magrini R. & Ceci G. snc.">
+<meta name="robots" content="noindex, follow">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<script>
+(function(){ var t=null; try{ t=localStorage.getItem('mg-theme'); }catch(e){} if(t==='dark'||t==='light') document.documentElement.setAttribute('data-theme',t); })();
+</script>
+<style>
+@font-face{font-family:"Figtree";font-style:normal;font-weight:400;font-display:swap;src:url(fonts/figtree-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Figtree";font-style:normal;font-weight:600;font-display:swap;src:url(fonts/figtree-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:"DM Mono";font-style:normal;font-weight:500;font-display:swap;src:url(fonts/dm-mono-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:"Young Serif";font-style:normal;font-weight:400;font-display:swap;src:url(fonts/young-serif-latin-400-normal.woff2) format("woff2")}
+:root{
+  --bg:#FFFCF2; --surface:#FFFFFF; --crema:#FFF4BD; --giallo:#FCC80B; --blu:#2447A0; --ink:#1A2240; --muted:#586080; --line:#EADFBF; --focus:#2447A0;
+  --f-display:"Young Serif", Georgia, serif; --f-body:"Figtree","Segoe UI",system-ui,sans-serif; --f-mono:"DM Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){ color-scheme:dark; --bg:#0E1430; --surface:#172047; --crema:#1D285A; --blu:#A3B7FF; --ink:#F3F0E2; --muted:#AEB5D2; --line:#29346A; --focus:#FCC80B; }
+}
+:root[data-theme="dark"]{ color-scheme:dark; --bg:#0E1430; --surface:#172047; --crema:#1D285A; --blu:#A3B7FF; --ink:#F3F0E2; --muted:#AEB5D2; --line:#29346A; --focus:#FCC80B; }
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 var(--f-body);-webkit-font-smoothing:antialiased}
+a{color:var(--blu)}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:6px}
+.wrap{width:100%;max-width:860px;margin-inline:auto;padding-inline:clamp(16px,4vw,40px)}
+.top{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:14px;min-height:68px;max-width:1100px}
+.top .brand{display:flex;align-items:center;gap:12px;margin-right:auto;text-decoration:none;color:var(--ink)}
+.top .brand img{height:44px;width:auto}
+:root[data-theme="dark"] .top .brand img{background:#FFF8D6;border-radius:8px;padding:3px}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .top .brand img{background:#FFF8D6;border-radius:8px;padding:3px}}
+.back{font-weight:600;font-size:.95rem;text-decoration:none;padding:9px 14px;border-radius:999px;border:1.5px solid var(--line);color:var(--ink)}
+.back:hover{border-color:var(--blu);color:var(--blu)}
+main{padding-block:clamp(32px,5vw,64px)}
+.eyebrow{font:500 .78rem/1.2 var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+h1{font:400 clamp(2rem,1.4rem + 2.4vw,3.2rem)/1.1 var(--f-display);color:var(--blu);margin:10px 0 8px}
+h2{font:400 clamp(1.3rem,1.1rem + .8vw,1.7rem)/1.2 var(--f-display);margin:44px 0 10px;scroll-margin-top:90px}
+h3{font-size:1.02rem;margin:22px 0 6px}
+p,li{color:var(--ink)}
+.muted{color:var(--muted)}
+.box{background:var(--surface);border:1.5px solid var(--line);border-radius:16px;padding:18px 20px;margin:18px 0}
+table{width:100%;border-collapse:collapse;font-size:.95rem;margin:12px 0}
+th,td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line)}
+th{font:500 .74rem var(--f-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.tw{overflow-x:auto}
+footer{border-top:1px solid var(--line);padding-block:24px 34px;color:var(--muted);font-size:.88rem}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="img/logo-magrini.svg" alt="Raffaele Magrini" width="61" height="44"></a>
+    <a class="back" href="index.html">&larr; Torna al sito</a>
+  </div>
+</header>
+
+<main class="wrap">
+  <span class="eyebrow">Privacy e cookie</span>
+  <h1>Informativa sul trattamento dei dati personali</h1>
+  <p class="muted">Ai sensi degli articoli 13 e 14 del Regolamento (UE) 2016/679 (GDPR), per chi visita il sito magrinigelati.it e per chi ci scrive tramite i suoi moduli. Ultimo aggiornamento: settembre 2026.</p>
+
+  <h2 id="titolare">Titolare del trattamento</h2>
+  <div class="box">
+    <strong>Magrini R. &amp; Ceci G. snc</strong><br>
+    Via Norvegia, 5, 64026 Roseto degli Abruzzi (TE)<br>
+    P.IVA, C.F. e n. Registro Imprese 00257660670 · REA TE-70091<br>
+    PEC: magrinigelati@pec.it<br>
+    Email: <a href="mailto:info@magrinigelati.it">info@magrinigelati.it</a> · Tel. <a href="tel:+390858941066">085 894 1066</a>
+  </div>
+  <p>Per la gestione di clienti e fornitori resta valida anche la nostra <a href="docs/informativa-privacy.pdf" target="_blank" rel="noopener">informativa privacy aziendale (PDF)</a>.</p>
+
+  <h2 id="navigazione">Dati di navigazione</h2>
+  <p>Il sito è una raccolta di pagine statiche. Per mostrarle, il servizio di hosting (GitHub Pages, di GitHub Inc.) registra automaticamente alcuni dati tecnici: indirizzo IP, data e ora della richiesta, pagina visitata e tipo di browser. Questi dati servono solo al funzionamento e alla sicurezza del servizio; non li usiamo per identificare i visitatori né per fini commerciali. GitHub Inc. ha sede negli Stati Uniti e aderisce all'EU-U.S. Data Privacy Framework.</p>
+  <p>I caratteri tipografici e tutte le immagini sono ospitati sul sito stesso: aprendo le pagine il browser non contatta servizi di terze parti.</p>
+
+  <h2 id="moduli">Moduli "Richiedi un'offerta" e "Diventa concessionario"</h2>
+  <p>Se compili uno dei moduli ci invii i dati che inserisci (nome, attività, località, telefono, email, messaggio e, per le candidature, ragione sociale, partita IVA, zona e informazioni sulla tua attività).</p>
+  <ul>
+    <li><strong>Finalità:</strong> rispondere alla tua richiesta, inviarti listini e offerte richieste, valutare la candidatura.</li>
+    <li><strong>Base giuridica:</strong> esecuzione di misure precontrattuali adottate su tua richiesta (art. 6, par. 1, lett. b GDPR).</li>
+    <li><strong>Come arrivano a noi:</strong> il modulo è inoltrato alla nostra casella <a href="mailto:info@magrinigelati.it">info@magrinigelati.it</a> tramite il servizio Web3Forms (Web3Creative, India), che agisce come nostro responsabile del trattamento: recapita i dati via email e ne conserva una copia per un massimo di tre anni, come previsto dalla sua informativa. Web3Forms si appoggia a fornitori come Amazon Web Services e Cloudflare; i trasferimenti di dati fuori dall'Unione europea avvengono con le Clausole contrattuali standard approvate dalla Commissione europea (art. 46 GDPR).</li>
+    <li><strong>Conservazione:</strong> per il tempo necessario a gestire la richiesta e, se nasce un rapporto commerciale, per la durata di quel rapporto e gli obblighi di legge.</li>
+    <li><strong>Obbligatorietà:</strong> i campi contrassegnati come obbligatori servono per ricontattarti; senza di essi non possiamo rispondere.</li>
+  </ul>
+
+  <h2 id="newsletter">Newsletter</h2>
+  <p>Se ti iscrivi alla newsletter usiamo il tuo indirizzo email per inviarti novità, eventi e promozioni dedicate ai professionisti.</p>
+  <ul>
+    <li><strong>Base giuridica:</strong> il tuo consenso (art. 6, par. 1, lett. a GDPR), che puoi revocare in ogni momento con il link di disiscrizione presente in ogni email o scrivendoci.</li>
+    <li><strong>Piattaforma:</strong> la lista è gestita con Brevo (Sendinblue SAS, Francia), che tratta i dati per nostro conto all'interno dell'Unione europea.</li>
+    <li><strong>Conservazione:</strong> fino alla disiscrizione.</li>
+  </ul>
+
+  <h2 id="destinatari">Chi può vedere i dati</h2>
+  <p>I dati sono trattati dal personale di Magrini R. &amp; Ceci G. snc incaricato (ufficio commerciale e amministrazione) e, se necessario, dai nostri agenti di zona per darti seguito. Sono coinvolti solo i fornitori tecnici indicati sopra (hosting, inoltro dei moduli, newsletter). Non vendiamo né cediamo i dati a terzi.</p>
+
+  <h2 id="diritti">I tuoi diritti</h2>
+  <p>Puoi chiedere in ogni momento di accedere ai tuoi dati, correggerli, cancellarli, limitarne il trattamento, opporti o riceverli in formato portabile (articoli 15-22 GDPR), scrivendo a <a href="mailto:info@magrinigelati.it">info@magrinigelati.it</a>. Hai anche il diritto di proporre reclamo al Garante per la protezione dei dati personali (<a href="https://www.garanteprivacy.it" target="_blank" rel="noopener">garanteprivacy.it</a>).</p>
+
+  <h2 id="cookie">Cookie policy</h2>
+  <p><strong>Questo sito non installa cookie</strong>, né di profilazione né statistici, e non usa strumenti di tracciamento o di analisi del traffico. Per questo non compare alcun banner di consenso.</p>
+  <p>Il sito salva solo due preferenze nella memoria del tuo browser (localStorage), quando le scegli tu:</p>
+  <div class="tw"><table>
+    <thead><tr><th>Nome</th><th>A cosa serve</th><th>Durata</th></tr></thead>
+    <tbody>
+      <tr><td><code>mg-lang</code></td><td>Ricorda la lingua scelta (IT, EN, FR, ES)</td><td>Finché non la cancelli dal browser</td></tr>
+      <tr><td><code>mg-theme</code></td><td>Ricorda il tema chiaro o scuro</td><td>Finché non la cancelli dal browser</td></tr>
+    </tbody>
+  </table></div>
+  <p>Sono strumenti tecnici di funzionalità: restano sul tuo dispositivo, non vengono inviati a noi né a terzi e, secondo le Linee guida del Garante del 10 giugno 2021, non richiedono consenso.</p>
+  <h3>Link a servizi esterni</h3>
+  <p>Alcuni link aprono servizi di terze parti (Google Maps, Google Foto, WhatsApp, Facebook, Instagram). Solo quando li apri, quei servizi possono usare i propri cookie secondo le loro informative. Allo stesso modo, quando invii un modulo o ti iscrivi alla newsletter, i dati passano ai fornitori indicati sopra.</p>
+
+  <h2 id="modifiche">Modifiche</h2>
+  <p>Possiamo aggiornare questa informativa quando cambiano il sito o la normativa. La data dell'ultimo aggiornamento è indicata in alto.</p>
+</main>
+
+<footer><div class="wrap">Magrini R. &amp; Ceci G. snc · Via Norvegia 5, 64026 Roseto degli Abruzzi (TE) · P.IVA 00257660670 · REA TE-70091</div></footer>
+</body>
+</html>

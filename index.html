@@ -1,0 +1,1609 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Magrini Gelati</title>
+<meta name="description" content="Raffaele Magrini, gelati dal 1936 a Roseto degli Abruzzi. Azienda artigiana che produce per bar, gelaterie, concessionari e grande distribuzione. Certificata ISO 9001 e IFS Food.">
+<meta name="google-site-verification" content="Kdjz2z8oCkavwbQp6KU5tWRG9TbFYFItwV2HV_5tcCg">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<meta property="og:locale:alternate" content="en_GB">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:site_name" content="Magrini R. &amp; Ceci G. snc">
+<meta property="og:title" content="Magrini Gelati, dal 1936 a Roseto degli Abruzzi">
+<meta property="og:description" content="Gelati prodotti a Roseto degli Abruzzi da un'azienda artigiana, per bar, gelaterie, concessionari e GDO.">
+<meta property="og:image" content="img/logo-magrini.png">
+<meta name="theme-color" content="#FFFCF2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E1430" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preload" href="fonts/figtree-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/young-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<script>
+/* tema e lingua applicati subito, prima del disegno della pagina, per evitare lampeggi */
+(function(){
+  var d = document.documentElement, t = null, l = null;
+  try { t = localStorage.getItem('mg-theme'); l = localStorage.getItem('mg-lang'); } catch(e){}
+  if (t === 'dark' || t === 'light') d.setAttribute('data-theme', t);
+  if (!l) { var n = (navigator.language || 'it').toLowerCase().slice(0,2); l = (n === 'it' || n === 'fr' || n === 'es') ? n : 'en'; }
+  d.setAttribute('data-lang', l);
+  d.lang = l;
+})();
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Magrini R. & Ceci G. snc",
+  "alternateName": "Raffaele Magrini Gelati",
+  "description": "Azienda artigiana produttrice di gelati dal 1936",
+  "foundingDate": "1936",
+  "url": "https://www.magrinigelati.it/",
+  "logo": "https://www.magrinigelati.it/img/logo-magrini.png",
+  "telephone": "+39 085 8941066",
+  "email": "info@magrinigelati.it",
+  "vatID": "IT00257660670",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Via Norvegia, 5",
+    "addressLocality": "Roseto degli Abruzzi",
+    "postalCode": "64026",
+    "addressRegion": "TE",
+    "addressCountry": "IT"
+  },
+  "sameAs": [
+    "https://www.facebook.com/MagriniGelati",
+    "https://www.instagram.com/magrini_e_ceci/",
+    "https://www.linkedin.com/company/magrini-e-ceci/"
+  ]
+}
+</script>
+<style>
+/* font ospitati sul sito (nessuna richiesta a server esterni) */
+@font-face{font-family:"Figtree";font-style:normal;font-weight:400;font-display:swap;src:url(fonts/figtree-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Figtree";font-style:italic;font-weight:400;font-display:swap;src:url(fonts/figtree-latin-400-italic.woff2) format("woff2")}
+@font-face{font-family:"Figtree";font-style:normal;font-weight:500;font-display:swap;src:url(fonts/figtree-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:"Figtree";font-style:normal;font-weight:600;font-display:swap;src:url(fonts/figtree-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:"Figtree";font-style:normal;font-weight:700;font-display:swap;src:url(fonts/figtree-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:"DM Mono";font-style:normal;font-weight:400;font-display:swap;src:url(fonts/dm-mono-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"DM Mono";font-style:normal;font-weight:500;font-display:swap;src:url(fonts/dm-mono-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:"Young Serif";font-style:normal;font-weight:400;font-display:swap;src:url(fonts/young-serif-latin-400-normal.woff2) format("woff2")}
+/* ============ COLORI (chiaro) ============ */
+:root{
+  --bg:#FFFCF2;
+  --bg-alt:#FFF4C4;
+  --surface:#FFFFFF;
+  --crema:#FFF4BD;
+  --crema-2:#FDE9A0;
+  --giallo:#FCC80B;
+  --arancio:#F2A20C;
+  --blu:#2447A0;
+  --blu-deep:#1B3680;
+  --blu-soft:#E6ECFA;
+  --ink:#1A2240;
+  --muted:#586080;
+  --line:#EADFBF;
+  --verde:#2FB35A;
+  --bianco-flag:#E9E6DA;
+  --rosso:#E41E26;
+  --on-blu:#FFFFFF;
+  --focus:#2447A0;
+  --shadow:0 1px 0 rgba(26,34,64,.05), 0 10px 30px -14px rgba(26,34,64,.22);
+  --shadow-lift:0 2px 0 rgba(26,34,64,.05), 0 22px 44px -18px rgba(26,34,64,.32);
+  --radius:16px;
+  --f-display:"Young Serif", "Georgia", "Times New Roman", serif;
+  --f-body:"Figtree", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --f-mono:"DM Mono", ui-monospace, "Consolas", monospace;
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+/* ============ COLORI (scuro) ============ */
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#0E1430; --bg-alt:#121A3C; --surface:#172047; --crema:#1D285A; --crema-2:#25326B;
+    --giallo:#FCC80B; --arancio:#F5B233; --blu:#A3B7FF; --blu-deep:#C9D5FF; --blu-soft:#1D2858;
+    --ink:#F3F0E2; --muted:#AEB5D2; --line:#29346A; --bianco-flag:#F3F0E2; --on-blu:#0E1430; --focus:#FCC80B;
+    --shadow:0 1px 0 rgba(0,0,0,.3), 0 12px 30px -14px rgba(0,0,0,.65);
+    --shadow-lift:0 2px 0 rgba(0,0,0,.3), 0 24px 48px -18px rgba(0,0,0,.75);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0E1430; --bg-alt:#121A3C; --surface:#172047; --crema:#1D285A; --crema-2:#25326B;
+  --giallo:#FCC80B; --arancio:#F5B233; --blu:#A3B7FF; --blu-deep:#C9D5FF; --blu-soft:#1D2858;
+  --ink:#F3F0E2; --muted:#AEB5D2; --line:#29346A; --bianco-flag:#F3F0E2; --on-blu:#0E1430; --focus:#FCC80B;
+  --shadow:0 1px 0 rgba(0,0,0,.3), 0 12px 30px -14px rgba(0,0,0,.65);
+  --shadow-lift:0 2px 0 rgba(0,0,0,.3), 0 24px 48px -18px rgba(0,0,0,.75);
+}
+
+/* ============ BASE ============ */
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:96px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.62 var(--f-body);-webkit-font-smoothing:antialiased;transition:background-color .35s ease,color .35s ease}
+@media (min-width:1400px){body{font-size:18px}}
+img{max-width:100%;display:block}
+a{color:var(--blu);text-underline-offset:3px}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:6px}
+h1,h2,h3{font-family:var(--f-display);font-weight:400;line-height:1.1;text-wrap:balance;margin:0;color:var(--ink)}
+h2{font-size:clamp(2rem,1.2rem + 2.6vw,3.4rem);letter-spacing:-.01em}
+h3{font-size:1.3rem}
+p{margin:0}
+.wrap{width:100%;max-width:1280px;margin-inline:auto;padding-inline:clamp(16px,3.5vw,40px)}
+.eyebrow{font:500 .78rem/1.2 var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);display:inline-flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:22px;height:2px;background:var(--giallo);border-radius:2px}
+.mono{font-family:var(--f-mono);font-size:.9em}
+.section{padding-block:clamp(64px,9vw,128px)}
+.section-head{display:grid;gap:14px;max-width:66ch;margin-bottom:clamp(32px,4vw,52px)}
+.section-head p{color:var(--muted);font-size:1.08rem}
+.split-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:24px;margin-bottom:clamp(32px,4vw,52px)}
+.split-head .section-head{margin-bottom:0}
+
+/* ============ ANIMAZIONI ALLO SCROLL ============ */
+[data-reveal]{transition:opacity .8s var(--ease),transform .8s var(--ease);transition-delay:var(--d,0ms)}
+[data-reveal].pre{opacity:0;transform:translateY(34px)}
+[data-reveal="left"].pre{transform:translateX(-40px)}
+[data-reveal="right"].pre{transform:translateX(40px)}
+[data-reveal="zoom"].pre{transform:scale(.94)}
+.split .w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.08em;margin-bottom:-.08em}
+.split .w > span{display:inline-block;transition:transform .9s var(--ease);transition-delay:calc(var(--i) * 55ms)}
+.split.pre{opacity:1;transform:none}
+.split.pre .w > span{transform:translateY(105%)}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.hero-copy > *{animation:rise .9s var(--ease) both}
+.hero-copy > *:nth-child(2){animation-delay:.08s}
+.hero-copy > *:nth-child(3){animation-delay:.16s}
+.hero-copy > *:nth-child(4){animation-delay:.24s}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes scroll-x{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  [data-reveal].pre,.split.pre .w > span{opacity:1;transform:none}
+}
+
+/* ============ BOTTONI ============ */
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:999px;font:600 1rem/1 var(--f-body);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .2s var(--ease),background-color .2s ease,box-shadow .2s ease}
+.btn:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+.btn-primary{background:var(--blu);color:var(--on-blu)}
+.btn-ghost{border-color:var(--blu);color:var(--blu);background:transparent}
+.btn-giallo{background:var(--giallo);color:#1A2240}
+.btn .arr{transition:transform .2s var(--ease)}
+.btn:hover .arr{transform:translateX(3px)}
+
+/* ============ TRICOLORE ============ */
+.tricolore{display:grid;grid-template-columns:1fr 1fr 1fr;gap:clamp(20px,6vw,90px);height:10px}
+.tricolore span:nth-child(1){background:var(--verde)}
+.tricolore span:nth-child(3){background:var(--rosso)}
+.tricolore span:nth-child(2){background:#FFFFFF;box-shadow:inset 0 0 0 1px var(--line)}
+
+/* ============ HEADER ============ */
+.site-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:saturate(1.3) blur(10px);-webkit-backdrop-filter:saturate(1.3) blur(10px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:18px;min-height:78px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink);flex-shrink:0;margin-right:auto}
+.brand img{height:52px;width:auto}
+.brand small{display:block;font:500 .68rem/1.3 var(--f-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.brand strong{font:400 1.08rem/1.1 var(--f-display)}
+.nav{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+.nav::-webkit-scrollbar{display:none}
+.nav a{position:relative;white-space:nowrap;padding:9px 11px;border-radius:999px;color:var(--ink);text-decoration:none;font-weight:500;font-size:.96rem;transition:background-color .2s ease}
+.nav a:hover{background:var(--crema)}
+.nav a.active::after{content:"";position:absolute;left:13px;right:13px;bottom:3px;height:2px;border-radius:2px;background:var(--giallo)}
+.nav a.cta{font-weight:700;color:var(--blu);margin-left:4px}
+.nav a.cta::before{content:"";display:inline-block;width:1px;height:18px;background:var(--line);margin-right:14px;vertical-align:-3px}
+.nav a.cta .arr{display:inline-block;margin-left:6px;transition:transform .2s var(--ease)}
+.nav a.cta:hover{background:transparent;text-decoration:underline;text-underline-offset:4px}
+.nav a.cta:hover .arr{transform:translateX(3px)}
+.nav a.cta.active::after{display:none}
+@media (max-width:1320px){.nav a{padding:9px 8px;font-size:.93rem}.nav a.cta::before{margin-right:10px}}
+.tools{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.lang{display:inline-flex;border:1.5px solid var(--line);border-radius:999px;padding:3px;background:var(--surface)}
+.lang button{font:500 .76rem/1 var(--f-mono);letter-spacing:.05em;border:0;background:transparent;color:var(--muted);padding:7px 8px;border-radius:999px;cursor:pointer}
+.lang button:hover{color:var(--ink)}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.theme-btn{width:40px;height:40px;border-radius:50%;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);display:grid;place-items:center;cursor:pointer;transition:transform .3s var(--ease)}
+.theme-btn:hover{transform:rotate(-20deg)}
+.theme-btn svg{width:19px;height:19px}
+.i-sun{display:none}
+:root[data-theme="dark"] .i-sun{display:block}
+:root[data-theme="dark"] .i-moon{display:none}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) .i-sun{display:block}
+  :root:not([data-theme="light"]) .i-moon{display:none}
+}
+.progress{position:absolute;left:0;bottom:-1px;height:3px;width:100%;transform-origin:0 50%;transform:scaleX(var(--p,0));background:linear-gradient(90deg,var(--verde) 0 33.3%,var(--bianco-flag) 33.3% 66.6%,var(--rosso) 66.6% 100%)}
+@media (max-width:1180px){
+  .bar{flex-wrap:wrap;gap:6px 12px;padding-block:10px;min-height:0}
+  .nav{order:3;width:100%;margin-inline:-6px}
+  .brand img{height:44px}
+  html{scroll-padding-top:130px}
+}
+@media (min-width:1181px){.brand-text{display:none}}
+@media (max-width:560px){.brand-text{display:none}}
+
+/* ============ HERO ============ */
+.hero{padding-block:clamp(40px,6vw,88px) 0;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(32px,6vw,96px);align-items:center}
+.hero h1{font-size:clamp(2.6rem,1.2rem + 4.6vw,5.4rem);color:var(--blu);letter-spacing:-.015em;line-height:1.02}
+.hero h1 em{font-style:normal;color:var(--ink);display:block;margin-top:.12em}
+.hero-copy{display:grid;gap:26px;justify-items:start}
+.hero-copy .lead{font-size:clamp(1.08rem,1rem + .3vw,1.25rem);color:var(--muted);max-width:54ch}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+.hero-figure{position:relative;display:grid;gap:16px;width:100%;max-width:520px;justify-self:end}
+.arch{position:relative;aspect-ratio:4/4.5;width:100%;border:12px solid var(--arancio);border-radius:50% 50% 12px 12px / 34% 34% 12px 12px;background:#FFF4BD;overflow:hidden;display:grid;place-items:center;box-shadow:var(--shadow-lift)}
+.arch::after{content:"";position:absolute;inset:7px;border:3px solid rgba(255,255,255,.9);border-radius:inherit;pointer-events:none}
+.arch .fallback{width:80%;height:auto;will-change:transform}
+.arch .photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero-figure .tricolore{height:12px}
+.seal{position:absolute;left:-54px;bottom:44px;width:156px;height:156px;border-radius:50%;background:var(--giallo);color:#1A2240;display:grid;place-items:center;box-shadow:var(--shadow-lift)}
+.seal svg{position:absolute;inset:0;width:100%;height:100%;animation:spin 26s linear infinite}
+.seal text{font:600 13.5px var(--f-mono);letter-spacing:.14em;fill:#1A2240}
+.seal .num{font:400 3rem/.9 var(--f-display);text-align:center;color:#1A2240}
+.seal .num small{display:block;font:500 .68rem/1.4 var(--f-mono);letter-spacing:.14em;text-transform:uppercase}
+@media (max-width:960px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-figure{max-width:440px;justify-self:center}
+  .seal{left:-12px;width:124px;height:124px;bottom:36px}
+  .seal .num{font-size:2.4rem}
+}
+
+/* numeri */
+.proof{margin-top:clamp(48px,6vw,88px);border-block:1px solid var(--line);background:var(--surface)}
+.proof ul{list-style:none;margin:0 auto;padding-block:26px;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.proof li{display:grid;gap:4px;padding-left:18px;border-left:3px solid var(--giallo)}
+.proof b{font:400 clamp(1.9rem,1.4rem + 1.2vw,2.6rem)/1 var(--f-display);color:var(--blu);font-variant-numeric:tabular-nums}
+.proof span{font-size:.93rem;color:var(--muted)}
+@media (max-width:860px){.proof ul{grid-template-columns:1fr 1fr;gap:22px 16px}}
+
+/* nastro prodotti */
+.ticker{overflow:hidden;background:var(--blu);color:#fff;padding-block:16px;border-block:1px solid var(--blu)}
+:root[data-theme="dark"] .ticker{background:#1B2A66}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .ticker{background:#1B2A66}}
+.ticker-track{display:flex;width:max-content;animation:scroll-x 48s linear infinite}
+.ticker:hover .ticker-track{animation-play-state:paused}
+.ticker ul{display:flex;list-style:none;margin:0;padding:0}
+.ticker li{font:400 clamp(1.3rem,1rem + 1vw,1.9rem)/1 var(--f-display);white-space:nowrap;padding-inline:26px;display:flex;align-items:center;gap:52px}
+.ticker li::after{content:"";width:10px;height:10px;border-radius:50%;background:var(--giallo);flex-shrink:0}
+@media (prefers-reduced-motion: reduce){.ticker-track{width:auto;flex-wrap:wrap}.ticker ul[aria-hidden]{display:none}.ticker ul{flex-wrap:wrap;row-gap:12px}}
+
+/* ============ STORIA ============ */
+.storia-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,96px);align-items:start}
+.storia-text{display:grid;gap:20px;max-width:60ch}
+.storia-text .quote{font:400 clamp(1.4rem,1.1rem + 1vw,1.9rem)/1.3 var(--f-display);color:var(--blu);border-left:4px solid var(--giallo);padding-left:22px;margin-block:6px}
+.timeline{list-style:none;margin:0;padding:0;display:grid;position:relative}
+.timeline li{display:grid;grid-template-columns:120px 1fr;gap:22px;padding:22px 0;border-top:1px solid var(--line)}
+.timeline li:last-child{border-bottom:1px solid var(--line)}
+.timeline .when{font:500 1rem/1.4 var(--f-mono);color:var(--blu)}
+.timeline h3{font-size:1.25rem;margin-bottom:6px}
+.timeline p{color:var(--muted)}
+@media (max-width:960px){.storia-grid{grid-template-columns:1fr}.timeline li{grid-template-columns:88px 1fr}}
+
+
+/* ============ FASCIA FOTO STABILIMENTO ============ */
+.band{position:relative;height:clamp(260px,38vw,560px);overflow:hidden;background:#1B3680}
+.band img{position:absolute;left:0;top:-12%;width:100%;height:124%;object-fit:cover;object-position:center 45%;will-change:transform}
+.band::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,20,48,0) 45%,rgba(14,20,48,.72) 100%)}
+.band-cap{position:absolute;left:0;right:0;bottom:0;z-index:1;padding-block:clamp(18px,3vw,36px);color:#fff}
+.band-cap p{font:400 clamp(1.4rem,1rem + 1.6vw,2.4rem)/1.15 var(--f-display);max-width:28ch}
+.band-cap span{display:block;font:500 .78rem/1.4 var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--giallo);margin-bottom:8px}
+/* anteprime archivio eventi */
+
+/* ============ METODO ============ */
+.metodo{background:var(--bg-alt)}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(16px,2vw,28px);counter-reset:s}
+.step{position:relative;display:grid;gap:12px;align-content:start;padding:28px 24px 26px;background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow)}
+.step .n{font:400 3.2rem/1 var(--f-display);color:var(--giallo);-webkit-text-stroke:1.5px var(--arancio)}
+.step h3{font-size:1.25rem}
+.step p{color:var(--muted);font-size:.97rem}
+.step .unit{justify-self:start;font:500 .82rem/1 var(--f-mono);padding:7px 10px;border-radius:6px;background:var(--blu-soft);color:var(--blu)}
+@media (max-width:1080px){.steps{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.steps{grid-template-columns:1fr}}
+
+/* ============ GAMMA ============ */
+.filters{display:flex;flex-wrap:wrap;gap:8px}
+.filters button{font:500 .93rem/1 var(--f-body);padding:11px 17px;border-radius:999px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;transition:background-color .2s ease,border-color .2s ease}
+.filters button:hover{border-color:var(--blu)}
+.filters button[aria-pressed="true"]{background:var(--blu);border-color:var(--blu);color:var(--on-blu)}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:clamp(16px,1.8vw,24px);margin-top:28px}
+.card{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);display:flex;flex-direction:column;overflow:hidden;transition:transform .35s var(--ease),box-shadow .35s var(--ease),opacity .8s var(--ease)}
+.card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lift)}
+.card[hidden]{display:none!important}
+.card figure{margin:10px 10px 0;position:relative;aspect-ratio:4/5;border-radius:46% 46% 10px 10px / 30% 30% 10px 10px;background:var(--crema-2);display:grid;place-items:center;overflow:hidden}
+.card figure .name{font:400 1.5rem/1.1 var(--f-display);color:var(--blu);text-align:center;padding:26px;text-wrap:balance}
+.card figure img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:var(--crema-2);transition:transform .6s var(--ease)}
+.card:hover figure img{transform:scale(1.04)}
+.card .body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card h3{font-size:1.16rem}
+.card p{color:var(--muted);font-size:.94rem}
+.card .more{margin-top:auto;padding-top:4px;font-weight:600;font-size:.94rem;text-decoration:none}
+/* depliant da scaricare */
+.depliant{margin-top:clamp(36px,5vw,64px);background:var(--surface);border-radius:24px;padding:clamp(20px,3vw,36px);box-shadow:var(--shadow)}
+.dp-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:14px 24px;margin-bottom:20px}
+.dp-head h3{font-size:clamp(1.4rem,1.1rem + 1vw,1.9rem);color:var(--blu)}
+.dp-head p{color:var(--muted);margin-top:4px}
+.dp-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.dp-list a{display:grid;grid-template-columns:56px 1fr auto;align-items:center;gap:12px;padding:10px 12px 10px 10px;border:1.5px solid var(--line);border-radius:14px;text-decoration:none;color:var(--ink);transition:border-color .2s ease,transform .25s var(--ease)}
+.dp-list a:hover{border-color:var(--blu);transform:translateY(-2px)}
+.dp-list .th{width:56px;height:72px;border-radius:6px;overflow:hidden;background:var(--crema);display:grid;place-items:center}
+.dp-list .th img{width:100%;height:100%;object-fit:cover}
+.dp-list .tx{display:grid;gap:2px;min-width:0}
+.dp-list b{font-weight:600;font-size:.95rem;line-height:1.25}
+.dp-list small{color:var(--muted);font-size:.82rem}
+.dp-list .meta{font-size:.76rem;color:var(--muted)}
+.dp-list .ic{color:var(--blu)}
+@media (max-width:1100px){.dp-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.dp-list{grid-template-columns:1fr}}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font:500 .72rem/1 var(--f-mono);letter-spacing:.04em;text-transform:uppercase;padding:5px 8px;border-radius:6px;background:var(--blu-soft);color:var(--blu)}
+.tag.sg{background:color-mix(in srgb,var(--verde) 18%,transparent);color:var(--ink)}
+
+/* ============ NOVITA ============ */
+.novita{background:var(--bg-alt)}
+.novita-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(16px,2vw,28px)}
+.novita-card{border-radius:var(--radius);padding:24px;display:grid;gap:12px;align-content:start;background:var(--surface);box-shadow:var(--shadow)}
+.novita-card .fmt{font:500 .9rem/1.3 var(--f-mono);color:var(--blu);background:var(--blu-soft);border-radius:6px;padding:6px 10px;justify-self:start}
+.novita-card .pic{aspect-ratio:4/3;border-radius:12px;background:var(--crema);position:relative;overflow:hidden;display:grid;place-items:center}
+.novita-card .pic span{font:400 2.2rem/1 var(--f-display);color:var(--arancio)}
+.novita-card .pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
+.novita-card:hover .pic img{transform:scale(1.04)}
+.novita-card p{color:var(--muted);font-size:.97rem}
+.gusti-new{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.gusti-new li{font-weight:600;font-size:.92rem;padding:7px 12px;border-radius:999px;background:var(--crema);color:var(--ink);border:1.5px solid var(--giallo)}
+.stay{margin-top:24px;font:500 .9rem var(--f-mono);color:var(--muted)}
+@media (max-width:1100px){.novita-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:640px){.novita-grid{grid-template-columns:1fr}}
+
+/* ============ EVENTI ============ */
+.evento-top{display:grid;grid-template-columns:1fr 1.05fr;gap:clamp(24px,4vw,56px);align-items:center;background:var(--surface);border-radius:24px;padding:clamp(22px,3.5vw,44px);box-shadow:var(--shadow)}
+.badge{font:500 .8rem/1 var(--f-mono);letter-spacing:.1em;text-transform:uppercase;background:var(--giallo);color:#1A2240;padding:8px 11px;border-radius:6px;justify-self:start}
+.evento-info{display:grid;gap:16px}
+.evento-info h3{font-size:clamp(1.8rem,1.3rem + 1.8vw,2.8rem);color:var(--blu)}
+.evento-info dl{display:grid;grid-template-columns:auto 1fr;gap:8px 18px;margin:0}
+.evento-info dt{font:500 .8rem/1.8 var(--f-mono);text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.evento-info dd{margin:0}
+.evento-info > p{color:var(--muted)}
+.gp-link{font-weight:500;font-size:.88rem;color:var(--muted);text-decoration:none}
+.gp-link:hover{color:var(--blu);text-decoration:underline;text-underline-offset:3px}
+.evento-foto{display:grid;grid-template-columns:1fr 1fr;gap:12px;text-decoration:none}
+.evento-foto img{border-radius:12px;aspect-ratio:4/3.1;object-fit:cover;width:100%;height:auto;display:block;transition:transform .5s var(--ease)}
+.evento-foto img.big{grid-column:1 / -1;aspect-ratio:2/1}
+.evento-foto:hover img{transform:scale(1.02)}
+.ar-pics{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:6px}
+.ar-pics img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:8px;display:block;background:var(--crema);transition:opacity .2s ease}
+.ar-pics img.a{grid-column:1 / -1;aspect-ratio:16/10}
+.ar-pics:hover img{opacity:.88}
+.archivio .gp-link{margin-top:4px;color:var(--blu);font-weight:600;font-size:.93rem}
+.archivio .gp-link span{color:inherit}
+.archivio{margin-top:24px;list-style:none;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.archivio li{background:var(--surface);border-radius:14px;padding:18px;display:grid;gap:6px;align-content:start;border:1.5px solid var(--line)}
+.archivio .when{font:500 .84rem var(--f-mono);color:var(--blu)}
+.archivio b{font-weight:600}
+.archivio span:not(.when){color:var(--muted);font-size:.92rem}
+.archivio a{font-weight:600;font-size:.93rem;text-decoration:none}
+@media (max-width:1180px){.archivio{grid-template-columns:1fr 1fr}}
+@media (max-width:960px){.evento-top{grid-template-columns:1fr}.archivio{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.archivio{grid-template-columns:1fr}}
+
+/* ============ CERTIFICAZIONI ============ */
+.cert-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2vw,28px)}
+.cert{border-top:6px solid var(--giallo);background:var(--surface);border-radius:0 0 var(--radius) var(--radius);padding:28px;display:grid;gap:12px;align-content:start;box-shadow:var(--shadow)}
+.cert .code{font:400 2.2rem/1 var(--f-display);color:var(--blu)}
+.cert p{color:var(--muted);font-size:.97rem}
+.cert a{font-weight:600;text-decoration:none}
+/* recensioni */
+.recensioni{padding-block:clamp(56px,7vw,100px)}
+.rev-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:20px 40px;margin-bottom:clamp(28px,3.5vw,44px)}
+.rev-head .section-head{margin-bottom:0}
+.rev-score{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--ink);background:var(--surface);border-radius:18px;padding:14px 20px;box-shadow:var(--shadow)}
+.rev-score .num{font:400 3rem/1 var(--f-display);color:var(--blu)}
+.rev-score .sc{display:grid;gap:4px;font-size:.88rem;color:var(--muted)}
+.stars{display:inline-flex;gap:2px;color:#F2A20C}
+.rev-list{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(14px,1.6vw,22px)}
+.rev{margin:0;background:var(--surface);border-radius:var(--radius);padding:22px;display:flex;flex-direction:column;gap:14px;box-shadow:var(--shadow);border-top:4px solid var(--giallo)}
+.rev blockquote{margin:0;font-size:.98rem;line-height:1.55;flex:1}
+.rev figcaption{display:flex;justify-content:space-between;align-items:baseline;gap:10px;font-size:.92rem}
+.rev figcaption .mono{font-size:.76rem;color:var(--muted)}
+.rev-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:clamp(24px,3vw,36px)}
+@media (max-width:1100px){.rev-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){.rev-list{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin-inline:calc(-1 * clamp(16px,3.5vw,40px));padding:4px clamp(16px,3.5vw,40px) 14px;scrollbar-width:none}.rev-list::-webkit-scrollbar{display:none}.rev{flex:0 0 82%;scroll-snap-align:center}}
+@media (max-width:960px){.cert-grid{grid-template-columns:1fr}}
+
+/* ============ AREA RIVENDITORI ============ */
+.pro{background:var(--bg-alt)}
+.pro-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(24px,4vw,56px);align-items:start}
+.panel{background:var(--surface);border-radius:24px;padding:clamp(22px,3vw,40px);box-shadow:var(--shadow)}
+.panel h3{margin-bottom:10px}
+form{display:grid;gap:16px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+label{display:grid;gap:7px;font-weight:600;font-size:.93rem}
+input,select,textarea{font:inherit;font-weight:400;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:11px;padding:12px 13px;width:100%;transition:border-color .2s ease,box-shadow .2s ease}
+textarea{min-height:120px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--blu);box-shadow:0 0 0 3px color-mix(in srgb,var(--blu) 25%,transparent)}
+.check{display:flex;gap:10px;align-items:flex-start;font-weight:400;font-size:.89rem;color:var(--muted)}
+.check input{width:18px;height:18px;margin-top:3px;flex-shrink:0}
+.form-msg{font-size:.96rem;padding:13px 15px;border-radius:11px;background:var(--blu-soft)}
+.downloads{list-style:none;margin:0;padding:0;display:grid}
+.downloads li{border-top:1px solid var(--line)}
+.downloads li:last-child{border-bottom:1px solid var(--line)}
+.downloads a{display:grid;grid-template-columns:1fr auto;gap:12px;padding:15px 2px;text-decoration:none;color:var(--ink);transition:padding .25s var(--ease)}
+.downloads a:hover{padding-left:8px}
+.downloads a:hover b{color:var(--blu)}
+.downloads b{font-weight:600}
+.downloads small{display:block;color:var(--muted);font-size:.86rem}
+.downloads .ext{font:500 .75rem/1 var(--f-mono);align-self:center;padding:6px 8px;border-radius:6px;background:var(--crema);color:var(--ink)}
+@media (max-width:960px){.pro-grid{grid-template-columns:1fr}}
+@media (max-width:600px){.row{grid-template-columns:1fr}}
+
+
+/* ============ DIVENTA CONCESSIONARIO ============ */
+.conc{background:#1B3680;color:#fff;position:relative;overflow:hidden}
+:root[data-theme="dark"] .conc{background:#121A3C;border-block:1px solid var(--line)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .conc{background:#121A3C;border-block:1px solid var(--line)}}
+.conc::before{content:"";position:absolute;right:-180px;top:-180px;width:520px;height:520px;border-radius:50%;border:60px solid rgba(252,200,11,.10);pointer-events:none}
+.conc h2,.conc h3{color:#fff}
+.conc .eyebrow{color:#C9D5FF}
+.conc .section-head p{color:rgba(255,255,255,.82)}
+.conc-intro{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(28px,5vw,80px);align-items:start}
+.conc-intro .lead{font-size:clamp(1.08rem,1rem + .3vw,1.25rem);color:rgba(255,255,255,.85);max-width:56ch}
+.offer{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.offer li{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:18px;display:grid;gap:6px;align-content:start}
+.offer b{font:400 1.12rem/1.2 var(--f-display);color:#fff;display:flex;gap:10px;align-items:baseline}
+.offer b::before{content:"";flex-shrink:0;width:10px;height:10px;border-radius:50%;background:var(--giallo);transform:translateY(-1px)}
+.offer span{color:rgba(255,255,255,.78);font-size:.94rem}
+.who{display:grid;gap:14px;background:rgba(255,255,255,.06);border-radius:18px;padding:clamp(20px,2.5vw,30px);border:1px solid rgba(255,255,255,.14)}
+.who ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.who li{display:grid;grid-template-columns:24px 1fr;gap:10px;color:rgba(255,255,255,.88)}
+.who li::before{content:"\2713";font-weight:700;color:var(--giallo)}
+.who .note{font-size:.9rem;color:rgba(255,255,255,.7);border-top:1px solid rgba(255,255,255,.14);padding-top:14px}
+.conc-steps{list-style:none;margin:clamp(40px,5vw,64px) 0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative}
+.conc-steps li{position:relative;padding:22px 20px 0 0;display:grid;gap:8px;align-content:start;border-top:2px solid rgba(255,255,255,.2)}
+.conc-steps li::before{content:attr(data-n);position:absolute;top:-19px;left:0;width:36px;height:36px;border-radius:50%;background:var(--giallo);color:#1A2240;font:600 .95rem/36px var(--f-mono);text-align:center}
+.conc-steps li{padding-top:34px}
+.conc-steps h3{font-size:1.2rem}
+.conc-steps p{color:rgba(255,255,255,.78);font-size:.95rem}
+.conc-form{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(24px,4vw,56px);align-items:start}
+.conc-form .panel{color:var(--ink)}
+.conc-form .panel h3{color:var(--ink)}
+.conc-form aside{display:grid;gap:16px}
+.conc-form aside p{color:rgba(255,255,255,.82)}
+.conc-form aside .big{font:400 clamp(1.5rem,1.2rem + 1vw,2rem)/1.2 var(--f-display);color:#fff}
+.conc-form aside a{color:var(--giallo);font-weight:600}
+@media (max-width:1080px){.conc-intro,.conc-form{grid-template-columns:1fr}.conc-steps{grid-template-columns:1fr 1fr;row-gap:36px}}
+@media (max-width:600px){.offer{grid-template-columns:1fr}.conc-steps{grid-template-columns:1fr}}
+
+/* ============ NEWSLETTER ============ */
+.news{background:#2447A0;color:#fff}
+.news .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px;padding-block:48px}
+.news h2{color:#fff;font-size:clamp(1.7rem,1.2rem + 1.4vw,2.4rem)}
+.news p{color:rgba(255,255,255,.84);max-width:54ch;margin-top:6px}
+.news-form{display:grid;gap:10px;flex:1 1 380px;max-width:520px}
+.nf-row{display:flex;gap:10px;flex-wrap:wrap}
+.nf-row input{flex:1 1 220px;font:inherit;font-size:1rem;padding:13px 16px;border-radius:999px;border:0;background:#fff;color:#1A2240}
+.nf-row input:focus{outline:3px solid #FCC80B;outline-offset:2px}
+.nf-check{display:flex;gap:10px;align-items:flex-start;font-size:.86rem;color:rgba(255,255,255,.85)}
+.nf-check input{width:18px;height:18px;margin-top:2px;flex-shrink:0;accent-color:#FCC80B}
+.nf-check a{color:#fff}
+.nf-msg{margin:0;font-size:.95rem;padding:10px 14px;border-radius:10px;background:rgba(255,255,255,.14);color:#fff}
+.hp{position:absolute!important;left:-9999px!important;width:1px;height:1px;opacity:0}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ============ CONTATTI ============ */
+.contatti-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2vw,28px)}
+.contatto{border:1.5px solid var(--line);border-radius:var(--radius);padding:26px;display:grid;gap:10px;align-content:start;background:var(--surface)}
+.contatto .eyebrow{margin-bottom:4px}
+.contatto .big{font:400 1.4rem/1.3 var(--f-display);color:var(--ink)}
+.contatto .big a{color:var(--ink);text-decoration:none}
+.contatto .big a:hover{color:var(--blu)}
+.contatto a{font-weight:600}
+.social{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.social a{font-size:.9rem;padding:9px 13px;border-radius:999px;border:1.5px solid var(--line);text-decoration:none;color:var(--ink);font-weight:500}
+.social a:hover{border-color:var(--blu);color:var(--blu)}
+@media (max-width:960px){.contatti-grid{grid-template-columns:1fr}}
+
+/* ============ FOOTER ============ */
+footer{border-top:1px solid var(--line);padding-block:36px 44px;font-size:.9rem;color:var(--muted)}
+footer .wrap{display:grid;gap:18px}
+.foot-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;align-items:center}
+.foot-top img{height:60px;width:auto}
+.foot-top .tricolore{width:180px;height:6px;gap:20px}
+.legal{display:flex;flex-wrap:wrap;gap:6px 20px}
+.legal a{color:var(--muted)}
+.to-top{position:fixed;right:clamp(16px,2vw,28px);bottom:calc(clamp(16px,2vw,28px) + env(safe-area-inset-bottom,0px));width:48px;height:48px;border-radius:50%;border:0;background:var(--blu);color:var(--on-blu);display:grid;place-items:center;cursor:pointer;box-shadow:var(--shadow-lift);opacity:0;transform:translateY(12px);pointer-events:none;transition:opacity .3s ease,transform .3s var(--ease);z-index:25}
+.to-top.show{opacity:1;transform:none;pointer-events:auto}
+
+/* logo leggibile anche col tema scuro */
+:root[data-theme="dark"] .brand img,:root[data-theme="dark"] .foot-top img{background:#FFF8D6;border-radius:8px;padding:3px}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .brand img,:root:not([data-theme="light"]) .foot-top img{background:#FFF8D6;border-radius:8px;padding:3px}}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="Magrini Gelati">
+      <img src="img/logo-magrini.svg" alt="Raffaele Magrini, prodotto in Italia" width="72" height="52">
+      <span class="brand-text"><strong>Magrini R. &amp; Ceci G.</strong><small data-i18n="brand.sub">Gelati dal 1936</small></span>
+    </a>
+    <nav class="nav" aria-label="Menu">
+      <a href="#storia" data-i18n="nav.storia">Storia</a>
+      <a href="#gamma" data-i18n="nav.gamma">Prodotti</a>
+      <a href="#novita" data-i18n="nav.novita">Novità</a>
+      <a href="#eventi" data-i18n="nav.eventi">Eventi</a>
+      <a href="#certificazioni" data-i18n="nav.cert">Qualità</a>
+      <a href="#recensioni" data-i18n="nav.rev">Recensioni</a>
+      <a href="#contatti" data-i18n="nav.contatti">Contatti</a>
+      <a href="#concessionari" data-i18n="nav.conc">Concessionari</a>
+      <a class="cta" href="#professionisti"><span data-i18n="nav.pro">Richiedi offerta</span><span class="arr" aria-hidden="true">&rarr;</span></a>
+    </nav>
+    <div class="tools">
+      <div class="lang" role="group" aria-label="Lingua / Language">
+        <button type="button" data-lang="it" aria-pressed="true">IT</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        <button type="button" data-lang="fr" aria-pressed="false">FR</button>
+        <button type="button" data-lang="es" aria-pressed="false">ES</button>
+      </div>
+      <button type="button" class="theme-btn" id="theme-btn" aria-label="Tema chiaro o scuro">
+        <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow" data-i18n="hero.eyebrow">Roseto degli Abruzzi · dal 1936</span>
+      <h1 data-i18n="hero.title">Gelati Magrini, <em>prodotti di qualità da quattro generazioni.</em></h1>
+      <p class="lead" data-i18n="hero.lead">Siamo un'azienda artigiana: produciamo gelati, semifreddi e dessert per bar, gelaterie, stabilimenti balneari, concessionari e grande distribuzione. Materie prime selezionate, ricette di famiglia e lavorazione artigianale in un laboratorio moderno e certificato.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#gamma"><span data-i18n="hero.cta1">Scopri la gamma</span><span class="arr" aria-hidden="true">&rarr;</span></a>
+        <a class="btn btn-ghost" href="#professionisti" data-i18n="hero.cta2">Richiedi il listino</a>
+      </div>
+    </div>
+    <div class="hero-figure" data-reveal="zoom">
+      <div class="arch" id="arch">
+        <img class="fallback" src="img/logo-magrini.svg" alt="Logo Raffaele Magrini" width="596" height="430">
+      </div>
+      <div class="tricolore" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div class="seal" aria-label="90 anni di gelato, 1936-2026">
+        <svg viewBox="0 0 200 200" aria-hidden="true"><defs><path id="ring" d="M100,100 m-80,0 a80,80 0 1,1 160,0 a80,80 0 1,1 -160,0"/></defs><text textLength="496" lengthAdjust="spacing"><textPath href="#ring" data-i18n="seal.ring">1936 · 2026 · NOVANT'ANNI DI GELATO ·</textPath></text></svg>
+        <div class="num">90<small data-i18n="seal.anni">anni</small></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="proof">
+    <ul class="wrap" id="proof">
+      <li data-reveal><b data-count="90">90</b><span data-i18n="proof.1">anni di gelato, dal Caffè Magrini del 1936</span></li>
+      <li data-reveal style="--d:90ms"><b data-count="10">10</b><span data-i18n="proof.2">linee di prodotto, dal banco frigo al dessert</span></li>
+      <li data-reveal style="--d:180ms"><b data-count="30" data-prefix="+" data-suffix="%">+30%</b><span data-i18n="proof.3">peso specifico rispetto al gelato industriale</span></li>
+      <li data-reveal style="--d:270ms"><b>ISO · IFS</b><span data-i18n="proof.4">qualità certificata ISO 9001 e IFS Food</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- nastro scorrevole -->
+<div class="ticker">
+  <div class="ticker-track">
+    <ul>
+      <li>Torta Cristallo</li><li>Trancio Cristallo</li><li>Torta Pizza Dolce Teramana</li><li>Parisienne</li><li>Profiterole Magrini</li><li>Mattonella Croccante</li><li>Tartufacchio</li><li>Tortino Soufflè</li><li>Coppa Rossini</li><li>Cono Capriccio</li><li>Maxi Pinguino</li><li>Gran Ripieno</li><li>Mimosa</li><li>Geltorrone</li><li>Panettone Gelato</li>
+    </ul>
+    <ul aria-hidden="true">
+      <li>Torta Cristallo</li><li>Trancio Cristallo</li><li>Torta Pizza Dolce Teramana</li><li>Parisienne</li><li>Profiterole Magrini</li><li>Mattonella Croccante</li><li>Tartufacchio</li><li>Tortino Soufflè</li><li>Coppa Rossini</li><li>Cono Capriccio</li><li>Maxi Pinguino</li><li>Gran Ripieno</li><li>Mimosa</li><li>Geltorrone</li><li>Panettone Gelato</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ============ STORIA ============ -->
+<section class="section" id="storia">
+  <div class="wrap storia-grid">
+    <div class="storia-text">
+      <span class="eyebrow" data-reveal data-i18n="story.eyebrow">La nostra storia</span>
+      <h2 class="split" data-reveal data-i18n="story.title">Dal Caffè Magrini al laboratorio di Via Norvegia</h2>
+      <p data-reveal data-i18n="story.p1">Negli anni Trenta Maria Magrini inizia a produrre nell'antico Caffè Magrini i primi gelati, per allietare le passeggiate estive dei rosetani. Materie prime genuine e ingredienti freschi fanno del Caffè il punto di ritrovo degli amanti del gelato.</p>
+      <p class="quote" data-reveal="left" data-i18n="story.quote">Coppe così esclusive e fantasiose da meritare il nome di "leggenda del gelato italiano".</p>
+      <p data-reveal data-i18n="story.p2">Oggi Raffaele Magrini porta avanti gli insegnamenti della nonna e li trasforma in regole di qualità, nel laboratorio che gestisce ogni giorno con la socia Graziella Ceci, i figli Barbara e Alessandro Magrini e il genero Gianni Iachini.</p>
+    </div>
+    <ol class="timeline">
+      <li data-reveal="right"><span class="when" data-i18n="tl.1w">anni '30</span><div><h3 data-i18n="tl.1t">Il Caffè Magrini</h3><p data-i18n="tl.1p">Maria Magrini prepara i primi gelati nel centro di Roseto degli Abruzzi.</p></div></li>
+      <li data-reveal="right" style="--d:100ms"><span class="when" data-i18n="tl.2w">poi</span><div><h3 data-i18n="tl.2t">Le coppe dei figli</h3><p data-i18n="tl.2p">La seconda generazione crea le coppe che rendono famoso il gelato Magrini.</p></div></li>
+      <li data-reveal="right" style="--d:200ms"><span class="when">1980</span><div><h3 data-i18n="tl.3t">Nasce Magrini R. &amp; Ceci G.</h3><p data-i18n="tl.3p">L'impresa artigiana passa dalla gelateria alla produzione per bar, gelaterie e rivenditori.</p></div></li>
+      <li data-reveal="right" style="--d:300ms"><span class="when" data-i18n="tl.4w">oggi</span><div><h3 data-i18n="tl.4t">Certificati ISO 9001 e IFS</h3><p data-i18n="tl.4p">Una rete di concessionari in tutta Italia, collaborazioni con grandi gruppi commerciali e clienti all'estero.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ FASCIA FOTO ============ -->
+<section class="band" aria-label="Stabilimento">
+  <img id="band-img" src="img/banner-2.jpg" alt="Lo stabilimento Magrini a Roseto degli Abruzzi con le bandiere italiane" loading="lazy">
+  <div class="band-cap"><div class="wrap" data-reveal><span data-i18n="band.eyebrow">Roseto degli Abruzzi</span><p data-i18n="band.p">Il nostro stabilimento, dove ogni giorno nasce il gelato Magrini.</p></div></div>
+</section>
+
+<!-- ============ COME LAVORIAMO ============ -->
+<section class="section metodo" id="metodo">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" data-reveal data-i18n="met.eyebrow">Come lavoriamo</span>
+      <h2 class="split" data-reveal data-i18n="met.title">Dalla materia prima al banco frigo</h2>
+    </div>
+    <ol class="steps">
+      <li class="step" data-reveal><span class="n">1</span><h3 data-i18n="met.1t">Materie prime scelte</h3><p data-i18n="met.1p">Fornitori selezionati e controllati come richiedono ISO 9001 e IFS Food. Latte, frutta e semilavorati di qualità.</p></li>
+      <li class="step" data-reveal style="--d:100ms"><span class="n">2</span><h3 data-i18n="met.2t">Prodotto a Roseto</h3><p data-i18n="met.2p">Ogni gelato nasce nel nostro laboratorio di Via Norvegia, con le ricette di famiglia e impianti moderni.</p></li>
+      <li class="step" data-reveal style="--d:200ms"><span class="n">3</span><h3 data-i18n="met.3t">Più gelato, meno aria</h3><p data-i18n="met.3p">Peso specifico superiore del 30% rispetto al gelato industriale: più sostanza in ogni coppetta.</p><span class="unit">+30%</span></li>
+      <li class="step" data-reveal style="--d:300ms"><span class="n">4</span><h3 data-i18n="met.4t">Catena del freddo</h3><p data-i18n="met.4p">Conservazione in cella e consegna con mezzi refrigerati, direttamente o tramite la nostra rete di concessionari.</p><span class="unit">&le; &minus;18 &deg;C</span></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ GAMMA ============ -->
+<section class="section" id="gamma">
+  <div class="wrap">
+    <div class="split-head">
+      <div class="section-head">
+        <span class="eyebrow" data-reveal data-i18n="gamma.eyebrow">I nostri prodotti</span>
+        <h2 class="split" data-reveal data-i18n="gamma.title">La gamma Magrini</h2>
+        <p data-reveal data-i18n="gamma.p">Ogni linea ha il suo catalogo da sfogliare, con foto, peso e pezzatura di ogni prodotto, e il dépliant da scaricare.</p>
+      </div>
+    </div>
+    <div class="filters" role="group" aria-label="Filtro" data-reveal>
+      <button type="button" aria-pressed="true" data-filter="tutti" data-i18n="f.tutti">Tutte</button>
+      <button type="button" aria-pressed="false" data-filter="gelati" data-i18n="f.gelati">Gelati</button>
+      <button type="button" aria-pressed="false" data-filter="marchi" data-i18n="f.marchi">Marchi partner</button>
+      <button type="button" aria-pressed="false" data-filter="ricorrenze" data-i18n="f.dessert">Ricorrenze</button>
+    </div>
+    <div class="cards" id="cards">
+      <article class="card" data-reveal data-cat="gelati">
+        <figure><span class="name">Linea Impulso</span><img data-optional src="img/linee/impulso.jpg" alt="Linea Impulso" loading="lazy"></figure>
+        <div class="body"><h3>Linea Impulso</h3><p data-i18n="c.impulso">Coni, stecchi, biscotti e coppette per il banco frigo.</p><a class="more" href="catalogo.html#impulso" data-i18n="c.book">Sfoglia il catalogo &rarr;</a></div>
+      </article>
+      <article class="card" data-reveal data-cat="gelati">
+        <figure><span class="name" data-i18n="n.sorb">Sorbetteria &amp; Semifreddi</span><img data-optional src="img/linee/sorbetteria.jpg" alt="Sorbetteria e semifreddi" loading="lazy"></figure>
+        <div class="body"><h3 data-i18n="n.sorb">Sorbetteria &amp; Semifreddi</h3><p data-i18n="c.sorb">Sorbetti alla frutta e semifreddi in monoporzione.</p><a class="more" href="catalogo.html#sorbetteria" data-i18n="c.book">Sfoglia il catalogo &rarr;</a></div>
+      </article>
+      <article class="card" data-reveal data-cat="gelati">
+        <figure><span class="name">Giochi e Gelati</span><img data-optional src="img/linee/giochi.jpg" alt="Giochi e Gelati" loading="lazy"></figure>
+        <div class="body"><h3 data-i18n="n.bimbo">Giochi e Gelati</h3><p data-i18n="c.bimbo">Coppette e gelati con gioco o sorpresa, pensati per i più piccoli.</p><a class="more" href="catalogo.html#giochi" data-i18n="c.book">Sfoglia il catalogo &rarr;</a></div>
+      </article>
+      <article class="card" data-reveal data-cat="gelati">
+        <figure><span class="name">Dessert</span><img data-optional src="img/linee/dessert.jpg" alt="Dessert" loading="lazy"></figure>
+        <div class="body"><h3>Dessert</h3><p data-i18n="c.dessert">Torte gelato, dessert di pasticceria e monoporzioni.</p><a class="more" href="catalogo.html#dessert" data-i18n="c.book">Sfoglia il catalogo &rarr;</a></div>
+      </article>
+      <article class="card" data-reveal data-cat="gelati">
+        <figure><span class="name" data-i18n="n.mpk">Multipack e Asporto</span><img data-optional src="img/linee/multipack.jpg" alt="Linea multipack e asporto" loading="lazy"></figure>
+        <div class="body"><h3 data-i18n="n.mpk">Multipack e Asporto</h3><p data-i18n="c.mpk">Confezioni multiple e vaschette da portare a casa.</p><a class="more" href="catalogo.html#multipack" data-i18n="c.book">Sfoglia il catalogo &rarr;</a></div>
+      </article>
+      <article class="card" data-reveal data-cat="gelati">
+        <figure><span class="name" data-i18n="n.mant">Il nostro Mantecato</span><img data-optional src="img/linee/mantecato.jpg" alt="Gelato mantecato" loading="lazy"></figure>
+        <div class="body"><h3 data-i18n="n.mant">Il nostro Mantecato</h3><div class="tags"><span class="tag" data-i18n="t.vaschette">vaschette</span><span class="tag" data-i18n="t.carapine">carapine</span></div><p data-i18n="c.mant">Gelato da vetrina per gelaterie e bar.</p><a class="more" href="catalogo.html#mantecato" data-i18n="c.book">Sfoglia il catalogo &rarr;</a></div>
+      </article>
+      <article class="card" data-reveal data-cat="ricorrenze">
+        <figure><span class="name">Natale Goloso</span><img data-optional src="img/linee/natale.jpg" alt="Natale Goloso" loading="lazy"></figure>
+        <div class="body"><h3>Natale Goloso</h3><p data-i18n="c.natale">Panettoni gelato, tronchetti e dolci delle feste.</p><a class="more" href="catalogo.html#natale" data-i18n="c.book">Sfoglia il catalogo &rarr;</a></div>
+      </article>
+      <article class="card" data-reveal data-cat="ricorrenze">
+        <figure><span class="name">Pasqua Golosa</span><img data-optional src="img/linee/pasqua.jpg" alt="Pasqua Golosa" loading="lazy"></figure>
+        <div class="body"><h3>Pasqua Golosa</h3><p data-i18n="c.pasqua">La GelColomba, colomba di pasticceria farcita con gelato.</p><a class="more" href="catalogo.html#pasqua" data-i18n="c.book">Sfoglia il catalogo &rarr;</a></div>
+      </article>
+      <article class="card" data-reveal data-cat="marchi">
+        <figure><span class="name">Linea Ferrero</span><img data-optional src="img/linee/ferrero.jpg" alt="Linea Ferrero" loading="lazy"></figure>
+        <div class="body"><h3>Linea Ferrero</h3><p data-i18n="c.ferrero">I gelati dei marchi Ferrero che distribuiamo.</p><a class="more" href="catalogo.html#ferrero" data-i18n="c.book">Sfoglia il catalogo &rarr;</a></div>
+      </article>
+      <article class="card" data-reveal data-cat="marchi">
+        <figure><span class="name">Linea Mars</span><img data-optional src="img/linee/mars.jpg" alt="Linea Mars" loading="lazy"></figure>
+        <div class="body"><h3>Linea Mars</h3><p data-i18n="c.mars">Mars, Snickers, Twix, Bounty e gli altri gelati Mars.</p><a class="more" href="catalogo.html#mars" data-i18n="c.book">Sfoglia il catalogo &rarr;</a></div>
+      </article>
+    </div>
+    <div class="depliant" id="depliant" data-reveal>
+      <div class="dp-head">
+        <div><h3 data-i18n="dp.title">Dépliant da scaricare</h3><p data-i18n="dp.p">I cartelli della stagione in alta qualità, da stampare, esporre o girare ai clienti.</p></div>
+        <a class="btn btn-ghost" href="docs/depliant/magrini-depliant-2026.pdf" download><span data-i18n="dp.all">Scaricali tutti</span> <span class="n mono">PDF · 11,4 MB</span></a>
+      </div>
+      <ul class="dp-list">
+        <li><a href="docs/depliant/magrini-linea-impulso.pdf" download><span class="th"><img src="img/depliant/impulso.jpg" alt="" loading="lazy"></span><span class="tx"><b>Linea Impulso</b><span class="meta mono">PDF · 1,5 MB</span></span><svg class="ic" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+        <li><a href="docs/depliant/magrini-sorbetteria-e-semifreddi.pdf" download><span class="th"><img src="img/depliant/sorbetteria.jpg" alt="" loading="lazy"></span><span class="tx"><b data-i18n="n.sorb">Sorbetteria &amp; Semifreddi</b><span class="meta mono">PDF · 1,4 MB</span></span><svg class="ic" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+        <li><a href="docs/depliant/magrini-giochi-e-gelati.pdf" download><span class="th"><img src="img/depliant/giochi.jpg" alt="" loading="lazy"></span><span class="tx"><b data-i18n="n.bimbo">Giochi e Gelati</b><span class="meta mono">PDF · 1,1 MB</span></span><svg class="ic" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+        <li><a href="docs/depliant/magrini-dessert.pdf" download><span class="th"><img src="img/depliant/dessert.jpg" alt="" loading="lazy"></span><span class="tx"><b>Dessert</b><span class="meta mono">PDF · 1,8 MB</span></span><svg class="ic" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+        <li><a href="docs/depliant/magrini-multipack-e-asporto.pdf" download><span class="th"><img src="img/depliant/multipack.jpg" alt="" loading="lazy"></span><span class="tx"><b data-i18n="n.mpk">Multipack e Asporto</b><span class="meta mono">PDF · 2,0 MB</span></span><svg class="ic" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+        <li><a href="docs/depliant/magrini-natale-goloso.pdf" download><span class="th"><img src="img/depliant/natale.jpg" alt="" loading="lazy"></span><span class="tx"><b>Natale Goloso</b><span class="meta mono">PDF · 2,0 MB</span></span><svg class="ic" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+        <li><a href="docs/depliant/magrini-pasqua-golosa.pdf" download><span class="th"><img src="img/depliant/pasqua.jpg" alt="" loading="lazy"></span><span class="tx"><b>Pasqua Golosa</b><span class="meta mono">PDF · 140 KB</span></span><svg class="ic" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+        <li><a href="docs/depliant/magrini-linea-ferrero.pdf" download><span class="th"><img src="img/depliant/ferrero.jpg" alt="" loading="lazy"></span><span class="tx"><b>Linea Ferrero</b><span class="meta mono">PDF · 1,2 MB</span></span><svg class="ic" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+        <li><a href="docs/depliant/magrini-linea-mars.pdf" download><span class="th"><img src="img/depliant/mars.jpg" alt="" loading="lazy"></span><span class="tx"><b>Linea Mars</b><span class="meta mono">PDF · 490 KB</span></span><svg class="ic" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NOVITA ============ -->
+<section class="section novita" id="novita">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" data-reveal data-i18n="nov.eyebrow">Stagione 2026</span>
+      <h2 class="split" data-reveal data-i18n="nov.title">Le novità dell'anno</h2>
+      <p data-reveal data-i18n="nov.p">Ogni anno nuovi gusti, prodotti stagionali ed edizioni limitate. Ecco le ultime arrivate.</p>
+    </div>
+    <div class="novita-grid">
+      <article class="novita-card" data-reveal>
+        <div class="pic"><span>Oro</span><img data-optional src="img/novita/oro.jpg" alt="Vaschetta di gelato mantecato Linea Oro lt 6,5" width="1200" height="900" loading="lazy"></div>
+        <h3 data-i18n="nov.1t">Nuovi gusti Linea Oro</h3>
+        <span class="fmt">lt 6,5 · g 3900</span>
+        <p data-i18n="nov.1p">I nuovi gusti di quest'anno in vaschetta decorata, per la vetrina della gelateria:</p>
+        <ul class="gusti-new"><li>Gran Croccante Amarena</li><li>Summer Fruit</li></ul>
+      </article>
+      <article class="novita-card" data-reveal style="--d:100ms">
+        <div class="pic"><span>Mimosa</span><img data-optional src="img/novita/mimosa-card.jpg" alt="Mimosa monoporzione" width="1200" height="900" loading="lazy"></div>
+        <h3 data-i18n="nov.2t">Mimosa monoporzione</h3>
+        <span class="fmt">g 100</span>
+        <p data-i18n="nov.2p">Monoporzione di pasticceria farcita alla crema chantilly con pezzi di fragola e ananas, su strati di pan di Spagna aromatizzato alla frutta.</p>
+      </article>
+      <article class="novita-card" data-reveal style="--d:200ms">
+        <div class="pic"><span>Rodeo</span><img data-optional src="img/novita/rodeo-card.jpg" alt="Multipack Rodeo" width="1200" height="900" loading="lazy"></div>
+        <h3>MPK Rodeo</h3>
+        <span class="fmt">pz 8 · g 400</span>
+        <p data-i18n="nov.3p">Il nuovo multipack da 8 pezzi per la vendita da asporto.</p>
+      </article>
+      <article class="novita-card" data-reveal style="--d:300ms">
+        <div class="pic"><span>Zizze</span><img data-optional src="img/novita/zizze-card.jpg" alt="Zizze delle Monache" width="1200" height="900" loading="lazy"></div>
+        <h3>Zizze delle Monache</h3>
+        <span class="fmt">g 70</span>
+        <p data-i18n="nov.4p">Pan di Spagna farcito alla crema chantilly, il dolce della tradizione abruzzese in monoporzione.</p>
+      </article>
+    </div>
+    <p class="stay" data-i18n="nov.stay">to be continued... #staytuned</p>
+  </div>
+</section>
+
+<!-- ============ EVENTI ============ -->
+<section class="section" id="eventi">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" data-reveal data-i18n="ev.eyebrow">Eventi</span>
+      <h2 class="split" data-reveal data-i18n="ev.title">Ci vediamo in azienda</h2>
+      <p data-reveal data-i18n="ev.p">Fiere di settore, open day e degustazioni dedicate a professionisti e clienti.</p>
+    </div>
+    <div class="evento-top" data-reveal>
+      <div class="evento-info">
+        <span class="badge" data-i18n="ev.badge">5ª edizione</span>
+        <h3>Open Day Magrini</h3>
+        <dl>
+          <dt data-i18n="ev.date">Date</dt><dd class="mono" data-i18n="ev.dateV">15 &rarr; 18 marzo 2026</dd>
+          <dt data-i18n="ev.orari">Orari</dt><dd class="mono">09.00 &rarr; 18.30</dd>
+          <dt data-i18n="ev.dove">Dove</dt><dd>Via Norvegia 5, Roseto degli Abruzzi (TE)</dd>
+          <dt data-i18n="ev.ingresso">Ingresso</dt><dd data-i18n="ev.ingressoV">Libero, riservato agli operatori di settore</dd>
+        </dl>
+        <p data-i18n="ev.desc">Anteprima delle novità, degustazioni della nostra gamma e dei partner ospiti, networking e visite guidate alle linee produttive (17 e 18 marzo, ore 11.00-12.00).</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://photos.app.goo.gl/suueFjyt4VgF4kLd7" target="_blank" rel="noopener"><span data-i18n="ev.gp">Sfoglia il book su Google Foto</span> &#8599;</a>
+          <a class="btn btn-ghost" href="docs/open-day-2026.pdf" target="_blank" rel="noopener" data-i18n="ev.pdf">Volantino PDF</a>
+        </div>
+      </div>
+      <a class="evento-foto" href="https://photos.app.goo.gl/suueFjyt4VgF4kLd7" target="_blank" rel="noopener" aria-label="Open Day 2026, album su Google Foto">
+        <img class="big" src="img/eventi/anteprime/2026-a.jpg" alt="La sala espositiva vista dall'alto durante l'Open Day 2026" width="1400" height="700" loading="lazy">
+        <img src="img/eventi/anteprime/2026-b.jpg" alt="Banco dei dessert monoporzione" width="640" height="496" loading="lazy">
+        <img src="img/eventi/anteprime/2026-c.jpg" alt="La cena con clienti e partner" width="640" height="496" loading="lazy">
+      </a>
+    </div>
+    <ul class="archivio">
+      <li data-reveal>
+        <a class="ar-pics" href="https://photos.app.goo.gl/V1i2pDairxPL2e2z7" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img class="a" src="img/eventi/anteprime/2025-a.jpg" alt="" loading="lazy"><img src="img/eventi/anteprime/2025-b-v2.jpg" alt="" loading="lazy"><img src="img/eventi/anteprime/2025-c-v3.jpg" alt="" loading="lazy"></a>
+        <span class="when" data-i18n="ar.1w">08 &rarr; 11 mar 2025</span><b data-i18n="ar.1t">Open Day, 4ª edizione</b>
+        <a class="gp-link" href="https://photos.app.goo.gl/V1i2pDairxPL2e2z7" target="_blank" rel="noopener"><span data-i18n="ev.gp">Sfoglia il book su Google Foto</span> &#8599;</a>
+      </li>
+      <li data-reveal style="--d:80ms">
+        <a class="ar-pics" href="https://photos.app.goo.gl/isUA3QzyeBVoBzvp6" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img class="a" src="img/eventi/anteprime/2024-a.jpg" alt="" loading="lazy"><img src="img/eventi/anteprime/2024-b-v2.jpg" alt="" loading="lazy"><img src="img/eventi/anteprime/2024-c.jpg" alt="" loading="lazy"></a>
+        <span class="when" data-i18n="ar.2w">23 &rarr; 26 mar 2024</span><b data-i18n="ar.2t">Open Day, 3ª edizione</b>
+        <a class="gp-link" href="https://photos.app.goo.gl/isUA3QzyeBVoBzvp6" target="_blank" rel="noopener"><span data-i18n="ev.gp">Sfoglia il book su Google Foto</span> &#8599;</a>
+      </li>
+      <li data-reveal style="--d:160ms">
+        <a class="ar-pics" href="https://photos.app.goo.gl/s5geSA6rN4kFXpwh9" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img class="a" src="img/eventi/anteprime/2023-a.jpg" alt="" loading="lazy"><img src="img/eventi/anteprime/2023-b.jpg" alt="" loading="lazy"><img src="img/eventi/anteprime/2023-c-v2.jpg" alt="" loading="lazy"></a>
+        <span class="when" data-i18n="ar.4w">25 &rarr; 28 mar 2023</span><b data-i18n="ar.4t">Open Day, 2ª edizione</b>
+        <a class="gp-link" href="https://photos.app.goo.gl/s5geSA6rN4kFXpwh9" target="_blank" rel="noopener"><span data-i18n="ev.gp">Sfoglia il book su Google Foto</span> &#8599;</a>
+      </li>
+      <li data-reveal style="--d:240ms">
+        <a class="ar-pics" href="https://photos.app.goo.gl/HQ9JETvvmYoo5ouQA" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img class="a" src="img/eventi/anteprime/2020-a.jpg" alt="" loading="lazy"><img src="img/eventi/anteprime/2020-b.jpg" alt="" loading="lazy"><img src="img/eventi/anteprime/2020-c.jpg" alt="" loading="lazy"></a>
+        <span class="when" data-i18n="ar.5w">22 &rarr; 25 feb 2020</span><b data-i18n="ar.5t">Open Day, 1ª edizione</b>
+        <a class="gp-link" href="https://photos.app.goo.gl/HQ9JETvvmYoo5ouQA" target="_blank" rel="noopener"><span data-i18n="ev.gp">Sfoglia il book su Google Foto</span> &#8599;</a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ CERTIFICAZIONI ============ -->
+<section class="section novita" id="certificazioni">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" data-reveal data-i18n="cert.eyebrow">Qualità</span>
+      <h2 class="split" data-reveal data-i18n="cert.title">Le nostre certificazioni</h2>
+      <p data-reveal data-i18n="cert.p">Selezione dei fornitori, controllo delle materie prime e processi tracciati, dalla ricetta alla consegna.</p>
+    </div>
+    <div class="cert-grid">
+      <article class="cert" data-reveal>
+        <span class="code">IFS Food</span>
+        <p data-i18n="cert.1p">Standard internazionale per la sicurezza alimentare: prodotti sicuri, conformi ai requisiti di legge e alle richieste dei clienti.</p>
+        <a href="docs/certificato-ifs-food.pdf" target="_blank" rel="noopener" data-i18n="cert.dl">Scarica il certificato (PDF)</a>
+      </article>
+      <article class="cert" data-reveal style="--d:100ms">
+        <span class="code">ISO 9001</span>
+        <p data-i18n="cert.2p">Sistema di gestione della qualità: controllo rigoroso dalla selezione delle materie prime alla consegna, con miglioramento continuo.</p>
+        <a href="docs/certificato-iso-9001.pdf" target="_blank" rel="noopener" data-i18n="cert.dl">Scarica il certificato (PDF)</a>
+      </article>
+      <article class="cert" data-reveal style="--d:200ms">
+        <span class="code">HACCP</span>
+        <p data-i18n="cert.3p">Sistema di autocontrollo conforme alle norme europee sulla sicurezza alimentare, con standard elevati di igiene.</p>
+        <a href="docs/dichiarazione-haccp.pdf" target="_blank" rel="noopener" data-i18n="cert.dl2">Scarica la dichiarazione (PDF)</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DICONO DI NOI ============ -->
+<!-- Recensioni copiate da Google cosi' come sono (non modificarne il testo). Per cambiarle sostituisci il testo, il nome abbreviato e l'anno. -->
+<section class="section recensioni" id="recensioni">
+  <div class="wrap">
+    <div class="rev-head">
+      <div class="section-head">
+        <span class="eyebrow" data-reveal data-i18n="rev.eyebrow">Dicono di noi</span>
+        <h2 class="split" data-reveal data-i18n="rev.title">La qualità si fa riconoscere</h2>
+        <p data-reveal data-i18n="rev.p">La passione e l'amore per il nostro lavoro ripagano sempre. Ecco alcune delle recensioni lasciate su Google da chi ha assaggiato i nostri gelati.</p>
+      </div>
+      <a class="rev-score" href="https://g.page/magrinigelati" target="_blank" rel="noopener" data-reveal>
+        <span class="num">4,6</span>
+        <span class="sc"><span class="stars" role="img" aria-label="4,6 su 5"><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M10 1.8l2.5 5.2 5.7.8-4.1 4 1 5.7L10 14.8l-5.1 2.7 1-5.7-4.1-4 5.7-.8z" fill="currentColor"/></svg><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M10 1.8l2.5 5.2 5.7.8-4.1 4 1 5.7L10 14.8l-5.1 2.7 1-5.7-4.1-4 5.7-.8z" fill="currentColor"/></svg><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M10 1.8l2.5 5.2 5.7.8-4.1 4 1 5.7L10 14.8l-5.1 2.7 1-5.7-4.1-4 5.7-.8z" fill="currentColor"/></svg><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M10 1.8l2.5 5.2 5.7.8-4.1 4 1 5.7L10 14.8l-5.1 2.7 1-5.7-4.1-4 5.7-.8z" fill="currentColor"/></svg><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><defs><linearGradient id="st6"><stop offset="60%" stop-color="currentColor"/><stop offset="60%" stop-color="currentColor" stop-opacity=".25"/></linearGradient></defs><path d="M10 1.8l2.5 5.2 5.7.8-4.1 4 1 5.7L10 14.8l-5.1 2.7 1-5.7-4.1-4 5.7-.8z" fill="url(#st6)"/></svg></span><span data-i18n="rev.score">su Google, oltre 60 recensioni</span></span>
+      </a>
+    </div>
+    <div class="rev-list">
+      <figure class="rev" data-reveal style="--d:0ms">
+        <span class="stars" role="img" aria-label="5 su 5"><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M10 1.8l2.5 5.2 5.7.8-4.1 4 1 5.7L10 14.8l-5.1 2.7 1-5.7-4.1-4 5.7-.8z" fill="currentColor"/></svg><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M10 1.8l2.5 5.2 5.7.8-4.1 4 1 5.7L10 14.8l-5.1 2.7 1-5.7-4.1-4 5.7-.8z" fill="currentColor"/></svg><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M10 1.8l2.5 5.2 5.7.8-4.1 4 1 5.7L10 14.8l-5.1 2.7 1-5.7-4.1-4 5.7-.8z" fill="currentColor"/></svg><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M10 1.8l2.5 5.2 5.7.8-4.1 4 1 5.7L10 14.8l-5.1 2.7 1-5.7-4.1-4 5.7-.8z" fill="currentColor"/></svg><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M10 1.8l2.5 5.2 5.7.8-4.1 4 1 5.7L10 14.8l-5.1 2.7 1-5.7-4.1-4 5.7-.8z" fill="currentColor"/></svg></span>
+        <blockquote lang="it">&ldquo;Ho scoperto per caso i vostri gelati al bar del lido perché sono in ferie a Silvi marina,beh che dire spettacolari! Il mio preferito è il capriccio, comunque sono molto più buoni di gelati di marche ben più conosciute.&rdquo;</blockquote>
+        <figcaption><b>Andrea D.</b><span class="mono">Google · 2026</span></figcaption>
+      </figure>
+      <figure class="rev" data-reveal style="--d:80ms">
+        <span class="stars" role="img" aria-label="5 su 5"><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M10 1.8l2.5 5.2 5.7.8-4.1 4 1 5.7L10 14.8l-5.1 2.7 1-5.7-4.1-4 5.7-.8z" fill="currentColor"/></svg><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M10 1.8l2.5 5.2 5.7.8-4.1 4 1 5.7L10 14.8l-5.1 2.7 1-5.7-4.1-4 5.7-.8z" fill="currentColor"/></svg><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M10 1.8l2.5 5.2 5.7.8-4.1 4 1 5.7L10 14.8l-5.1 2.7 1-5.7-4.1-4 5.7-.8z" fill="currentColor"/></svg><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M10 1.8l2.5 5.2 5.7.8-4.1 4 1 5.7L10 14.8l-5.1 2.7 1-5.7-4.1-4 5.7-.8z" fill="currentColor"/></svg><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M10 1.8l2.5 5.2 5.7.8-4.1 4 1 5.7L10 14.8l-5.1 2.7 1-5.7-4.1-4 5.7-.8z" fill="currentColor"/></svg></span>
+        <blockquote lang="it">&ldquo;Di recente, ho acquistato il Vostro gelato (BiscoBon) e l'ho trovato migliore dei gelati messi in commercio dalle altre aziende di grosso calibro. Continuate così! ❤️❤️❤️&rdquo;</blockquote>
+        <figcaption><b>Giovanni D.</b><span class="mono">Google · 2025</span></figcaption>
+      </figure>
+      <figure class="rev" data-reveal style="--d:160ms">
+        <span class="stars" role="img" aria-label="5 su 5"><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M10 1.8l2.5 5.2 5.7.8-4.1 4 1 5.7L10 14.8l-5.1 2.7 1-5.7-4.1-4 5.7-.8z" fill="currentColor"/></svg><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M10 1.8l2.5 5.2 5.7.8-4.1 4 1 5.7L10 14.8l-5.1 2.7 1-5.7-4.1-4 5.7-.8z" fill="currentColor"/></svg><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M10 1.8l2.5 5.2 5.7.8-4.1 4 1 5.7L10 14.8l-5.1 2.7 1-5.7-4.1-4 5.7-.8z" fill="currentColor"/></svg><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M10 1.8l2.5 5.2 5.7.8-4.1 4 1 5.7L10 14.8l-5.1 2.7 1-5.7-4.1-4 5.7-.8z" fill="currentColor"/></svg><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M10 1.8l2.5 5.2 5.7.8-4.1 4 1 5.7L10 14.8l-5.1 2.7 1-5.7-4.1-4 5.7-.8z" fill="currentColor"/></svg></span>
+        <blockquote lang="it">&ldquo;Ho comprato il cono capriccio pistacchio e nocciola che dire gelato fantastico la cialda un biscotto al malto, ottimo consigliato a tutti&rdquo;</blockquote>
+        <figcaption><b>Maricaru</b><span class="mono">Google · 2026</span></figcaption>
+      </figure>
+      <figure class="rev" data-reveal style="--d:240ms">
+        <span class="stars" role="img" aria-label="5 su 5"><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M10 1.8l2.5 5.2 5.7.8-4.1 4 1 5.7L10 14.8l-5.1 2.7 1-5.7-4.1-4 5.7-.8z" fill="currentColor"/></svg><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M10 1.8l2.5 5.2 5.7.8-4.1 4 1 5.7L10 14.8l-5.1 2.7 1-5.7-4.1-4 5.7-.8z" fill="currentColor"/></svg><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M10 1.8l2.5 5.2 5.7.8-4.1 4 1 5.7L10 14.8l-5.1 2.7 1-5.7-4.1-4 5.7-.8z" fill="currentColor"/></svg><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M10 1.8l2.5 5.2 5.7.8-4.1 4 1 5.7L10 14.8l-5.1 2.7 1-5.7-4.1-4 5.7-.8z" fill="currentColor"/></svg><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M10 1.8l2.5 5.2 5.7.8-4.1 4 1 5.7L10 14.8l-5.1 2.7 1-5.7-4.1-4 5.7-.8z" fill="currentColor"/></svg></span>
+        <blockquote lang="it">&ldquo;gelati buonissimi, solo Magrini ti darà forze e grinta a volontà&rdquo;</blockquote>
+        <figcaption><b>Andrea M.</b><span class="mono">Google · 2025</span></figcaption>
+      </figure>
+    </div>
+    <div class="rev-actions" data-reveal>
+      <a class="btn btn-primary" href="https://g.page/magrinigelati" target="_blank" rel="noopener"><span data-i18n="rev.all">Leggi tutte le recensioni</span> &#8599;</a>
+      <a class="btn btn-ghost" href="https://g.page/magrinigelati/review?gm" target="_blank" rel="noopener"><span data-i18n="rev.write">Scrivi la tua recensione</span> &#8599;</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AREA RIVENDITORI ============ -->
+<section class="section" id="professionisti">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" data-reveal data-i18n="pro.eyebrow">Bar, gelaterie, ristoranti, negozi</span>
+      <h2 class="split" data-reveal data-i18n="pro.title">Richiedi un'offerta riservata</h2>
+      <p data-reveal data-i18n="pro.p">Lasciaci nome, tipo di attività, località e un recapito: ti ricontattiamo con il listino aggiornato e una proposta pensata per la tua attività.</p>
+    </div>
+    <div class="pro-grid">
+      <div class="panel" data-reveal="left">
+        <form id="offerta" class="lead-form" data-subject="Richiesta offerta dal sito" novalidate>
+          <div class="row">
+            <label for="f-nome"><span data-i18n="fm.nome">Nome e cognome</span><input id="f-nome" name="nome" autocomplete="name" required></label>
+            <label for="f-attivita"><span data-i18n="fm.attivita">Nome dell'attività</span><input id="f-attivita" name="attivita" autocomplete="organization"></label>
+          </div>
+          <div class="row">
+            <label for="f-tipo"><span data-i18n="fm.tipo">Tipo di attività</span>
+              <select id="f-tipo" name="tipo">
+                <option data-i18n="fm.o1">Bar</option><option data-i18n="fm.o2">Gelateria</option><option data-i18n="fm.o3">Stabilimento balneare</option><option data-i18n="fm.o4">Ristorante / pizzeria</option><option data-i18n="fm.o5">Supermercato / GDO</option><option data-i18n="fm.o6">Concessionario / distributore</option><option data-i18n="fm.o7">Importatore estero</option><option data-i18n="fm.o8">Altro</option>
+              </select>
+            </label>
+            <label for="f-localita"><span data-i18n="fm.localita">Località</span><input id="f-localita" name="localita" autocomplete="address-level2" required></label>
+          </div>
+          <div class="row">
+            <label for="f-tel"><span data-i18n="fm.tel">Telefono</span><input id="f-tel" name="telefono" type="tel" autocomplete="tel" required></label>
+            <label for="f-email"><span>Email</span><input id="f-email" name="email" type="email" autocomplete="email"></label>
+          </div>
+          <label for="f-msg"><span data-i18n="fm.msg">Messaggio</span><textarea id="f-msg" name="messaggio" data-i18n-ph="fm.ph" placeholder="Linee che ti interessano, volumi indicativi, periodo..."></textarea></label>
+          <label class="check" for="f-privacy"><input id="f-privacy" name="privacy" type="checkbox" required><span data-i18n="fm.privacy">Ho letto l'<a href="privacy.html#moduli" target="_blank" rel="noopener">informativa privacy</a>: i miei dati saranno usati solo per ricontattarmi.</span></label>
+          <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div><button class="btn btn-primary" type="submit"><span data-i18n="fm.invia">Invia la richiesta</span><span class="arr" aria-hidden="true">&rarr;</span></button></div>
+          <p class="form-msg" role="status" hidden></p>
+        </form>
+      </div>
+      <div class="panel" data-reveal="right">
+        <h3 data-i18n="dl.title">Documenti utili</h3>
+        <ul class="downloads">
+          <li><a href="docs/modulo-presa-ordini.pdf" target="_blank" rel="noopener"><span><b data-i18n="dl.1t">Modulo presa ordini</b><small data-i18n="dl.1p">Foglio di carico con i codici prodotto</small></span><span class="ext">PDF</span></a></li>
+          <li><a href="docs/elenco-gusti-mantecato.pdf" target="_blank" rel="noopener"><span><b data-i18n="dl.2t">Elenco gusti mantecato</b><small data-i18n="dl.2p">Aggiornato in base alla stagione</small></span><span class="ext">PDF</span></a></li>
+          <li><a href="docs/elenco-gusti-asporto.pdf" target="_blank" rel="noopener"><span><b data-i18n="dl.3t">Elenco gusti asporto</b><small data-i18n="dl.3p">Formati per la vendita da banco</small></span><span class="ext">PDF</span></a></li>
+          <li><a href="docs/elenco-gusti-carapine.pdf" target="_blank" rel="noopener"><span><b data-i18n="dl.4t">Elenco gusti carapine</b><small data-i18n="dl.4p">Per il servizio in gelateria</small></span><span class="ext">PDF</span></a></li>
+          <li><a href="docs/open-day-2026.pdf" target="_blank" rel="noopener"><span><b data-i18n="dl.5t">Volantino Open Day 2026</b><small data-i18n="dl.5p">5ª edizione, 15-18 marzo</small></span><span class="ext">PDF</span></a></li>
+        </ul>
+        <p style="margin-top:18px"><a href="#concessionari" style="font-weight:600" data-i18n="pro.conc">Sei un distributore? Diventa concessionario &rarr;</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DIVENTA CONCESSIONARIO ============ -->
+<section class="section conc" id="concessionari">
+  <div class="wrap">
+    <div class="conc-intro">
+      <div class="section-head" style="margin-bottom:0">
+        <span class="eyebrow" data-reveal data-i18n="co.eyebrow">Diventa concessionario</span>
+        <h2 class="split" data-reveal data-i18n="co.title">Porta il gelato Magrini nella tua zona</h2>
+        <p class="lead" data-reveal data-i18n="co.lead">Cerchiamo distributori del settore freddo, horeca e ristorazione, in Italia e all'estero, che vogliano proporre ai propri clienti i gelati di un'azienda artigiana con novant'anni di storia, certificata e riconoscibile.</p>
+      </div>
+      <div class="who" data-reveal="right">
+        <h3 data-i18n="co.whoT">Chi cerchiamo</h3>
+        <ul>
+          <li data-i18n="co.who1">Distributori, grossisti e importatori del settore alimentare surgelato, horeca e ristorazione</li>
+          <li data-i18n="co.who3">Una rete di clienti: bar, gelaterie, stabilimenti balneari, ristoranti, negozi</li>
+          <li data-i18n="co.who4">Voglia di crescere con un marchio storico e un prodotto di qualità</li>
+        </ul>
+        <p class="note" data-i18n="co.note">Ordine minimo, zona e condizioni commerciali le definiamo insieme, di persona.</p>
+      </div>
+    </div>
+
+    <h3 style="margin:clamp(44px,5vw,72px) 0 20px" data-reveal data-i18n="co.offT">Cosa ti offriamo</h3>
+    <ul class="offer">
+      <li data-reveal><b data-i18n="co.o1t">Listino riservato</b><span data-i18n="co.o1p">Prezzi dedicati ai concessionari e una guida introduttiva ai listini della stagione.</span></li>
+      <li data-reveal style="--d:80ms"><b data-i18n="co.o2t">Una gamma completa</b><span data-i18n="co.o2p">Le nostre linee: impulso, sorbetteria e semifreddi, giochi e gelati, dessert, multipack e asporto, mantecato, Natale e Pasqua.</span></li>
+      <li data-reveal style="--d:160ms"><b data-i18n="co.o3t">Materiale pubblicitario</b><span data-i18n="co.o3p">Cartelli, dépliant e cataloghi fotografici aggiornati ogni stagione, pronti per i tuoi clienti.</span></li>
+      <li data-reveal style="--d:240ms"><b data-i18n="co.o4t">Supporto commerciale</b><span data-i18n="co.o4p">I nostri agenti e l'ufficio commerciale ti affiancano nell'avvio e durante la stagione.</span></li>
+      <li data-reveal style="--d:320ms"><b data-i18n="co.o5t">Consegne refrigerate</b><span data-i18n="co.o5p">Consegne con i nostri automezzi refrigerati oppure tramite corrieri convenzionati, come STEF Italia e altri partner specializzati, con servizi puntuali e tracciati. Catena del freddo sempre garantita.</span></li>
+      <li data-reveal style="--d:400ms"><b data-i18n="co.o6t">Open Day ogni anno</b><span data-i18n="co.o6p">Anteprima delle novità, degustazioni e incontro con i partner, da portare anche ai tuoi clienti.</span></li>
+    </ul>
+
+    <ol class="conc-steps">
+      <li data-n="1" data-reveal><h3 data-i18n="co.s1t">Compila il modulo</h3><p data-i18n="co.s1p">Raccontaci chi sei, dove lavori e che clienti servi.</p></li>
+      <li data-n="2" data-reveal style="--d:100ms"><h3 data-i18n="co.s2t">Ti chiamiamo</h3><p data-i18n="co.s2p">Un nostro referente commerciale ti contatta per conoscere la tua zona.</p></li>
+      <li data-n="3" data-reveal style="--d:200ms"><h3 data-i18n="co.s3t">Vieni a trovarci</h3><p data-i18n="co.s3p">Visita al laboratorio di Roseto, degustazione della gamma e listino dedicato.</p></li>
+      <li data-n="4" data-reveal style="--d:300ms"><h3 data-i18n="co.s4t">Si parte</h3><p data-i18n="co.s4p">Primo ordine, materiale pubblicitario e l'affiancamento dei nostri agenti.</p></li>
+    </ol>
+
+    <div class="conc-form">
+      <aside data-reveal="left">
+        <p class="big" data-i18n="co.asideT">Parliamone.</p>
+        <p data-i18n="co.asideP">Compila il modulo oppure chiamaci: ti rispondiamo dall'ufficio commerciale.</p>
+        <p><a href="tel:+390858941066">+39 085 894 1066</a><br><a href="mailto:info@magrinigelati.it">info@magrinigelati.it</a></p>
+      </aside>
+      <div class="panel" data-reveal="right">
+        <form id="candidatura" class="lead-form" data-subject="Candidatura concessionario dal sito" novalidate>
+          <div class="row">
+            <label for="c-azienda"><span data-i18n="cf.azienda">Ragione sociale</span><input id="c-azienda" name="ragione_sociale" autocomplete="organization" required></label>
+            <label for="c-referente"><span data-i18n="cf.referente">Referente</span><input id="c-referente" name="referente" autocomplete="name" required></label>
+          </div>
+          <div class="row">
+            <label for="c-piva"><span data-i18n="cf.piva">Partita IVA</span><input id="c-piva" name="partita_iva"></label>
+            <label for="c-zona"><span data-i18n="cf.zona">Zona di interesse</span><input id="c-zona" name="zona" data-i18n-ph="cf.zonaPh" placeholder="Provincia, regione o paese" required></label>
+          </div>
+          <div class="row">
+            <label for="c-tel"><span data-i18n="fm.tel">Telefono</span><input id="c-tel" name="telefono" type="tel" autocomplete="tel" required></label>
+            <label for="c-email"><span>Email</span><input id="c-email" name="email" type="email" autocomplete="email"></label>
+          </div>
+          <div class="row">
+            <label for="c-mezzi"><span data-i18n="cf.mezzi">Mezzi refrigerati</span>
+              <select id="c-mezzi" name="mezzi_refrigerati"><option data-i18n="cf.m1">Sì, di proprietà</option><option data-i18n="cf.m2">Sì, a noleggio o terzi</option><option data-i18n="cf.m3">No, non ancora</option></select>
+            </label>
+            <label for="c-clienti"><span data-i18n="cf.clienti">Clienti serviti oggi</span>
+              <select id="c-clienti" name="clienti"><option data-i18n="cf.k0">Sto iniziando</option><option data-i18n="cf.k1">Meno di 50</option><option data-i18n="cf.k2">Da 50 a 200</option><option data-i18n="cf.k3">Oltre 200</option></select>
+            </label>
+          </div>
+          <label for="c-msg"><span data-i18n="cf.msg">Parlaci della tua attività</span><textarea id="c-msg" name="messaggio" data-i18n-ph="cf.msgPh" placeholder="Prodotti che distribuisci oggi, tipo di clienti, marchi trattati..."></textarea></label>
+          <label class="check" for="c-privacy"><input id="c-privacy" name="privacy" type="checkbox" required><span data-i18n="fm.privacy">Ho letto l'<a href="privacy.html#moduli" target="_blank" rel="noopener">informativa privacy</a>: i miei dati saranno usati solo per ricontattarmi.</span></label>
+          <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div><button class="btn btn-primary" type="submit"><span data-i18n="cf.invia">Invia la candidatura</span><span class="arr" aria-hidden="true">&rarr;</span></button></div>
+          <p class="form-msg" role="status" hidden></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NEWSLETTER ============ -->
+<section class="news" aria-labelledby="news-title">
+  <div class="wrap" data-reveal>
+    <div>
+      <h2 id="news-title" data-i18n="news.title">Newsletter Magrini</h2>
+      <p data-i18n="news.p">Novità, eventi e promozioni per i professionisti, direttamente nella tua casella.</p>
+    </div>
+    <form class="news-form" id="news-form" action="https://78bf6014.sibforms.com/serve/MUIEAJ5JbiJXighd2MD64Tw1dGEPg3woKgCbDjPbR3qji_NUmCfNaHSzUEC---MEMmKIfKvnhBfhUU8zadqf6zBdKqOP2XWOkskeUUQ6dPXXV3zil_Eb7Jf-yNCHVrLxMRO_N_hcALuL9e1vsDiOmaiSiQArNm8SmasZclpkV6blzBF8vgCqMRZMwWd4qB4IHf9wmuis-8euTOZ-" method="POST" target="brevo-frame" novalidate>
+      <div class="nf-row">
+        <label class="sr" for="n-email" data-i18n="news.lbl">La tua email</label>
+        <input id="n-email" name="EMAIL" type="email" autocomplete="email" required data-i18n-ph="news.ph" placeholder="La tua email">
+        <button class="btn btn-giallo" type="submit" data-i18n="news.btn">Iscriviti</button>
+      </div>
+      <label class="nf-check" for="n-optin"><input id="n-optin" name="OPT_IN" value="1" type="checkbox" required><span data-i18n="news.ok">Acconsento a ricevere la newsletter Magrini. Posso disiscrivermi in qualsiasi momento. <a href="privacy.html#newsletter">Informativa</a></span></label>
+      <input type="text" name="email_address_check" value="" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <input type="hidden" name="locale" value="it">
+      <input type="hidden" name="html_type" value="simple">
+      <p class="nf-msg" role="status" hidden></p>
+    </form>
+    <iframe name="brevo-frame" title="Iscrizione newsletter" hidden></iframe>
+  </div>
+</section>
+
+<!-- ============ CONTATTI ============ -->
+<section class="section" id="contatti">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" data-reveal data-i18n="ct.eyebrow">Contatti</span>
+      <h2 class="split" data-reveal data-i18n="ct.title">Vieni a trovarci</h2>
+    </div>
+    <div class="contatti-grid">
+      <div class="contatto" data-reveal>
+        <span class="eyebrow" data-i18n="ct.sede">Sede e produzione</span>
+        <p class="big">Via Norvegia, 5<br>64026 Roseto degli Abruzzi (TE)<span data-i18n="ct.italia"></span></p>
+        <a href="https://maps.app.goo.gl/k4avLPA6qjRL1qz47" target="_blank" rel="noopener" data-i18n="ct.maps">Apri in Google Maps &#8599;</a>
+      </div>
+      <div class="contatto" data-reveal style="--d:100ms">
+        <span class="eyebrow" data-i18n="ct.tel">Telefono ed email</span>
+        <p class="big"><a href="tel:+390858941066">+39 085 894 1066</a></p>
+        <p><a href="mailto:info@magrinigelati.it">info@magrinigelati.it</a></p>
+        <p><a href="https://api.whatsapp.com/send/?phone=390858941066" target="_blank" rel="noopener" data-i18n="ct.wa">Scrivici su WhatsApp &#8599;</a></p>
+      </div>
+      <div class="contatto" data-reveal style="--d:200ms">
+        <span class="eyebrow" data-i18n="ct.segui">Seguici</span>
+        <div class="social">
+          <a href="https://www.facebook.com/MagriniGelati" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.instagram.com/magrini_e_ceci/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.linkedin.com/company/magrini-e-ceci/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+        <p style="margin-top:10px" data-i18n="ct.rec">Ti sei trovato bene con noi?</p>
+        <a href="https://g.page/magrinigelati/review?gm" target="_blank" rel="noopener" data-i18n="ct.google">Leggi e scrivi una recensione su Google &#8599;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <img src="img/logo-magrini.svg" alt="Raffaele Magrini" width="83" height="60">
+      <div class="tricolore" aria-hidden="true"><span></span><span></span><span></span></div>
+    </div>
+    <p><strong>Magrini R. &amp; Ceci G. snc</strong> · <span data-i18n="ft.imp">Impresa artigiana</span> · Via Norvegia 5, 64026 Roseto degli Abruzzi (TE) · <span data-i18n="ft.piva">P.IVA, C.F. e n. Registro Imprese</span> 00257660670 · REA TE-70091 · <span data-i18n="ft.sdi">Codice SdI</span> 5RUO82D · PEC <a href="mailto:magrinigelati@pec.it">magrinigelati@pec.it</a></p>
+    <div class="legal">
+      <a href="privacy.html" data-i18n="ft.privacy">Privacy e cookie</a>
+      <a href="docs/aiuti-di-stato-2025.pdf" target="_blank" rel="noopener" data-i18n="ft.aiuti">Aiuti di Stato 2025</a>
+      <span data-i18n="ft.cookie">Nessun cookie di profilazione, nessun banner da accettare.</span>
+      <span>© <span id="anno">2026</span> Magrini R. &amp; Ceci G. snc</span>
+    </div>
+  </div>
+</footer>
+
+<button type="button" class="to-top" id="to-top" aria-label="Torna su"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+
+<script>
+/* =====================================================
+   IMPOSTAZIONI
+   Chiave Web3Forms per l'invio dei moduli (gratuita su web3forms.com,
+   da generare con info@magrinigelati.it). Finché è vuota, i moduli
+   mostrano un messaggio con email e telefono.
+   ===================================================== */
+var W3F_KEY = "009d1f01-a5fb-4fcc-b6ba-81024ac128d6";
+
+/* =====================================================
+   TRADUZIONI (inglese, francese, spagnolo)
+   L'italiano si modifica direttamente nell'HTML.
+   Ogni chiave corrisponde a un attributo data-i18n nella pagina.
+   ===================================================== */
+var I18N = {
+
+/* ------------------------------ ENGLISH ------------------------------ */
+en: {
+  "brand.sub":"Gelato since 1936",
+  "nav.storia":"Our story","nav.gamma":"Products","nav.novita":"New","nav.eventi":"Events","nav.rev":"Reviews","nav.cert":"Quality","nav.contatti":"Contact","nav.conc":"Distributors","nav.pro":"Get a quote",
+  "hero.eyebrow":"Roseto degli Abruzzi, Italy · since 1936",
+  "hero.title":"Magrini gelato, <em>quality products for four generations.</em>",
+  "hero.lead":"We are an Italian artisan company producing gelato, semifreddi and desserts for bars, gelato shops, beach resorts, distributors and retail chains. Carefully selected ingredients, family recipes and hands-on processing in a modern certified facility.",
+  "hero.cta1":"Explore the range","hero.cta2":"Request our price list",
+  "seal.ring":"1936 · 2026 · NINETY YEARS OF GELATO ·","seal.anni":"years",
+  "proof.1":"years of gelato, since the Caffè Magrini in 1936",
+  "proof.2":"product lines, from the freezer cabinet to desserts",
+  "proof.3":"higher density than industrial ice cream",
+  "proof.4":"certified quality, ISO 9001 and IFS Food",
+  "story.eyebrow":"Our story",
+  "story.title":"From the Caffè Magrini to our facility in Via Norvegia",
+  "story.p1":"In the 1930s Maria Magrini began making her first gelato at the old Caffè Magrini, to brighten the summer evening strolls of Roseto. Genuine ingredients and fresh produce soon made the café the meeting place for gelato lovers.",
+  "story.quote":"Sundaes so original and imaginative that they earned the name \"legend of Italian gelato\".",
+  "story.p2":"Today Raffaele Magrini carries on his grandmother's teachings and turns them into quality standards, in the facility he runs every day with his partner Graziella Ceci, his children Barbara and Alessandro Magrini and his son-in-law Gianni Iachini.",
+  "tl.1w":"1930s","tl.1t":"The Caffè Magrini","tl.1p":"Maria Magrini makes the first gelato in the centre of Roseto degli Abruzzi.",
+  "tl.2w":"then","tl.2t":"The next generation's sundaes","tl.2p":"Her children create the sundaes that make Magrini gelato famous.",
+  "tl.3t":"Magrini R. & Ceci G. is founded","tl.3p":"The artisan company moves from the gelato shop to production for bars, gelato shops and resellers.",
+  "tl.4w":"today","tl.4t":"ISO 9001 and IFS certified","tl.4p":"A network of distributors across Italy, partnerships with major retail groups and customers abroad.",
+  "band.eyebrow":"Roseto degli Abruzzi, Italy","band.p":"Our facility, where Magrini gelato is made every day.",
+  "met.eyebrow":"How we work","met.title":"From raw ingredients to the freezer cabinet",
+  "met.1t":"Selected ingredients","met.1p":"Suppliers selected and audited as required by ISO 9001 and IFS Food. Quality milk, fruit and ingredients.",
+  "met.2t":"Made in Roseto","met.2p":"Every gelato is made in our facility in Via Norvegia, using family recipes and modern equipment.",
+  "met.3t":"More gelato, less air","met.3p":"30% higher density than industrial ice cream: more substance in every cup.",
+  "met.4t":"Unbroken cold chain","met.4p":"Cold storage and delivery with refrigerated vehicles, directly or through our distributor network.",
+  "gamma.eyebrow":"Our products","gamma.title":"The Magrini range","gamma.p":"Each line has its own catalogue to browse, with photo, weight and case size of every product, plus a leaflet to download.",
+  "f.tutti":"All","f.gelati":"Gelato","f.marchi":"Partner brands","f.dessert":"Holidays","f.free":"Gluten-free & plant-based","f.bar":"Breakfast & bar",
+  "dp.title":"Leaflets to download","dp.p":"This season's posters in high quality, to print, display or share with your customers.","dp.all":"Download them all","dp.gusti":"Flavour list","c.more":"Photo catalogue &#8599;","c.book":"Browse the catalogue &rarr;",
+  "c.impulso":"Cones, sticks, sandwiches and cups for the freezer cabinet.",
+  "n.minioro":"Mini gelato &amp; Linea Oro","c.minioro":"Small formats and our premium line in tubs.",
+  "n.bimbo":"Games &amp; Gelato","c.bimbo":"Gelato cups with a toy or surprise, made for children.",
+  "n.sorb":"Sorbets &amp; Semifreddi","c.sorb":"Fruit sorbets and single-portion semifreddi.",
+  "n.mant":"Our Mantecato","t.vaschette":"tubs","t.carapine":"carapine","c.mant":"Display gelato for gelato shops and bars.",
+  "n.mpk":"Multipacks &amp; Take-away","c.mpk":"Multipacks and tubs to take home.",
+  "c.ferrero":"Ferrero-branded ice creams we distribute.",
+  "c.mars":"Mars, Snickers, Twix, Bounty and the rest of the Mars range.",
+  "c.dessert":"Ice cream cakes, pastry desserts and single portions.",
+  "c.natale":"Gelato panettone, yule logs and festive desserts.",
+  "c.pasqua":"GelColomba, the Easter colomba cake filled with gelato.",
+  "n.sg":"Gluten-free gelato","t.sg":"gluten-free","c.sg":"A selection of our range suitable for a gluten-free diet.",
+  "t.veg":"100% plant-based","c.rice":"Rice-based gelato, dairy-free.",
+  "n.sgl":"Gluten- and lactose-free cups","t.sl":"lactose-free","c.sgl":"Vanilla with chocolate ripple and vanilla with amarena cherry ripple.",
+  "t.nostra":"our own production","c.nonna":"Muffins, mini cakes and mini ciambelloni, also dairy-free.",
+  "n.corn":"Croissants","n.corn2":"Croissants &amp; breakfast","c.corn":"Frozen croissants and baked goods for bars.",
+  "n.bev":"Hot drinks","c.bev":"Ginseng coffee 1000 g · Espresso barley 500 g · Hot chocolate 1000 g",
+  "c.cat":"Fried snacks, pinsa, pizza bases, pasticciotti and bubble tea for food service.",
+  "nov.eyebrow":"2026 season","nov.title":"What's new this year","nov.p":"Every year brings new flavours, seasonal products and limited editions. Here are the latest.",
+  "nov.1t":"New flavours, Linea Oro","nov.1p":"This year's new flavours in decorated tubs, for the gelato shop display:",
+  "nov.2t":"Mimosa single portion","nov.2p":"Pastry single portion filled with Chantilly cream, strawberry and pineapple pieces, on layers of fruit-flavoured sponge cake.",
+  "nov.3p":"Our new 8-piece multipack for take-away sales.",
+  "nov.4p":"Sponge cake filled with Chantilly cream, a traditional sweet from Abruzzo in a single portion.",
+  "nov.stay":"to be continued... #staytuned",
+  "ev.eyebrow":"Events","ev.title":"Come and visit us","ev.p":"Trade fairs, open days and tastings for professionals and customers.",
+  "ev.badge":"5th edition","ev.date":"Dates","ev.dateV":"15 &rarr; 18 March 2026","ev.orari":"Hours","ev.dove":"Where","ev.ingresso":"Admission","ev.ingressoV":"Free, trade visitors only",
+  "ev.desc":"Preview of the new products, tastings of our range and our guest partners' products, networking and guided tours of the production lines (17 and 18 March, 11.00-12.00).",
+  "ev.gp":"Browse the album on Google Photos","ev.album":"View photos","ev.pdf":"Flyer (PDF)","ar.album":"View photos",
+  "ar.1w":"8 &rarr; 11 Mar 2025","ar.1t":"Open Day, 4th edition",
+  "ar.2w":"23 &rarr; 26 Mar 2024","ar.2t":"Open Day, 3rd edition",
+  "ar.4w":"25 &rarr; 28 Mar 2023","ar.4t":"Open Day, 2nd edition",
+  "ar.5w":"22 &rarr; 25 Feb 2020","ar.5t":"Open Day, 1st edition",
+  "cert.eyebrow":"Quality","cert.title":"Our certifications","cert.p":"Supplier selection, raw material checks and traceable processes, from recipe to delivery.",
+  "cert.1p":"International food safety standard: safe products that meet legal requirements and customer specifications.",
+  "cert.2p":"Quality management system: strict control from raw material selection to delivery, with continuous improvement.",
+  "cert.3p":"Self-monitoring system compliant with European food safety regulations, with high hygiene standards.",
+  "cert.dl":"Download the certificate (PDF)","cert.dl2":"Download the statement (PDF)",
+  "pro.eyebrow":"Bars, gelato shops, restaurants, shops","pro.title":"Request a tailored offer",
+  "pro.p":"Leave us your name, type of business, location and a contact: we will get back to you with our current price list and an offer tailored to your business.",
+  "pro.conc":"Are you a distributor? Become a Magrini distributor &rarr;",
+  "fm.nome":"Full name","fm.attivita":"Business name","fm.tipo":"Type of business","fm.localita":"Town / country","fm.tel":"Phone","fm.msg":"Message",
+  "fm.o1":"Bar","fm.o2":"Gelato shop","fm.o3":"Beach resort","fm.o4":"Restaurant / pizzeria","fm.o5":"Supermarket / retail chain","fm.o6":"Distributor","fm.o7":"Importer (outside Italy)","fm.o8":"Other",
+  "fm.ph":"Lines you are interested in, indicative volumes, period...",
+  "fm.privacy":"I have read the <a href=\"privacy.html#moduli\" target=\"_blank\" rel=\"noopener\">privacy notice</a>: my data will only be used to contact me.",
+  "fm.invia":"Send request",
+  "dl.title":"Useful documents",
+  "dl.1t":"Order form","dl.1p":"Loading sheet with product codes",
+  "dl.2t":"Mantecato flavour list","dl.2p":"Updated every season",
+  "dl.3t":"Take-away flavour list","dl.3p":"Formats for counter sales",
+  "dl.4t":"Carapine flavour list","dl.4p":"For gelato shop service",
+  "dl.5t":"Open Day 2026 flyer","dl.5p":"5th edition, 15-18 March",
+  "co.eyebrow":"Become a distributor","co.title":"Bring Magrini gelato to your area",
+  "co.lead":"We are looking for distributors in frozen food, hospitality and catering, in Italy and abroad, who want to offer their customers the gelato of an artisan company with ninety years of history, certified and recognisable.",
+  "co.whoT":"Who we are looking for",
+  "co.who1":"Distributors, wholesalers and importers in frozen food, hospitality and catering",
+  "co.who3":"A customer network: bars, gelato shops, beach resorts, restaurants, shops",
+  "co.who4":"The drive to grow with a heritage brand and a quality product",
+  "co.note":"Minimum order, territory and commercial terms are agreed together, in person.",
+  "co.offT":"What we offer",
+  "co.o1t":"Dedicated price list","co.o1p":"Distributor pricing and an introductory guide to the season's price lists.",
+  "co.o2t":"A complete range","co.o2p":"Our lines: impulse, sorbets and semifreddi, games & gelato, desserts, multipacks and take-away, mantecato, Christmas and Easter.",
+  "co.o3t":"Point-of-sale material","co.o3p":"Posters, leaflets and photo catalogues updated every season, ready for your customers.",
+  "co.o4t":"Sales support","co.o4p":"Our agents and sales office support you at the start and throughout the season.",
+  "co.o5t":"Refrigerated deliveries","co.o5p":"Deliveries with our own refrigerated vehicles or through partner couriers such as STEF Italia and other specialised carriers, with punctual, tracked services. Cold chain always guaranteed.",
+  "co.o6t":"An Open Day every year","co.o6p":"New product previews, tastings and meetings with partners, to share with your customers too.",
+  "co.s1t":"Fill in the form","co.s1p":"Tell us who you are, where you work and which customers you serve.",
+  "co.s2t":"We call you","co.s2p":"One of our sales managers contacts you to learn about your area.",
+  "co.s3t":"Visit us","co.s3p":"A visit to our facility in Roseto, a tasting of the range and a dedicated price list.",
+  "co.s4t":"Let's start","co.s4p":"First order, point-of-sale material and support from our agents.",
+  "co.asideT":"Let's talk.","co.asideP":"Fill in the form or give us a call: our sales office will get back to you.",
+  "cf.azienda":"Company name","cf.referente":"Contact person","cf.piva":"VAT number","cf.zona":"Area of interest","cf.zonaPh":"Province, region or country",
+  "cf.mezzi":"Refrigerated vehicles","cf.m1":"Yes, our own","cf.m2":"Yes, rented or third-party","cf.m3":"Not yet",
+  "cf.clienti":"Customers served today","cf.k0":"Just starting out","cf.k1":"Fewer than 50","cf.k2":"50 to 200","cf.k3":"More than 200",
+  "cf.msg":"Tell us about your business","cf.msgPh":"Products you distribute today, type of customers, brands you carry...","cf.invia":"Send application",
+  "news.title":"Magrini newsletter","news.p":"New products, events and offers for professionals, straight to your inbox.","news.btn":"Subscribe","news.lbl":"Your email","news.ph":"Your email","news.ok":"I agree to receive the Magrini newsletter. I can unsubscribe at any time. <a href=\"privacy.html#newsletter\">Privacy notice</a>",
+  "ct.eyebrow":"Contact","ct.title":"Come and see us","ct.sede":"Head office and production","ct.italia":"<br>Italy","ct.maps":"Open in Google Maps &#8599;",
+  "rev.eyebrow":"What people say","rev.title":"Quality gets noticed","rev.p":"Passion and love for our work always pay off. Here are some of the Google reviews left by people who have tasted our gelato (in Italian).","rev.score":"on Google, over 60 reviews","rev.all":"Read all reviews","rev.write":"Write your review","ct.tel":"Phone and email","ct.wa":"Message us on WhatsApp &#8599;","ct.segui":"Follow us","ct.rec":"Happy with our products?","ct.google":"Read and write a review on Google &#8599;",
+  "ft.imp":"Artisan company","ft.piva":"VAT no., tax code and Companies Register no.","ft.sdi":"SdI code","ft.privacy":"Privacy &amp; cookies","ft.aiuti":"State aid 2025","ft.cookie":"No profiling cookies, no banner to accept."
+},
+
+/* ------------------------------ FRANÇAIS ------------------------------ */
+fr: {
+  "brand.sub":"Glaces depuis 1936",
+  "nav.storia":"Histoire","nav.gamma":"Produits","nav.novita":"Nouveautés","nav.eventi":"Événements","nav.rev":"Avis","nav.cert":"Qualité","nav.contatti":"Contact","nav.conc":"Distributeurs","nav.pro":"Devis",
+  "hero.eyebrow":"Roseto degli Abruzzi, Italie · depuis 1936",
+  "hero.title":"Glaces Magrini, <em>des produits de qualité depuis quatre générations.</em>",
+  "hero.lead":"Entreprise artisanale italienne, nous produisons glaces, semifreddi et desserts pour les bars, glaciers, établissements de plage, distributeurs et la grande distribution. Des matières premières sélectionnées, des recettes de famille et un savoir-faire artisanal dans un laboratoire moderne certifié.",
+  "hero.cta1":"Découvrir la gamme","hero.cta2":"Demander le tarif",
+  "seal.ring":"1936 · 2026 · QUATRE-VINGT-DIX ANS DE GLACES ·","seal.anni":"ans",
+  "proof.1":"ans de glaces, depuis le Caffè Magrini en 1936",
+  "proof.2":"lignes de produits, du congélateur au dessert",
+  "proof.3":"de densité en plus par rapport à la glace industrielle",
+  "proof.4":"qualité certifiée ISO 9001 et IFS Food",
+  "story.eyebrow":"Notre histoire",
+  "story.title":"Du Caffè Magrini à notre laboratoire de Via Norvegia",
+  "story.p1":"Dans les années 1930, Maria Magrini commence à préparer ses premières glaces dans l'ancien Caffè Magrini, pour égayer les promenades d'été des habitants de Roseto. Des ingrédients authentiques et frais font rapidement du café le rendez-vous des amateurs de glace.",
+  "story.quote":"Des coupes si originales et créatives qu'elles ont mérité le nom de « légende de la glace italienne ».",
+  "story.p2":"Aujourd'hui, Raffaele Magrini perpétue les enseignements de sa grand-mère et en fait des règles de qualité, dans le laboratoire qu'il dirige chaque jour avec son associée Graziella Ceci, ses enfants Barbara et Alessandro Magrini et son gendre Gianni Iachini.",
+  "tl.1w":"années 30","tl.1t":"Le Caffè Magrini","tl.1p":"Maria Magrini prépare les premières glaces au centre de Roseto degli Abruzzi.",
+  "tl.2w":"ensuite","tl.2t":"Les coupes de ses enfants","tl.2p":"La deuxième génération crée les coupes qui font la renommée des glaces Magrini.",
+  "tl.3t":"Naissance de Magrini R. & Ceci G.","tl.3p":"L'entreprise artisanale passe du glacier à la production pour bars, glaciers et revendeurs.",
+  "tl.4w":"aujourd'hui","tl.4t":"Certifiés ISO 9001 et IFS","tl.4p":"Un réseau de distributeurs dans toute l'Italie, des partenariats avec de grands groupes commerciaux et des clients à l'étranger.",
+  "band.eyebrow":"Roseto degli Abruzzi, Italie","band.p":"Notre site de production, où naissent chaque jour les glaces Magrini.",
+  "met.eyebrow":"Notre méthode","met.title":"De la matière première au congélateur",
+  "met.1t":"Matières premières choisies","met.1p":"Fournisseurs sélectionnés et contrôlés selon ISO 9001 et IFS Food. Lait, fruits et ingrédients de qualité.",
+  "met.2t":"Produit à Roseto","met.2p":"Chaque glace naît dans notre laboratoire de Via Norvegia, avec des recettes de famille et des équipements modernes.",
+  "met.3t":"Plus de glace, moins d'air","met.3p":"Une densité supérieure de 30 % à celle de la glace industrielle : plus de matière dans chaque pot.",
+  "met.4t":"Chaîne du froid","met.4p":"Stockage en chambre froide et livraison en véhicules frigorifiques, en direct ou via notre réseau de distributeurs.",
+  "gamma.eyebrow":"Nos produits","gamma.title":"La gamme Magrini","gamma.p":"Chaque ligne a son catalogue à feuilleter, avec photo, poids et colisage de chaque produit, et son dépliant à télécharger.",
+  "f.tutti":"Toutes","f.gelati":"Glaces","f.marchi":"Marques partenaires","f.dessert":"Fêtes","f.free":"Sans gluten et végétal","f.bar":"Petit-déjeuner et bar",
+  "dp.title":"Dépliants à télécharger","dp.p":"Les affiches de la saison en haute qualité, à imprimer, exposer ou partager avec vos clients.","dp.all":"Tout télécharger","dp.gusti":"Carte des parfums","c.more":"Catalogue photo &#8599;","c.book":"Feuilleter le catalogue &rarr;",
+  "c.impulso":"Cônes, bâtonnets, biscuits glacés et pots pour le congélateur.",
+  "n.minioro":"Mini glaces &amp; Linea Oro","c.minioro":"Petits formats et notre ligne premium en bacs.",
+  "n.bimbo":"Jeux et Glaces","c.bimbo":"Pots de glace avec jeu ou surprise, pensés pour les enfants.",
+  "n.sorb":"Sorbets &amp; Semifreddi","c.sorb":"Sorbets aux fruits et semifreddi en portions individuelles.",
+  "n.mant":"Notre Mantecato","t.vaschette":"bacs","t.carapine":"carapine","c.mant":"Glace en vitrine pour glaciers et bars.",
+  "n.mpk":"Multipacks et vente à emporter","c.mpk":"Multipacks et bacs à emporter.",
+  "c.ferrero":"Les glaces des marques Ferrero que nous distribuons.",
+  "c.mars":"Mars, Snickers, Twix, Bounty et toute la gamme Mars.",
+  "c.dessert":"Gâteaux glacés, desserts de pâtisserie et portions individuelles.",
+  "c.natale":"Panettones glacés, bûches et desserts de fêtes.",
+  "c.pasqua":"La GelColomba, colombe pascale fourrée de glace.",
+  "n.sg":"Glaces sans gluten","t.sg":"sans gluten","c.sg":"Une sélection de la gamme adaptée à une alimentation sans gluten.",
+  "t.veg":"100 % végétal","c.rice":"Glaces à base de riz, sans lait.",
+  "n.sgl":"Pots sans gluten et sans lactose","t.sl":"sans lactose","c.sgl":"Vanille marbrée au chocolat et vanille marbrée à l'amarena.",
+  "t.nostra":"notre production","c.nonna":"Muffins, petits gâteaux et mini ciambelloni, aussi sans lait.",
+  "n.corn":"Viennoiserie","n.corn2":"Viennoiserie et petit-déjeuner","c.corn":"Croissants surgelés et produits de boulangerie pour le bar.",
+  "n.bev":"Boissons chaudes","c.bev":"Café ginseng 1000 g · Orge expresso 500 g · Chocolat chaud 1000 g",
+  "c.cat":"Fritures, pinsa, bases à pizza, pasticciotti et bubble tea pour la restauration.",
+  "nov.eyebrow":"Saison 2026","nov.title":"Les nouveautés de l'année","nov.p":"Chaque année, de nouveaux parfums, des produits de saison et des éditions limitées. Voici les dernières.",
+  "nov.1t":"Nouveaux parfums Linea Oro","nov.1p":"Les nouveaux parfums de l'année en bacs décorés, pour la vitrine du glacier :",
+  "nov.2t":"Mimosa portion individuelle","nov.2p":"Portion de pâtisserie fourrée à la crème chantilly avec morceaux de fraise et d'ananas, sur des couches de génoise aromatisée aux fruits.",
+  "nov.3p":"Notre nouveau multipack de 8 pièces pour la vente à emporter.",
+  "nov.4p":"Génoise fourrée à la crème chantilly, une douceur traditionnelle des Abruzzes en portion individuelle.",
+  "nov.stay":"à suivre... #staytuned",
+  "ev.eyebrow":"Événements","ev.title":"Rendez-vous chez nous","ev.p":"Salons professionnels, journées portes ouvertes et dégustations pour les professionnels et nos clients.",
+  "ev.badge":"5e édition","ev.date":"Dates","ev.dateV":"15 &rarr; 18 mars 2026","ev.orari":"Horaires","ev.dove":"Lieu","ev.ingresso":"Entrée","ev.ingressoV":"Libre, réservée aux professionnels",
+  "ev.desc":"Avant-première des nouveautés, dégustations de notre gamme et des partenaires invités, networking et visites guidées des lignes de production (17 et 18 mars, 11h00-12h00).",
+  "ev.gp":"Voir l'album sur Google Photos","ev.album":"Voir les photos","ev.pdf":"Flyer (PDF)","ar.album":"Voir les photos",
+  "ar.1w":"8 &rarr; 11 mars 2025","ar.1t":"Open Day, 4e édition",
+  "ar.2w":"23 &rarr; 26 mars 2024","ar.2t":"Open Day, 3e édition",
+  "ar.4w":"25 &rarr; 28 mars 2023","ar.4t":"Open Day, 2e édition",
+  "ar.5w":"22 &rarr; 25 févr. 2020","ar.5t":"Open Day, 1re édition",
+  "cert.eyebrow":"Qualité","cert.title":"Nos certifications","cert.p":"Sélection des fournisseurs, contrôle des matières premières et processus tracés, de la recette à la livraison.",
+  "cert.1p":"Norme internationale de sécurité alimentaire : des produits sûrs, conformes à la loi et aux exigences des clients.",
+  "cert.2p":"Système de management de la qualité : contrôle rigoureux de la sélection des matières premières à la livraison, avec amélioration continue.",
+  "cert.3p":"Système d'autocontrôle conforme aux normes européennes de sécurité alimentaire, avec des standards d'hygiène élevés.",
+  "cert.dl":"Télécharger le certificat (PDF)","cert.dl2":"Télécharger la déclaration (PDF)",
+  "pro.eyebrow":"Bars, glaciers, restaurants, commerces","pro.title":"Demandez une offre personnalisée",
+  "pro.p":"Laissez-nous votre nom, votre type d'activité, votre ville et un contact : nous vous recontacterons avec notre tarif à jour et une offre adaptée à votre activité.",
+  "pro.conc":"Vous êtes distributeur ? Devenez distributeur Magrini &rarr;",
+  "fm.nome":"Nom et prénom","fm.attivita":"Nom de l'établissement","fm.tipo":"Type d'activité","fm.localita":"Ville / pays","fm.tel":"Téléphone","fm.msg":"Message",
+  "fm.o1":"Bar","fm.o2":"Glacier","fm.o3":"Établissement de plage","fm.o4":"Restaurant / pizzeria","fm.o5":"Supermarché / grande distribution","fm.o6":"Distributeur","fm.o7":"Importateur (hors Italie)","fm.o8":"Autre",
+  "fm.ph":"Lignes qui vous intéressent, volumes indicatifs, période...",
+  "fm.privacy":"J'ai lu la <a href=\"privacy.html#moduli\" target=\"_blank\" rel=\"noopener\">politique de confidentialité</a> : mes données serviront uniquement à me recontacter.",
+  "fm.invia":"Envoyer la demande",
+  "dl.title":"Documents utiles",
+  "dl.1t":"Bon de commande","dl.1p":"Feuille de chargement avec les codes produits",
+  "dl.2t":"Liste des parfums mantecato","dl.2p":"Mise à jour à chaque saison",
+  "dl.3t":"Liste des parfums à emporter","dl.3p":"Formats pour la vente au comptoir",
+  "dl.4t":"Liste des parfums carapine","dl.4p":"Pour le service en glacier",
+  "dl.5t":"Flyer Open Day 2026","dl.5p":"5e édition, 15-18 mars",
+  "co.eyebrow":"Devenir distributeur","co.title":"Apportez les glaces Magrini dans votre région",
+  "co.lead":"Nous recherchons des distributeurs du surgelé, de l'hôtellerie et de la restauration, en Italie et à l'étranger, qui souhaitent proposer à leurs clients les glaces d'une entreprise artisanale forte de quatre-vingt-dix ans d'histoire, certifiée et reconnaissable.",
+  "co.whoT":"Qui nous recherchons",
+  "co.who1":"Distributeurs, grossistes et importateurs du surgelé, de l'hôtellerie et de la restauration",
+  "co.who3":"Un réseau de clients : bars, glaciers, plages, restaurants, commerces",
+  "co.who4":"L'envie de grandir avec une marque historique et un produit de qualité",
+  "co.note":"Commande minimum, zone et conditions commerciales sont définies ensemble, en personne.",
+  "co.offT":"Ce que nous vous offrons",
+  "co.o1t":"Tarif réservé","co.o1p":"Des prix dédiés aux distributeurs et un guide d'introduction aux tarifs de la saison.",
+  "co.o2t":"Une gamme complète","co.o2p":"Nos lignes : impulsion, sorbets et semifreddi, jeux et glaces, desserts, multipacks et à emporter, mantecato, Noël et Pâques.",
+  "co.o3t":"Matériel publicitaire","co.o3p":"Affiches, dépliants et catalogues photo mis à jour à chaque saison, prêts pour vos clients.",
+  "co.o4t":"Soutien commercial","co.o4p":"Nos agents et notre service commercial vous accompagnent au démarrage et pendant toute la saison.",
+  "co.o5t":"Livraisons frigorifiques","co.o5p":"Livraisons avec nos propres véhicules frigorifiques ou via des transporteurs partenaires comme STEF Italia et d'autres spécialistes, avec des services ponctuels et suivis. Chaîne du froid toujours garantie.",
+  "co.o6t":"Un Open Day chaque année","co.o6p":"Avant-premières, dégustations et rencontres avec les partenaires, à partager aussi avec vos clients.",
+  "co.s1t":"Remplissez le formulaire","co.s1p":"Dites-nous qui vous êtes, où vous travaillez et quels clients vous servez.",
+  "co.s2t":"Nous vous appelons","co.s2p":"Un de nos responsables commerciaux vous contacte pour connaître votre zone.",
+  "co.s3t":"Venez nous voir","co.s3p":"Visite du laboratoire à Roseto, dégustation de la gamme et tarif dédié.",
+  "co.s4t":"C'est parti","co.s4p":"Première commande, matériel publicitaire et accompagnement de nos agents.",
+  "co.asideT":"Parlons-en.","co.asideP":"Remplissez le formulaire ou appelez-nous : notre service commercial vous répondra.",
+  "cf.azienda":"Raison sociale","cf.referente":"Personne de contact","cf.piva":"Numéro de TVA","cf.zona":"Zone d'intérêt","cf.zonaPh":"Département, région ou pays",
+  "cf.mezzi":"Véhicules frigorifiques","cf.m1":"Oui, en propre","cf.m2":"Oui, en location ou sous-traités","cf.m3":"Pas encore",
+  "cf.clienti":"Clients servis aujourd'hui","cf.k0":"Je démarre","cf.k1":"Moins de 50","cf.k2":"De 50 à 200","cf.k3":"Plus de 200",
+  "cf.msg":"Parlez-nous de votre activité","cf.msgPh":"Produits distribués aujourd'hui, type de clients, marques...","cf.invia":"Envoyer la candidature",
+  "news.title":"Newsletter Magrini","news.p":"Nouveautés, événements et promotions pour les professionnels, directement dans votre boîte mail.","news.btn":"S'inscrire","news.lbl":"Votre e-mail","news.ph":"Votre e-mail","news.ok":"J'accepte de recevoir la newsletter Magrini. Je peux me désinscrire à tout moment. <a href=\"privacy.html#newsletter\">Confidentialité</a>",
+  "ct.eyebrow":"Contact","ct.title":"Venez nous rendre visite","ct.sede":"Siège et production","ct.italia":"<br>Italie","ct.maps":"Ouvrir dans Google Maps &#8599;",
+  "rev.eyebrow":"Ils parlent de nous","rev.title":"La qualité se remarque","rev.p":"La passion et l'amour de notre métier paient toujours. Voici quelques avis Google laissés par ceux qui ont goûté nos glaces (en italien).","rev.score":"sur Google, plus de 60 avis","rev.all":"Lire tous les avis","rev.write":"Écrire votre avis","ct.tel":"Téléphone et e-mail","ct.wa":"Écrivez-nous sur WhatsApp &#8599;","ct.segui":"Suivez-nous","ct.rec":"Satisfait de nos produits ?","ct.google":"Lire et écrire un avis sur Google &#8599;",
+  "ft.imp":"Entreprise artisanale","ft.piva":"N° TVA, code fiscal et n° au Registre des entreprises","ft.sdi":"Code SdI","ft.privacy":"Confidentialité et cookies","ft.aiuti":"Aides d'État 2025","ft.cookie":"Aucun cookie de profilage, aucune bannière à accepter."
+},
+
+/* ------------------------------ ESPAÑOL ------------------------------ */
+es: {
+  "brand.sub":"Helados desde 1936",
+  "nav.storia":"Historia","nav.gamma":"Productos","nav.novita":"Novedades","nav.eventi":"Eventos","nav.rev":"Reseñas","nav.cert":"Calidad","nav.contatti":"Contacto","nav.conc":"Distribuidores","nav.pro":"Pedir oferta",
+  "hero.eyebrow":"Roseto degli Abruzzi, Italia · desde 1936",
+  "hero.title":"Helados Magrini, <em>productos de calidad desde hace cuatro generaciones.</em>",
+  "hero.lead":"Somos una empresa artesana italiana: producimos helados, semifríos y postres para bares, heladerías, chiringuitos, distribuidores y gran distribución. Materias primas seleccionadas, recetas familiares y elaboración artesana en un obrador moderno certificado.",
+  "hero.cta1":"Descubre la gama","hero.cta2":"Pide la tarifa",
+  "seal.ring":"1936 · 2026 · NOVENTA AÑOS DE HELADO ·","seal.anni":"años",
+  "proof.1":"años de helado, desde el Caffè Magrini en 1936",
+  "proof.2":"líneas de producto, del congelador al postre",
+  "proof.3":"más de densidad que el helado industrial",
+  "proof.4":"calidad certificada ISO 9001 e IFS Food",
+  "story.eyebrow":"Nuestra historia",
+  "story.title":"Del Caffè Magrini a nuestro obrador de Via Norvegia",
+  "story.p1":"En los años treinta, Maria Magrini empieza a elaborar sus primeros helados en el antiguo Caffè Magrini, para alegrar los paseos de verano de los vecinos de Roseto. Ingredientes auténticos y frescos convierten pronto el café en el punto de encuentro de los amantes del helado.",
+  "story.quote":"Copas tan originales y creativas que merecieron el nombre de «leyenda del helado italiano».",
+  "story.p2":"Hoy Raffaele Magrini continúa las enseñanzas de su abuela y las convierte en normas de calidad, en el obrador que dirige cada día con su socia Graziella Ceci, sus hijos Barbara y Alessandro Magrini y su yerno Gianni Iachini.",
+  "tl.1w":"años 30","tl.1t":"El Caffè Magrini","tl.1p":"Maria Magrini elabora los primeros helados en el centro de Roseto degli Abruzzi.",
+  "tl.2w":"después","tl.2t":"Las copas de sus hijos","tl.2p":"La segunda generación crea las copas que hacen famoso el helado Magrini.",
+  "tl.3t":"Nace Magrini R. & Ceci G.","tl.3p":"La empresa artesana pasa de la heladería a la producción para bares, heladerías y revendedores.",
+  "tl.4w":"hoy","tl.4t":"Certificados ISO 9001 e IFS","tl.4p":"Una red de distribuidores en toda Italia, colaboraciones con grandes grupos comerciales y clientes en el extranjero.",
+  "band.eyebrow":"Roseto degli Abruzzi, Italia","band.p":"Nuestra planta, donde cada día nace el helado Magrini.",
+  "met.eyebrow":"Cómo trabajamos","met.title":"De la materia prima al congelador",
+  "met.1t":"Materias primas elegidas","met.1p":"Proveedores seleccionados y controlados según ISO 9001 e IFS Food. Leche, fruta e ingredientes de calidad.",
+  "met.2t":"Hecho en Roseto","met.2p":"Cada helado nace en nuestro obrador de Via Norvegia, con recetas familiares y maquinaria moderna.",
+  "met.3t":"Más helado, menos aire","met.3p":"Una densidad un 30 % superior a la del helado industrial: más producto en cada tarrina.",
+  "met.4t":"Cadena de frío","met.4p":"Almacenamiento en cámara y entrega con vehículos refrigerados, de forma directa o a través de nuestra red de distribuidores.",
+  "gamma.eyebrow":"Nuestros productos","gamma.title":"La gama Magrini","gamma.p":"Cada línea tiene su catálogo para hojear, con foto, peso y unidades por caja de cada producto, y el folleto para descargar.",
+  "f.tutti":"Todas","f.gelati":"Helados","f.marchi":"Marcas asociadas","f.dessert":"Fiestas","f.free":"Sin gluten y vegetales","f.bar":"Desayuno y bar",
+  "dp.title":"Folletos para descargar","dp.p":"Los carteles de la temporada en alta calidad, para imprimir, exponer o compartir con tus clientes.","dp.all":"Descargarlos todos","dp.gusti":"Carta de sabores","c.more":"Catálogo de fotos &#8599;","c.book":"Hojear el catálogo &rarr;",
+  "c.impulso":"Conos, polos, sándwiches helados y tarrinas para el congelador.",
+  "n.minioro":"Mini helados &amp; Linea Oro","c.minioro":"Formatos pequeños y nuestra línea premium en cubetas.",
+  "n.bimbo":"Juegos y Helados","c.bimbo":"Tarrinas de helado con juego o sorpresa, pensadas para los más pequeños.",
+  "n.sorb":"Sorbetes &amp; Semifríos","c.sorb":"Sorbetes de fruta y semifríos en porciones individuales.",
+  "n.mant":"Nuestro Mantecato","t.vaschette":"cubetas","t.carapine":"carapine","c.mant":"Helado de vitrina para heladerías y bares.",
+  "n.mpk":"Multipacks y para llevar","c.mpk":"Multipacks y tarrinas para llevar a casa.",
+  "c.ferrero":"Los helados de las marcas Ferrero que distribuimos.",
+  "c.mars":"Mars, Snickers, Twix, Bounty y el resto de la gama Mars.",
+  "c.dessert":"Tartas heladas, postres de pastelería y porciones individuales.",
+  "c.natale":"Panettones helados, troncos y dulces navideños.",
+  "c.pasqua":"La GelColomba, colomba de Pascua rellena de helado.",
+  "n.sg":"Helados sin gluten","t.sg":"sin gluten","c.sg":"Una selección de la gama apta para una dieta sin gluten.",
+  "t.veg":"100 % vegetal","c.rice":"Helados a base de arroz, sin leche.",
+  "n.sgl":"Tarrinas sin gluten y sin lactosa","t.sl":"sin lactosa","c.sgl":"Vainilla con veteado de chocolate y vainilla con veteado de amarena.",
+  "t.nostra":"producción propia","c.nonna":"Muffins, pastelitos y mini ciambelloni, también sin leche.",
+  "n.corn":"Bollería","n.corn2":"Bollería y desayuno","c.corn":"Cruasanes congelados y productos horneados para el bar.",
+  "n.bev":"Bebidas calientes","c.bev":"Café ginseng 1000 g · Cebada expreso 500 g · Chocolate caliente 1000 g",
+  "c.cat":"Fritos, pinsas, bases de pizza, pasticciotti y bubble tea para la restauración.",
+  "nov.eyebrow":"Temporada 2026","nov.title":"Las novedades del año","nov.p":"Cada año, nuevos sabores, productos de temporada y ediciones limitadas. Estas son las últimas.",
+  "nov.1t":"Nuevos sabores Linea Oro","nov.1p":"Los nuevos sabores del año en cubeta decorada, para la vitrina de la heladería:",
+  "nov.2t":"Mimosa porción individual","nov.2p":"Porción de pastelería rellena de crema chantilly con trozos de fresa y piña, sobre capas de bizcocho aromatizado con fruta.",
+  "nov.3p":"Nuestro nuevo multipack de 8 unidades para la venta para llevar.",
+  "nov.4p":"Bizcocho relleno de crema chantilly, un dulce tradicional de los Abruzos en porción individual.",
+  "nov.stay":"continuará... #staytuned",
+  "ev.eyebrow":"Eventos","ev.title":"Te esperamos en la empresa","ev.p":"Ferias del sector, jornadas de puertas abiertas y degustaciones para profesionales y clientes.",
+  "ev.badge":"5.ª edición","ev.date":"Fechas","ev.dateV":"15 &rarr; 18 de marzo de 2026","ev.orari":"Horario","ev.dove":"Dónde","ev.ingresso":"Entrada","ev.ingressoV":"Libre, reservada a profesionales del sector",
+  "ev.desc":"Presentación de las novedades, degustaciones de nuestra gama y de los socios invitados, networking y visitas guiadas a las líneas de producción (17 y 18 de marzo, 11:00-12:00).",
+  "ev.gp":"Ver el álbum en Google Fotos","ev.album":"Ver las fotos","ev.pdf":"Folleto (PDF)","ar.album":"Ver las fotos",
+  "ar.1w":"8 &rarr; 11 mar 2025","ar.1t":"Open Day, 4.ª edición",
+  "ar.2w":"23 &rarr; 26 mar 2024","ar.2t":"Open Day, 3.ª edición",
+  "ar.4w":"25 &rarr; 28 mar 2023","ar.4t":"Open Day, 2.ª edición",
+  "ar.5w":"22 &rarr; 25 feb 2020","ar.5t":"Open Day, 1.ª edición",
+  "cert.eyebrow":"Calidad","cert.title":"Nuestras certificaciones","cert.p":"Selección de proveedores, control de las materias primas y procesos trazables, de la receta a la entrega.",
+  "cert.1p":"Norma internacional de seguridad alimentaria: productos seguros, conformes a la ley y a los requisitos de los clientes.",
+  "cert.2p":"Sistema de gestión de la calidad: control riguroso desde la selección de las materias primas hasta la entrega, con mejora continua.",
+  "cert.3p":"Sistema de autocontrol conforme a la normativa europea de seguridad alimentaria, con altos estándares de higiene.",
+  "cert.dl":"Descargar el certificado (PDF)","cert.dl2":"Descargar la declaración (PDF)",
+  "pro.eyebrow":"Bares, heladerías, restaurantes, tiendas","pro.title":"Pide una oferta personalizada",
+  "pro.p":"Déjanos tu nombre, tipo de negocio, localidad y un contacto: te llamaremos con la tarifa actualizada y una propuesta pensada para tu negocio.",
+  "pro.conc":"¿Eres distribuidor? Hazte distribuidor Magrini &rarr;",
+  "fm.nome":"Nombre y apellidos","fm.attivita":"Nombre del negocio","fm.tipo":"Tipo de negocio","fm.localita":"Localidad / país","fm.tel":"Teléfono","fm.msg":"Mensaje",
+  "fm.o1":"Bar","fm.o2":"Heladería","fm.o3":"Chiringuito / club de playa","fm.o4":"Restaurante / pizzería","fm.o5":"Supermercado / gran distribución","fm.o6":"Distribuidor","fm.o7":"Importador (fuera de Italia)","fm.o8":"Otro",
+  "fm.ph":"Líneas que te interesan, volúmenes aproximados, periodo...",
+  "fm.privacy":"He leído la <a href=\"privacy.html#moduli\" target=\"_blank\" rel=\"noopener\">política de privacidad</a>: mis datos se usarán solo para contactarme.",
+  "fm.invia":"Enviar solicitud",
+  "dl.title":"Documentos útiles",
+  "dl.1t":"Hoja de pedido","dl.1p":"Hoja de carga con los códigos de producto",
+  "dl.2t":"Lista de sabores mantecato","dl.2p":"Actualizada cada temporada",
+  "dl.3t":"Lista de sabores para llevar","dl.3p":"Formatos para la venta en mostrador",
+  "dl.4t":"Lista de sabores carapine","dl.4p":"Para el servicio en heladería",
+  "dl.5t":"Folleto Open Day 2026","dl.5p":"5.ª edición, 15-18 de marzo",
+  "co.eyebrow":"Hazte distribuidor","co.title":"Lleva el helado Magrini a tu zona",
+  "co.lead":"Buscamos distribuidores de congelados, hostelería y restauración, en Italia y en el extranjero, que quieran ofrecer a sus clientes los helados de una empresa artesana con noventa años de historia, certificada y reconocible.",
+  "co.whoT":"A quién buscamos",
+  "co.who1":"Distribuidores, mayoristas e importadores de congelados, hostelería y restauración",
+  "co.who3":"Una red de clientes: bares, heladerías, chiringuitos, restaurantes, tiendas",
+  "co.who4":"Ganas de crecer con una marca con historia y un producto de calidad",
+  "co.note":"El pedido mínimo, la zona y las condiciones comerciales las definimos juntos, en persona.",
+  "co.offT":"Qué te ofrecemos",
+  "co.o1t":"Tarifa reservada","co.o1p":"Precios dedicados a distribuidores y una guía de introducción a las tarifas de la temporada.",
+  "co.o2t":"Una gama completa","co.o2p":"Nuestras líneas: impulso, sorbetes y semifríos, juegos y helados, postres, multipacks y para llevar, mantecato, Navidad y Pascua.",
+  "co.o3t":"Material publicitario","co.o3p":"Carteles, folletos y catálogos fotográficos actualizados cada temporada, listos para tus clientes.",
+  "co.o4t":"Apoyo comercial","co.o4p":"Nuestros agentes y la oficina comercial te acompañan en el arranque y durante toda la temporada.",
+  "co.o5t":"Entregas refrigeradas","co.o5p":"Entregas con nuestros vehículos refrigerados o mediante transportistas colaboradores como STEF Italia y otros socios especializados, con servicios puntuales y con seguimiento. Cadena de frío siempre garantizada.",
+  "co.o6t":"Un Open Day cada año","co.o6p":"Presentación de novedades, degustaciones y encuentros con los socios, para compartir también con tus clientes.",
+  "co.s1t":"Rellena el formulario","co.s1p":"Cuéntanos quién eres, dónde trabajas y a qué clientes sirves.",
+  "co.s2t":"Te llamamos","co.s2p":"Uno de nuestros responsables comerciales te contacta para conocer tu zona.",
+  "co.s3t":"Ven a vernos","co.s3p":"Visita al obrador de Roseto, degustación de la gama y tarifa dedicada.",
+  "co.s4t":"Empezamos","co.s4p":"Primer pedido, material publicitario y el apoyo de nuestros agentes.",
+  "co.asideT":"Hablemos.","co.asideP":"Rellena el formulario o llámanos: te responde nuestra oficina comercial.",
+  "cf.azienda":"Razón social","cf.referente":"Persona de contacto","cf.piva":"NIF / número de IVA","cf.zona":"Zona de interés","cf.zonaPh":"Provincia, región o país",
+  "cf.mezzi":"Vehículos refrigerados","cf.m1":"Sí, propios","cf.m2":"Sí, de alquiler o de terceros","cf.m3":"Todavía no",
+  "cf.clienti":"Clientes atendidos hoy","cf.k0":"Estoy empezando","cf.k1":"Menos de 50","cf.k2":"De 50 a 200","cf.k3":"Más de 200",
+  "cf.msg":"Háblanos de tu negocio","cf.msgPh":"Productos que distribuyes hoy, tipo de clientes, marcas...","cf.invia":"Enviar candidatura",
+  "news.title":"Newsletter Magrini","news.p":"Novedades, eventos y promociones para profesionales, directamente en tu correo.","news.btn":"Suscríbete","news.lbl":"Tu correo","news.ph":"Tu correo","news.ok":"Acepto recibir la newsletter de Magrini. Puedo darme de baja en cualquier momento. <a href=\"privacy.html#newsletter\">Privacidad</a>",
+  "ct.eyebrow":"Contacto","ct.title":"Ven a visitarnos","ct.sede":"Sede y producción","ct.italia":"<br>Italia","ct.maps":"Abrir en Google Maps &#8599;",
+  "rev.eyebrow":"Dicen de nosotros","rev.title":"La calidad se nota","rev.p":"La pasión y el amor por nuestro trabajo siempre dan fruto. Estas son algunas reseñas de Google de quienes han probado nuestros helados (en italiano).","rev.score":"en Google, más de 60 reseñas","rev.all":"Leer todas las reseñas","rev.write":"Escribir tu reseña","ct.tel":"Teléfono y correo","ct.wa":"Escríbenos por WhatsApp &#8599;","ct.segui":"Síguenos","ct.rec":"¿Te han gustado nuestros productos?","ct.google":"Lee y escribe una reseña en Google &#8599;",
+  "ft.imp":"Empresa artesana","ft.piva":"NIF-IVA, código fiscal y n.º Registro Mercantil","ft.sdi":"Código SdI","ft.privacy":"Privacidad y cookies","ft.aiuti":"Ayudas de Estado 2025","ft.cookie":"Sin cookies de perfilado, sin banner que aceptar."
+}
+};
+
+var MSG = {
+  it:{req:"Compila i campi obbligatori e accetta l'informativa privacy.",soon:"Il modulo online sarà attivo a breve. Nel frattempo scrivici a info@magrinigelati.it o chiamaci allo +39 085 894 1066.",sending:"Invio in corso...",ok:"Richiesta inviata. Ti ricontattiamo al più presto.",ko:"Invio non riuscito. Scrivici a info@magrinigelati.it o chiamaci allo +39 085 894 1066.",theme:"Tema chiaro o scuro",top:"Torna su",nReq:"Inserisci la tua email e dai il consenso per iscriverti.",nOk:"Grazie, iscrizione ricevuta! Ti arriveranno le prossime newsletter Magrini.",gClose:"Chiudi la galleria",gPrev:"Foto precedente",gNext:"Foto successiva",gPhoto:"foto",desc:"Raffaele Magrini, gelati dal 1936 a Roseto degli Abruzzi. Azienda artigiana che produce per bar, gelaterie, concessionari e grande distribuzione. Certificata ISO 9001 e IFS Food."},
+  en:{req:"Please fill in the required fields and accept the privacy notice.",soon:"The online form will be active shortly. In the meantime write to info@magrinigelati.it or call +39 085 894 1066.",sending:"Sending...",ok:"Request sent. We will get back to you shortly.",ko:"Sending failed. Please write to info@magrinigelati.it or call +39 085 894 1066.",theme:"Light or dark theme",top:"Back to top",nReq:"Enter your email and tick the consent box to subscribe.",nOk:"Thank you, subscription received! You will get the next Magrini newsletters.",gClose:"Close gallery",gPrev:"Previous photo",gNext:"Next photo",gPhoto:"photo",desc:"Raffaele Magrini, gelato since 1936 from Roseto degli Abruzzi, Italy. An artisan company producing for bars, gelato shops, distributors and retail chains. ISO 9001 and IFS Food certified."},
+  fr:{req:"Veuillez remplir les champs obligatoires et accepter la politique de confidentialité.",soon:"Le formulaire en ligne sera bientôt actif. En attendant, écrivez à info@magrinigelati.it ou appelez le +39 085 894 1066.",sending:"Envoi en cours...",ok:"Demande envoyée. Nous vous recontacterons rapidement.",ko:"L'envoi a échoué. Écrivez à info@magrinigelati.it ou appelez le +39 085 894 1066.",theme:"Thème clair ou sombre",top:"Retour en haut",nReq:"Saisissez votre e-mail et cochez la case de consentement pour vous inscrire.",nOk:"Merci, inscription reçue ! Vous recevrez les prochaines newsletters Magrini.",gClose:"Fermer la galerie",gPrev:"Photo précédente",gNext:"Photo suivante",gPhoto:"photo",desc:"Raffaele Magrini, glaces depuis 1936 à Roseto degli Abruzzi, Italie. Entreprise artisanale qui produit pour bars, glaciers, distributeurs et grande distribution. Certifiée ISO 9001 et IFS Food."},
+  es:{req:"Rellena los campos obligatorios y acepta la política de privacidad.",soon:"El formulario online estará activo en breve. Mientras tanto, escríbenos a info@magrinigelati.it o llámanos al +39 085 894 1066.",sending:"Enviando...",ok:"Solicitud enviada. Te contactaremos lo antes posible.",ko:"No se ha podido enviar. Escríbenos a info@magrinigelati.it o llámanos al +39 085 894 1066.",theme:"Tema claro u oscuro",top:"Volver arriba",nReq:"Escribe tu correo y marca la casilla de consentimiento para suscribirte.",nOk:"¡Gracias, suscripción recibida! Recibirás las próximas newsletters de Magrini.",gClose:"Cerrar la galería",gPrev:"Foto anterior",gNext:"Foto siguiente",gPhoto:"foto",desc:"Raffaele Magrini, helados desde 1936 en Roseto degli Abruzzi, Italia. Empresa artesana que produce para bares, heladerías, distribuidores y gran distribución. Certificada ISO 9001 e IFS Food."}
+};
+var LANGS = ['it','en','fr','es'];
+
+(function(){
+  var root = document.documentElement;
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function store(k,v){ try { localStorage.setItem(k,v); } catch(e){} }
+  function esc(s){ return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+  /* ---------- immagini opzionali ---------- */
+  document.querySelectorAll('img[data-optional]').forEach(function(img){
+    function drop(){ img.remove(); }
+    if (img.complete && img.naturalWidth === 0) drop();
+    else img.addEventListener('error', drop);
+  });
+
+  /* ---------- lingua ---------- */
+  var IT = {};
+  var i18nEls = document.querySelectorAll('[data-i18n]');
+  i18nEls.forEach(function(el){ var k = el.dataset.i18n; if (!(k in IT)) IT[k] = el.innerHTML; });
+  var phEls = document.querySelectorAll('[data-i18n-ph]');
+  var IT_PH = {}; phEls.forEach(function(el){ IT_PH[el.dataset.i18nPh] = el.placeholder; });
+  var lang = root.getAttribute('data-lang');
+  if (LANGS.indexOf(lang) < 0) lang = 'it';
+
+  function splitWords(el){
+    var words = el.textContent.trim().split(/\s+/);
+    el.innerHTML = words.map(function(w,i){ return '<span class="w"><span style="--i:'+i+'">'+esc(w)+'</span></span>'; }).join(' ');
+  }
+  function applyLang(l){
+    lang = l;
+    var dict = I18N[l] || {};
+    i18nEls.forEach(function(el){ var k = el.dataset.i18n; el.innerHTML = (l !== 'it' && dict[k] != null) ? dict[k] : IT[k]; });
+    phEls.forEach(function(el){ var k = el.dataset.i18nPh; el.placeholder = (l !== 'it' && dict[k]) ? dict[k] : IT_PH[k]; });
+    document.querySelectorAll('.split').forEach(splitWords);
+    root.lang = l; root.setAttribute('data-lang', l);
+    document.querySelectorAll('.lang button').forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.lang === l)); });
+    document.getElementById('theme-btn').setAttribute('aria-label', MSG[l].theme);
+    document.getElementById('to-top').setAttribute('aria-label', MSG[l].top);
+    var md = document.querySelector('meta[name="description"]'); if (md) md.setAttribute('content', MSG[l].desc);
+    document.querySelectorAll('.form-msg').forEach(function(m){ m.hidden = true; });
+  }
+  document.querySelectorAll('.lang button').forEach(function(b){
+    b.addEventListener('click', function(){ applyLang(b.dataset.lang); store('mg-lang', b.dataset.lang); });
+  });
+  applyLang(lang);
+
+  /* ---------- tema chiaro / scuro ---------- */
+  function isDark(){
+    var t = root.getAttribute('data-theme');
+    if (t) return t === 'dark';
+    return window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches;
+  }
+  document.getElementById('theme-btn').addEventListener('click', function(){
+    var next = isDark() ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    store('mg-theme', next);
+  });
+
+  /* ---------- animazioni allo scroll ---------- */
+  var cards = document.querySelectorAll('#cards .card');
+  cards.forEach(function(c,i){ c.style.setProperty('--d', (i % 4) * 80 + 'ms'); });
+  var targets = document.querySelectorAll('[data-reveal]');
+  if (!reduce && 'IntersectionObserver' in window) {
+    var vh = window.innerHeight || 800;
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting) { e.target.classList.remove('pre'); io.unobserve(e.target); if (e.target.parentNode && e.target.parentNode.id === 'proof') countUp(e.target); }
+      });
+    }, { rootMargin:'0px 0px -8% 0px', threshold:0.12 });
+    targets.forEach(function(el){
+      if (el.getBoundingClientRect().top > vh * 0.9) { el.classList.add('pre'); io.observe(el); }
+      else if (el.parentNode && el.parentNode.id === 'proof') setTimeout(function(){ countUp(el); }, 500);
+    });
+  }
+
+  /* ---------- contatori ---------- */
+  function countUp(li){
+    var b = li.querySelector('[data-count]'); if (!b || b.dataset.done) return;
+    b.dataset.done = '1';
+    var to = +b.dataset.count, pre = b.dataset.prefix || '', suf = b.dataset.suffix || '', t0 = null, dur = 1400;
+    function step(ts){ if (!t0) t0 = ts; var p = Math.min(1, (ts - t0) / dur); var v = Math.round(to * (1 - Math.pow(1 - p, 3))); b.textContent = pre + v + suf; if (p < 1) requestAnimationFrame(step); }
+    requestAnimationFrame(step);
+  }
+
+  /* ---------- barra tricolore, voce attiva del menu, torna su, parallasse logo ---------- */
+  var bar = document.getElementById('progress');
+  var toTop = document.getElementById('to-top');
+  var arch = document.querySelector('#arch .fallback');
+  var bandImg = document.getElementById('band-img');
+  var links = Array.prototype.slice.call(document.querySelectorAll('.nav a[href^="#"]'));
+  var sections = links.map(function(a){ return document.querySelector(a.getAttribute('href')); });
+  var ticking = false;
+  function onScroll(){
+    var y = window.scrollY, h = document.documentElement.scrollHeight - window.innerHeight;
+    bar.style.setProperty('--p', h > 0 ? (y / h).toFixed(4) : 0);
+    toTop.classList.toggle('show', y > 900);
+    if (arch && !reduce && y < 900) arch.style.transform = 'translateY(' + (y * 0.08).toFixed(1) + 'px) rotate(' + (y * -0.006).toFixed(2) + 'deg)';
+    if (bandImg && !reduce) { var r = bandImg.parentNode.getBoundingClientRect(); if (r.bottom > 0 && r.top < window.innerHeight) { var k = (r.top + r.height/2 - window.innerHeight/2) / window.innerHeight; bandImg.style.transform = 'translateY(' + (k * -60).toFixed(1) + 'px)'; } }
+    var cur = -1, best = -Infinity;
+    sections.forEach(function(s,i){ if (!s) return; var t = s.getBoundingClientRect().top; if (t < 140 && t > best) { best = t; cur = i; } });
+    links.forEach(function(a,i){ a.classList.toggle('active', i === cur); });
+    ticking = false;
+  }
+  window.addEventListener('scroll', function(){ if (!ticking) { ticking = true; requestAnimationFrame(onScroll); } }, { passive:true });
+  onScroll();
+  toTop.addEventListener('click', function(){ window.scrollTo({ top:0, behavior: reduce ? 'auto' : 'smooth' }); });
+
+  /* ---------- filtro linee ---------- */
+  var btns = document.querySelectorAll('.filters button');
+  btns.forEach(function(b){
+    b.addEventListener('click', function(){
+      var f = b.dataset.filter;
+      btns.forEach(function(x){ x.setAttribute('aria-pressed', String(x === b)); });
+      cards.forEach(function(c){ c.hidden = !(f === 'tutti' || c.dataset.cat === f); if (!c.hidden) c.classList.remove('pre'); });
+    });
+  });
+
+  /* ---------- moduli (offerta e candidatura concessionario) ---------- */
+  document.querySelectorAll('form.lead-form').forEach(function(form){
+    var msg = form.querySelector('.form-msg');
+    function show(k){ msg.textContent = MSG[lang][k]; msg.hidden = false; }
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      if (!form.checkValidity()) { show('req'); return; }
+      if (form.querySelector('.hp').checked) return;
+      if (!W3F_KEY) { show('soon'); return; }
+      var data = new FormData(form);
+      data.delete('privacy');
+      data.append('access_key', W3F_KEY);
+      data.append('subject', form.dataset.subject + ' (' + lang.toUpperCase() + ')');
+      data.append('from_name', 'Sito magrinigelati.it');
+      data.append('lingua', lang);
+      data.append('privacy', 'informativa letta e accettata');
+      show('sending');
+      fetch('https://api.web3forms.com/submit', { method:'POST', body:data })
+        .then(function(r){ return r.json(); })
+        .then(function(j){ if (j.success) { form.reset(); show('ok'); } else { throw new Error(); } })
+        .catch(function(){ show('ko'); });
+    });
+  });
+
+  /* ---------- newsletter (Brevo) ----------
+     Il modulo invia l'email direttamente al modulo Brevo, in un riquadro nascosto:
+     il contatto entra nella lista Brevo come con il modulo del vecchio sito. */
+  var nf = document.getElementById('news-form');
+  if (nf) {
+    var nmsg = nf.querySelector('.nf-msg'), sent = false;
+    nf.addEventListener('submit', function(e){
+      if (nf.querySelector('.hp').value) { e.preventDefault(); return; }
+      if (!nf.checkValidity()) { e.preventDefault(); nmsg.textContent = MSG[lang].nReq; nmsg.hidden = false; return; }
+      nf.querySelector('[name=locale]').value = lang;
+      sent = true; nmsg.textContent = MSG[lang].sending; nmsg.hidden = false;
+    });
+    document.querySelector('iframe[name=brevo-frame]').addEventListener('load', function(){
+      if (!sent) return; sent = false; nf.reset(); nmsg.textContent = MSG[lang].nOk; nmsg.hidden = false;
+    });
+  }
+
+  document.getElementById('anno').textContent = new Date().getFullYear();
+})();
+</script>
+
+</body>
+</html>
