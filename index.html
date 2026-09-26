@@ -30,9 +30,9 @@
 /* tema e lingua applicati subito, prima del disegno della pagina, per evitare lampeggi */
 (function(){
   var d = document.documentElement, t = null, l = null;
-  try { t = localStorage.getItem('mg-theme'); l = localStorage.getItem('mg-lang'); } catch(e){}
+  try { t = localStorage.getItem('mg-theme'); localStorage.removeItem('mg-lang'); l = sessionStorage.getItem('mg-lang'); } catch(e){}
   d.setAttribute('data-theme', t === 'light' ? 'light' : 'dark');
-  if (!l) { var n = (navigator.language || 'it').toLowerCase().slice(0,2); l = (n === 'it' || n === 'fr' || n === 'es') ? n : 'en'; }
+  if (l !== 'en' && l !== 'fr' && l !== 'es') l = 'it';
   d.setAttribute('data-lang', l);
   d.lang = l;
 })();
@@ -1544,7 +1544,7 @@ var LANGS = ['it','en','fr','es'];
     document.querySelectorAll('.form-msg').forEach(function(m){ m.hidden = true; });
   }
   document.querySelectorAll('.lang button').forEach(function(b){
-    b.addEventListener('click', function(){ applyLang(b.dataset.lang); store('mg-lang', b.dataset.lang); });
+    b.addEventListener('click', function(){ applyLang(b.dataset.lang); try { sessionStorage.setItem('mg-lang', b.dataset.lang); } catch(e){} });
   });
   applyLang(lang);
 
