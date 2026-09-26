@@ -510,7 +510,24 @@ footer .wrap{display:grid;gap:18px}
 .foot-top .tricolore{width:180px;height:6px;gap:20px}
 .legal{display:flex;flex-wrap:wrap;gap:6px 20px}
 .legal a{color:var(--muted)}
-.to-top{position:fixed;right:clamp(16px,2vw,28px);bottom:calc(clamp(16px,2vw,28px) + env(safe-area-inset-bottom,0px));width:48px;height:48px;border-radius:50%;border:0;background:var(--blu);color:var(--on-blu);display:grid;place-items:center;cursor:pointer;box-shadow:var(--shadow-lift);opacity:0;transform:translateY(12px);pointer-events:none;transition:opacity .3s ease,transform .3s var(--ease);z-index:25}
+.to-top{position:fixed;right:clamp(16px,2vw,28px);bottom:calc(clamp(16px,2vw,28px) + 60px + env(safe-area-inset-bottom,0px));width:48px;height:48px;border-radius:50%;border:0;background:var(--blu);color:var(--on-blu);display:grid;place-items:center;cursor:pointer;box-shadow:var(--shadow-lift);opacity:0;transform:translateY(12px);pointer-events:none;transition:opacity .3s ease,transform .3s var(--ease);z-index:25}
+/* pulsante WhatsApp: discreto, si allarga col passaggio del mouse */
+.wa{position:fixed;right:clamp(16px,2vw,28px);bottom:calc(clamp(16px,2vw,28px) + env(safe-area-inset-bottom,0px));z-index:26;display:flex;align-items:center;gap:0;height:48px;padding:0 12px;border-radius:999px;background:var(--surface);color:var(--ink);border:1.5px solid var(--line);box-shadow:var(--shadow);text-decoration:none;font-weight:600;font-size:.92rem;transition:gap .3s var(--ease),padding .3s var(--ease),border-color .2s ease,transform .2s var(--ease)}
+.wa svg{width:22px;height:22px;flex-shrink:0;color:#25D366}
+.wa span{max-width:0;overflow:hidden;white-space:nowrap;transition:max-width .35s var(--ease)}
+.wa:hover,.wa:focus-visible{gap:9px;padding:0 16px 0 13px;border-color:#25D366;transform:translateY(-2px)}
+.wa:hover span,.wa:focus-visible span{max-width:220px}
+@media (hover:none){.wa:hover{transform:none}}
+/* cartelli delle linee cliccabili */
+.card figure[data-href]{cursor:pointer}
+/* dove trovarci */
+.dove-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(24px,4vw,56px);align-items:start}
+.dove-text{display:grid;gap:16px;align-content:start}
+.dove-text p{color:var(--muted);font-size:1.05rem}
+.dove-text ul{list-style:none;margin:6px 0 0;padding:0;display:grid;gap:10px}
+.dove-text li{display:grid;grid-template-columns:22px 1fr;gap:10px;color:var(--ink)}
+.dove-text li::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--giallo);margin-top:.5em}
+@media (max-width:960px){.dove-grid{grid-template-columns:1fr}}
 .to-top.show{opacity:1;transform:none;pointer-events:auto}
 
 /* logo leggibile anche col tema scuro */
@@ -622,7 +639,7 @@ footer .wrap{display:grid;gap:18px}
 
 <!-- ============ FASCIA FOTO ============ -->
 <section class="band" aria-label="Stabilimento">
-  <img id="band-img" src="img/banner-2.jpg" alt="Lo stabilimento Magrini a Roseto degli Abruzzi con le bandiere italiane" loading="lazy">
+  <img id="band-img" src="img/banner-2.webp" alt="Lo stabilimento Magrini a Roseto degli Abruzzi con le bandiere italiane" loading="lazy">
   <div class="band-cap"><div class="wrap" data-reveal><span data-i18n="band.eyebrow">Roseto degli Abruzzi</span><p data-i18n="band.p">Il nostro stabilimento, dove ogni giorno nasce il gelato Magrini.</p></div></div>
 </section>
 
@@ -660,43 +677,43 @@ footer .wrap{display:grid;gap:18px}
     </div>
     <div class="cards" id="cards">
       <article class="card" data-reveal data-cat="gelati">
-        <figure><span class="name">Linea Impulso</span><img data-optional src="img/linee/impulso.jpg" alt="Linea Impulso" loading="lazy"></figure>
+        <figure><span class="name">Linea Impulso</span><img data-optional src="img/linee/impulso.webp" alt="Linea Impulso" loading="lazy"></figure>
         <div class="body"><h3>Linea Impulso</h3><p data-i18n="c.impulso">Coni, stecchi, biscotti e coppette per il banco frigo.</p><a class="more" href="catalogo.html#impulso" data-i18n="c.book">Sfoglia il catalogo &rarr;</a></div>
       </article>
       <article class="card" data-reveal data-cat="gelati">
-        <figure><span class="name" data-i18n="n.sorb">Sorbetteria &amp; Semifreddi</span><img data-optional src="img/linee/sorbetteria.jpg" alt="Sorbetteria e semifreddi" loading="lazy"></figure>
+        <figure><span class="name" data-i18n="n.sorb">Sorbetteria &amp; Semifreddi</span><img data-optional src="img/linee/sorbetteria.webp" alt="Sorbetteria e semifreddi" loading="lazy"></figure>
         <div class="body"><h3 data-i18n="n.sorb">Sorbetteria &amp; Semifreddi</h3><p data-i18n="c.sorb">Sorbetti alla frutta e semifreddi in monoporzione.</p><a class="more" href="catalogo.html#sorbetteria" data-i18n="c.book">Sfoglia il catalogo &rarr;</a></div>
       </article>
       <article class="card" data-reveal data-cat="gelati">
-        <figure><span class="name">Giochi e Gelati</span><img data-optional src="img/linee/giochi.jpg" alt="Giochi e Gelati" loading="lazy"></figure>
+        <figure><span class="name">Giochi e Gelati</span><img data-optional src="img/linee/giochi.webp" alt="Giochi e Gelati" loading="lazy"></figure>
         <div class="body"><h3 data-i18n="n.bimbo">Giochi e Gelati</h3><p data-i18n="c.bimbo">Coppette e gelati con gioco o sorpresa, pensati per i più piccoli.</p><a class="more" href="catalogo.html#giochi" data-i18n="c.book">Sfoglia il catalogo &rarr;</a></div>
       </article>
       <article class="card" data-reveal data-cat="gelati">
-        <figure><span class="name">Dessert</span><img data-optional src="img/linee/dessert.jpg" alt="Dessert" loading="lazy"></figure>
+        <figure><span class="name">Dessert</span><img data-optional src="img/linee/dessert.webp" alt="Dessert" loading="lazy"></figure>
         <div class="body"><h3>Dessert</h3><p data-i18n="c.dessert">Torte gelato, dessert di pasticceria e monoporzioni.</p><a class="more" href="catalogo.html#dessert" data-i18n="c.book">Sfoglia il catalogo &rarr;</a></div>
       </article>
       <article class="card" data-reveal data-cat="gelati">
-        <figure><span class="name" data-i18n="n.mpk">Multipack e Asporto</span><img data-optional src="img/linee/multipack.jpg" alt="Linea multipack e asporto" loading="lazy"></figure>
+        <figure><span class="name" data-i18n="n.mpk">Multipack e Asporto</span><img data-optional src="img/linee/multipack.webp" alt="Linea multipack e asporto" loading="lazy"></figure>
         <div class="body"><h3 data-i18n="n.mpk">Multipack e Asporto</h3><p data-i18n="c.mpk">Confezioni multiple e vaschette da portare a casa.</p><a class="more" href="catalogo.html#multipack" data-i18n="c.book">Sfoglia il catalogo &rarr;</a></div>
       </article>
       <article class="card" data-reveal data-cat="gelati">
-        <figure><span class="name" data-i18n="n.mant">Il nostro Mantecato</span><img data-optional src="img/linee/mantecato.jpg" alt="Gelato mantecato" loading="lazy"></figure>
+        <figure><span class="name" data-i18n="n.mant">Il nostro Mantecato</span><img data-optional src="img/linee/mantecato.webp" alt="Gelato mantecato" loading="lazy"></figure>
         <div class="body"><h3 data-i18n="n.mant">Il nostro Mantecato</h3><div class="tags"><span class="tag" data-i18n="t.vaschette">vaschette</span><span class="tag" data-i18n="t.carapine">carapine</span></div><p data-i18n="c.mant">Gelato da vetrina per gelaterie e bar.</p><a class="more" href="catalogo.html#mantecato" data-i18n="c.book">Sfoglia il catalogo &rarr;</a></div>
       </article>
       <article class="card" data-reveal data-cat="ricorrenze">
-        <figure><span class="name">Natale Goloso</span><img data-optional src="img/linee/natale.jpg" alt="Natale Goloso" loading="lazy"></figure>
+        <figure><span class="name">Natale Goloso</span><img data-optional src="img/linee/natale.webp" alt="Natale Goloso" loading="lazy"></figure>
         <div class="body"><h3>Natale Goloso</h3><p data-i18n="c.natale">Panettoni gelato, tronchetti e dolci delle feste.</p><a class="more" href="catalogo.html#natale" data-i18n="c.book">Sfoglia il catalogo &rarr;</a></div>
       </article>
       <article class="card" data-reveal data-cat="ricorrenze">
-        <figure><span class="name">Pasqua Golosa</span><img data-optional src="img/linee/pasqua.jpg" alt="Pasqua Golosa" loading="lazy"></figure>
+        <figure><span class="name">Pasqua Golosa</span><img data-optional src="img/linee/pasqua.webp" alt="Pasqua Golosa" loading="lazy"></figure>
         <div class="body"><h3>Pasqua Golosa</h3><p data-i18n="c.pasqua">La GelColomba, colomba di pasticceria farcita con gelato.</p><a class="more" href="catalogo.html#pasqua" data-i18n="c.book">Sfoglia il catalogo &rarr;</a></div>
       </article>
       <article class="card" data-reveal data-cat="marchi">
-        <figure><span class="name">Linea Ferrero</span><img data-optional src="img/linee/ferrero.jpg" alt="Linea Ferrero" loading="lazy"></figure>
+        <figure><span class="name">Linea Ferrero</span><img data-optional src="img/linee/ferrero.webp" alt="Linea Ferrero" loading="lazy"></figure>
         <div class="body"><h3>Linea Ferrero</h3><p data-i18n="c.ferrero">I gelati dei marchi Ferrero che distribuiamo.</p><a class="more" href="catalogo.html#ferrero" data-i18n="c.book">Sfoglia il catalogo &rarr;</a></div>
       </article>
       <article class="card" data-reveal data-cat="marchi">
-        <figure><span class="name">Linea Mars</span><img data-optional src="img/linee/mars.jpg" alt="Linea Mars" loading="lazy"></figure>
+        <figure><span class="name">Linea Mars</span><img data-optional src="img/linee/mars.webp" alt="Linea Mars" loading="lazy"></figure>
         <div class="body"><h3>Linea Mars</h3><p data-i18n="c.mars">Mars, Snickers, Twix, Bounty e gli altri gelati Mars.</p><a class="more" href="catalogo.html#mars" data-i18n="c.book">Sfoglia il catalogo &rarr;</a></div>
       </article>
     </div>
@@ -706,15 +723,15 @@ footer .wrap{display:grid;gap:18px}
         <a class="btn btn-ghost" href="docs/depliant/magrini-depliant-2026.pdf" download><span data-i18n="dp.all">Scaricali tutti</span> <span class="n mono">PDF · 13,0 MB</span></a>
       </div>
       <ul class="dp-list">
-        <li><a href="docs/depliant/magrini-linea-impulso.pdf" download><span class="th"><img src="img/depliant/impulso.jpg" alt="" loading="lazy"></span><span class="tx"><b>Linea Impulso</b><span class="meta mono">PDF · 1,5 MB</span></span><svg class="ic" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
-        <li><a href="docs/depliant/magrini-sorbetteria-e-semifreddi.pdf" download><span class="th"><img src="img/depliant/sorbetteria.jpg" alt="" loading="lazy"></span><span class="tx"><b data-i18n="n.sorb">Sorbetteria &amp; Semifreddi</b><span class="meta mono">PDF · 1,4 MB</span></span><svg class="ic" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
-        <li><a href="docs/depliant/magrini-giochi-e-gelati.pdf" download><span class="th"><img src="img/depliant/giochi.jpg" alt="" loading="lazy"></span><span class="tx"><b data-i18n="n.bimbo">Giochi e Gelati</b><span class="meta mono">PDF · 1,1 MB</span></span><svg class="ic" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
-        <li><a href="docs/depliant/magrini-dessert.pdf" download><span class="th"><img src="img/depliant/dessert.jpg" alt="" loading="lazy"></span><span class="tx"><b>Dessert</b><span class="meta mono">PDF · 1,8 MB</span></span><svg class="ic" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
-        <li><a href="docs/depliant/magrini-multipack-e-asporto.pdf" download><span class="th"><img src="img/depliant/multipack.jpg" alt="" loading="lazy"></span><span class="tx"><b data-i18n="n.mpk">Multipack e Asporto</b><span class="meta mono">PDF · 2,0 MB</span></span><svg class="ic" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
-        <li><a href="docs/depliant/magrini-natale-goloso.pdf" download><span class="th"><img src="img/depliant/natale.jpg" alt="" loading="lazy"></span><span class="tx"><b>Natale Goloso</b><span class="meta mono">PDF · 2,0 MB</span></span><svg class="ic" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
-        <li><a href="docs/depliant/magrini-pasqua-golosa.pdf" download><span class="th"><img src="img/depliant/pasqua.jpg" alt="" loading="lazy"></span><span class="tx"><b>Pasqua Golosa</b><span class="meta mono">PDF · 1,5 MB</span></span><svg class="ic" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
-        <li><a href="docs/depliant/magrini-linea-ferrero.pdf" download><span class="th"><img src="img/depliant/ferrero.jpg" alt="" loading="lazy"></span><span class="tx"><b>Linea Ferrero</b><span class="meta mono">PDF · 1,2 MB</span></span><svg class="ic" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
-        <li><a href="docs/depliant/magrini-linea-mars.pdf" download><span class="th"><img src="img/depliant/mars.jpg" alt="" loading="lazy"></span><span class="tx"><b>Linea Mars</b><span class="meta mono">PDF · 490 KB</span></span><svg class="ic" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+        <li><a href="docs/depliant/magrini-linea-impulso.pdf" download><span class="th"><img src="img/depliant/impulso.webp" alt="" loading="lazy"></span><span class="tx"><b>Linea Impulso</b><span class="meta mono">PDF · 1,5 MB</span></span><svg class="ic" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+        <li><a href="docs/depliant/magrini-sorbetteria-e-semifreddi.pdf" download><span class="th"><img src="img/depliant/sorbetteria.webp" alt="" loading="lazy"></span><span class="tx"><b data-i18n="n.sorb">Sorbetteria &amp; Semifreddi</b><span class="meta mono">PDF · 1,4 MB</span></span><svg class="ic" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+        <li><a href="docs/depliant/magrini-giochi-e-gelati.pdf" download><span class="th"><img src="img/depliant/giochi.webp" alt="" loading="lazy"></span><span class="tx"><b data-i18n="n.bimbo">Giochi e Gelati</b><span class="meta mono">PDF · 1,1 MB</span></span><svg class="ic" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+        <li><a href="docs/depliant/magrini-dessert.pdf" download><span class="th"><img src="img/depliant/dessert.webp" alt="" loading="lazy"></span><span class="tx"><b>Dessert</b><span class="meta mono">PDF · 1,8 MB</span></span><svg class="ic" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+        <li><a href="docs/depliant/magrini-multipack-e-asporto.pdf" download><span class="th"><img src="img/depliant/multipack.webp" alt="" loading="lazy"></span><span class="tx"><b data-i18n="n.mpk">Multipack e Asporto</b><span class="meta mono">PDF · 2,0 MB</span></span><svg class="ic" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+        <li><a href="docs/depliant/magrini-natale-goloso.pdf" download><span class="th"><img src="img/depliant/natale.webp" alt="" loading="lazy"></span><span class="tx"><b>Natale Goloso</b><span class="meta mono">PDF · 2,0 MB</span></span><svg class="ic" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+        <li><a href="docs/depliant/magrini-pasqua-golosa.pdf" download><span class="th"><img src="img/depliant/pasqua.webp" alt="" loading="lazy"></span><span class="tx"><b>Pasqua Golosa</b><span class="meta mono">PDF · 1,5 MB</span></span><svg class="ic" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+        <li><a href="docs/depliant/magrini-linea-ferrero.pdf" download><span class="th"><img src="img/depliant/ferrero.webp" alt="" loading="lazy"></span><span class="tx"><b>Linea Ferrero</b><span class="meta mono">PDF · 1,2 MB</span></span><svg class="ic" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+        <li><a href="docs/depliant/magrini-linea-mars.pdf" download><span class="th"><img src="img/depliant/mars.webp" alt="" loading="lazy"></span><span class="tx"><b>Linea Mars</b><span class="meta mono">PDF · 490 KB</span></span><svg class="ic" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
       </ul>
     </div>
   </div>
@@ -730,26 +747,26 @@ footer .wrap{display:grid;gap:18px}
     </div>
     <div class="novita-grid">
       <article class="novita-card" data-reveal>
-        <div class="pic"><span>Oro</span><img data-optional src="img/novita/oro.jpg" alt="Vaschetta di gelato mantecato Linea Oro lt 6,5" width="1200" height="900" loading="lazy"></div>
+        <div class="pic"><span>Oro</span><img data-optional src="img/novita/oro.webp" alt="Vaschetta di gelato mantecato Linea Oro lt 6,5" width="1200" height="900" loading="lazy"></div>
         <h3 data-i18n="nov.1t">Nuovi gusti Linea Oro</h3>
         <span class="fmt">lt 6,5 · g 3900</span>
         <p data-i18n="nov.1p">I nuovi gusti di quest'anno in vaschetta decorata, per la vetrina della gelateria:</p>
         <ul class="gusti-new"><li>Gran Croccante Amarena</li><li>Summer Fruit</li></ul>
       </article>
       <article class="novita-card" data-reveal style="--d:100ms">
-        <div class="pic"><span>Mimosa</span><img data-optional src="img/novita/mimosa-card.jpg" alt="Mimosa monoporzione" width="1200" height="900" loading="lazy"></div>
+        <div class="pic"><span>Mimosa</span><img data-optional src="img/novita/mimosa-card.webp" alt="Mimosa monoporzione" width="1200" height="900" loading="lazy"></div>
         <h3 data-i18n="nov.2t">Mimosa monoporzione</h3>
         <span class="fmt">g 100</span>
         <p data-i18n="nov.2p">Monoporzione di pasticceria farcita alla crema chantilly con pezzi di fragola e ananas, su strati di pan di Spagna aromatizzato alla frutta.</p>
       </article>
       <article class="novita-card" data-reveal style="--d:200ms">
-        <div class="pic"><span>Rodeo</span><img data-optional src="img/novita/rodeo-card.jpg" alt="Multipack Rodeo" width="1200" height="900" loading="lazy"></div>
+        <div class="pic"><span>Rodeo</span><img data-optional src="img/novita/rodeo-card.webp" alt="Multipack Rodeo" width="1200" height="900" loading="lazy"></div>
         <h3>MPK Rodeo</h3>
         <span class="fmt">pz 8 · g 400</span>
         <p data-i18n="nov.3p">Il nuovo multipack da 8 pezzi per la vendita da asporto.</p>
       </article>
       <article class="novita-card" data-reveal style="--d:300ms">
-        <div class="pic"><span>Zizze</span><img data-optional src="img/novita/zizze-card.jpg" alt="Zizze delle Monache" width="1200" height="900" loading="lazy"></div>
+        <div class="pic"><span>Zizze</span><img data-optional src="img/novita/zizze-card.webp" alt="Zizze delle Monache" width="1200" height="900" loading="lazy"></div>
         <h3>Zizze delle Monache</h3>
         <span class="fmt">g 70</span>
         <p data-i18n="nov.4p">Pan di Spagna farcito alla crema chantilly, il dolce della tradizione abruzzese in monoporzione.</p>
@@ -784,29 +801,29 @@ footer .wrap{display:grid;gap:18px}
         </div>
       </div>
       <a class="evento-foto" href="https://photos.app.goo.gl/suueFjyt4VgF4kLd7" target="_blank" rel="noopener" aria-label="Open Day 2026, album su Google Foto">
-        <img class="big" src="img/eventi/anteprime/2026-a.jpg" alt="La sala espositiva vista dall'alto durante l'Open Day 2026" width="1400" height="700" loading="lazy">
-        <img src="img/eventi/anteprime/2026-b.jpg" alt="Banco dei dessert monoporzione" width="640" height="496" loading="lazy">
-        <img src="img/eventi/anteprime/2026-c.jpg" alt="La cena con clienti e partner" width="640" height="496" loading="lazy">
+        <img class="big" src="img/eventi/anteprime/2026-a.webp" alt="La sala espositiva vista dall'alto durante l'Open Day 2026" width="1400" height="700" loading="lazy">
+        <img src="img/eventi/anteprime/2026-b.webp" alt="Banco dei dessert monoporzione" width="640" height="496" loading="lazy">
+        <img src="img/eventi/anteprime/2026-c.webp" alt="La cena con clienti e partner" width="640" height="496" loading="lazy">
       </a>
     </div>
     <ul class="archivio">
       <li data-reveal>
-        <a class="ar-pics" href="https://photos.app.goo.gl/V1i2pDairxPL2e2z7" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img class="a" src="img/eventi/anteprime/2025-a.jpg" alt="" loading="lazy"><img src="img/eventi/anteprime/2025-b-v2.jpg" alt="" loading="lazy"><img src="img/eventi/anteprime/2025-c-v3.jpg" alt="" loading="lazy"></a>
+        <a class="ar-pics" href="https://photos.app.goo.gl/V1i2pDairxPL2e2z7" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img class="a" src="img/eventi/anteprime/2025-a.webp" alt="" loading="lazy"><img src="img/eventi/anteprime/2025-b-v2.webp" alt="" loading="lazy"><img src="img/eventi/anteprime/2025-c-v3.webp" alt="" loading="lazy"></a>
         <span class="when" data-i18n="ar.1w">08 &rarr; 11 mar 2025</span><b data-i18n="ar.1t">Open Day, 4ª edizione</b>
         <a class="gp-link" href="https://photos.app.goo.gl/V1i2pDairxPL2e2z7" target="_blank" rel="noopener"><span data-i18n="ev.gp">Sfoglia il book su Google Foto</span> &#8599;</a>
       </li>
       <li data-reveal style="--d:80ms">
-        <a class="ar-pics" href="https://photos.app.goo.gl/isUA3QzyeBVoBzvp6" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img class="a" src="img/eventi/anteprime/2024-a.jpg" alt="" loading="lazy"><img src="img/eventi/anteprime/2024-b-v2.jpg" alt="" loading="lazy"><img src="img/eventi/anteprime/2024-c.jpg" alt="" loading="lazy"></a>
+        <a class="ar-pics" href="https://photos.app.goo.gl/isUA3QzyeBVoBzvp6" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img class="a" src="img/eventi/anteprime/2024-a.webp" alt="" loading="lazy"><img src="img/eventi/anteprime/2024-b-v2.webp" alt="" loading="lazy"><img src="img/eventi/anteprime/2024-c.webp" alt="" loading="lazy"></a>
         <span class="when" data-i18n="ar.2w">23 &rarr; 26 mar 2024</span><b data-i18n="ar.2t">Open Day, 3ª edizione</b>
         <a class="gp-link" href="https://photos.app.goo.gl/isUA3QzyeBVoBzvp6" target="_blank" rel="noopener"><span data-i18n="ev.gp">Sfoglia il book su Google Foto</span> &#8599;</a>
       </li>
       <li data-reveal style="--d:160ms">
-        <a class="ar-pics" href="https://photos.app.goo.gl/s5geSA6rN4kFXpwh9" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img class="a" src="img/eventi/anteprime/2023-a.jpg" alt="" loading="lazy"><img src="img/eventi/anteprime/2023-b.jpg" alt="" loading="lazy"><img src="img/eventi/anteprime/2023-c-v2.jpg" alt="" loading="lazy"></a>
+        <a class="ar-pics" href="https://photos.app.goo.gl/s5geSA6rN4kFXpwh9" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img class="a" src="img/eventi/anteprime/2023-a.webp" alt="" loading="lazy"><img src="img/eventi/anteprime/2023-b.webp" alt="" loading="lazy"><img src="img/eventi/anteprime/2023-c-v2.webp" alt="" loading="lazy"></a>
         <span class="when" data-i18n="ar.4w">25 &rarr; 28 mar 2023</span><b data-i18n="ar.4t">Open Day, 2ª edizione</b>
         <a class="gp-link" href="https://photos.app.goo.gl/s5geSA6rN4kFXpwh9" target="_blank" rel="noopener"><span data-i18n="ev.gp">Sfoglia il book su Google Foto</span> &#8599;</a>
       </li>
       <li data-reveal style="--d:240ms">
-        <a class="ar-pics" href="https://photos.app.goo.gl/HQ9JETvvmYoo5ouQA" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img class="a" src="img/eventi/anteprime/2020-a.jpg" alt="" loading="lazy"><img src="img/eventi/anteprime/2020-b.jpg" alt="" loading="lazy"><img src="img/eventi/anteprime/2020-c.jpg" alt="" loading="lazy"></a>
+        <a class="ar-pics" href="https://photos.app.goo.gl/HQ9JETvvmYoo5ouQA" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img class="a" src="img/eventi/anteprime/2020-a.webp" alt="" loading="lazy"><img src="img/eventi/anteprime/2020-b.webp" alt="" loading="lazy"><img src="img/eventi/anteprime/2020-c.webp" alt="" loading="lazy"></a>
         <span class="when" data-i18n="ar.5w">22 &rarr; 25 feb 2020</span><b data-i18n="ar.5t">Open Day, 1ª edizione</b>
         <a class="gp-link" href="https://photos.app.goo.gl/HQ9JETvvmYoo5ouQA" target="_blank" rel="noopener"><span data-i18n="ev.gp">Sfoglia il book su Google Foto</span> &#8599;</a>
       </li>
@@ -1034,6 +1051,38 @@ footer .wrap{display:grid;gap:18px}
   </div>
 </section>
 
+<!-- ============ DOVE TROVARCI ============ -->
+<section class="section" id="dove">
+  <div class="wrap dove-grid">
+    <div class="dove-text section-head" style="margin-bottom:0">
+      <span class="eyebrow" data-reveal data-i18n="dv.eyebrow">Dove trovarci</span>
+      <h2 class="split" data-reveal data-i18n="dv.title">Cerchi i gelati Magrini vicino a te?</h2>
+      <p data-reveal data-i18n="dv.p">Scrivici la tua città: ti rispondiamo noi con i bar, le gelaterie e i negozi della tua zona dove trovare i nostri prodotti.</p>
+      <ul data-reveal>
+        <li data-i18n="dv.l1">Rispondiamo via email, di solito entro un giorno lavorativo</li>
+        <li data-i18n="dv.l2">Puoi chiederci anche un prodotto in particolare</li>
+      </ul>
+    </div>
+    <div class="panel" data-reveal="right">
+      <form id="dove-form" class="lead-form" data-subject="Dove trovare i gelati Magrini" novalidate>
+        <div class="row">
+          <label for="d-nome"><span data-i18n="fm.nome">Nome e cognome</span><input id="d-nome" name="nome" autocomplete="name" required></label>
+          <label for="d-email"><span>Email</span><input id="d-email" name="email" type="email" autocomplete="email" required></label>
+        </div>
+        <div class="row">
+          <label for="d-localita"><span data-i18n="dv.loc">Comune e provincia</span><input id="d-localita" name="localita" autocomplete="address-level2" required></label>
+          <label for="d-tel"><span data-i18n="dv.tel">Telefono (facoltativo)</span><input id="d-tel" name="telefono" type="tel" autocomplete="tel"></label>
+        </div>
+        <label for="d-msg"><span data-i18n="dv.msg">Cosa cerchi?</span><textarea id="d-msg" name="messaggio" data-i18n-ph="dv.ph" placeholder="Ad esempio: il Cono Capriccio, le torte gelato, un bar vicino al mare..."></textarea></label>
+        <label class="check" for="d-privacy"><input id="d-privacy" name="privacy" type="checkbox" required><span data-i18n="fm.privacy">Ho letto l'<a href="privacy.html#moduli" target="_blank" rel="noopener">informativa privacy</a>: i miei dati saranno usati solo per ricontattarmi.</span></label>
+        <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div><button class="btn btn-primary" type="submit"><span data-i18n="dv.invia">Chiedi dove trovarci</span><span class="arr" aria-hidden="true">&rarr;</span></button></div>
+        <p class="form-msg" role="status" hidden></p>
+      </form>
+    </div>
+  </div>
+</section>
+
 <!-- ============ CONTATTI ============ -->
 <section class="section" id="contatti">
   <div class="wrap">
@@ -1084,6 +1133,8 @@ footer .wrap{display:grid;gap:18px}
     </div>
   </div>
 </footer>
+
+<a class="wa" href="https://api.whatsapp.com/send/?phone=390858941066" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg><span data-i18n="wa.lbl">Scrivici su WhatsApp</span></a>
 
 <button type="button" class="to-top" id="to-top" aria-label="Torna su"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
 
@@ -1208,6 +1259,7 @@ en: {
   "cf.mezzi":"Refrigerated vehicles","cf.m1":"Yes, our own","cf.m2":"Yes, rented or third-party","cf.m3":"Not yet",
   "cf.clienti":"Customers served today","cf.k0":"Just starting out","cf.k1":"Fewer than 50","cf.k2":"50 to 200","cf.k3":"More than 200",
   "cf.msg":"Tell us about your business","cf.msgPh":"Products you distribute today, type of customers, brands you carry...","cf.invia":"Send application",
+  "dv.eyebrow":"Where to find us","dv.title":"Looking for Magrini gelato near you?","dv.p":"Tell us your town: we will reply with the bars, gelato shops and stores in your area where you can find our products.","dv.l1":"We reply by email, usually within one working day","dv.l2":"You can also ask us about a specific product","dv.loc":"Town and province","dv.tel":"Phone (optional)","dv.msg":"What are you looking for?","dv.ph":"For example: the Capriccio cone, ice cream cakes, a bar near the beach...","dv.invia":"Ask where to find us","wa.lbl":"Message us on WhatsApp",
   "news.title":"Magrini newsletter","news.p":"New products, events and offers for professionals, straight to your inbox.","news.btn":"Subscribe","news.lbl":"Your email","news.ph":"Your email","news.ok":"I agree to receive the Magrini newsletter. I can unsubscribe at any time. <a href=\"privacy.html#newsletter\">Privacy notice</a>",
   "ct.eyebrow":"Contact","ct.title":"Come and see us","ct.sede":"Head office and production","ct.italia":"<br>Italy","ct.maps":"Open in Google Maps &#8599;",
   "rev.eyebrow":"What people say","rev.title":"Quality gets noticed","rev.p":"Passion and love for our work always pay off. Here are some of the Google reviews left by people who have tasted our gelato (in Italian).","rev.score":"on Google, over 60 reviews","rev.all":"Read all reviews","rev.write":"Write your review","ct.tel":"Phone and email","ct.wa":"Message us on WhatsApp &#8599;","ct.segui":"Follow us","ct.rec":"Happy with our products?","ct.google":"Read and write a review on Google &#8599;",
@@ -1319,6 +1371,7 @@ fr: {
   "cf.mezzi":"Véhicules frigorifiques","cf.m1":"Oui, en propre","cf.m2":"Oui, en location ou sous-traités","cf.m3":"Pas encore",
   "cf.clienti":"Clients servis aujourd'hui","cf.k0":"Je démarre","cf.k1":"Moins de 50","cf.k2":"De 50 à 200","cf.k3":"Plus de 200",
   "cf.msg":"Parlez-nous de votre activité","cf.msgPh":"Produits distribués aujourd'hui, type de clients, marques...","cf.invia":"Envoyer la candidature",
+  "dv.eyebrow":"Où nous trouver","dv.title":"Vous cherchez les glaces Magrini près de chez vous ?","dv.p":"Indiquez-nous votre ville : nous vous répondrons avec les bars, glaciers et commerces de votre région où trouver nos produits.","dv.l1":"Nous répondons par e-mail, en général sous un jour ouvré","dv.l2":"Vous pouvez aussi nous demander un produit en particulier","dv.loc":"Ville et département","dv.tel":"Téléphone (facultatif)","dv.msg":"Que cherchez-vous ?","dv.ph":"Par exemple : le cône Capriccio, les gâteaux glacés, un bar près de la plage...","dv.invia":"Demander où nous trouver","wa.lbl":"Écrivez-nous sur WhatsApp",
   "news.title":"Newsletter Magrini","news.p":"Nouveautés, événements et promotions pour les professionnels, directement dans votre boîte mail.","news.btn":"S'inscrire","news.lbl":"Votre e-mail","news.ph":"Votre e-mail","news.ok":"J'accepte de recevoir la newsletter Magrini. Je peux me désinscrire à tout moment. <a href=\"privacy.html#newsletter\">Confidentialité</a>",
   "ct.eyebrow":"Contact","ct.title":"Venez nous rendre visite","ct.sede":"Siège et production","ct.italia":"<br>Italie","ct.maps":"Ouvrir dans Google Maps &#8599;",
   "rev.eyebrow":"Ils parlent de nous","rev.title":"La qualité se remarque","rev.p":"La passion et l'amour de notre métier paient toujours. Voici quelques avis Google laissés par ceux qui ont goûté nos glaces (en italien).","rev.score":"sur Google, plus de 60 avis","rev.all":"Lire tous les avis","rev.write":"Écrire votre avis","ct.tel":"Téléphone et e-mail","ct.wa":"Écrivez-nous sur WhatsApp &#8599;","ct.segui":"Suivez-nous","ct.rec":"Satisfait de nos produits ?","ct.google":"Lire et écrire un avis sur Google &#8599;",
@@ -1430,6 +1483,7 @@ es: {
   "cf.mezzi":"Vehículos refrigerados","cf.m1":"Sí, propios","cf.m2":"Sí, de alquiler o de terceros","cf.m3":"Todavía no",
   "cf.clienti":"Clientes atendidos hoy","cf.k0":"Estoy empezando","cf.k1":"Menos de 50","cf.k2":"De 50 a 200","cf.k3":"Más de 200",
   "cf.msg":"Háblanos de tu negocio","cf.msgPh":"Productos que distribuyes hoy, tipo de clientes, marcas...","cf.invia":"Enviar candidatura",
+  "dv.eyebrow":"Dónde encontrarnos","dv.title":"¿Buscas los helados Magrini cerca de ti?","dv.p":"Dinos tu ciudad: te responderemos con los bares, heladerías y tiendas de tu zona donde encontrar nuestros productos.","dv.l1":"Respondemos por correo, normalmente en un día laborable","dv.l2":"También puedes preguntarnos por un producto concreto","dv.loc":"Ciudad y provincia","dv.tel":"Teléfono (opcional)","dv.msg":"¿Qué buscas?","dv.ph":"Por ejemplo: el cono Capriccio, las tartas heladas, un bar cerca de la playa...","dv.invia":"Preguntar dónde encontrarnos","wa.lbl":"Escríbenos por WhatsApp",
   "news.title":"Newsletter Magrini","news.p":"Novedades, eventos y promociones para profesionales, directamente en tu correo.","news.btn":"Suscríbete","news.lbl":"Tu correo","news.ph":"Tu correo","news.ok":"Acepto recibir la newsletter de Magrini. Puedo darme de baja en cualquier momento. <a href=\"privacy.html#newsletter\">Privacidad</a>",
   "ct.eyebrow":"Contacto","ct.title":"Ven a visitarnos","ct.sede":"Sede y producción","ct.italia":"<br>Italia","ct.maps":"Abrir en Google Maps &#8599;",
   "rev.eyebrow":"Dicen de nosotros","rev.title":"La calidad se nota","rev.p":"La pasión y el amor por nuestro trabajo siempre dan fruto. Estas son algunas reseñas de Google de quienes han probado nuestros helados (en italiano).","rev.score":"en Google, más de 60 reseñas","rev.all":"Leer todas las reseñas","rev.write":"Escribir tu reseña","ct.tel":"Teléfono y correo","ct.wa":"Escríbenos por WhatsApp &#8599;","ct.segui":"Síguenos","ct.rec":"¿Te han gustado nuestros productos?","ct.google":"Lee y escribe una reseña en Google &#8599;",
@@ -1550,6 +1604,14 @@ var LANGS = ['it','en','fr','es'];
   onScroll();
   toTop.addEventListener('click', function(){ window.scrollTo({ top:0, behavior: reduce ? 'auto' : 'smooth' }); });
 
+  /* ---------- cartelli cliccabili: la foto apre il catalogo come "Sfoglia il catalogo" ---------- */
+  cards.forEach(function(c){
+    var a = c.querySelector('a.more'), f = c.querySelector('figure');
+    if (!a || !f) return;
+    f.setAttribute('data-href', a.getAttribute('href'));
+    f.addEventListener('click', function(){ a.click(); });
+  });
+
   /* ---------- filtro linee ---------- */
   var btns = document.querySelectorAll('.filters button');
   btns.forEach(function(b){
@@ -1605,5 +1667,11 @@ var LANGS = ['it','en','fr','es'];
 })();
 </script>
 
+<script>
+/* Statistiche di visita senza cookie (Cloudflare Web Analytics).
+   Incolla qui il token del sito: finche' e' vuoto non viene caricato nulla. */
+var STAT_TOKEN = "";
+if (STAT_TOKEN) { (function(){ var s = document.createElement('script'); s.defer = true; s.src = 'https://static.cloudflareinsights.com/beacon.min.js'; s.setAttribute('data-cf-beacon', JSON.stringify({ token: STAT_TOKEN, spa: true })); document.head.appendChild(s); })(); }
+</script>
 </body>
 </html>

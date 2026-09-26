@@ -9,7 +9,8 @@
 <link rel="preload" href="fonts/figtree-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/young-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <script>
-(function(){ var t=null; try{ t=localStorage.getItem('mg-theme'); }catch(e){} if(t==='dark'||t==='light') document.documentElement.setAttribute('data-theme',t); })();
+(function(){ var d=document.documentElement, t=null, l=null; try{ t=localStorage.getItem('mg-theme'); l=localStorage.getItem('mg-lang'); }catch(e){} if(t==='dark'||t==='light') d.setAttribute('data-theme',t);
+  if(!l){ var n=(navigator.language||'it').toLowerCase().slice(0,2); l=(n==='it'||n==='fr'||n==='es')?n:'en'; } d.setAttribute('data-lang',l); d.lang=l; })();
 </script>
 <style>
 /* font ospitati sul sito (nessuna richiesta a server esterni) */
@@ -60,6 +61,12 @@ h1,h2,h3{font-family:var(--f-display);font-weight:400;margin:0;line-height:1.1;t
 .top .brand span{font:400 1.05rem var(--f-display)}
 .back{font-weight:600;font-size:.95rem;text-decoration:none;padding:9px 14px;border-radius:999px;border:1.5px solid var(--line);color:var(--ink)}
 .back:hover{border-color:var(--blu);color:var(--blu)}
+.lang{display:inline-flex;border:1.5px solid var(--line);border-radius:999px;padding:3px;background:var(--surface)}
+.lang button{font:500 .76rem/1 var(--f-mono);letter-spacing:.05em;border:0;background:transparent;color:var(--muted);padding:7px 8px;border-radius:999px;cursor:pointer}
+.lang button:hover{color:var(--ink)}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.back{white-space:nowrap}
+@media (max-width:560px){.back{padding:8px 12px}.back span{display:none}.lang button{padding:7px 6px}}
 .theme-btn{width:40px;height:40px;border-radius:50%;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);display:grid;place-items:center;cursor:pointer}
 .theme-btn svg{width:19px;height:19px}
 .i-sun{display:none}
@@ -203,8 +210,14 @@ footer{border-top:1px solid var(--line);padding-block:26px 34px;color:var(--mute
 
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="index.html"><img src="img/logo-magrini.svg" alt="Raffaele Magrini" width="64" height="46"><span>Cataloghi Magrini</span></a>
-    <a class="back" href="index.html#gamma">&larr; Torna al sito</a>
+    <a class="brand" href="index.html"><img src="img/logo-magrini.svg" alt="Raffaele Magrini" width="64" height="46"><span data-t="brand">Cataloghi Magrini</span></a>
+    <a class="back" href="index.html#gamma">&larr;<span data-t="back"> Torna al sito</span></a>
+    <div class="lang" role="group" aria-label="Lingua / Language">
+      <button type="button" data-lang="it" aria-pressed="true">IT</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      <button type="button" data-lang="fr" aria-pressed="false">FR</button>
+      <button type="button" data-lang="es" aria-pressed="false">ES</button>
+    </div>
     <button type="button" class="theme-btn" id="theme-btn" aria-label="Tema chiaro o scuro">
       <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
       <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
@@ -225,12 +238,12 @@ footer{border-top:1px solid var(--line);padding-block:26px 34px;color:var(--mute
 
 <div class="tools">
   <div class="wrap">
-    <label class="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="q" type="search" placeholder="Cerca un prodotto..." aria-label="Cerca un prodotto"></label>
-    <label class="chk"><input type="checkbox" id="sg"> Solo senza glutine</label>
+    <label class="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="q" type="search" placeholder="Cerca un prodotto..." aria-label="Cerca un prodotto" data-t-ph="search"></label>
+    <label class="chk"><input type="checkbox" id="sg"> <span data-t="onlySg">Solo senza glutine</span></label>
     <span class="count" id="count"></span>
     <div class="views" role="group" aria-label="Vista">
-      <button type="button" data-view="book" aria-pressed="true">Sfoglia</button>
-      <button type="button" data-view="grid" aria-pressed="false">Griglia</button>
+      <button type="button" data-view="book" aria-pressed="true" data-t="vBook">Sfoglia</button>
+      <button type="button" data-view="grid" aria-pressed="false" data-t="vGrid">Griglia</button>
     </div>
   </div>
 </div>
@@ -244,27 +257,96 @@ footer{border-top:1px solid var(--line);padding-block:26px 34px;color:var(--mute
       <button class="navbtn" id="next" type="button" aria-label="Pagina successiva"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></button>
     </div>
     <div class="strip" id="strip" aria-label="Miniature"></div>
-    <p class="hint">Usa le frecce della tastiera o scorri col dito per sfogliare</p>
+    <p class="hint" data-t="hint">Usa le frecce della tastiera o scorri col dito per sfogliare</p>
   </section>
   <section id="v-grid" hidden>
     <div class="grid" id="grid"></div>
   </section>
 </main>
 
-<footer><div class="wrap">Magrini R. &amp; Ceci G. snc · Via Norvegia 5, 64026 Roseto degli Abruzzi (TE) · P.IVA 00257660670 · REA TE-70091 · Le immagini sono indicative.</div></footer>
+<footer><div class="wrap">Magrini R. &amp; Ceci G. snc · Via Norvegia 5, 64026 Roseto degli Abruzzi (TE) · <span data-t="piva">P.IVA</span> 00257660670 · REA TE-70091 · <span data-t="indicative">Le immagini sono indicative.</span></div></footer>
 
 <script src="catalogo/dati.js"></script>
 <script>
 (function(){
   var DATA = window.CATALOGO || {};
+  /* ---------- traduzioni: i nomi dei prodotti e dei gusti restano in italiano ---------- */
+  var T = {
+    it:{brand:'Cataloghi Magrini',back:' Torna al sito',search:'Cerca un prodotto...',onlySg:'Solo senza glutine',vBook:'Sfoglia',vGrid:'Griglia',
+        hint:'Usa le frecce della tastiera o scorri col dito per sfogliare',piva:'P.IVA',indicative:'Le immagini sono indicative.',
+        theme:'Tema chiaro o scuro',prev:'Pagina precedente',next:'Pagina successiva',goto:'Vai alla pagina',thumbs:'Miniature',lines:'Linee',title:'Catalogo Magrini',
+        catalog:'Catalogo',intro:function(n){ return n+' referenze, con peso e pezzatura per cartone.'; },introMant:function(f,g){ return f+' formati e '+g+' gusti, con peso e disponibilità.'; },
+        start:'Sfoglia il catalogo &rarr;',dep:'Scarica il dépliant',depMant:'Carta dei gusti (PDF)',
+        weight:'Peso',pz:'Pezzatura',sg:'Senza glutine',formats:'Disponibile anche nei formati',flav:'Gusti disponibili',
+        page:function(a,b){ return 'Pagina '+a+' di '+b; },cover:'Copertina',carta:'Carta dei gusti',cartaTitle:'La carta dei gusti',
+        cartaDesc:function(n,s){ return n+' gusti sempre disponibili nella vaschetta Lt 6,5 decorata. Quelli con il pallino giallo ('+s+') sono disponibili in tutti i formati, gli altri su ordinazione.'; },
+        novita:'novità',vetrina:'La vetrina del mantecato',photo:'Foto',none:'Nessun prodotto trovato.',na:'Catalogo non disponibile.',
+        count:function(n){ return n+(n===1?' prodotto':' prodotti'); }},
+    en:{brand:'Magrini catalogues',back:' Back to the site',search:'Search for a product...',onlySg:'Gluten-free only',vBook:'Browse',vGrid:'Grid',
+        hint:'Use the arrow keys or swipe to turn the pages',piva:'VAT no.',indicative:'Pictures are for illustration only.',
+        theme:'Light or dark theme',prev:'Previous page',next:'Next page',goto:'Go to page',thumbs:'Thumbnails',lines:'Lines',title:'Magrini catalogue',
+        catalog:'Catalogue',intro:function(n){ return n+' products, with weight and case size.'; },introMant:function(f,g){ return f+' formats and '+g+' flavours, with weight and availability.'; },
+        start:'Browse the catalogue &rarr;',dep:'Download the leaflet',depMant:'Flavour list (PDF)',
+        weight:'Weight',pz:'Case size',sg:'Gluten-free',formats:'Also available in',flav:'Available flavours',
+        page:function(a,b){ return 'Page '+a+' of '+b; },cover:'Cover',carta:'Flavour list',cartaTitle:'Our flavours',
+        cartaDesc:function(n,s){ return n+' flavours always available in the decorated 6.5 l tub. Those marked with a yellow dot ('+s+') are available in every format, the others on request.'; },
+        novita:'new',vetrina:'The mantecato display',photo:'Photo',none:'No products found.',na:'Catalogue not available.',
+        count:function(n){ return n+(n===1?' product':' products'); }},
+    fr:{brand:'Catalogues Magrini',back:' Retour au site',search:'Rechercher un produit...',onlySg:'Sans gluten uniquement',vBook:'Feuilleter',vGrid:'Grille',
+        hint:'Utilisez les flèches du clavier ou faites glisser pour tourner les pages',piva:'N° TVA',indicative:'Photos non contractuelles.',
+        theme:'Thème clair ou sombre',prev:'Page précédente',next:'Page suivante',goto:'Aller à la page',thumbs:'Miniatures',lines:'Lignes',title:'Catalogue Magrini',
+        catalog:'Catalogue',intro:function(n){ return n+' références, avec poids et colisage.'; },introMant:function(f,g){ return f+' formats et '+g+' parfums, avec poids et disponibilité.'; },
+        start:'Feuilleter le catalogue &rarr;',dep:'Télécharger le dépliant',depMant:'Carte des parfums (PDF)',
+        weight:'Poids',pz:'Colisage',sg:'Sans gluten',formats:'Existe aussi en',flav:'Parfums disponibles',
+        page:function(a,b){ return 'Page '+a+' sur '+b; },cover:'Couverture',carta:'Carte des parfums',cartaTitle:'La carte des parfums',
+        cartaDesc:function(n,s){ return n+' parfums toujours disponibles en bac décoré de 6,5 l. Ceux marqués d\u2019un point jaune ('+s+') existent dans tous les formats, les autres sur commande.'; },
+        novita:'nouveau',vetrina:'La vitrine du mantecato',photo:'Photo',none:'Aucun produit trouvé.',na:'Catalogue indisponible.',
+        count:function(n){ return n+(n===1?' produit':' produits'); }},
+    es:{brand:'Catálogos Magrini',back:' Volver al sitio',search:'Buscar un producto...',onlySg:'Solo sin gluten',vBook:'Hojear',vGrid:'Cuadrícula',
+        hint:'Usa las flechas del teclado o desliza para pasar las páginas',piva:'NIF-IVA',indicative:'Las imágenes son orientativas.',
+        theme:'Tema claro u oscuro',prev:'Página anterior',next:'Página siguiente',goto:'Ir a la página',thumbs:'Miniaturas',lines:'Líneas',title:'Catálogo Magrini',
+        catalog:'Catálogo',intro:function(n){ return n+' referencias, con peso y unidades por caja.'; },introMant:function(f,g){ return f+' formatos y '+g+' sabores, con peso y disponibilidad.'; },
+        start:'Hojear el catálogo &rarr;',dep:'Descargar el folleto',depMant:'Carta de sabores (PDF)',
+        weight:'Peso',pz:'Unidades por caja',sg:'Sin gluten',formats:'Disponible también en',flav:'Sabores disponibles',
+        page:function(a,b){ return 'Página '+a+' de '+b; },cover:'Portada',carta:'Carta de sabores',cartaTitle:'La carta de sabores',
+        cartaDesc:function(n,s){ return n+' sabores siempre disponibles en la cubeta decorada de 6,5 l. Los marcados con el punto amarillo ('+s+') están disponibles en todos los formatos, los demás bajo pedido.'; },
+        novita:'novedad',vetrina:'La vitrina del mantecato',photo:'Foto',none:'No se han encontrado productos.',na:'Catálogo no disponible.',
+        count:function(n){ return n+(n===1?' producto':' productos'); }}
+  };
+  /* titoli delle linee tradotti come nella home; le altre restano col nome del marchio */
+  var LT = {
+    sorbetteria:{en:'Sorbets & Semifreddi',fr:'Sorbets & Semifreddi',es:'Sorbetes y Semifríos'},
+    giochi:{en:'Games & Gelato',fr:'Jeux et Glaces',es:'Juegos y Helados'},
+    multipack:{en:'Multipacks & Take-away',fr:'Multipacks et vente à emporter',es:'Multipacks y para llevar'},
+    mantecato:{en:'Our Mantecato',fr:'Notre Mantecato',es:'Nuestro Mantecato'}
+  };
+  /* frasi che arrivano dai dati */
+  var PH = {
+    'Disponibile in gusti assortiti':{en:'Available in assorted flavours',fr:'Disponible en parfums assortis',es:'Disponible en sabores variados'},
+    'Contenuto della confezione':{en:'Pack contents',fr:'Contenu du paquet',es:'Contenido del paquete'},
+    'Composta da strati di':{en:'Made of layers of',fr:'Composée de couches de',es:'Compuesta por capas de'}
+  };
+  /* unita' di misura nelle pezzature */
+  var UN = {
+    en:[[/\bpz\b/g,'pcs'],[/\bconf\./g,'packs'],[/\bastucci\b/g,'boxes'],[/\bda\b/g,'of'],[/\bcad\./g,'each'],[/\bo\b/g,'or']],
+    fr:[[/\bpz\b/g,'pcs'],[/\bconf\./g,'paquets'],[/\bastucci\b/g,'étuis'],[/\bda\b/g,'de'],[/\bcad\./g,'pièce'],[/\bo\b/g,'ou']],
+    es:[[/\bpz\b/g,'uds.'],[/\bconf\./g,'paquetes'],[/\bastucci\b/g,'estuches'],[/\bda\b/g,'de'],[/\bcad\./g,'c/u'],[/\bo\b/g,'o']]
+  };
+  var LANGS = ['it','en','fr','es'];
+  var lang = document.documentElement.getAttribute('data-lang'); if (LANGS.indexOf(lang) < 0) lang = 'it';
+  function t(k){ return (T[lang] && T[lang][k] != null) ? T[lang][k] : T.it[k]; }
+  function lineTitle(id){ return (lang !== 'it' && LT[id] && LT[id][lang]) || DATA[id].titolo; }
+  function phr(s){ return (lang !== 'it' && PH[s] && PH[s][lang]) || s; }
+  function un(s){ s = String(s || ''); if (lang === 'it') return s; (UN[lang] || []).forEach(function(r){ s = s.replace(r[0], r[1]); }); return s; }
   var ids = Object.keys(DATA);
   var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
   var cur = ids[0], list = [], page = 0;
   var $ = function(id){ return document.getElementById(id); };
+  function tn(u){ return /\.webp$/.test(u || '') ? u.replace(/\.webp$/, '-t.webp') : u; }
   function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
 
   /* linee */
-  $('lines').innerHTML = ids.map(function(id){ return '<button type="button" data-id="'+id+'" aria-pressed="'+(id===cur)+'">'+esc(DATA[id].titolo)+'</button>'; }).join('');
+  $('lines').innerHTML = ids.map(function(id){ return '<button type="button" data-id="'+id+'" aria-pressed="'+(id===cur)+'">'+esc(lineTitle(id))+'</button>'; }).join('');
   $('lines').addEventListener('click', function(e){ var b = e.target.closest('button'); if (!b) return; cur = b.dataset.id; $('lines').querySelectorAll('button').forEach(function(x){ x.setAttribute('aria-pressed', String(x===b)); }); page = 0; $('q').value=''; $('sg').checked=false; try { history.replaceState(null,'','#'+cur); } catch(e){} refresh(); });
 
   function filtered(){
@@ -279,44 +361,44 @@ footer{border-top:1px solid var(--line);padding-block:26px 34px;color:var(--mute
   function isGustiPage(i){ return hasGusti() && i === list.length + 1; }
   function prodAt(i){ return filtering() ? list[i] : (i === 0 || isGustiPage(i) ? null : list[i-1]); }
   function nFormati(L){ return L.prodotti.reduce(function(n,p){ return n + 1 + (p.formati ? p.formati.length : 0); }, 0); }
-  function introText(L){ return L.gusti ? nFormati(L) + ' formati e ' + L.gusti.length + ' gusti, con peso e disponibilità.' : L.prodotti.length + ' referenze, con peso e pezzatura per cartone.'; }
+  function introText(L){ return L.gusti ? t('introMant')(nFormati(L), L.gusti.length) : t('intro')(L.prodotti.length); }
   function gustiHtml(L){
     var sempre = L.gusti.filter(function(g){ return g.sempre; }).length;
-    return '<div class="leaf left"><img src="'+esc(L.gustiFoto || L.copertina)+'" alt="La vetrina del mantecato"></div>' +
-      '<div class="leaf right gusti"><div class="runhead"><span>'+esc(L.titolo)+' '+esc(L.anno)+'</span><span>Carta dei gusti</span></div>' +
-      '<h2 class="pname">La carta dei gusti</h2>' +
-      '<p class="pdesc">'+L.gusti.length+' gusti sempre disponibili nella vaschetta Lt 6,5 decorata. Quelli con il pallino giallo ('+sempre+') sono disponibili in tutti i formati, gli altri su ordinazione.</p>' +
-      '<ul class="glist">' + L.gusti.map(function(g){ return '<li'+(g.sempre ? ' class="s"' : '')+'>'+esc(g.nome)+(g.novita ? ' <b>novità</b>' : '')+'</li>'; }).join('') + '</ul></div>';
+    return '<div class="leaf left"><img src="'+esc(L.gustiFoto || L.copertina)+'" alt="'+esc(t('vetrina'))+'"></div>' +
+      '<div class="leaf right gusti"><div class="runhead"><span>'+esc(lineTitle(cur))+' '+esc(L.anno)+'</span><span>'+esc(t('carta'))+'</span></div>' +
+      '<h2 class="pname">'+esc(t('cartaTitle'))+'</h2>' +
+      '<p class="pdesc">'+esc(t('cartaDesc')(L.gusti.length, sempre))+'</p>' +
+      '<ul class="glist">' + L.gusti.map(function(g){ return '<li'+(g.sempre ? ' class="s"' : '')+'>'+esc(g.nome)+(g.novita ? ' <b>'+esc(t('novita'))+'</b>' : '')+'</li>'; }).join('') + '</ul></div>';
   }
 
   function renderBook(dir){
     var L = DATA[cur], n = pages(), book = $('book');
-    if (!n) { book.innerHTML = '<div class="leaf right" style="grid-column:1/-1"><p class="empty">Nessun prodotto trovato.</p></div>'; }
+    if (!n) { book.innerHTML = '<div class="leaf right" style="grid-column:1/-1"><p class="empty">'+esc(t('none'))+'</p></div>'; }
     else {
       page = Math.max(0, Math.min(page, n - 1));
       var p = prodAt(page), html;
       if (isGustiPage(page)) {
         html = gustiHtml(L);
       } else if (!p) {
-        html = '<div class="leaf left cover"><img src="'+esc(L.copertina)+'" alt="'+esc(L.titolo)+' '+esc(L.anno)+'"></div>' +
-               '<div class="leaf right cover-title"><img class="logo" src="img/logo-magrini.svg" alt="Raffaele Magrini"><span class="eyebrow">Catalogo '+esc(L.anno)+'</span><h2>'+esc(L.titolo)+'</h2>' +
+        html = '<div class="leaf left cover"><img src="'+esc(L.copertina)+'" alt="'+esc(lineTitle(cur))+' '+esc(L.anno)+'"></div>' +
+               '<div class="leaf right cover-title"><img class="logo" src="img/logo-magrini.svg" alt="Raffaele Magrini"><span class="eyebrow">'+esc(t('catalog'))+' '+esc(L.anno)+'</span><h2>'+esc(lineTitle(cur))+'</h2>' +
                '<div class="tri" aria-hidden="true"><span></span><span></span><span></span></div>' +
                '<p>'+introText(L)+'</p>' +
-               '<div class="cover-actions"><button class="start" type="button" id="start">Sfoglia il catalogo &rarr;</button>' +
-               (L.depliant ? '<a class="dl-dep" href="'+esc(L.depliant)+'" download><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>'+(cur === 'mantecato' ? 'Carta dei gusti (PDF)' : 'Scarica il dépliant')+'</a>' : '') + '</div></div>';
+               '<div class="cover-actions"><button class="start" type="button" id="start">'+t('start')+'</button>' +
+               (L.depliant ? '<a class="dl-dep" href="'+esc(L.depliant)+'" download><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>'+esc(cur === 'mantecato' ? t('depMant') : t('dep'))+'</a>' : '') + '</div></div>';
       } else {
         var num = filtering() ? page + 1 : page;
         var ph = p.foto && p.foto.length ? [p.img].concat(p.foto) : null;
         html = '<div class="leaf left'+(ph ? ' multi' : '')+'"><img class="main" src="'+esc(p.img)+'" alt="'+esc(p.nome)+'">' +
-               (ph ? '<div class="ph-thumbs">' + ph.map(function(u,k){ return '<button type="button" data-src="'+esc(u)+'" aria-pressed="'+(k===0)+'" aria-label="Foto '+(k+1)+'"><img src="'+esc(u)+'" alt=""></button>'; }).join('') + '</div>' : '') +
+               (ph ? '<div class="ph-thumbs">' + ph.map(function(u,k){ return '<button type="button" data-src="'+esc(u)+'" aria-pressed="'+(k===0)+'" aria-label="'+esc(t('photo'))+' '+(k+1)+'"><img src="'+esc(tn(u))+'" alt=""></button>'; }).join('') + '</div>' : '') +
                '<span class="folio">'+String(num*2).padStart(2,'0')+'</span></div>' +
-               '<div class="leaf right"><div class="runhead"><span>'+esc(L.titolo)+' '+esc(L.anno)+'</span><span>'+num+' / '+list.length+'</span></div>' +
+               '<div class="leaf right"><div class="runhead"><span>'+esc(lineTitle(cur))+' '+esc(L.anno)+'</span><span>'+num+' / '+list.length+'</span></div>' +
                '<h2 class="pname">'+esc(p.nome)+'</h2>' +
-               '<dl class="specs">'+(p.peso ? '<div class="spec"><dt>Peso</dt><dd>'+esc(p.peso)+'</dd></div>' : '')+(p.pz ? '<div class="spec"><dt>Pezzatura</dt><dd>'+esc(p.pz)+'</dd></div>' : '')+'</dl>' +
-               (p.sg ? '<span class="badge-sg">Senza glutine</span>' : '') +
-               (p.nota ? '<p class="nota">'+esc(p.nota)+'</p>' : '') +
-               (p.formati && p.formati.length ? '<div class="formati"><h3>Disponibile anche nei formati</h3><ul>' + p.formati.map(function(f){ return '<li><span>'+esc(f.nome)+'</span><b>'+esc(f.peso)+'</b></li>'; }).join('') + '</ul></div>' : '') +
-               (p.gusti && p.gusti.length ? '<div class="formati gusti-p"><h3>'+esc(p.gustiTitolo || 'Gusti disponibili')+'</h3><ul class="chips">' + p.gusti.map(function(g){ return '<li>'+esc(g)+'</li>'; }).join('') + '</ul></div>' : '') +
+               '<dl class="specs">'+(p.peso ? '<div class="spec"><dt>'+esc(t('weight'))+'</dt><dd>'+esc(un(p.peso))+'</dd></div>' : '')+(p.pz ? '<div class="spec"><dt>'+esc(t('pz'))+'</dt><dd>'+esc(un(p.pz))+'</dd></div>' : '')+'</dl>' +
+               (p.sg ? '<span class="badge-sg">'+esc(t('sg'))+'</span>' : '') +
+               (p.nota ? '<p class="nota">'+esc(phr(p.nota))+'</p>' : '') +
+               (p.formati && p.formati.length ? '<div class="formati"><h3>'+esc(t('formats'))+'</h3><ul>' + p.formati.map(function(f){ return '<li><span>'+esc(f.nome)+'</span><b>'+esc(f.peso)+'</b></li>'; }).join('') + '</ul></div>' : '') +
+               (p.gusti && p.gusti.length ? '<div class="formati gusti-p"><h3>'+esc(p.gustiTitolo ? phr(p.gustiTitolo) : t('flav'))+'</h3><ul class="chips">' + p.gusti.map(function(g){ return '<li>'+esc(g)+'</li>'; }).join('') + '</ul></div>' : '') +
                '<span class="folio">'+String(num*2+1).padStart(2,'0')+'</span></div>';
       }
       book.innerHTML = html;
@@ -328,22 +410,22 @@ footer{border-top:1px solid var(--line);padding-block:26px 34px;color:var(--mute
     $('prev').disabled = page <= 0; $('next').disabled = page >= n - 1;
     $('range').max = Math.max(0, n - 1); $('range').value = page;
     var p2 = prodAt(page);
-    $('pg').textContent = n ? (p2 ? 'Pagina ' + (filtering() ? page + 1 : page) + ' di ' + list.length : (isGustiPage(page) ? 'Carta dei gusti' : 'Copertina')) : '';
+    $('pg').textContent = n ? (p2 ? t('page')(filtering() ? page + 1 : page, list.length) : (isGustiPage(page) ? t('carta') : t('cover'))) : '';
     $('pgname').textContent = p2 ? p2.nome : '';
     $('strip').querySelectorAll('button').forEach(function(b){ b.setAttribute('aria-current', String(+b.dataset.i === page)); });
     var a = $('strip').querySelector('[aria-current="true"]'), sp = $('strip'); if (a) sp.scrollTo({left: a.offsetLeft - sp.clientWidth/2 + a.clientWidth/2, behavior: reduce ? 'auto' : 'smooth'});
   }
   function renderStrip(){
     var off = filtering() ? 0 : 1;
-    $('strip').innerHTML = list.map(function(p,i){ return '<button type="button" data-i="'+(i+off)+'" title="'+esc(p.nome)+'"><img src="'+esc(p.img)+'" alt="" loading="lazy"></button>'; }).join('');
+    $('strip').innerHTML = list.map(function(p,i){ return '<button type="button" data-i="'+(i+off)+'" title="'+esc(p.nome)+'"><img src="'+esc(tn(p.img))+'" alt="" loading="lazy"></button>'; }).join('');
   }
   $('strip').addEventListener('click', function(e){ var b = e.target.closest('button'); if (b) { var t = +b.dataset.i; go(t, t > page ? 'next' : 'prev'); } });
 
   function renderGrid(){
     var off = filtering() ? 0 : 1;
     $('grid').innerHTML = list.length ? list.map(function(p,i){
-      return '<button type="button" class="gcard" data-i="'+(i+off)+'"><div class="ph"><img src="'+esc(p.img)+'" alt="'+esc(p.nome)+'" loading="lazy"></div><div class="tx"><h3>'+esc(p.nome)+'</h3><span class="meta">'+[p.peso, p.pz].filter(Boolean).map(esc).join(' · ')+'</span>'+(p.sg ? '<span class="sg">Senza glutine</span>' : '')+'</div></button>';
-    }).join('') : '<p class="empty">Nessun prodotto trovato.</p>';
+      return '<button type="button" class="gcard" data-i="'+(i+off)+'"><div class="ph"><img src="'+esc(tn(p.img))+'" alt="'+esc(p.nome)+'" loading="lazy"></div><div class="tx"><h3>'+esc(p.nome)+'</h3><span class="meta">'+[p.peso, p.pz].filter(Boolean).map(function(x){ return esc(un(x)); }).join(' · ')+'</span>'+(p.sg ? '<span class="sg">'+esc(t('sg'))+'</span>' : '')+'</div></button>';
+    }).join('') : '<p class="empty">'+esc(t('none'))+'</p>';
   }
   $('grid').addEventListener('click', function(e){ var b = e.target.closest('.gcard'); if (!b) return; page = +b.dataset.i; setView('book'); renderBook('next'); window.scrollTo({top:0, behavior: reduce ? 'auto':'smooth'}); });
 
@@ -369,9 +451,9 @@ footer{border-top:1px solid var(--line);padding-block:26px 34px;color:var(--mute
   function refresh(){
     var L = DATA[cur];
     list = filtered();
-    $('h-title').textContent = L.titolo; $('h-eyebrow').textContent = 'Catalogo ' + L.anno;
+    $('h-title').textContent = lineTitle(cur); $('h-eyebrow').textContent = t('catalog') + ' ' + L.anno;
     $('h-sub').textContent = introText(L);
-    $('count').textContent = list.length + (list.length === 1 ? ' prodotto' : ' prodotti');
+    $('count').textContent = t('count')(list.length);
     renderStrip(); renderGrid(); renderBook();
   }
   $('q').addEventListener('input', function(){ page = 0; refresh(); });
@@ -387,9 +469,29 @@ footer{border-top:1px solid var(--line);padding-block:26px 34px;color:var(--mute
   /* apertura diretta: catalogo.html#impulso */
   var h = (location.hash || '').replace('#','');
   if (DATA[h]) { cur = h; $('lines').querySelectorAll('button').forEach(function(x){ x.setAttribute('aria-pressed', String(x.dataset.id === h)); }); }
-  if (!ids.length) { $('book').innerHTML = '<p class="empty">Catalogo non disponibile.</p>'; return; }
+  /* lingua */
+  function applyLang(l){
+    lang = l; document.documentElement.lang = l; document.documentElement.setAttribute('data-lang', l);
+    document.querySelectorAll('[data-t]').forEach(function(el){ el.innerHTML = t(el.dataset.t); });
+    document.querySelectorAll('[data-t-ph]').forEach(function(el){ el.placeholder = t(el.dataset.tPh); el.setAttribute('aria-label', t(el.dataset.tPh).replace(/\.+$/,'')); });
+    document.querySelectorAll('.lang button').forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.lang === l)); });
+    $('theme-btn').setAttribute('aria-label', t('theme')); $('prev').setAttribute('aria-label', t('prev')); $('next').setAttribute('aria-label', t('next'));
+    $('range').setAttribute('aria-label', t('goto')); $('strip').setAttribute('aria-label', t('thumbs')); $('lines').setAttribute('aria-label', t('lines'));
+    document.title = t('title');
+    document.querySelector('.back').setAttribute('aria-label', t('back').trim());
+    $('lines').querySelectorAll('button').forEach(function(b){ b.textContent = lineTitle(b.dataset.id); });
+  }
+  document.querySelectorAll('.lang button').forEach(function(b){ b.addEventListener('click', function(){ applyLang(b.dataset.lang); try { localStorage.setItem('mg-lang', b.dataset.lang); } catch(e){} if (ids.length) refresh(); }); });
+  applyLang(lang);
+  if (!ids.length) { $('book').innerHTML = '<p class="empty">'+esc(t('na'))+'</p>'; return; }
   refresh();
 })();
+</script>
+<script>
+/* Statistiche di visita senza cookie (Cloudflare Web Analytics).
+   Incolla qui il token del sito: finche' e' vuoto non viene caricato nulla. */
+var STAT_TOKEN = "";
+if (STAT_TOKEN) { (function(){ var s = document.createElement('script'); s.defer = true; s.src = 'https://static.cloudflareinsights.com/beacon.min.js'; s.setAttribute('data-cf-beacon', JSON.stringify({ token: STAT_TOKEN, spa: true })); document.head.appendChild(s); })(); }
 </script>
 </body>
 </html>
