@@ -162,7 +162,6 @@ h1,h2,h3{font-family:var(--f-display);font-weight:400;margin:0;line-height:1.1;t
 .glist{list-style:none;margin:0;padding:0;columns:4 130px;column-gap:16px;font-size:.88rem;color:#1A2240}
 .glist li{break-inside:avoid;padding:3px 0 3px 16px;position:relative;line-height:1.35}
 .glist li::before{content:"";position:absolute;left:2px;top:.62em;width:6px;height:6px;border-radius:50%;background:#D9D2B5}
-.glist li.s::before{background:#FCC80B;width:8px;height:8px;left:1px;top:.55em}
 .glist b{font:600 .62rem/1 var(--f-mono);text-transform:uppercase;letter-spacing:.06em;background:#E41E26;color:#fff;padding:2px 5px;border-radius:4px;vertical-align:2px}
 
 /* animazione girata pagina */
@@ -291,7 +290,7 @@ footer{border-top:1px solid var(--line);padding-block:26px 34px;color:var(--mute
         start:'Sfoglia il catalogo &rarr;',dep:'Scarica il dépliant',depMant:'Carta dei gusti (PDF)',
         weight:'Peso',pz:'Pezzatura',sg:'Senza glutine',formats:'Disponibile anche nei formati',flav:'Gusti disponibili',
         page:function(a,b){ return 'Pagina '+a+' di '+b; },cover:'Copertina',carta:'Carta dei gusti',cartaTitle:'La carta dei gusti',
-        cartaDesc:function(n,s){ return n+' gusti sempre disponibili nella vaschetta Lt 6,5 decorata. Quelli con il pallino giallo ('+s+') sono disponibili in tutti i formati, gli altri su ordinazione.'; },
+        cartaDesc:function(n){ return 'Quasi '+n+' gusti disponibili nella vaschetta Lt 6,5 decorata.'; },
         novita:'novità',vetrina:'La vetrina del mantecato',photo:'Foto',none:'Nessun prodotto trovato.',na:'Catalogo non disponibile.',
         count:function(n){ return n+(n===1?' prodotto':' prodotti'); }},
     en:{brand:'Magrini catalogues',back:' Back to the site',search:'Search for a product...',onlySg:'Gluten-free only',vBook:'Browse',vGrid:'Grid',
@@ -301,7 +300,7 @@ footer{border-top:1px solid var(--line);padding-block:26px 34px;color:var(--mute
         start:'Browse the catalogue &rarr;',dep:'Download the leaflet',depMant:'Flavour list (PDF)',
         weight:'Weight',pz:'Case size',sg:'Gluten-free',formats:'Also available in',flav:'Available flavours',
         page:function(a,b){ return 'Page '+a+' of '+b; },cover:'Cover',carta:'Flavour list',cartaTitle:'Our flavours',
-        cartaDesc:function(n,s){ return n+' flavours always available in the decorated 6.5 l tub. Those marked with a yellow dot ('+s+') are available in every format, the others on request.'; },
+        cartaDesc:function(n){ return 'Almost '+n+' flavours available in the decorated 6.5 l tub.'; },
         novita:'new',vetrina:'The mantecato display',photo:'Photo',none:'No products found.',na:'Catalogue not available.',
         count:function(n){ return n+(n===1?' product':' products'); }},
     fr:{brand:'Catalogues Magrini',back:' Retour au site',search:'Rechercher un produit...',onlySg:'Sans gluten uniquement',vBook:'Feuilleter',vGrid:'Grille',
@@ -311,7 +310,7 @@ footer{border-top:1px solid var(--line);padding-block:26px 34px;color:var(--mute
         start:'Feuilleter le catalogue &rarr;',dep:'Télécharger le dépliant',depMant:'Carte des parfums (PDF)',
         weight:'Poids',pz:'Colisage',sg:'Sans gluten',formats:'Existe aussi en',flav:'Parfums disponibles',
         page:function(a,b){ return 'Page '+a+' sur '+b; },cover:'Couverture',carta:'Carte des parfums',cartaTitle:'La carte des parfums',
-        cartaDesc:function(n,s){ return n+' parfums toujours disponibles en bac décoré de 6,5 l. Ceux marqués d\u2019un point jaune ('+s+') existent dans tous les formats, les autres sur commande.'; },
+        cartaDesc:function(n){ return 'Près de '+n+' parfums disponibles en bac décoré de 6,5 l.'; },
         novita:'nouveau',vetrina:'La vitrine du mantecato',photo:'Photo',none:'Aucun produit trouvé.',na:'Catalogue indisponible.',
         count:function(n){ return n+(n===1?' produit':' produits'); }},
     es:{brand:'Catálogos Magrini',back:' Volver al sitio',search:'Buscar un producto...',onlySg:'Solo sin gluten',vBook:'Hojear',vGrid:'Cuadrícula',
@@ -321,7 +320,7 @@ footer{border-top:1px solid var(--line);padding-block:26px 34px;color:var(--mute
         start:'Hojear el catálogo &rarr;',dep:'Descargar el folleto',depMant:'Carta de sabores (PDF)',
         weight:'Peso',pz:'Unidades por caja',sg:'Sin gluten',formats:'Disponible también en',flav:'Sabores disponibles',
         page:function(a,b){ return 'Página '+a+' de '+b; },cover:'Portada',carta:'Carta de sabores',cartaTitle:'La carta de sabores',
-        cartaDesc:function(n,s){ return n+' sabores siempre disponibles en la cubeta decorada de 6,5 l. Los marcados con el punto amarillo ('+s+') están disponibles en todos los formatos, los demás bajo pedido.'; },
+        cartaDesc:function(n){ return 'Casi '+n+' sabores disponibles en la cubeta decorada de 6,5 l.'; },
         novita:'novedad',vetrina:'La vitrina del mantecato',photo:'Foto',none:'No se han encontrado productos.',na:'Catálogo no disponible.',
         count:function(n){ return n+(n===1?' producto':' productos'); }}
   };
@@ -375,12 +374,11 @@ footer{border-top:1px solid var(--line);padding-block:26px 34px;color:var(--mute
   function nFormati(L){ return L.prodotti.reduce(function(n,p){ return n + 1 + (p.formati ? p.formati.length : 0); }, 0); }
   function introText(L){ return L.gusti ? t('introMant')(nFormati(L), L.gusti.length) : t('intro')(L.prodotti.length); }
   function gustiHtml(L){
-    var sempre = L.gusti.filter(function(g){ return g.sempre; }).length;
     return '<div class="leaf left"><img src="'+esc(L.gustiFoto || L.copertina)+'" alt="'+esc(t('vetrina'))+'"></div>' +
       '<div class="leaf right gusti"><div class="runhead"><span>'+esc(lineTitle(cur))+' '+esc(L.anno)+'</span><span>'+esc(t('carta'))+'</span></div>' +
       '<h2 class="pname">'+esc(t('cartaTitle'))+'</h2>' +
-      '<p class="pdesc">'+esc(t('cartaDesc')(L.gusti.length, sempre))+'</p>' +
-      '<ul class="glist">' + L.gusti.map(function(g){ return '<li'+(g.sempre ? ' class="s"' : '')+'>'+esc(g.nome)+(g.novita ? ' <b>'+esc(t('novita'))+'</b>' : '')+'</li>'; }).join('') + '</ul></div>';
+      '<p class="pdesc">'+esc(t('cartaDesc')(Math.ceil(L.gusti.length/10)*10))+'</p>' +
+      '<ul class="glist">' + L.gusti.map(function(g){ return '<li>'+esc(g.nome)+(g.novita ? ' <b>'+esc(t('novita'))+'</b>' : '')+'</li>'; }).join('') + '</ul></div>';
   }
 
   function renderBook(dir){
