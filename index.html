@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="it">
+<html lang="it" data-theme="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -21,8 +21,7 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Gelati Magrini, dal 1936 a Roseto degli Abruzzi">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#FFFCF2" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0E1430" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#0E1430">
 <link rel="icon" type="image/png" href="img/favicon.png">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="preload" href="fonts/figtree-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
@@ -32,7 +31,7 @@
 (function(){
   var d = document.documentElement, t = null, l = null;
   try { t = localStorage.getItem('mg-theme'); l = localStorage.getItem('mg-lang'); } catch(e){}
-  if (t === 'dark' || t === 'light') d.setAttribute('data-theme', t);
+  d.setAttribute('data-theme', t === 'light' ? 'light' : 'dark');
   if (!l) { var n = (navigator.language || 'it').toLowerCase().slice(0,2); l = (n === 'it' || n === 'fr' || n === 'es') ? n : 'en'; }
   d.setAttribute('data-lang', l);
   d.lang = l;

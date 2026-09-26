@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="it">
+<html lang="it" data-theme="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -8,7 +8,7 @@
 <meta name="robots" content="noindex, follow">
 <link rel="icon" type="image/png" href="img/favicon.png">
 <script>
-(function(){ var t=null; try{ t=localStorage.getItem('mg-theme'); }catch(e){} if(t==='dark'||t==='light') document.documentElement.setAttribute('data-theme',t); })();
+(function(){ var t=null; try{ t=localStorage.getItem('mg-theme'); }catch(e){} document.documentElement.setAttribute('data-theme', t==='light' ? 'light' : 'dark'); })();
 </script>
 <style>
 @font-face{font-family:"Figtree";font-style:normal;font-weight:400;font-display:swap;src:url(fonts/figtree-latin-400-normal.woff2) format("woff2")}
