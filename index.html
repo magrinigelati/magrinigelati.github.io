@@ -288,7 +288,7 @@ p{margin:0}
 
 /* ============ FASCIA FOTO STABILIMENTO ============ */
 .band{position:relative;height:clamp(260px,38vw,560px);overflow:hidden;background:#1B3680}
-.band img{position:absolute;left:0;top:-12%;width:100%;height:124%;object-fit:cover;object-position:center 45%;will-change:transform}
+.band img,.band video{position:absolute;left:0;top:-12%;width:100%;height:124%;object-fit:cover;object-position:center 45%;will-change:transform}
 .band::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,20,48,0) 45%,rgba(14,20,48,.72) 100%)}
 .band-cap{position:absolute;left:0;right:0;bottom:0;z-index:1;padding-block:clamp(18px,3vw,36px);color:#fff}
 .band-cap p{font:400 clamp(1.4rem,1rem + 1.6vw,2.4rem)/1.15 var(--f-display);max-width:28ch}
@@ -644,7 +644,7 @@ footer .wrap{display:grid;gap:18px}
 
 <!-- ============ FASCIA FOTO ============ -->
 <section class="band" aria-label="Stabilimento">
-  <img id="band-img" src="img/banner-2.webp" alt="Lo stabilimento Magrini a Roseto degli Abruzzi con le bandiere italiane" loading="lazy">
+  <video id="band-img" autoplay muted loop playsinline preload="metadata" poster="video/magrini-produzione-poster.webp" aria-label="Lo stabilimento Magrini e la produzione a Roseto degli Abruzzi"><source src="video/magrini-produzione.webm" type="video/webm"><source src="video/magrini-produzione.mp4" type="video/mp4"></video>
   <div class="band-cap"><div class="wrap" data-reveal><span data-i18n="band.eyebrow">Roseto degli Abruzzi</span><p data-i18n="band.p">Il nostro stabilimento, dove ogni giorno nasce il gelato Magrini.</p></div></div>
 </section>
 
@@ -1591,6 +1591,7 @@ var LANGS = ['it','en','fr','es'];
   var toTop = document.getElementById('to-top');
   var arch = document.querySelector('#arch .fallback');
   var bandImg = document.getElementById('band-img');
+  if (bandImg && bandImg.tagName === 'VIDEO' && reduce) { bandImg.removeAttribute('autoplay'); bandImg.pause(); }
   var links = Array.prototype.slice.call(document.querySelectorAll('.nav a[href^="#"]'));
   var sections = links.map(function(a){ return document.querySelector(a.getAttribute('href')); });
   var ticking = false;
