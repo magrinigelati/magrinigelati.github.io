@@ -2058,7 +2058,7 @@ window.CATALOGO = {
     "sempre": false
    }
   ],
-  "gustiFoto": "img/catalogo/mantecato/gusti.webp"
+  "gustiFoto": "img/catalogo/mantecato/gusti-v2.webp"
  },
  "natale": {
   "titolo": "Natale Goloso",
