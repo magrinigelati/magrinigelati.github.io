@@ -357,6 +357,9 @@ p{margin:0}
 .gusti-new{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
 .gusti-new li{font-weight:600;font-size:.92rem;padding:7px 12px;border-radius:999px;background:var(--crema);color:var(--ink);border:1.5px solid var(--giallo)}
 .stay{margin-top:24px;font:500 .9rem var(--f-mono);color:var(--muted)}
+.teaser{margin-top:clamp(24px,3vw,36px);padding:clamp(24px,3.5vw,40px);border-radius:var(--radius);background:var(--surface);border:2px solid var(--giallo);box-shadow:var(--shadow);display:grid;gap:12px;justify-items:start}
+.teaser h3{font-size:clamp(1.6rem,1.1rem + 1.6vw,2.4rem)}
+.teaser p{color:var(--muted);font-size:1.08rem;max-width:62ch}
 @media (max-width:1100px){.novita-grid{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:640px){.novita-grid{grid-template-columns:1fr}}
 
@@ -776,6 +779,11 @@ footer .wrap{display:grid;gap:18px}
         <span class="fmt">g 70</span>
         <p data-i18n="nov.4p">Pan di Spagna farcito alla crema chantilly, il dolce della tradizione abruzzese in monoporzione.</p>
       </article>
+    </div>
+    <div class="teaser" data-reveal>
+      <span class="eyebrow">Novità in arrivo · Ottobre 2026</span>
+      <h3>Tartufi, la collezione si fa grande</h3>
+      <p>5 nuove varianti tutte da scoprire, per una gamma che arriva a ben 8 tartufi. Preparatevi: il meglio deve ancora venire!</p>
     </div>
     <p class="stay" data-i18n="nov.stay">to be continued... #staytuned</p>
   </div>
