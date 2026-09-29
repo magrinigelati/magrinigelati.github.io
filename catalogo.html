@@ -2,7 +2,7 @@
 <html lang="it" data-theme="dark">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Catalogo Magrini</title>
 <meta name="description" content="Catalogo fotografico dei gelati Magrini: nome, peso e pezzatura di ogni referenza.">
 <meta property="og:type" content="website">
@@ -64,7 +64,7 @@ h1,h2,h3{font-family:var(--f-display);font-weight:400;margin:0;line-height:1.1;t
 .mono{font-family:var(--f-mono)}
 
 /* header */
-.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .top .wrap{display:flex;align-items:center;gap:14px;min-height:70px}
 .top .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink);margin-right:auto}
 .top .brand img{height:46px;width:auto}
@@ -98,7 +98,7 @@ h1,h2,h3{font-family:var(--f-display);font-weight:400;margin:0;line-height:1.1;t
 .lines button[aria-pressed="true"]{background:var(--blu);border-color:var(--blu);color:var(--on-blu)}
 
 /* barra strumenti */
-.tools{position:sticky;top:calc(71px + env(safe-area-inset-top,0px));z-index:15;background:var(--bg);border-bottom:1px solid var(--line)}
+.tools{position:sticky;top:71px;z-index:15;background:var(--bg);border-bottom:1px solid var(--line)}
 .tools .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;padding-block:12px}
 .search{flex:1 1 240px;max-width:380px;position:relative}
 .search input{width:100%;font:inherit;font-size:.96rem;padding:11px 14px 11px 40px;border-radius:999px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink)}
