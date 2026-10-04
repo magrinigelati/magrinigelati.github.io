@@ -433,6 +433,10 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--blu);box
 .check{display:flex;gap:10px;align-items:flex-start;font-weight:400;font-size:.89rem;color:var(--muted)}
 .check input{width:18px;height:18px;margin-top:3px;flex-shrink:0}
 .form-msg{font-size:.96rem;padding:13px 15px;border-radius:11px;background:var(--blu-soft)}
+.area-ris{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:18px;padding:14px 16px;border-radius:12px;background:var(--blu-soft);color:var(--ink);text-decoration:none;border:1px solid transparent;transition:border-color .2s}
+.area-ris:hover{border-color:var(--blu)}
+.area-ris b{display:block}.area-ris small{display:block;color:var(--muted);font-size:13px;margin-top:2px}
+.area-ris .ar-go{font-weight:700;color:var(--blu);white-space:nowrap}
 .downloads{list-style:none;margin:0;padding:0;display:grid}
 .downloads li{border-top:1px solid var(--line)}
 .downloads li:last-child{border-bottom:1px solid var(--line)}
@@ -963,6 +967,7 @@ footer .wrap{display:grid;gap:18px}
           <li><a href="docs/elenco-gusti-carapine.pdf" target="_blank" rel="noopener"><span><b data-i18n="dl.4t">Elenco gusti carapine</b><small data-i18n="dl.4p">Per il servizio in gelateria</small></span><span class="ext">PDF</span></a></li>
           <li><a href="docs/open-day-2026.pdf" target="_blank" rel="noopener"><span><b data-i18n="dl.5t">Volantino Open Day 2026</b><small data-i18n="dl.5p">5ª edizione, 15-18 marzo</small></span><span class="ext">PDF</span></a></li>
         </ul>
+        <a class="area-ris" href="/commerciale/" rel="nofollow"><span><b data-i18n="ar.t">Area commerciale riservata</b><small data-i18n="ar.p">Per agenti, padroncini e concessionari: ordini e materiale aggiornato</small></span><span class="ar-go" data-i18n="ar.go">Accedi &rarr;</span></a>
         <p style="margin-top:18px"><a href="#concessionari" style="font-weight:600" data-i18n="pro.conc">Sei un distributore? Diventa concessionario &rarr;</a></p>
       </div>
     </div>
@@ -1146,6 +1151,7 @@ footer .wrap{display:grid;gap:18px}
       <a href="privacy.html" data-i18n="ft.privacy">Privacy e cookie</a>
       <a href="docs/aiuti-di-stato-2025.pdf" target="_blank" rel="noopener" data-i18n="ft.aiuti">Aiuti di Stato 2025</a>
       <a href="/portale/" rel="nofollow" data-i18n="ft.dip">Area dipendenti</a>
+      <a href="/commerciale/" rel="nofollow" data-i18n="ft.comm">Area commerciale</a>
       <span data-i18n="ft.cookie">Nessun cookie di profilazione, nessun banner da accettare.</span>
       <span>© <span id="anno">2026</span> Magrini R. &amp; Ceci G. snc</span>
     </div>
@@ -1249,7 +1255,7 @@ en: {
   "fm.ph":"Lines you are interested in, indicative volumes, period...",
   "fm.privacy":"I have read the <a href=\"privacy.html#moduli\" target=\"_blank\" rel=\"noopener\">privacy notice</a>: my data will only be used to contact me.",
   "fm.invia":"Send request",
-  "dl.title":"Useful documents",
+  "dl.title":"Useful documents","ar.t":"Reserved sales area","ar.p":"For agents, drivers and dealers: orders and up-to-date materials","ar.go":"Sign in &rarr;","ft.comm":"Sales area",
   "dl.1t":"Order form","dl.1p":"Loading sheet with product codes",
   "dl.2t":"Mantecato flavour list","dl.2p":"Updated every season",
   "dl.3t":"Take-away flavour list","dl.3p":"Formats for counter sales",
@@ -1361,7 +1367,7 @@ fr: {
   "fm.ph":"Lignes qui vous intéressent, volumes indicatifs, période...",
   "fm.privacy":"J'ai lu la <a href=\"privacy.html#moduli\" target=\"_blank\" rel=\"noopener\">politique de confidentialité</a> : mes données serviront uniquement à me recontacter.",
   "fm.invia":"Envoyer la demande",
-  "dl.title":"Documents utiles",
+  "dl.title":"Documents utiles","ar.t":"Espace commercial réservé","ar.p":"Pour agents, livreurs et concessionnaires : commandes et documents à jour","ar.go":"Accéder &rarr;","ft.comm":"Espace commercial",
   "dl.1t":"Bon de commande","dl.1p":"Feuille de chargement avec les codes produits",
   "dl.2t":"Liste des parfums mantecato","dl.2p":"Mise à jour à chaque saison",
   "dl.3t":"Liste des parfums à emporter","dl.3p":"Formats pour la vente au comptoir",
@@ -1473,7 +1479,7 @@ es: {
   "fm.ph":"Líneas que te interesan, volúmenes aproximados, periodo...",
   "fm.privacy":"He leído la <a href=\"privacy.html#moduli\" target=\"_blank\" rel=\"noopener\">política de privacidad</a>: mis datos se usarán solo para contactarme.",
   "fm.invia":"Enviar solicitud",
-  "dl.title":"Documentos útiles",
+  "dl.title":"Documentos útiles","ar.t":"Área comercial reservada","ar.p":"Para agentes, repartidores y concesionarios: pedidos y material actualizado","ar.go":"Acceder &rarr;","ft.comm":"Área comercial",
   "dl.1t":"Hoja de pedido","dl.1p":"Hoja de carga con los códigos de producto",
   "dl.2t":"Lista de sabores mantecato","dl.2p":"Actualizada cada temporada",
   "dl.3t":"Lista de sabores para llevar","dl.3p":"Formatos para la venta en mostrador",
