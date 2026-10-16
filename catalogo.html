@@ -530,6 +530,9 @@ footer{border-top:1px solid var(--line);padding-block:26px 34px;color:var(--mute
 
   function refresh(){
     var L = DATA[cur];
+    var hasSg = L.prodotti.some(function(p){ return p.sg; });
+    $('sg').closest('label').style.display = hasSg ? '' : 'none';
+    if (!hasSg) $('sg').checked = false;
     list = filtered();
     $('h-title').textContent = lineTitle(cur); $('h-eyebrow').textContent = t('catalog') + ' ' + L.anno;
     $('h-sub').textContent = introText(L);
