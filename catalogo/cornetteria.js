@@ -139,9 +139,9 @@ window.CATALOGO.cornetteria = {
   },
   {
    "img": "img/catalogo/cornetteria/03-treccia-noci-pecan.webp",
-   "nome": "Treccia noci pecan Danish",
+   "nome": "Danesina noci pecan",
    "sg": false,
-   "marca": "Cupiello",
+   "marca": "Cornetteria",
    "gruppo": "FAGOTTI E SFOGLIE",
    "tipo": {
     "it": "Sfoglia",
@@ -167,34 +167,7 @@ window.CATALOGO.cornetteria = {
     "fr": "Bar, petit-déjeuner, pâtisserie",
     "es": "Bar, desayuno, pastelería"
    },
-   "tags": [
-    {
-     "it": "Senza OGM",
-     "en": "GMO free",
-     "fr": "Sans OGM",
-     "es": "Sin OGM"
-    },
-    {
-     "it": "Senza grassi idrogenati",
-     "en": "No hydrogenated fats",
-     "fr": "Sans graisses hydrogénées",
-     "es": "Sin grasas hidrogenadas"
-    },
-    {
-     "it": "Senza aromi e coloranti artificiali",
-     "en": "No artificial flavours or colours",
-     "fr": "Sans arômes ni colorants artificiels",
-     "es": "Sin aromas ni colorantes artificiales"
-    },
-    {
-     "it": "Pronto forno",
-     "en": "Ready to bake",
-     "fr": "Prêt à enfourner",
-     "es": "Listo para hornear"
-    }
-   ],
-   "cod": "4730",
-   "codF": "1C2708"
+   "cod": "4730"
   },
   {
    "img": "img/catalogo/cornetteria/04-treccia-crema.webp",
