@@ -457,7 +457,6 @@ footer{border-top:1px solid var(--line);padding-block:26px 34px;color:var(--mute
                (p.sg && p.eti && p.eti.it !== 'SENZA GLUTINE' ? '<span class="badge-sg">'+esc(t('sg'))+'</span>' : '') +
                (p.lista ? '<div class="formati"><h3>'+esc(L10(p.lista.t))+'</h3><ul>' + p.lista.items.map(function(r){ var inf = L10(r.info || ''); return '<li><span>'+esc(r.nome)+(inf ? ' <em>'+esc(inf)+'</em>' : '')+'</span></li>'; }).join('') + '</ul></div>' : '') +
                (p.ricariche && p.ricariche.length ? '<div class="formati"><h3>'+esc(t('ric'))+'</h3><ul>' + p.ricariche.map(function(r){ return '<li><span>'+esc(r.nome)+' <em>'+r.pz+' '+esc(t('pcs'))+'</em></span></li>'; }).join('') + '</ul></div>' : '') +
-               '<div class="price"><p><b>'+esc(t('priceT'))+'</b> '+t('priceP')+'</p><a class="ask" href="'+esc(ask)+'">'+esc(t('ask'))+' <span aria-hidden="true">&rarr;</span></a></div>' +
                '<span class="folio">'+String(num*2+1).padStart(2,'0')+'</span></div>';
       } else {
         var num = filtering() ? page + 1 : page;
