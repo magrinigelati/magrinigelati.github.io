@@ -8,77 +8,7 @@ window.CATALOGO.cornetteria = {
  "cornetteria": true,
  "prodotti": [
   {
-   "img": "img/catalogo/cornetteria/01-fagotto-cerealdark.webp",
-   "nome": "Fagotto Cerealdark",
-   "sg": false,
-   "marca": "Cupiello",
-   "gruppo": "FAGOTTI E SFOGLIE",
-   "tipo": {
-    "it": "Sfoglia vegana",
-    "en": "Vegan puff pastry",
-    "fr": "Feuilleté vegan",
-    "es": "Hojaldre vegano"
-   },
-   "fmt": {
-    "it": "Peso netto 101 g · 32 pezzi per cartone",
-    "en": "Net weight 101 g · 32 pieces per carton",
-    "fr": "Poids net 101 g · 32 pièces par carton",
-    "es": "Peso neto 101 g · 32 piezas por caja"
-   },
-   "eti": {
-    "it": "VEGANO",
-    "en": "VEGAN",
-    "fr": "VEGAN",
-    "es": "VEGANO"
-   },
-   "desc": {
-    "it": "Soffice impasto ai cereali farcito con cioccolato fondente e ricoperto da granella croccante Gold&Black. Vegano, con lievito MadreCupiello fresco.",
-    "en": "Soft cereal dough filled with dark chocolate and topped with crunchy Gold&Black granules. Vegan, made with fresh MadreCupiello sourdough.",
-    "fr": "Pâte moelleuse aux céréales fourrée au chocolat noir et recouverte de granulés croquants Gold&Black. Vegan, au levain MadreCupiello frais.",
-    "es": "Masa suave de cereales rellena de chocolate negro y cubierta de granillo crujiente Gold&Black. Vegano, con masa madre MadreCupiello fresca."
-   },
-   "pos": {
-    "it": "Bar, prima colazione, pasticceria",
-    "en": "Bars, breakfast, pastry shops",
-    "fr": "Bar, petit-déjeuner, pâtisserie",
-    "es": "Bar, desayuno, pastelería"
-   },
-   "tags": [
-    {
-     "it": "Senza OGM",
-     "en": "GMO free",
-     "fr": "Sans OGM",
-     "es": "Sin OGM"
-    },
-    {
-     "it": "Senza grassi idrogenati",
-     "en": "No hydrogenated fats",
-     "fr": "Sans graisses hydrogénées",
-     "es": "Sin grasas hidrogenadas"
-    },
-    {
-     "it": "Lievito MadreCupiello",
-     "en": "MadreCupiello sourdough",
-     "fr": "Levain MadreCupiello",
-     "es": "Masa madre MadreCupiello"
-    },
-    {
-     "it": "Pronto forno",
-     "en": "Ready to bake",
-     "fr": "Prêt à enfourner",
-     "es": "Listo para hornear"
-    },
-    {
-     "it": "Vegano",
-     "en": "Vegan",
-     "fr": "Vegan",
-     "es": "Vegano"
-    }
-   ],
-   "codF": "1B2495"
-  },
-  {
-   "img": "img/catalogo/cornetteria/02-fagotto-ace.webp",
+   "img": "img/catalogo/cornetteria/01-fagotto-ace.webp",
    "nome": "Fagotto gusto ACE carote fresche e agrumi",
    "sg": false,
    "marca": "Cupiello",
@@ -149,7 +79,7 @@ window.CATALOGO.cornetteria = {
    "codF": "1B2624"
   },
   {
-   "img": "img/catalogo/cornetteria/03-pancannolo-nocciola.webp",
+   "img": "img/catalogo/cornetteria/02-pancannolo-nocciola.webp",
    "nome": "Pancannolo nocciola",
    "sg": false,
    "marca": "Cupiello",
@@ -208,7 +138,7 @@ window.CATALOGO.cornetteria = {
    "codF": "1B3135"
   },
   {
-   "img": "img/catalogo/cornetteria/04-treccia-noci-pecan.webp",
+   "img": "img/catalogo/cornetteria/03-treccia-noci-pecan.webp",
    "nome": "Treccia noci pecan Danish",
    "sg": false,
    "marca": "Cupiello",
@@ -267,7 +197,7 @@ window.CATALOGO.cornetteria = {
    "codF": "1C2708"
   },
   {
-   "img": "img/catalogo/cornetteria/05-treccia-crema.webp",
+   "img": "img/catalogo/cornetteria/04-treccia-crema.webp",
    "nome": "Treccia crema",
    "sg": false,
    "marca": "Cupiello",
@@ -332,71 +262,7 @@ window.CATALOGO.cornetteria = {
    "codF": "1T3999"
   },
   {
-   "img": "img/catalogo/cornetteria/06-caramellita.webp",
-   "nome": "Caramellita, treccia tuttoburro e caramello salato",
-   "sg": false,
-   "marca": "Cupiello",
-   "gruppo": "FAGOTTI E SFOGLIE",
-   "tipo": {
-    "it": "Sfoglia al burro",
-    "en": "Butter puff pastry",
-    "fr": "Feuilleté au beurre",
-    "es": "Hojaldre de mantequilla"
-   },
-   "fmt": {
-    "it": "Peso netto 100 g · 32 pezzi per cartone",
-    "en": "Net weight 100 g · 32 pieces per carton",
-    "fr": "Poids net 100 g · 32 pièces par carton",
-    "es": "Peso neto 100 g · 32 piezas por caja"
-   },
-   "desc": {
-    "it": "Treccia tuttoburro lucidata con zucchero ed extra-farcita con crema al caramello salato (20%). Sfoglia con il 24% di burro, 26 ore di lievitazione naturale.",
-    "en": "All-butter braid glazed with sugar and extra-filled with salted caramel cream (20%). Puff pastry with 24% butter, 26 hours of natural proofing.",
-    "fr": "Tresse pur beurre nappée de sucre et extra-garnie de crème au caramel salé (20 %). Feuilletage à 24 % de beurre, 26 heures de levée naturelle.",
-    "es": "Trenza de mantequilla abrillantada con azúcar y extra de relleno de crema de caramelo salado (20 %). Hojaldre con un 24 % de mantequilla, 26 horas de fermentación natural."
-   },
-   "pos": {
-    "it": "Bar, prima colazione, pasticceria",
-    "en": "Bars, breakfast, pastry shops",
-    "fr": "Bar, petit-déjeuner, pâtisserie",
-    "es": "Bar, desayuno, pastelería"
-   },
-   "tags": [
-    {
-     "it": "Uova da allevamento a terra",
-     "en": "Barn-laid eggs",
-     "fr": "Œufs de poules élevées au sol",
-     "es": "Huevos de gallinas criadas en suelo"
-    },
-    {
-     "it": "Senza OGM",
-     "en": "GMO free",
-     "fr": "Sans OGM",
-     "es": "Sin OGM"
-    },
-    {
-     "it": "Senza grassi idrogenati",
-     "en": "No hydrogenated fats",
-     "fr": "Sans graisses hydrogénées",
-     "es": "Sin grasas hidrogenadas"
-    },
-    {
-     "it": "Lievito MadreCupiello",
-     "en": "MadreCupiello sourdough",
-     "fr": "Levain MadreCupiello",
-     "es": "Masa madre MadreCupiello"
-    },
-    {
-     "it": "Pronto forno",
-     "en": "Ready to bake",
-     "fr": "Prêt à enfourner",
-     "es": "Listo para hornear"
-    }
-   ],
-   "codF": "1B3240S"
-  },
-  {
-   "img": "img/catalogo/cornetteria/07-bombolone.webp",
+   "img": "img/catalogo/cornetteria/05-bombolone.webp",
    "nome": "Bombolone / Krapfen vuoto",
    "sg": false,
    "marca": "Cupiello",
@@ -437,7 +303,7 @@ window.CATALOGO.cornetteria = {
    "codF": "1C1038959"
   },
   {
-   "img": "img/catalogo/cornetteria/08-ciambella-donut.webp",
+   "img": "img/catalogo/cornetteria/06-ciambella-donut.webp",
    "nome": "Ciambella / Donut",
    "sg": false,
    "marca": "Cupiello",
@@ -478,7 +344,7 @@ window.CATALOGO.cornetteria = {
    "codF": "1C15515P"
   },
   {
-   "img": "img/catalogo/cornetteria/09-graffa.webp",
+   "img": "img/catalogo/cornetteria/07-graffa.webp",
    "nome": "Ciambella zuccherata maxi",
    "sg": false,
    "marca": "Cupiello",
@@ -525,7 +391,7 @@ window.CATALOGO.cornetteria = {
    "codF": "1C2190"
   },
   {
-   "img": "img/catalogo/cornetteria/10-donut-ciok.webp",
+   "img": "img/catalogo/cornetteria/08-donut-ciok.webp",
    "nome": "Ciambella / Donut Ciok",
    "sg": false,
    "marca": "Cupiello",
@@ -578,7 +444,7 @@ window.CATALOGO.cornetteria = {
    "codF": "1C22920"
   },
   {
-   "img": "img/catalogo/cornetteria/11-donut-tris.webp",
+   "img": "img/catalogo/cornetteria/09-donut-tris.webp",
    "nome": "Ciambella / Donut Tris",
    "sg": false,
    "marca": "Cupiello",
@@ -619,71 +485,7 @@ window.CATALOGO.cornetteria = {
    "codF": "1C61640"
   },
   {
-   "img": "img/catalogo/cornetteria/12-grancornetto-nocciola.webp",
-   "nome": "Grancornetto nocciola",
-   "sg": false,
-   "marca": "Cupiello",
-   "gruppo": "CORNETTI E GRANCORNETTI",
-   "tipo": {
-    "it": "Grancornetto",
-    "en": "Large croissant",
-    "fr": "Grand croissant",
-    "es": "Croissant grande"
-   },
-   "fmt": {
-    "it": "Peso netto 95 g · 55 pezzi per cartone",
-    "en": "Net weight 95 g · 55 pieces per carton",
-    "fr": "Poids net 95 g · 55 pièces par carton",
-    "es": "Peso neto 95 g · 55 piezas por caja"
-   },
-   "desc": {
-    "it": "Grancornetto curvo farcito con crema alla nocciola e rifinito con scaglie di cioccolato. Prelievitato surgelato, pronto da cuocere, lievitato 26 ore.",
-    "en": "Large curved croissant filled with hazelnut cream and finished with chocolate flakes. Pre-proofed frozen, ready to bake, proofed 26 hours.",
-    "fr": "Grand croissant courbe fourré à la crème de noisette et fini aux copeaux de chocolat. Surgelé pré-poussé, prêt à cuire, levé 26 heures.",
-    "es": "Croissant grande curvo relleno de crema de avellana y terminado con virutas de chocolate. Prefermentado congelado, listo para hornear, 26 horas de fermentación."
-   },
-   "pos": {
-    "it": "Bar, prima colazione, pasticceria",
-    "en": "Bars, breakfast, pastry shops",
-    "fr": "Bar, petit-déjeuner, pâtisserie",
-    "es": "Bar, desayuno, pastelería"
-   },
-   "tags": [
-    {
-     "it": "Uova da allevamento a terra",
-     "en": "Barn-laid eggs",
-     "fr": "Œufs de poules élevées au sol",
-     "es": "Huevos de gallinas criadas en suelo"
-    },
-    {
-     "it": "Senza OGM",
-     "en": "GMO free",
-     "fr": "Sans OGM",
-     "es": "Sin OGM"
-    },
-    {
-     "it": "Senza grassi idrogenati",
-     "en": "No hydrogenated fats",
-     "fr": "Sans graisses hydrogénées",
-     "es": "Sin grasas hidrogenadas"
-    },
-    {
-     "it": "Lievito MadreCupiello",
-     "en": "MadreCupiello sourdough",
-     "fr": "Levain MadreCupiello",
-     "es": "Masa madre MadreCupiello"
-    },
-    {
-     "it": "Pronto forno",
-     "en": "Ready to bake",
-     "fr": "Prêt à enfourner",
-     "es": "Listo para hornear"
-    }
-   ],
-   "codF": "1R2117N"
-  },
-  {
-   "img": "img/catalogo/cornetteria/13-grancornetto-albicocca.webp",
+   "img": "img/catalogo/cornetteria/10-grancornetto-albicocca.webp",
    "nome": "Grancornetto confettura albicocca",
    "sg": false,
    "marca": "Cupiello",
@@ -748,7 +550,7 @@ window.CATALOGO.cornetteria = {
    "codF": "1R2118-N"
   },
   {
-   "img": "img/catalogo/cornetteria/14-grancornetto-crema.webp",
+   "img": "img/catalogo/cornetteria/11-grancornetto-crema.webp",
    "nome": "Grancornetto crema",
    "sg": false,
    "marca": "Cupiello",
@@ -813,7 +615,7 @@ window.CATALOGO.cornetteria = {
    "codF": "1R2116-N"
   },
   {
-   "img": "img/catalogo/cornetteria/15-grancornetto-vuoto.webp",
+   "img": "img/catalogo/cornetteria/12-grancornetto-vuoto.webp",
    "nome": "Grancornetto vuoto",
    "sg": false,
    "marca": "Cupiello",
@@ -878,65 +680,7 @@ window.CATALOGO.cornetteria = {
    "codF": "1R2119-N"
   },
   {
-   "img": "img/catalogo/cornetteria/16-cornetto-pistacchio.webp",
-   "nome": "Cornetto pistacchio",
-   "sg": false,
-   "marca": "Cupiello",
-   "gruppo": "CORNETTI E GRANCORNETTI",
-   "tipo": {
-    "it": "Cornetto",
-    "en": "Croissant",
-    "fr": "Croissant",
-    "es": "Croissant"
-   },
-   "fmt": {
-    "it": "Peso netto 85 g · 55 pezzi per cartone",
-    "en": "Net weight 85 g · 55 pieces per carton",
-    "fr": "Poids net 85 g · 55 pièces par carton",
-    "es": "Peso neto 85 g · 55 piezas por caja"
-   },
-   "desc": {
-    "it": "Cornetto al pistacchio rifinito con granelle di mais color pistacchio. Con lievito MadreCupiello fresco.",
-    "en": "Pistachio croissant finished with pistachio-coloured corn crispies. Made with fresh MadreCupiello sourdough.",
-    "fr": "Croissant à la pistache fini aux billes de maïs couleur pistache. Au levain MadreCupiello frais.",
-    "es": "Croissant de pistacho terminado con crispies de maíz color pistacho. Con masa madre MadreCupiello fresca."
-   },
-   "pos": {
-    "it": "Bar, prima colazione, pasticceria",
-    "en": "Bars, breakfast, pastry shops",
-    "fr": "Bar, petit-déjeuner, pâtisserie",
-    "es": "Bar, desayuno, pastelería"
-   },
-   "tags": [
-    {
-     "it": "Senza OGM",
-     "en": "GMO free",
-     "fr": "Sans OGM",
-     "es": "Sin OGM"
-    },
-    {
-     "it": "Senza grassi idrogenati",
-     "en": "No hydrogenated fats",
-     "fr": "Sans graisses hydrogénées",
-     "es": "Sin grasas hidrogenadas"
-    },
-    {
-     "it": "Lievito MadreCupiello",
-     "en": "MadreCupiello sourdough",
-     "fr": "Levain MadreCupiello",
-     "es": "Masa madre MadreCupiello"
-    },
-    {
-     "it": "Pronto forno",
-     "en": "Ready to bake",
-     "fr": "Prêt à enfourner",
-     "es": "Listo para hornear"
-    }
-   ],
-   "codF": "1R2275N"
-  },
-  {
-   "img": "img/catalogo/cornetteria/17-cornetto-vegano-vuoto.webp",
+   "img": "img/catalogo/cornetteria/13-cornetto-vegano-vuoto.webp",
    "nome": "Cornetto curvo vegano vuoto",
    "sg": false,
    "marca": "Cupiello",
@@ -1007,7 +751,7 @@ window.CATALOGO.cornetteria = {
    "codF": "1R2304"
   },
   {
-   "img": "img/catalogo/cornetteria/18-cornetto-vegano-albicocca.webp",
+   "img": "img/catalogo/cornetteria/14-cornetto-vegano-albicocca.webp",
    "nome": "Cornetto vegano confettura albicocca",
    "sg": false,
    "marca": "Cupiello",
@@ -1078,7 +822,7 @@ window.CATALOGO.cornetteria = {
    "codF": "1R2305"
   },
   {
-   "img": "img/catalogo/cornetteria/19-cornetto-multicereali-salato.webp",
+   "img": "img/catalogo/cornetteria/15-cornetto-multicereali-salato.webp",
    "nome": "Cornetto dritto salato vuoto rifinito multicereali",
    "sg": false,
    "marca": "Cupiello",
@@ -1143,7 +887,7 @@ window.CATALOGO.cornetteria = {
    "codF": "1R2363"
   },
   {
-   "img": "img/catalogo/cornetteria/20-cornetto-buonsenso.webp",
+   "img": "img/catalogo/cornetteria/16-cornetto-buonsenso.webp",
    "nome": "Cornetto Buonsenso cereali e mirtilli rossi",
    "sg": false,
    "marca": "Cupiello",
@@ -1220,7 +964,7 @@ window.CATALOGO.cornetteria = {
    "codF": "1R2368"
   },
   {
-   "img": "img/catalogo/cornetteria/21-cornetto-multicereali-miele.webp",
+   "img": "img/catalogo/cornetteria/17-cornetto-multicereali-miele.webp",
    "nome": "Cornetto multicereali e miele",
    "sg": false,
    "marca": "Cupiello",
@@ -1285,7 +1029,7 @@ window.CATALOGO.cornetteria = {
    "codF": "1R2398"
   },
   {
-   "img": "img/catalogo/cornetteria/22-cornetto-recacao.webp",
+   "img": "img/catalogo/cornetteria/18-cornetto-recacao.webp",
    "nome": "Cornetto ReCacao, bicolore cacao",
    "sg": false,
    "marca": "Cupiello",
@@ -1350,7 +1094,7 @@ window.CATALOGO.cornetteria = {
    "codF": "1R2480UTZ"
   },
   {
-   "img": "img/catalogo/cornetteria/23-cornetto-rebosco.webp",
+   "img": "img/catalogo/cornetteria/19-cornetto-rebosco.webp",
    "nome": "Cornetto ReBosco, bicolore extrafarcito ai frutti di bosco",
    "sg": false,
    "marca": "Cupiello",
@@ -1409,77 +1153,7 @@ window.CATALOGO.cornetteria = {
    "codF": "1R2481"
   },
   {
-   "img": "img/catalogo/cornetteria/24-hotel-cuordimadre.webp",
-   "nome": "Hotel CuordiMadre vuoto",
-   "sg": false,
-   "marca": "Cupiello",
-   "gruppo": "CORNETTI E GRANCORNETTI",
-   "tipo": {
-    "it": "Cornetto formato hotel",
-    "en": "Hotel-size croissant",
-    "fr": "Croissant format hôtel",
-    "es": "Croissant formato hotel"
-   },
-   "fmt": {
-    "it": "Peso netto 37 g · 80 pezzi per cartone",
-    "en": "Net weight 37 g · 80 pieces per carton",
-    "fr": "Poids net 37 g · 80 pièces par carton",
-    "es": "Peso neto 37 g · 80 piezas por caja"
-   },
-   "desc": {
-    "it": "Cornetto CuordiMadre vuoto in formato hotel, lucidato con zucchero brillo, per la prima colazione in hotel. Lievitato 26 ore.",
-    "en": "Plain CuordiMadre croissant in hotel size, glazed with sugar, for hotel breakfasts. Proofed 26 hours.",
-    "fr": "Croissant CuordiMadre nature format hôtel, nappé de sucre, pour le petit-déjeuner à l'hôtel. Levé 26 heures.",
-    "es": "Croissant CuordiMadre sin relleno en formato hotel, abrillantado con azúcar, para el desayuno en hoteles. Fermentado 26 horas."
-   },
-   "pos": {
-    "it": "Hotel, buffet colazione, bar",
-    "en": "Hotels, breakfast buffets, bars",
-    "fr": "Hôtel, buffet petit-déjeuner, bar",
-    "es": "Hotel, bufé de desayuno, bar"
-   },
-   "tags": [
-    {
-     "it": "Etichetta pulita",
-     "en": "Clean label",
-     "fr": "Étiquette propre",
-     "es": "Etiqueta limpia"
-    },
-    {
-     "it": "Senza OGM",
-     "en": "GMO free",
-     "fr": "Sans OGM",
-     "es": "Sin OGM"
-    },
-    {
-     "it": "Senza grassi idrogenati",
-     "en": "No hydrogenated fats",
-     "fr": "Sans graisses hydrogénées",
-     "es": "Sin grasas hidrogenadas"
-    },
-    {
-     "it": "Lievito MadreCupiello",
-     "en": "MadreCupiello sourdough",
-     "fr": "Levain MadreCupiello",
-     "es": "Masa madre MadreCupiello"
-    },
-    {
-     "it": "Senza aromi e coloranti artificiali",
-     "en": "No artificial flavours or colours",
-     "fr": "Sans arômes ni colorants artificiels",
-     "es": "Sin aromas ni colorantes artificiales"
-    },
-    {
-     "it": "Pronto forno",
-     "en": "Ready to bake",
-     "fr": "Prêt à enfourner",
-     "es": "Listo para hornear"
-    }
-   ],
-   "codF": "1R2584"
-  },
-  {
-   "img": "img/catalogo/cornetteria/25-grancornetto-cuordimadre.webp",
+   "img": "img/catalogo/cornetteria/20-grancornetto-cuordimadre.webp",
    "nome": "Grancornetto Cuor di Madre vuoto",
    "sg": false,
    "marca": "Cupiello",
@@ -1556,7 +1230,7 @@ window.CATALOGO.cornetteria = {
    "codF": "1R2666"
   },
   {
-   "img": "img/catalogo/cornetteria/26-cornetto-segale-frutti-bosco.webp",
+   "img": "img/catalogo/cornetteria/21-cornetto-segale-frutti-bosco.webp",
    "nome": "Cornetto multicereali con segale e frutti di bosco",
    "sg": false,
    "marca": "Cupiello",
@@ -1621,7 +1295,7 @@ window.CATALOGO.cornetteria = {
    "codF": "1R2731"
   },
   {
-   "img": "img/catalogo/cornetteria/27-london-vegan.webp",
+   "img": "img/catalogo/cornetteria/22-london-vegan.webp",
    "nome": "London, vegan croissant multicereali vuoto",
    "sg": false,
    "marca": "Cupiello",
@@ -1692,7 +1366,7 @@ window.CATALOGO.cornetteria = {
    "codF": "1R2741"
   },
   {
-   "img": "img/catalogo/cornetteria/28-ischia.webp",
+   "img": "img/catalogo/cornetteria/23-ischia.webp",
    "nome": "Ischia, cornetto doppio impasto vuoto",
    "sg": false,
    "marca": "Cupiello",
@@ -1733,71 +1407,7 @@ window.CATALOGO.cornetteria = {
    "codF": "1R2760"
   },
   {
-   "img": "img/catalogo/cornetteria/29-cornetto-cuordimadre-cereali-miele.webp",
-   "nome": "Cornetto Cuor di Madre diritto ai cereali e miele",
-   "sg": false,
-   "marca": "Cupiello",
-   "gruppo": "CORNETTI E GRANCORNETTI",
-   "tipo": {
-    "it": "Cornetto",
-    "en": "Croissant",
-    "fr": "Croissant",
-    "es": "Croissant"
-   },
-   "fmt": {
-    "it": "Peso netto 80 g · 55 pezzi per cartone",
-    "en": "Net weight 80 g · 55 pieces per carton",
-    "fr": "Poids net 80 g · 55 pièces par carton",
-    "es": "Peso neto 80 g · 55 piezas por caja"
-   },
-   "desc": {
-    "it": "Cornetto diritto ai cereali e miele, lucidato con zucchero di canna, lievitato 36 ore con lievito MadreCupiello fresco. Fa parte della linea Madre Integrali.",
-    "en": "Straight cereal and honey croissant glazed with cane sugar, proofed 36 hours with fresh MadreCupiello sourdough. Part of the Madre Integrali line.",
-    "fr": "Croissant droit aux céréales et au miel nappé de sucre de canne, levé 36 heures au levain MadreCupiello frais. Fait partie de la gamme Madre Integrali.",
-    "es": "Croissant recto de cereales y miel abrillantado con azúcar de caña, fermentado 36 horas con masa madre MadreCupiello fresca. Forma parte de la línea Madre Integrali."
-   },
-   "pos": {
-    "it": "Bar, prima colazione, pasticceria",
-    "en": "Bars, breakfast, pastry shops",
-    "fr": "Bar, petit-déjeuner, pâtisserie",
-    "es": "Bar, desayuno, pastelería"
-   },
-   "tags": [
-    {
-     "it": "Uova da allevamento a terra",
-     "en": "Barn-laid eggs",
-     "fr": "Œufs de poules élevées au sol",
-     "es": "Huevos de gallinas criadas en suelo"
-    },
-    {
-     "it": "Senza OGM",
-     "en": "GMO free",
-     "fr": "Sans OGM",
-     "es": "Sin OGM"
-    },
-    {
-     "it": "Senza grassi idrogenati",
-     "en": "No hydrogenated fats",
-     "fr": "Sans graisses hydrogénées",
-     "es": "Sin grasas hidrogenadas"
-    },
-    {
-     "it": "Lievito MadreCupiello",
-     "en": "MadreCupiello sourdough",
-     "fr": "Levain MadreCupiello",
-     "es": "Masa madre MadreCupiello"
-    },
-    {
-     "it": "Pronto forno",
-     "en": "Ready to bake",
-     "fr": "Prêt à enfourner",
-     "es": "Listo para hornear"
-    }
-   ],
-   "codF": "1R2811"
-  },
-  {
-   "img": "img/catalogo/cornetteria/30-paris-vuoto.webp",
+   "img": "img/catalogo/cornetteria/24-paris-vuoto.webp",
    "nome": "Paris, cornetto tuttoburro vuoto",
    "sg": false,
    "marca": "Cupiello",
@@ -1862,7 +1472,7 @@ window.CATALOGO.cornetteria = {
    "codF": "1R2822"
   },
   {
-   "img": "img/catalogo/cornetteria/31-paris-pistacchio.webp",
+   "img": "img/catalogo/cornetteria/25-paris-pistacchio.webp",
    "nome": "Paris, cornetto tuttoburro farcito pistacchio",
    "sg": false,
    "marca": "Cupiello",
@@ -1927,7 +1537,7 @@ window.CATALOGO.cornetteria = {
    "codF": "1R3220"
   },
   {
-   "img": "img/catalogo/cornetteria/32-perla-cremalatte.webp",
+   "img": "img/catalogo/cornetteria/26-perla-cremalatte.webp",
    "nome": "Perla cremalatte e panna",
    "sg": false,
    "marca": "Perla",
@@ -1955,10 +1565,11 @@ window.CATALOGO.cornetteria = {
     "en": "Bars, breakfast, pastry shops",
     "fr": "Bar, petit-déjeuner, pâtisserie",
     "es": "Bar, desayuno, pastelería"
-   }
+   },
+   "cod": "1805"
   },
   {
-   "img": "img/catalogo/cornetteria/33-perla-nocciola.webp",
+   "img": "img/catalogo/cornetteria/27-perla-nocciola.webp",
    "nome": "Perla nocciola",
    "sg": false,
    "marca": "Perla",
@@ -1990,7 +1601,7 @@ window.CATALOGO.cornetteria = {
    "cod": "0081"
   },
   {
-   "img": "img/catalogo/cornetteria/34-rondo-nocciola.webp",
+   "img": "img/catalogo/cornetteria/28-rondo-nocciola.webp",
    "nome": "Intreccio Rondò nocciola",
    "sg": false,
    "marca": "Perla",
@@ -2022,7 +1633,7 @@ window.CATALOGO.cornetteria = {
    "cod": "1700"
   },
   {
-   "img": "img/catalogo/cornetteria/35-strudelino-xl.webp",
+   "img": "img/catalogo/cornetteria/29-strudelino-xl.webp",
    "nome": "Strudelino XL",
    "sg": false,
    "marca": "Perla",
@@ -2054,7 +1665,7 @@ window.CATALOGO.cornetteria = {
    "cod": "6024"
   },
   {
-   "img": "img/catalogo/cornetteria/36-fagottino-gianduia.webp",
+   "img": "img/catalogo/cornetteria/30-fagottino-gianduia.webp",
    "nome": "Fagottino gianduia",
    "sg": false,
    "marca": "Cornetteria",
@@ -2086,7 +1697,7 @@ window.CATALOGO.cornetteria = {
    "cod": "6023"
   },
   {
-   "img": "img/catalogo/cornetteria/37-croissant-integrale.webp",
+   "img": "img/catalogo/cornetteria/31-croissant-integrale.webp",
    "nome": "Croissant integrale vuoto",
    "sg": false,
    "marca": "Cornetteria",
