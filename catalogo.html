@@ -214,6 +214,38 @@ h1,h2,h3{font-family:var(--f-display);font-weight:400;margin:0;line-height:1.1;t
 .gcard .sg{justify-self:start;font:600 .7rem/1 var(--f-body);text-transform:uppercase;letter-spacing:.04em;color:#1B6B37;background:#E3F5E9;padding:5px 8px;border-radius:999px}
 .empty{padding:60px 0;text-align:center;color:var(--muted)}
 
+/* ====== LINEA DOLCIARIA ====== */
+.leaf.left.dolc img.main{width:auto;height:auto;max-width:100%;max-height:100%}
+.leaf.right.dolc{justify-content:flex-start;gap:12px;padding-top:56px;overflow:auto}
+.leaf.right.dolc .pname{font-size:clamp(1.6rem,1rem + 1.8vw,2.5rem)}
+.leaf.right.dolc .fmt{margin:0;font:600 1rem/1.3 var(--f-body);color:#586080}
+.leaf.right.dolc .pdesc{margin:0;font-size:1.02rem;line-height:1.55;color:#1A2240;max-width:52ch}
+.leaf.right.dolc .pos{margin:0;display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline;font-size:.95rem;color:#1A2240}
+.leaf.right.dolc .pos span{font:500 .72rem var(--f-mono);letter-spacing:.12em;text-transform:uppercase;color:#8A8FA6}
+.leaf.right.dolc .formati ul{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:22px}
+.leaf.right.dolc .formati{max-width:52ch}
+.leaf.right.dolc .formati li{padding:6px 0;font-size:.93rem}
+.leaf.right.dolc .formati li b{font-size:.85rem}
+.leaf.right.dolc .formati li em{font-style:normal;color:#8A8FA6;font-size:.88rem;margin-left:6px}
+.codes{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px}
+.codm{display:inline-flex;align-items:baseline;gap:10px;background:#1A2240;color:#fff;border-radius:10px;padding:8px 14px;font:600 1.35rem/1 var(--f-mono);letter-spacing:.04em}
+.codm small{font:500 .7rem var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:#FCC80B}
+.codf{font:500 .82rem var(--f-mono);color:#8A8FA6}
+.price{border-left:4px solid #2447A0;background:#EEF2FC;border-radius:0 12px 12px 0;padding:12px 16px;display:grid;gap:10px;max-width:52ch}
+.price p{margin:0;font-size:.95rem;line-height:1.5;color:#1A2240}
+.price b{color:#2447A0}
+.price a{color:#2447A0}
+.price .ask{justify-self:start;display:inline-flex;gap:8px;align-items:center;background:#2447A0;color:#fff;text-decoration:none;border-radius:999px;padding:10px 18px;font:600 .95rem var(--f-body)}
+.price .ask:hover{background:#1B3680}
+.ribbon{position:absolute;top:18px;left:18px;font:600 .7rem/1 var(--f-mono);letter-spacing:.12em;text-transform:uppercase;background:#2447A0;color:#fff;padding:7px 10px;border-radius:6px;box-shadow:0 6px 14px -8px rgba(26,34,64,.5)}
+.gcard .ph .ribbon{top:10px;left:10px;font-size:.6rem;padding:5px 7px}
+.ggroup{grid-column:1/-1;font:500 .82rem var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:10px;margin-top:10px}
+.ggroup::before{content:"";width:22px;height:2px;background:var(--giallo)}
+.ggroup:first-child{margin-top:0}
+.gcard .gmarca{font:500 .7rem var(--f-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.gcard .gcod{font:500 .8rem var(--f-mono);color:var(--muted)}
+.gcard .gcod b{color:var(--ink);font-weight:600}
+
 footer{border-top:1px solid var(--line);padding-block:26px 34px;color:var(--muted);font-size:.88rem}
 .credito{margin-top:24px;font-size:11px;line-height:1.4;text-align:left;opacity:.55}
 .credito a{color:inherit;text-decoration:none}
@@ -282,12 +314,14 @@ footer{border-top:1px solid var(--line);padding-block:26px 34px;color:var(--mute
 <footer><div class="wrap">Magrini R. &amp; Ceci G. snc · Via Norvegia 5, 64026 Roseto degli Abruzzi (TE) · <span data-t="piva">P.IVA</span> 00257660670 · REA TE-70091 · <span data-t="indicative">Le immagini sono indicative.</span><p class="credito">Sito realizzato e curato da <a href="https://prosperialfonso.com" rel="author">Alfonso Prosperi</a></p></div></footer>
 
 <script src="catalogo/dati.js"></script>
+<script src="catalogo/dolciaria.js"></script>
 <script>
 (function(){
   var DATA = window.CATALOGO || {};
   /* ---------- traduzioni: i nomi dei prodotti e dei gusti restano in italiano ---------- */
   var T = {
-    it:{brand:'Cataloghi Magrini',back:' Torna al sito',search:'Cerca un prodotto...',onlySg:'Solo senza glutine',vBook:'Sfoglia',vGrid:'Griglia',
+    it:{introDolc:function(n){ return n+' referenze tra espositori pronti da banco e confezioni singole, ognuna con il codice Magrini da indicare in ordine.'; },depDolc:'Scarica il catalogo (PDF)',cod:'Cod. Magrini',codF:'cod. fornitore',pos:'Posizionamento consigliato',ric:'Ricariche singole · codice Magrini',pcs:'pz',priceT:'Prezzi e condizioni riservati.',priceP:'Chiedi al tuo agente di zona o scrivi a <a href="mailto:info@magrinigelati.it">info@magrinigelati.it</a>, tel. <a href="tel:+390858941066">085 8941066</a>',ask:'Richiedi informazioni',askMsg:function(n,c){ return 'Vorrei informazioni su: '+n+' (cod. Magrini '+c+')'; },
+        brand:'Cataloghi Magrini',back:' Torna al sito',search:'Cerca un prodotto...',onlySg:'Solo senza glutine',vBook:'Sfoglia',vGrid:'Griglia',
         hint:'Usa le frecce della tastiera o scorri col dito per sfogliare',piva:'P.IVA',indicative:'Le immagini sono indicative.',
         theme:'Tema chiaro o scuro',prev:'Pagina precedente',next:'Pagina successiva',goto:'Vai alla pagina',thumbs:'Miniature',lines:'Linee',title:'Catalogo Magrini',
         catalog:'Catalogo',intro:function(n){ return n+' referenze, con peso e pezzatura per cartone.'; },introMant:function(f,g){ return f+' formati e '+g+' gusti, con peso e disponibilità.'; },
@@ -297,7 +331,8 @@ footer{border-top:1px solid var(--line);padding-block:26px 34px;color:var(--mute
         cartaDesc:function(n){ return 'Quasi '+n+' gusti disponibili nella vaschetta Lt 6,5 decorata.'; },
         novita:'novità',vetrina:'La vetrina del mantecato',photo:'Foto',none:'Nessun prodotto trovato.',na:'Catalogo non disponibile.',
         count:function(n){ return n+(n===1?' prodotto':' prodotti'); }},
-    en:{brand:'Magrini catalogues',back:' Back to the site',search:'Search for a product...',onlySg:'Gluten-free only',vBook:'Browse',vGrid:'Grid',
+    en:{introDolc:function(n){ return n+' products, from ready-to-use counter displays to single-product boxes, each with the Magrini code to quote when ordering.'; },depDolc:'Download the catalogue (PDF)',cod:'Magrini code',codF:'supplier code',pos:'Suggested placement',ric:'Single refills · Magrini code',pcs:'pcs',priceT:'Prices and terms on request.',priceP:'Ask your local sales agent or write to <a href="mailto:info@magrinigelati.it">info@magrinigelati.it</a>, tel. <a href="tel:+390858941066">+39 085 8941066</a>',ask:'Request information',askMsg:function(n,c){ return 'I would like information on: '+n+' (Magrini code '+c+')'; },
+        brand:'Magrini catalogues',back:' Back to the site',search:'Search for a product...',onlySg:'Gluten-free only',vBook:'Browse',vGrid:'Grid',
         hint:'Use the arrow keys or swipe to turn the pages',piva:'VAT no.',indicative:'Pictures are for illustration only.',
         theme:'Light or dark theme',prev:'Previous page',next:'Next page',goto:'Go to page',thumbs:'Thumbnails',lines:'Lines',title:'Magrini catalogue',
         catalog:'Catalogue',intro:function(n){ return n+' products, with weight and case size.'; },introMant:function(f,g){ return f+' formats and '+g+' flavours, with weight and availability.'; },
@@ -307,7 +342,8 @@ footer{border-top:1px solid var(--line);padding-block:26px 34px;color:var(--mute
         cartaDesc:function(n){ return 'Almost '+n+' flavours available in the decorated 6.5 l tub.'; },
         novita:'new',vetrina:'The mantecato display',photo:'Photo',none:'No products found.',na:'Catalogue not available.',
         count:function(n){ return n+(n===1?' product':' products'); }},
-    fr:{brand:'Catalogues Magrini',back:' Retour au site',search:'Rechercher un produit...',onlySg:'Sans gluten uniquement',vBook:'Feuilleter',vGrid:'Grille',
+    fr:{introDolc:function(n){ return n+' références, des présentoirs de comptoir prêts à l\'emploi aux boîtes mono-produit, chacune avec le code Magrini à indiquer à la commande.'; },depDolc:'Télécharger le catalogue (PDF)',cod:'Code Magrini',codF:'code fournisseur',pos:'Emplacement conseillé',ric:'Recharges à l\'unité · code Magrini',pcs:'pcs',priceT:'Prix et conditions réservés.',priceP:'Demandez à votre agent de secteur ou écrivez à <a href="mailto:info@magrinigelati.it">info@magrinigelati.it</a>, tél. <a href="tel:+390858941066">+39 085 8941066</a>',ask:'Demander des informations',askMsg:function(n,c){ return 'Je souhaiterais des informations sur : '+n+' (code Magrini '+c+')'; },
+        brand:'Catalogues Magrini',back:' Retour au site',search:'Rechercher un produit...',onlySg:'Sans gluten uniquement',vBook:'Feuilleter',vGrid:'Grille',
         hint:'Utilisez les flèches du clavier ou faites glisser pour tourner les pages',piva:'N° TVA',indicative:'Photos non contractuelles.',
         theme:'Thème clair ou sombre',prev:'Page précédente',next:'Page suivante',goto:'Aller à la page',thumbs:'Miniatures',lines:'Lignes',title:'Catalogue Magrini',
         catalog:'Catalogue',intro:function(n){ return n+' références, avec poids et colisage.'; },introMant:function(f,g){ return f+' formats et '+g+' parfums, avec poids et disponibilité.'; },
@@ -317,7 +353,8 @@ footer{border-top:1px solid var(--line);padding-block:26px 34px;color:var(--mute
         cartaDesc:function(n){ return 'Près de '+n+' parfums disponibles en bac décoré de 6,5 l.'; },
         novita:'nouveau',vetrina:'La vitrine du mantecato',photo:'Photo',none:'Aucun produit trouvé.',na:'Catalogue indisponible.',
         count:function(n){ return n+(n===1?' produit':' produits'); }},
-    es:{brand:'Catálogos Magrini',back:' Volver al sitio',search:'Buscar un producto...',onlySg:'Solo sin gluten',vBook:'Hojear',vGrid:'Cuadrícula',
+    es:{introDolc:function(n){ return n+' referencias, entre expositores de mostrador listos para usar y cajas de un solo producto, cada una con el código Magrini para indicar en el pedido.'; },depDolc:'Descargar el catálogo (PDF)',cod:'Cód. Magrini',codF:'cód. proveedor',pos:'Ubicación recomendada',ric:'Recargas sueltas · código Magrini',pcs:'uds.',priceT:'Precios y condiciones reservados.',priceP:'Pregunta a tu agente de zona o escribe a <a href="mailto:info@magrinigelati.it">info@magrinigelati.it</a>, tel. <a href="tel:+390858941066">+39 085 8941066</a>',ask:'Solicitar información',askMsg:function(n,c){ return 'Quisiera información sobre: '+n+' (cód. Magrini '+c+')'; },
+        brand:'Catálogos Magrini',back:' Volver al sitio',search:'Buscar un producto...',onlySg:'Solo sin gluten',vBook:'Hojear',vGrid:'Cuadrícula',
         hint:'Usa las flechas del teclado o desliza para pasar las páginas',piva:'NIF-IVA',indicative:'Las imágenes son orientativas.',
         theme:'Tema claro u oscuro',prev:'Página anterior',next:'Página siguiente',goto:'Ir a la página',thumbs:'Miniaturas',lines:'Líneas',title:'Catálogo Magrini',
         catalog:'Catálogo',intro:function(n){ return n+' referencias, con peso y unidades por caja.'; },introMant:function(f,g){ return f+' formatos y '+g+' sabores, con peso y disponibilidad.'; },
@@ -333,7 +370,8 @@ footer{border-top:1px solid var(--line);padding-block:26px 34px;color:var(--mute
     sorbetteria:{en:'Sorbets & Semifreddi',fr:'Sorbets & Semifreddi',es:'Sorbetes y Semifríos'},
     giochi:{en:'Games & Gelato',fr:'Jeux et Glaces',es:'Juegos y Helados'},
     multipack:{en:'Multipacks & Take-away',fr:'Multipacks et vente à emporter',es:'Multipacks y para llevar'},
-    mantecato:{en:'Our Mantecato',fr:'Notre Mantecato',es:'Nuestro Mantecato'}
+    mantecato:{en:'Our Mantecato',fr:'Notre Mantecato',es:'Nuestro Mantecato'},
+    dolciaria:{en:'Confectionery Line',fr:'Ligne Confiserie',es:'Línea Confitería'}
   };
   /* frasi che arrivano dai dati */
   var PH = {
@@ -358,6 +396,7 @@ footer{border-top:1px solid var(--line);padding-block:26px 34px;color:var(--mute
   var cur = ids[0], list = [], page = 0;
   var $ = function(id){ return document.getElementById(id); };
   function tn(u){ return /\.webp$/.test(u || '') ? u.replace(/\.webp$/, '-t.webp') : u; }
+  function L10(o){ return o == null ? '' : (typeof o === 'string' ? o : (o[lang] || o.it)); }
   function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
 
   /* linee */
@@ -366,7 +405,7 @@ footer{border-top:1px solid var(--line);padding-block:26px 34px;color:var(--mute
 
   function filtered(){
     var q = $('q').value.trim().toLowerCase(), sg = $('sg').checked;
-    return DATA[cur].prodotti.filter(function(p){ return (!sg || p.sg) && (!q || (p.nome + ' ' + (p.gusti || []).join(' ')).toLowerCase().indexOf(q) >= 0); });
+    return DATA[cur].prodotti.filter(function(p){ return (!sg || p.sg) && (!q || (p.nome + ' ' + (p.gusti || []).join(' ') + ' ' + (p.marca || '') + ' ' + (p.cod || '')).toLowerCase().indexOf(q) >= 0); });
   }
   function filtering(){ return $('q').value.trim() !== '' || $('sg').checked; }
 
@@ -376,7 +415,7 @@ footer{border-top:1px solid var(--line);padding-block:26px 34px;color:var(--mute
   function isGustiPage(i){ return hasGusti() && i === list.length + 1; }
   function prodAt(i){ return filtering() ? list[i] : (i === 0 || isGustiPage(i) ? null : list[i-1]); }
   function nFormati(L){ return L.prodotti.reduce(function(n,p){ return n + 1 + (p.formati ? p.formati.length : 0); }, 0); }
-  function introText(L){ return L.gusti ? t('introMant')(nFormati(L), L.gusti.length) : t('intro')(L.prodotti.length); }
+  function introText(L){ return L.dolciaria ? t('introDolc')(L.prodotti.length) : L.gusti ? t('introMant')(nFormati(L), L.gusti.length) : t('intro')(L.prodotti.length); }
   function gustiHtml(L){
     return '<div class="leaf left"><img src="'+esc(L.gustiFoto || L.copertina)+'" alt="'+esc(t('vetrina'))+'"></div>' +
       '<div class="leaf right gusti"><div class="runhead"><span>'+esc(lineTitle(cur))+' '+esc(L.anno)+'</span><span>'+esc(t('carta'))+'</span></div>' +
@@ -399,7 +438,23 @@ footer{border-top:1px solid var(--line);padding-block:26px 34px;color:var(--mute
                '<div class="tri" aria-hidden="true"><span></span><span></span><span></span></div>' +
                '<p>'+introText(L)+'</p>' +
                '<div class="cover-actions"><button class="start" type="button" id="start">'+t('start')+'</button>' +
-               (L.depliant ? '<a class="dl-dep" href="'+esc(L.depliant)+'" download><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>'+esc(cur === 'mantecato' ? t('depMant') : t('dep'))+'</a>' : '') + '</div></div>';
+               (L.depliant ? '<a class="dl-dep" href="'+esc(L.depliant)+'" download><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>'+esc(cur === 'mantecato' ? t('depMant') : (L.dolciaria ? t('depDolc') : t('dep')))+'</a>' : '') + '</div></div>';
+      } else if (p.cod) {
+        var num = filtering() ? page + 1 : page;
+        var eti = L10(p.eti), ask = './?richiesta=' + encodeURIComponent(t('askMsg')(p.nome, p.cod)) + '#dove';
+        html = '<div class="leaf left dolc"><img class="main" src="'+esc(p.img)+'" alt="'+esc(p.nome)+'">' +
+               (eti ? '<span class="ribbon">'+esc(eti)+'</span>' : '') +
+               '<span class="folio">'+String(num*2).padStart(2,'0')+'</span></div>' +
+               '<div class="leaf right dolc"><div class="runhead"><span>'+esc(p.marca)+'</span><span>'+esc(L10(p.tipo))+' · '+num+' / '+list.length+'</span></div>' +
+               '<h2 class="pname">'+esc(p.nome)+'</h2>' +
+               '<p class="fmt">'+esc(L10(p.fmt))+'</p>' +
+               '<p class="pdesc">'+esc(L10(p.desc))+'</p>' +
+               '<p class="pos"><span>'+esc(t('pos'))+'</span>'+esc(L10(p.pos))+'</p>' +
+               (p.sg && p.eti && p.eti.it !== 'SENZA GLUTINE' ? '<span class="badge-sg">'+esc(t('sg'))+'</span>' : '') +
+               (p.ricariche && p.ricariche.length ? '<div class="formati"><h3>'+esc(t('ric'))+'</h3><ul>' + p.ricariche.map(function(r){ return '<li><span>'+esc(r.nome)+' <em>'+r.pz+' '+esc(t('pcs'))+'</em></span><b>'+esc(r.cod)+'</b></li>'; }).join('') + '</ul></div>' : '') +
+               '<div class="codes"><span class="codm"><small>'+esc(t('cod'))+'</small>'+esc(p.cod)+'</span>'+(p.codF ? '<span class="codf">'+esc(t('codF'))+' '+esc(p.codF)+'</span>' : '')+'</div>' +
+               '<div class="price"><p><b>'+esc(t('priceT'))+'</b> '+t('priceP')+'</p><a class="ask" href="'+esc(ask)+'">'+esc(t('ask'))+' <span aria-hidden="true">&rarr;</span></a></div>' +
+               '<span class="folio">'+String(num*2+1).padStart(2,'0')+'</span></div>';
       } else {
         var num = filtering() ? page + 1 : page;
         var ph = p.foto && p.foto.length ? [p.img].concat(p.foto) : null;
@@ -437,7 +492,12 @@ footer{border-top:1px solid var(--line);padding-block:26px 34px;color:var(--mute
 
   function renderGrid(){
     var off = filtering() ? 0 : 1;
+    var lastG = null;
     $('grid').innerHTML = list.length ? list.map(function(p,i){
+      if (p.cod) {
+        var head = p.gruppo !== lastG ? '<h3 class="ggroup">'+esc(p.gruppo)+'</h3>' : ''; lastG = p.gruppo;
+        return head + '<button type="button" class="gcard" data-i="'+(i+off)+'"><div class="ph"><img src="'+esc(tn(p.img))+'" alt="'+esc(p.nome)+'" loading="lazy">'+(p.eti ? '<span class="ribbon">'+esc(L10(p.eti))+'</span>' : '')+'</div><div class="tx"><span class="gmarca">'+esc(p.marca)+'</span><h3>'+esc(p.nome)+'</h3><span class="meta">'+esc(L10(p.fmt))+'</span><span class="gcod">'+esc(t('cod'))+' <b>'+esc(p.cod)+'</b></span></div></button>';
+      }
       return '<button type="button" class="gcard" data-i="'+(i+off)+'"><div class="ph"><img src="'+esc(tn(p.img))+'" alt="'+esc(p.nome)+'" loading="lazy"></div><div class="tx"><h3>'+esc(p.nome)+'</h3><span class="meta">'+[p.peso, p.pz].filter(Boolean).map(function(x){ return esc(un(x)); }).join(' · ')+'</span>'+(p.sg ? '<span class="sg">'+esc(t('sg'))+'</span>' : '')+'</div></button>';
     }).join('') : '<p class="empty">'+esc(t('none'))+'</p>';
   }
