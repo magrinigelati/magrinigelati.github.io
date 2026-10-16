@@ -145,6 +145,7 @@ window.CATALOGO.cornetteria = {
      "es": "Vegano"
     }
    ],
+   "cod": "6029",
    "codF": "1B2624"
   },
   {
@@ -203,6 +204,7 @@ window.CATALOGO.cornetteria = {
      "es": "Listo para hornear"
     }
    ],
+   "cod": "1040",
    "codF": "1B3135"
   },
   {
@@ -261,6 +263,7 @@ window.CATALOGO.cornetteria = {
      "es": "Listo para hornear"
     }
    ],
+   "cod": "4730",
    "codF": "1C2708"
   },
   {
@@ -325,6 +328,7 @@ window.CATALOGO.cornetteria = {
      "es": "Sin levadura"
     }
    ],
+   "cod": "1810",
    "codF": "1T3999"
   },
   {
@@ -429,6 +433,7 @@ window.CATALOGO.cornetteria = {
      "es": "Ya cocido"
     }
    ],
+   "cod": "5867",
    "codF": "1C1038959"
   },
   {
@@ -469,11 +474,12 @@ window.CATALOGO.cornetteria = {
      "es": "Ya cocido"
     }
    ],
+   "cod": "0415",
    "codF": "1C15515P"
   },
   {
    "img": "img/catalogo/cornetteria/09-graffa.webp",
-   "nome": "La Graffa / Maxi ciambella zucchero, ricetta italiana",
+   "nome": "Ciambella zuccherata maxi",
    "sg": false,
    "marca": "Cupiello",
    "gruppo": "CIAMBELLE E DONUT",
@@ -490,10 +496,10 @@ window.CATALOGO.cornetteria = {
     "es": "Peso neto 100 g · 36 piezas por caja"
    },
    "desc": {
-    "it": "Maxi ciambella ricetta italiana rifinita con zucchero. Già cotta, senza olio di palma.",
-    "en": "Maxi doughnut, Italian recipe, finished with sugar. Pre-baked, palm free.",
-    "fr": "Maxi donut recette italienne finition sucre. Déjà cuit, sans huile de palme.",
-    "es": "Maxi donut receta italiana terminado con azúcar. Ya cocido, sin aceite de palma."
+    "it": "Maxi ciambella rifinita con zucchero. Già cotta, senza olio di palma.",
+    "en": "Maxi doughnut finished with sugar. Pre-baked, palm free.",
+    "fr": "Maxi donut finition sucre. Déjà cuit, sans huile de palme.",
+    "es": "Maxi donut terminado con azúcar. Ya cocido, sin aceite de palma."
    },
    "pos": {
     "it": "Bar, prima colazione, pasticceria",
@@ -515,6 +521,7 @@ window.CATALOGO.cornetteria = {
      "es": "Sin aceite de palma"
     }
    ],
+   "cod": "1006",
    "codF": "1C2190"
   },
   {
@@ -567,6 +574,7 @@ window.CATALOGO.cornetteria = {
      "es": "Sin grasas hidrogenadas"
     }
    ],
+   "cod": "1516",
    "codF": "1C22920"
   },
   {
@@ -607,6 +615,7 @@ window.CATALOGO.cornetteria = {
      "es": "Ya cocido"
     }
    ],
+   "cod": "4832",
    "codF": "1C61640"
   },
   {
@@ -735,6 +744,7 @@ window.CATALOGO.cornetteria = {
      "es": "Listo para hornear"
     }
    ],
+   "cod": "2162",
    "codF": "1R2118-N"
   },
   {
@@ -799,6 +809,7 @@ window.CATALOGO.cornetteria = {
      "es": "Listo para hornear"
     }
    ],
+   "cod": "0563",
    "codF": "1R2116-N"
   },
   {
@@ -863,6 +874,7 @@ window.CATALOGO.cornetteria = {
      "es": "Listo para hornear"
     }
    ],
+   "cod": "1811",
    "codF": "1R2119-N"
   },
   {
@@ -991,6 +1003,7 @@ window.CATALOGO.cornetteria = {
      "es": "Vegano"
     }
    ],
+   "cod": "4404",
    "codF": "1R2304"
   },
   {
@@ -1061,6 +1074,7 @@ window.CATALOGO.cornetteria = {
      "es": "Vegano"
     }
    ],
+   "cod": "4476",
    "codF": "1R2305"
   },
   {
@@ -1125,6 +1139,7 @@ window.CATALOGO.cornetteria = {
      "es": "Listo para hornear"
     }
    ],
+   "cod": "4889",
    "codF": "1R2363"
   },
   {
@@ -1201,6 +1216,7 @@ window.CATALOGO.cornetteria = {
      "es": "Sin aceite de palma"
     }
    ],
+   "cod": "4406",
    "codF": "1R2368"
   },
   {
@@ -1265,6 +1281,7 @@ window.CATALOGO.cornetteria = {
      "es": "Listo para hornear"
     }
    ],
+   "cod": "3831",
    "codF": "1R2398"
   },
   {
@@ -1329,6 +1346,7 @@ window.CATALOGO.cornetteria = {
      "es": "Listo para hornear"
     }
    ],
+   "cod": "6012",
    "codF": "1R2480UTZ"
   },
   {
@@ -1387,6 +1405,7 @@ window.CATALOGO.cornetteria = {
      "es": "Listo para hornear"
     }
    ],
+   "cod": "5932",
    "codF": "1R2481"
   },
   {
@@ -1533,6 +1552,7 @@ window.CATALOGO.cornetteria = {
      "es": "Listo para hornear"
     }
    ],
+   "cod": "6845",
    "codF": "1R2666"
   },
   {
@@ -1597,6 +1617,7 @@ window.CATALOGO.cornetteria = {
      "es": "Listo para hornear"
     }
    ],
+   "cod": "6915",
    "codF": "1R2731"
   },
   {
@@ -1667,6 +1688,7 @@ window.CATALOGO.cornetteria = {
      "es": "Vegano"
     }
    ],
+   "cod": "6923",
    "codF": "1R2741"
   },
   {
@@ -1707,6 +1729,7 @@ window.CATALOGO.cornetteria = {
      "es": "Sin aromas ni colorantes artificiales"
     }
    ],
+   "cod": "1458",
    "codF": "1R2760"
   },
   {
@@ -1835,6 +1858,7 @@ window.CATALOGO.cornetteria = {
      "es": "Listo para hornear"
     }
    ],
+   "cod": "1436",
    "codF": "1R2822"
   },
   {
@@ -1899,6 +1923,7 @@ window.CATALOGO.cornetteria = {
      "es": "Listo para hornear"
     }
    ],
+   "cod": "0288",
    "codF": "1R3220"
   },
   {
@@ -1961,7 +1986,8 @@ window.CATALOGO.cornetteria = {
     "en": "Bars, breakfast, pastry shops",
     "fr": "Bar, petit-déjeuner, pâtisserie",
     "es": "Bar, desayuno, pastelería"
-   }
+   },
+   "cod": "0081"
   },
   {
    "img": "img/catalogo/cornetteria/34-rondo-nocciola.webp",
@@ -1992,7 +2018,8 @@ window.CATALOGO.cornetteria = {
     "en": "Bars, breakfast, pastry shops",
     "fr": "Bar, petit-déjeuner, pâtisserie",
     "es": "Bar, desayuno, pastelería"
-   }
+   },
+   "cod": "1700"
   },
   {
    "img": "img/catalogo/cornetteria/35-strudelino-xl.webp",
@@ -2023,7 +2050,8 @@ window.CATALOGO.cornetteria = {
     "en": "Bars, breakfast, pastry shops",
     "fr": "Bar, petit-déjeuner, pâtisserie",
     "es": "Bar, desayuno, pastelería"
-   }
+   },
+   "cod": "6024"
   },
   {
    "img": "img/catalogo/cornetteria/36-fagottino-gianduia.webp",
@@ -2054,7 +2082,8 @@ window.CATALOGO.cornetteria = {
     "en": "Bars, breakfast, pastry shops",
     "fr": "Bar, petit-déjeuner, pâtisserie",
     "es": "Bar, desayuno, pastelería"
-   }
+   },
+   "cod": "6023"
   },
   {
    "img": "img/catalogo/cornetteria/37-croissant-integrale.webp",
@@ -2085,38 +2114,8 @@ window.CATALOGO.cornetteria = {
     "en": "Bars, breakfast, pastry shops",
     "fr": "Bar, petit-déjeuner, pâtisserie",
     "es": "Bar, desayuno, pastelería"
-   }
-  },
-  {
-   "img": "img/catalogo/cornetteria/38-treccia-cioccolato-crema.webp",
-   "nome": "Treccia cioccolato e crema",
-   "sg": false,
-   "marca": "Cornetteria",
-   "gruppo": "ALTRE PROPOSTE",
-   "tipo": {
-    "it": "Sfoglia",
-    "en": "Puff pastry",
-    "fr": "Feuilleté",
-    "es": "Hojaldre"
    },
-   "fmt": {
-    "it": "90 g · 50 pezzi per confezione",
-    "en": "90 g · 50 pieces per pack",
-    "fr": "90 g · 50 pièces par paquet",
-    "es": "90 g · 50 piezas por paquete"
-   },
-   "desc": {
-    "it": "Treccia di sfoglia con crema e gocce di cioccolato.",
-    "en": "Puff pastry braid with custard cream and chocolate chips.",
-    "fr": "Tresse feuilletée à la crème et aux pépites de chocolat.",
-    "es": "Trenza de hojaldre con crema y gotas de chocolate."
-   },
-   "pos": {
-    "it": "Bar, prima colazione, pasticceria",
-    "en": "Bars, breakfast, pastry shops",
-    "fr": "Bar, petit-déjeuner, pâtisserie",
-    "es": "Bar, desayuno, pastelería"
-   }
+   "cod": "6731"
   }
  ],
  "depliant": "docs/depliant/magrini-linea-cornetteria.pdf"
