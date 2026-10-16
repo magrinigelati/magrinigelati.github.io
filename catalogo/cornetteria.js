@@ -75,8 +75,7 @@ window.CATALOGO.cornetteria = {
      "es": "Vegano"
     }
    ],
-   "cod": "6029",
-   "codF": "1B2624"
+   "cod": "6029"
   },
   {
    "img": "img/catalogo/cornetteria/02-pancannolo-nocciola.webp",
@@ -134,8 +133,7 @@ window.CATALOGO.cornetteria = {
      "es": "Listo para hornear"
     }
    ],
-   "cod": "1040",
-   "codF": "1B3135"
+   "cod": "1040"
   },
   {
    "img": "img/catalogo/cornetteria/03-treccia-noci-pecan.webp",
@@ -231,8 +229,7 @@ window.CATALOGO.cornetteria = {
      "es": "Sin levadura"
     }
    ],
-   "cod": "1810",
-   "codF": "1T3999"
+   "cod": "1810"
   },
   {
    "img": "img/catalogo/cornetteria/05-bombolone.webp",
@@ -272,8 +269,7 @@ window.CATALOGO.cornetteria = {
      "es": "Ya cocido"
     }
    ],
-   "cod": "5867",
-   "codF": "1C1038959"
+   "cod": "5867"
   },
   {
    "img": "img/catalogo/cornetteria/06-ciambella-donut.webp",
@@ -313,8 +309,7 @@ window.CATALOGO.cornetteria = {
      "es": "Ya cocido"
     }
    ],
-   "cod": "0415",
-   "codF": "1C15515P"
+   "cod": "0415"
   },
   {
    "img": "img/catalogo/cornetteria/07-graffa.webp",
@@ -360,8 +355,7 @@ window.CATALOGO.cornetteria = {
      "es": "Sin aceite de palma"
     }
    ],
-   "cod": "1006",
-   "codF": "1C2190"
+   "cod": "1006"
   },
   {
    "img": "img/catalogo/cornetteria/08-donut-ciok.webp",
@@ -413,8 +407,7 @@ window.CATALOGO.cornetteria = {
      "es": "Sin grasas hidrogenadas"
     }
    ],
-   "cod": "1516",
-   "codF": "1C22920"
+   "cod": "1516"
   },
   {
    "img": "img/catalogo/cornetteria/09-donut-tris.webp",
@@ -454,8 +447,7 @@ window.CATALOGO.cornetteria = {
      "es": "Ya cocido"
     }
    ],
-   "cod": "4832",
-   "codF": "1C61640"
+   "cod": "4832"
   },
   {
    "img": "img/catalogo/cornetteria/10-grancornetto-albicocca.webp",
@@ -519,8 +511,7 @@ window.CATALOGO.cornetteria = {
      "es": "Listo para hornear"
     }
    ],
-   "cod": "2162",
-   "codF": "1R2118-N"
+   "cod": "2162"
   },
   {
    "img": "img/catalogo/cornetteria/11-grancornetto-crema.webp",
@@ -584,8 +575,7 @@ window.CATALOGO.cornetteria = {
      "es": "Listo para hornear"
     }
    ],
-   "cod": "0563",
-   "codF": "1R2116-N"
+   "cod": "0563"
   },
   {
    "img": "img/catalogo/cornetteria/12-grancornetto-vuoto.webp",
@@ -649,8 +639,7 @@ window.CATALOGO.cornetteria = {
      "es": "Listo para hornear"
     }
    ],
-   "cod": "1811",
-   "codF": "1R2119-N"
+   "cod": "1811"
   },
   {
    "img": "img/catalogo/cornetteria/13-cornetto-vegano-vuoto.webp",
@@ -720,8 +709,7 @@ window.CATALOGO.cornetteria = {
      "es": "Vegano"
     }
    ],
-   "cod": "4404",
-   "codF": "1R2304"
+   "cod": "4404"
   },
   {
    "img": "img/catalogo/cornetteria/14-cornetto-vegano-albicocca.webp",
@@ -791,8 +779,7 @@ window.CATALOGO.cornetteria = {
      "es": "Vegano"
     }
    ],
-   "cod": "4476",
-   "codF": "1R2305"
+   "cod": "4476"
   },
   {
    "img": "img/catalogo/cornetteria/15-cornetto-multicereali-salato.webp",
@@ -856,8 +843,7 @@ window.CATALOGO.cornetteria = {
      "es": "Listo para hornear"
     }
    ],
-   "cod": "4889",
-   "codF": "1R2363"
+   "cod": "4889"
   },
   {
    "img": "img/catalogo/cornetteria/16-cornetto-buonsenso.webp",
@@ -933,8 +919,7 @@ window.CATALOGO.cornetteria = {
      "es": "Sin aceite de palma"
     }
    ],
-   "cod": "4406",
-   "codF": "1R2368"
+   "cod": "4406"
   },
   {
    "img": "img/catalogo/cornetteria/17-cornetto-multicereali-miele.webp",
@@ -998,8 +983,7 @@ window.CATALOGO.cornetteria = {
      "es": "Listo para hornear"
     }
    ],
-   "cod": "3831",
-   "codF": "1R2398"
+   "cod": "3831"
   },
   {
    "img": "img/catalogo/cornetteria/18-cornetto-recacao.webp",
@@ -1063,8 +1047,7 @@ window.CATALOGO.cornetteria = {
      "es": "Listo para hornear"
     }
    ],
-   "cod": "6012",
-   "codF": "1R2480UTZ"
+   "cod": "6012"
   },
   {
    "img": "img/catalogo/cornetteria/19-cornetto-rebosco.webp",
@@ -1122,8 +1105,7 @@ window.CATALOGO.cornetteria = {
      "es": "Listo para hornear"
     }
    ],
-   "cod": "5932",
-   "codF": "1R2481"
+   "cod": "5932"
   },
   {
    "img": "img/catalogo/cornetteria/20-grancornetto-cuordimadre.webp",
@@ -1199,8 +1181,7 @@ window.CATALOGO.cornetteria = {
      "es": "Listo para hornear"
     }
    ],
-   "cod": "6845",
-   "codF": "1R2666"
+   "cod": "6845"
   },
   {
    "img": "img/catalogo/cornetteria/21-cornetto-segale-frutti-bosco.webp",
@@ -1264,8 +1245,7 @@ window.CATALOGO.cornetteria = {
      "es": "Listo para hornear"
     }
    ],
-   "cod": "6915",
-   "codF": "1R2731"
+   "cod": "6915"
   },
   {
    "img": "img/catalogo/cornetteria/22-london-vegan.webp",
@@ -1335,8 +1315,7 @@ window.CATALOGO.cornetteria = {
      "es": "Vegano"
     }
    ],
-   "cod": "6923",
-   "codF": "1R2741"
+   "cod": "6923"
   },
   {
    "img": "img/catalogo/cornetteria/23-ischia.webp",
@@ -1376,8 +1355,7 @@ window.CATALOGO.cornetteria = {
      "es": "Sin aromas ni colorantes artificiales"
     }
    ],
-   "cod": "1458",
-   "codF": "1R2760"
+   "cod": "1458"
   },
   {
    "img": "img/catalogo/cornetteria/24-paris-vuoto.webp",
@@ -1441,8 +1419,7 @@ window.CATALOGO.cornetteria = {
      "es": "Listo para hornear"
     }
    ],
-   "cod": "1436",
-   "codF": "1R2822"
+   "cod": "1436"
   },
   {
    "img": "img/catalogo/cornetteria/25-paris-pistacchio.webp",
@@ -1506,8 +1483,7 @@ window.CATALOGO.cornetteria = {
      "es": "Listo para hornear"
     }
    ],
-   "cod": "0288",
-   "codF": "1R3220"
+   "cod": "0288"
   },
   {
    "img": "img/catalogo/cornetteria/26-perla-cremalatte.webp",
