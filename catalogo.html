@@ -453,7 +453,6 @@ footer{border-top:1px solid var(--line);padding-block:26px 34px;color:var(--mute
                '<div class="leaf right dolc"><div class="runhead"><span>'+esc(p.marca)+'</span><span>'+esc(L10(p.tipo))+' · '+num+' / '+list.length+'</span></div>' +
                '<h2 class="pname">'+esc(p.nome)+'</h2>' +
                '<p class="fmt">'+esc(L10(p.fmt))+'</p>' +
-               '<p class="pdesc">'+esc(brief(p.desc))+'</p>' +
                (p.sg && p.eti && p.eti.it !== 'SENZA GLUTINE' ? '<span class="badge-sg">'+esc(t('sg'))+'</span>' : '') +
                (p.lista ? '<div class="formati"><h3>'+esc(L10(p.lista.t))+'</h3><ul>' + p.lista.items.map(function(r){ var inf = L10(r.info || ''); return '<li><span>'+esc(r.nome)+(inf ? ' <em>'+esc(inf)+'</em>' : '')+'</span></li>'; }).join('') + '</ul></div>' : '') +
                (p.ricariche && p.ricariche.length ? '<div class="formati"><h3>'+esc(t('ric'))+'</h3><ul>' + p.ricariche.map(function(r){ return '<li><span>'+esc(r.nome)+' <em>'+r.pz+' '+esc(t('pcs'))+'</em></span></li>'; }).join('') + '</ul></div>' : '') +
