@@ -291,10 +291,6 @@ p{margin:0}
 /* ============ FASCIA FOTO STABILIMENTO ============ */
 .band{position:relative;height:clamp(260px,38vw,560px);overflow:hidden;background:#1B3680}
 .band img,.band video{position:absolute;left:0;top:-12%;width:100%;height:124%;object-fit:cover;object-position:center 45%;will-change:transform}
-.band video{transition:scale 1.4s ease}
-.band video.kb{animation:kb 9s ease-in-out infinite alternate}
-@keyframes kb{from{scale:1}to{scale:1.09}}
-@media (prefers-reduced-motion:reduce){.band video.kb{animation:none}}
 .band::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,20,48,0) 45%,rgba(14,20,48,.72) 100%)}
 .band-cap{position:absolute;left:0;right:0;bottom:0;z-index:1;padding-block:clamp(18px,3vw,36px);color:#fff}
 .band-cap p{font:400 clamp(1.4rem,1rem + 1.6vw,2.4rem)/1.15 var(--f-display);max-width:28ch}
@@ -660,7 +656,7 @@ footer .wrap{display:grid;gap:18px}
 
 <!-- ============ FASCIA FOTO ============ -->
 <section class="band" aria-label="Stabilimento">
-  <video id="band-img" autoplay muted loop playsinline preload="none" poster="video/magrini-produzione-poster.webp" class="kb" aria-label="Lo stabilimento Magrini e la produzione a Roseto degli Abruzzi"><source src="video/magrini-produzione-v2.webm" type="video/webm"><source src="video/magrini-produzione-v2.mp4" type="video/mp4"></video>
+  <video id="band-img" autoplay muted loop playsinline preload="metadata" poster="video/magrini-produzione-poster.webp" aria-label="Lo stabilimento Magrini e la produzione a Roseto degli Abruzzi"><source src="video/magrini-produzione-v2.webm" type="video/webm"><source src="video/magrini-produzione-v2.mp4" type="video/mp4"></video>
   <div class="band-cap"><div class="wrap" data-reveal><span data-i18n="band.eyebrow">Roseto degli Abruzzi</span><p data-i18n="band.p">Il nostro stabilimento, dove ogni giorno nasce il gelato Magrini.</p></div></div>
 </section>
 
@@ -1634,23 +1630,7 @@ var LANGS = ['it','en','fr','es'];
   var toTop = document.getElementById('to-top');
   var arch = document.querySelector('#arch .fallback');
   var bandImg = document.getElementById('band-img');
-  if (bandImg && bandImg.tagName === 'VIDEO' && reduce) { bandImg.removeAttribute('autoplay'); bandImg.pause(); bandImg.classList.remove('kb'); }
-  if (bandImg && bandImg.tagName === 'VIDEO' && !reduce) {
-    // la foto si muove (zoom lento) finché il video non gira davvero, poi lascia il posto al video
-    bandImg.addEventListener('playing', function(){
-      if (!bandImg.classList.contains('kb')) return;
-      var sc = getComputedStyle(bandImg).scale; bandImg.style.scale = (sc && sc !== 'none') ? sc : '1';
-      bandImg.classList.remove('kb');
-      requestAnimationFrame(function(){ requestAnimationFrame(function(){ bandImg.style.scale = '1'; }); });
-    });
-    bandImg.addEventListener('waiting', function(){ bandImg.classList.add('kb'); });
-    // il video comincia a scaricarsi quando mancano ancora un paio di schermate
-    var startVid = function(){ bandImg.preload = 'auto'; var p = bandImg.play(); if (p && p.catch) p.catch(function(){}); };
-    if ('IntersectionObserver' in window) {
-      var vio = new IntersectionObserver(function(es){ if (es.some(function(e){ return e.isIntersecting; })) { vio.disconnect(); startVid(); } }, {rootMargin: '1600px 0px'});
-      vio.observe(bandImg);
-    } else { startVid(); }
-  }
+  if (bandImg && bandImg.tagName === 'VIDEO' && reduce) { bandImg.removeAttribute('autoplay'); bandImg.pause(); }
   var links = Array.prototype.slice.call(document.querySelectorAll('.nav a[href^="#"]'));
   var sections = links.map(function(a){ return document.querySelector(a.getAttribute('href')); });
   var ticking = false;
