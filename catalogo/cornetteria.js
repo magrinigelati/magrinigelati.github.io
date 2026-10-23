@@ -8,699 +8,7 @@ window.CATALOGO.cornetteria = {
  "cornetteria": true,
  "prodotti": [
   {
-   "img": "img/catalogo/cornetteria/01-gran-paffutella.webp",
-   "nome": "Gran Paffutella alla nocciola",
-   "sg": false,
-   "marca": "Cupiello",
-   "gruppo": "FAGOTTI E SFOGLIE",
-   "tipo": {
-    "it": "Sfoglia",
-    "en": "Puff pastry",
-    "fr": "Feuilleté",
-    "es": "Hojaldre"
-   },
-   "fmt": {
-    "it": "Peso netto 79 g · 55 pezzi per cartone",
-    "en": "Net weight 79 g · 55 pieces per carton",
-    "fr": "Poids net 79 g · 55 pièces par carton",
-    "es": "Peso neto 79 g · 55 piezas por caja"
-   },
-   "desc": {
-    "it": "Sfoglia lievitata 26 ore con lievito MadreCupiello, farcita alla crema nocciola e lucidata con zucchero.",
-    "en": "Puff pastry proofed for 26 hours with MadreCupiello sourdough, filled with hazelnut cream and glazed with sugar.",
-    "fr": "Feuilleté levé 26 heures au levain MadreCupiello, garni de crème noisette et lustré au sucre.",
-    "es": "Hojaldre fermentado 26 horas con masa madre MadreCupiello, relleno de crema de avellana y abrillantado con azúcar."
-   },
-   "pos": {
-    "it": "Bar, prima colazione, pasticceria",
-    "en": "Bars, breakfast, pastry shops",
-    "fr": "Bar, petit-déjeuner, pâtisserie",
-    "es": "Bar, desayuno, pastelería"
-   },
-   "tags": [
-    {
-     "it": "Uova da allevamento a terra",
-     "en": "Barn-laid eggs",
-     "fr": "Œufs de poules élevées au sol",
-     "es": "Huevos de gallinas criadas en suelo"
-    },
-    {
-     "it": "Senza OGM",
-     "en": "GMO free",
-     "fr": "Sans OGM",
-     "es": "Sin OGM"
-    },
-    {
-     "it": "Senza grassi idrogenati",
-     "en": "No hydrogenated fats",
-     "fr": "Sans graisses hydrogénées",
-     "es": "Sin grasas hidrogenadas"
-    },
-    {
-     "it": "Lievito MadreCupiello",
-     "en": "MadreCupiello sourdough",
-     "fr": "Levain MadreCupiello",
-     "es": "Masa madre MadreCupiello"
-    },
-    {
-     "it": "Pronto forno",
-     "en": "Ready to bake",
-     "fr": "Prêt à enfourner",
-     "es": "Listo para hornear"
-    }
-   ],
-   "cod": "3582"
-  },
-  {
-   "img": "img/catalogo/cornetteria/02-double-fagotto.webp",
-   "nome": "Double, fagotto bicolore cioccolato",
-   "sg": false,
-   "marca": "Cupiello",
-   "gruppo": "FAGOTTI E SFOGLIE",
-   "tipo": {
-    "it": "Sfoglia",
-    "en": "Puff pastry",
-    "fr": "Feuilleté",
-    "es": "Hojaldre"
-   },
-   "fmt": {
-    "it": "Peso netto 88 g · 40 pezzi per cartone",
-    "en": "Net weight 88 g · 40 pieces per carton",
-    "fr": "Poids net 88 g · 40 pièces par carton",
-    "es": "Peso neto 88 g · 40 piezas por caja"
-   },
-   "desc": {
-    "it": "Fagotto a doppio impasto bicolore, extra farcito con crema al cioccolato e gocce di cioccolato fondente.",
-    "en": "Two-tone double-dough fagotto, extra filled with chocolate cream and dark chocolate chips.",
-    "fr": "Fagotto bicolore à double pâte, extra garni de crème au chocolat et de pépites de chocolat noir.",
-    "es": "Fagotto bicolor de doble masa, extra relleno de crema de chocolate y pepitas de chocolate negro."
-   },
-   "pos": {
-    "it": "Bar, prima colazione, pasticceria",
-    "en": "Bars, breakfast, pastry shops",
-    "fr": "Bar, petit-déjeuner, pâtisserie",
-    "es": "Bar, desayuno, pastelería"
-   },
-   "tags": [
-    {
-     "it": "Senza OGM",
-     "en": "GMO free",
-     "fr": "Sans OGM",
-     "es": "Sin OGM"
-    },
-    {
-     "it": "Senza grassi idrogenati",
-     "en": "No hydrogenated fats",
-     "fr": "Sans graisses hydrogénées",
-     "es": "Sin grasas hidrogenadas"
-    },
-    {
-     "it": "Lievito MadreCupiello",
-     "en": "MadreCupiello sourdough",
-     "fr": "Levain MadreCupiello",
-     "es": "Masa madre MadreCupiello"
-    },
-    {
-     "it": "Pronto forno",
-     "en": "Ready to bake",
-     "fr": "Prêt à enfourner",
-     "es": "Listo para hornear"
-    }
-   ],
-   "cod": "0606"
-  },
-  {
-   "img": "img/catalogo/cornetteria/03-fagotto-ace.webp",
-   "nome": "Fagotto gusto ACE carote fresche e agrumi",
-   "sg": false,
-   "marca": "Cupiello",
-   "gruppo": "FAGOTTI E SFOGLIE",
-   "tipo": {
-    "it": "Sfoglia vegana",
-    "en": "Vegan puff pastry",
-    "fr": "Feuilleté vegan",
-    "es": "Hojaldre vegano"
-   },
-   "fmt": {
-    "it": "Peso netto 95 g · 60 pezzi per cartone",
-    "en": "Net weight 95 g · 60 pieces per carton",
-    "fr": "Poids net 95 g · 60 pièces par carton",
-    "es": "Peso neto 95 g · 60 piezas por caja"
-   },
-   "eti": {
-    "it": "VEGANO",
-    "en": "VEGAN",
-    "fr": "VEGAN",
-    "es": "VEGANO"
-   },
-   "desc": {
-    "it": "Fagotto vegano con carote fresche e extra-farcitura agli agrumi italiani, rifinito con zucchero di canna. Lievitato 26 ore con lievito MadreCupiello fresco.",
-    "en": "Vegan fagotto with fresh carrots and an extra filling of Italian citrus, finished with cane sugar. Proofed for 26 hours with fresh MadreCupiello sourdough.",
-    "fr": "Fagotto vegan aux carottes fraîches et extra-garniture d'agrumes italiens, finition au sucre de canne. Levé 26 heures au levain MadreCupiello frais.",
-    "es": "Fagotto vegano con zanahorias frescas y extra de relleno de cítricos italianos, terminado con azúcar de caña. Fermentado 26 horas con masa madre MadreCupiello fresca."
-   },
-   "pos": {
-    "it": "Bar, prima colazione, pasticceria",
-    "en": "Bars, breakfast, pastry shops",
-    "fr": "Bar, petit-déjeuner, pâtisserie",
-    "es": "Bar, desayuno, pastelería"
-   },
-   "tags": [
-    {
-     "it": "Senza OGM",
-     "en": "GMO free",
-     "fr": "Sans OGM",
-     "es": "Sin OGM"
-    },
-    {
-     "it": "Senza grassi idrogenati",
-     "en": "No hydrogenated fats",
-     "fr": "Sans graisses hydrogénées",
-     "es": "Sin grasas hidrogenadas"
-    },
-    {
-     "it": "Lievito MadreCupiello",
-     "en": "MadreCupiello sourdough",
-     "fr": "Levain MadreCupiello",
-     "es": "Masa madre MadreCupiello"
-    },
-    {
-     "it": "Pronto forno",
-     "en": "Ready to bake",
-     "fr": "Prêt à enfourner",
-     "es": "Listo para hornear"
-    },
-    {
-     "it": "Vegano",
-     "en": "Vegan",
-     "fr": "Vegan",
-     "es": "Vegano"
-    }
-   ],
-   "cod": "6029"
-  },
-  {
-   "img": "img/catalogo/cornetteria/04-pancannolo-nocciola.webp",
-   "nome": "Pancannolo nocciola",
-   "sg": false,
-   "marca": "Cupiello",
-   "gruppo": "FAGOTTI E SFOGLIE",
-   "tipo": {
-    "it": "Sfoglia",
-    "en": "Puff pastry",
-    "fr": "Feuilleté",
-    "es": "Hojaldre"
-   },
-   "fmt": {
-    "it": "Peso netto 93 g · 60 pezzi per cartone",
-    "en": "Net weight 93 g · 60 pieces per carton",
-    "fr": "Poids net 93 g · 60 pièces par carton",
-    "es": "Peso neto 93 g · 60 piezas por caja"
-   },
-   "desc": {
-    "it": "Sfoglia dolce farcita con crema alla nocciola e rifinita con soluzione lucidante: forma più bella, farcitura più evidente, impasto più soffice. Prodotto da forno crudo surgelato.",
-    "en": "Sweet puff pastry filled with hazelnut cream and glazed: a better shape, a more visible filling, a softer dough. Raw frozen bake-off product.",
-    "fr": "Feuilleté sucré fourré à la crème de noisette et nappé : plus belle forme, garniture plus visible, pâte plus moelleuse. Produit cru surgelé à enfourner.",
-    "es": "Hojaldre dulce relleno de crema de avellana y abrillantado: mejor forma, relleno más visible, masa más suave. Producto crudo congelado para hornear."
-   },
-   "pos": {
-    "it": "Bar, prima colazione, pasticceria",
-    "en": "Bars, breakfast, pastry shops",
-    "fr": "Bar, petit-déjeuner, pâtisserie",
-    "es": "Bar, desayuno, pastelería"
-   },
-   "tags": [
-    {
-     "it": "Uova da allevamento a terra",
-     "en": "Barn-laid eggs",
-     "fr": "Œufs de poules élevées au sol",
-     "es": "Huevos de gallinas criadas en suelo"
-    },
-    {
-     "it": "Senza OGM",
-     "en": "GMO free",
-     "fr": "Sans OGM",
-     "es": "Sin OGM"
-    },
-    {
-     "it": "Senza grassi idrogenati",
-     "en": "No hydrogenated fats",
-     "fr": "Sans graisses hydrogénées",
-     "es": "Sin grasas hidrogenadas"
-    },
-    {
-     "it": "Pronto forno",
-     "en": "Ready to bake",
-     "fr": "Prêt à enfourner",
-     "es": "Listo para hornear"
-    }
-   ],
-   "cod": "0571"
-  },
-  {
-   "img": "img/catalogo/cornetteria/05-treccia-crema.webp",
-   "nome": "Treccia crema",
-   "sg": false,
-   "marca": "Cupiello",
-   "gruppo": "FAGOTTI E SFOGLIE",
-   "tipo": {
-    "it": "Sfoglia",
-    "en": "Puff pastry",
-    "fr": "Feuilleté",
-    "es": "Hojaldre"
-   },
-   "fmt": {
-    "it": "Peso netto 89 g · 70 pezzi per cartone",
-    "en": "Net weight 89 g · 70 pieces per carton",
-    "fr": "Poids net 89 g · 70 pièces par carton",
-    "es": "Peso neto 89 g · 70 piezas por caja"
-   },
-   "desc": {
-    "it": "Treccia di pasta sfoglia farcita alla crema e rifinita con zucchero. Prodotto da forno surgelato, senza lievito.",
-    "en": "Puff pastry braid filled with custard cream and finished with sugar. Frozen bake-off product, yeast free.",
-    "fr": "Tresse de pâte feuilletée fourrée à la crème et finie au sucre. Produit surgelé à enfourner, sans levure.",
-    "es": "Trenza de hojaldre rellena de crema y terminada con azúcar. Producto congelado para hornear, sin levadura."
-   },
-   "pos": {
-    "it": "Bar, prima colazione, pasticceria",
-    "en": "Bars, breakfast, pastry shops",
-    "fr": "Bar, petit-déjeuner, pâtisserie",
-    "es": "Bar, desayuno, pastelería"
-   },
-   "tags": [
-    {
-     "it": "Uova da allevamento a terra",
-     "en": "Barn-laid eggs",
-     "fr": "Œufs de poules élevées au sol",
-     "es": "Huevos de gallinas criadas en suelo"
-    },
-    {
-     "it": "Senza OGM",
-     "en": "GMO free",
-     "fr": "Sans OGM",
-     "es": "Sin OGM"
-    },
-    {
-     "it": "Senza grassi idrogenati",
-     "en": "No hydrogenated fats",
-     "fr": "Sans graisses hydrogénées",
-     "es": "Sin grasas hidrogenadas"
-    },
-    {
-     "it": "Pronto forno",
-     "en": "Ready to bake",
-     "fr": "Prêt à enfourner",
-     "es": "Listo para hornear"
-    },
-    {
-     "it": "Senza lievito",
-     "en": "Yeast free",
-     "fr": "Sans levure",
-     "es": "Sin levadura"
-    }
-   ],
-   "cod": "1810"
-  },
-  {
-   "img": "img/catalogo/cornetteria/06-danesina-noci-pecan.webp",
-   "nome": "Danesina noci pecan",
-   "sg": false,
-   "marca": "Cornetteria",
-   "gruppo": "FAGOTTI E SFOGLIE",
-   "tipo": {
-    "it": "Sfoglia",
-    "en": "Puff pastry",
-    "fr": "Feuilleté",
-    "es": "Hojaldre"
-   },
-   "fmt": {
-    "it": "Peso netto 95 g · 48 pezzi per cartone",
-    "en": "Net weight 95 g · 48 pieces per carton",
-    "fr": "Poids net 95 g · 48 pièces par carton",
-    "es": "Peso neto 95 g · 48 piezas por caja"
-   },
-   "desc": {
-    "it": "Treccia di pasta danese con topping di noci pecan.",
-    "en": "Danish pastry braid topped with pecan nuts.",
-    "fr": "Tresse de pâte danoise garnie de noix de pécan.",
-    "es": "Trenza de masa danesa con topping de nueces pecanas."
-   },
-   "pos": {
-    "it": "Bar, prima colazione, pasticceria",
-    "en": "Bars, breakfast, pastry shops",
-    "fr": "Bar, petit-déjeuner, pâtisserie",
-    "es": "Bar, desayuno, pastelería"
-   },
-   "cod": "4730"
-  },
-  {
-   "img": "img/catalogo/cornetteria/07-bombolone.webp",
-   "nome": "Bombolone / Krapfen vuoto",
-   "sg": false,
-   "marca": "Cupiello",
-   "gruppo": "CIAMBELLE E DONUT",
-   "tipo": {
-    "it": "Bombolone",
-    "en": "Filled doughnut base",
-    "fr": "Beignet",
-    "es": "Berlina"
-   },
-   "fmt": {
-    "it": "Peso netto 55 g · 48 pezzi per cartone",
-    "en": "Net weight 55 g · 48 pieces per carton",
-    "fr": "Poids net 55 g · 48 pièces par carton",
-    "es": "Peso neto 55 g · 48 piezas por caja"
-   },
-   "desc": {
-    "it": "Bombolone vuoto già cotto, nel formato dell'assortimento hotel.",
-    "en": "Plain, pre-baked doughnut in the hotel assortment size.",
-    "fr": "Beignet nature déjà cuit, au format de l'assortiment hôtel.",
-    "es": "Berlina sin relleno ya cocida, en el formato del surtido hotel."
-   },
-   "pos": {
-    "it": "Hotel, buffet colazione, bar",
-    "en": "Hotels, breakfast buffets, bars",
-    "fr": "Hôtel, buffet petit-déjeuner, bar",
-    "es": "Hotel, bufé de desayuno, bar"
-   },
-   "tags": [
-    {
-     "it": "Già cotto",
-     "en": "Pre-baked",
-     "fr": "Déjà cuit",
-     "es": "Ya cocido"
-    }
-   ],
-   "cod": "5867"
-  },
-  {
-   "img": "img/catalogo/cornetteria/08-ciambella-donut.webp",
-   "nome": "Ciambella / Donut",
-   "sg": false,
-   "marca": "Cupiello",
-   "gruppo": "CIAMBELLE E DONUT",
-   "tipo": {
-    "it": "Ciambelle e donut",
-    "en": "Doughnuts",
-    "fr": "Beignets et donuts",
-    "es": "Donuts y berlinas"
-   },
-   "fmt": {
-    "it": "Peso netto 49 g · 36 pezzi per cartone",
-    "en": "Net weight 49 g · 36 pieces per carton",
-    "fr": "Poids net 49 g · 36 pièces par carton",
-    "es": "Peso neto 49 g · 36 piezas por caja"
-   },
-   "desc": {
-    "it": "Ciambella già cotta, rifinita con zucchero.",
-    "en": "Pre-baked doughnut finished with sugar.",
-    "fr": "Donut déjà cuit, finition au sucre.",
-    "es": "Donut ya cocido, terminado con azúcar."
-   },
-   "pos": {
-    "it": "Hotel, buffet colazione, bar",
-    "en": "Hotels, breakfast buffets, bars",
-    "fr": "Hôtel, buffet petit-déjeuner, bar",
-    "es": "Hotel, bufé de desayuno, bar"
-   },
-   "tags": [
-    {
-     "it": "Già cotto",
-     "en": "Pre-baked",
-     "fr": "Déjà cuit",
-     "es": "Ya cocido"
-    }
-   ],
-   "cod": "0415"
-  },
-  {
-   "img": "img/catalogo/cornetteria/09-ciambella-zuccherata-maxi.webp",
-   "nome": "Ciambella zuccherata maxi",
-   "sg": false,
-   "marca": "Cupiello",
-   "gruppo": "CIAMBELLE E DONUT",
-   "tipo": {
-    "it": "Ciambelle e donut",
-    "en": "Doughnuts",
-    "fr": "Beignets et donuts",
-    "es": "Donuts y berlinas"
-   },
-   "fmt": {
-    "it": "Peso netto 100 g · 36 pezzi per cartone",
-    "en": "Net weight 100 g · 36 pieces per carton",
-    "fr": "Poids net 100 g · 36 pièces par carton",
-    "es": "Peso neto 100 g · 36 piezas por caja"
-   },
-   "desc": {
-    "it": "Maxi ciambella rifinita con zucchero. Già cotta, senza olio di palma.",
-    "en": "Maxi doughnut finished with sugar. Pre-baked, palm free.",
-    "fr": "Maxi donut finition sucre. Déjà cuit, sans huile de palme.",
-    "es": "Maxi donut terminado con azúcar. Ya cocido, sin aceite de palma."
-   },
-   "pos": {
-    "it": "Bar, prima colazione, pasticceria",
-    "en": "Bars, breakfast, pastry shops",
-    "fr": "Bar, petit-déjeuner, pâtisserie",
-    "es": "Bar, desayuno, pastelería"
-   },
-   "tags": [
-    {
-     "it": "Già cotto",
-     "en": "Pre-baked",
-     "fr": "Déjà cuit",
-     "es": "Ya cocido"
-    },
-    {
-     "it": "Senza olio di palma",
-     "en": "Palm free",
-     "fr": "Sans huile de palme",
-     "es": "Sin aceite de palma"
-    }
-   ],
-   "cod": "1006"
-  },
-  {
-   "img": "img/catalogo/cornetteria/10-donut-ciok.webp",
-   "nome": "Ciambella / Donut Ciok",
-   "sg": false,
-   "marca": "Cupiello",
-   "gruppo": "CIAMBELLE E DONUT",
-   "tipo": {
-    "it": "Ciambelle e donut",
-    "en": "Doughnuts",
-    "fr": "Beignets et donuts",
-    "es": "Donuts y berlinas"
-   },
-   "fmt": {
-    "it": "Peso netto 75 g · 24 pezzi per cartone",
-    "en": "Net weight 75 g · 24 pieces per carton",
-    "fr": "Poids net 75 g · 24 pièces par carton",
-    "es": "Peso neto 75 g · 24 piezas por caja"
-   },
-   "desc": {
-    "it": "Ciambella farcita con crema al cacao e nocciola. Già cotta, senza OGM e senza grassi idrogenati.",
-    "en": "Doughnut filled with cocoa and hazelnut cream. Pre-baked, GMO free and without hydrogenated fats.",
-    "fr": "Donut fourré à la crème cacao-noisette. Déjà cuit, sans OGM ni graisses hydrogénées.",
-    "es": "Donut relleno de crema de cacao y avellana. Ya cocido, sin OGM y sin grasas hidrogenadas."
-   },
-   "pos": {
-    "it": "Bar, prima colazione, pasticceria",
-    "en": "Bars, breakfast, pastry shops",
-    "fr": "Bar, petit-déjeuner, pâtisserie",
-    "es": "Bar, desayuno, pastelería"
-   },
-   "tags": [
-    {
-     "it": "Già cotto",
-     "en": "Pre-baked",
-     "fr": "Déjà cuit",
-     "es": "Ya cocido"
-    },
-    {
-     "it": "Senza OGM",
-     "en": "GMO free",
-     "fr": "Sans OGM",
-     "es": "Sin OGM"
-    },
-    {
-     "it": "Senza grassi idrogenati",
-     "en": "No hydrogenated fats",
-     "fr": "Sans graisses hydrogénées",
-     "es": "Sin grasas hidrogenadas"
-    }
-   ],
-   "cod": "1516"
-  },
-  {
-   "img": "img/catalogo/cornetteria/11-donut-tris.webp",
-   "nome": "Ciambella / Donut Tris",
-   "sg": false,
-   "marca": "Cupiello",
-   "gruppo": "CIAMBELLE E DONUT",
-   "tipo": {
-    "it": "Ciambelle e donut",
-    "en": "Doughnuts",
-    "fr": "Beignets et donuts",
-    "es": "Donuts y berlinas"
-   },
-   "fmt": {
-    "it": "Peso netto 52 g · 36 pezzi per cartone",
-    "en": "Net weight 52 g · 36 pieces per carton",
-    "fr": "Poids net 52 g · 36 pièces par carton",
-    "es": "Peso neto 52 g · 36 piezas por caja"
-   },
-   "desc": {
-    "it": "Tre gusti assortiti: Ciok, Pinky e White. Ciambelle già cotte.",
-    "en": "Three assorted flavours: Ciok, Pinky and White. Pre-baked doughnuts.",
-    "fr": "Trois parfums assortis : Ciok, Pinky et White. Donuts déjà cuits.",
-    "es": "Tres sabores surtidos: Ciok, Pinky y White. Donuts ya cocidos."
-   },
-   "pos": {
-    "it": "Hotel, buffet colazione, bar",
-    "en": "Hotels, breakfast buffets, bars",
-    "fr": "Hôtel, buffet petit-déjeuner, bar",
-    "es": "Hotel, bufé de desayuno, bar"
-   },
-   "tags": [
-    {
-     "it": "Già cotto",
-     "en": "Pre-baked",
-     "fr": "Déjà cuit",
-     "es": "Ya cocido"
-    }
-   ],
-   "cod": "4832"
-  },
-  {
-   "img": "img/catalogo/cornetteria/12-grancornetto-crema.webp",
-   "nome": "Grancornetto crema",
-   "sg": false,
-   "marca": "Cupiello",
-   "gruppo": "CORNETTI E GRANCORNETTI",
-   "tipo": {
-    "it": "Grancornetto",
-    "en": "Large croissant",
-    "fr": "Grand croissant",
-    "es": "Croissant grande"
-   },
-   "fmt": {
-    "it": "Peso netto 95 g · 55 pezzi per cartone",
-    "en": "Net weight 95 g · 55 pieces per carton",
-    "fr": "Poids net 95 g · 55 pièces par carton",
-    "es": "Peso neto 95 g · 55 piezas por caja"
-   },
-   "desc": {
-    "it": "Grancornetto curvo farcito alla crema e rifinito con codette di zucchero. Prelievitato surgelato, pronto da cuocere, lievitato 26 ore.",
-    "en": "Large curved croissant filled with custard cream and finished with sugar strands. Pre-proofed frozen, ready to bake, proofed 26 hours.",
-    "fr": "Grand croissant courbe fourré à la crème et fini aux vermicelles de sucre. Surgelé pré-poussé, prêt à cuire, levé 26 heures.",
-    "es": "Croissant grande curvo relleno de crema y terminado con fideos de azúcar. Prefermentado congelado, listo para hornear, 26 horas de fermentación."
-   },
-   "pos": {
-    "it": "Bar, prima colazione, pasticceria",
-    "en": "Bars, breakfast, pastry shops",
-    "fr": "Bar, petit-déjeuner, pâtisserie",
-    "es": "Bar, desayuno, pastelería"
-   },
-   "tags": [
-    {
-     "it": "Uova da allevamento a terra",
-     "en": "Barn-laid eggs",
-     "fr": "Œufs de poules élevées au sol",
-     "es": "Huevos de gallinas criadas en suelo"
-    },
-    {
-     "it": "Senza OGM",
-     "en": "GMO free",
-     "fr": "Sans OGM",
-     "es": "Sin OGM"
-    },
-    {
-     "it": "Senza grassi idrogenati",
-     "en": "No hydrogenated fats",
-     "fr": "Sans graisses hydrogénées",
-     "es": "Sin grasas hidrogenadas"
-    },
-    {
-     "it": "Lievito MadreCupiello",
-     "en": "MadreCupiello sourdough",
-     "fr": "Levain MadreCupiello",
-     "es": "Masa madre MadreCupiello"
-    },
-    {
-     "it": "Pronto forno",
-     "en": "Ready to bake",
-     "fr": "Prêt à enfourner",
-     "es": "Listo para hornear"
-    }
-   ],
-   "cod": "0563"
-  },
-  {
-   "img": "img/catalogo/cornetteria/13-grancornetto-albicocca.webp",
-   "nome": "Grancornetto confettura albicocca",
-   "sg": false,
-   "marca": "Cupiello",
-   "gruppo": "CORNETTI E GRANCORNETTI",
-   "tipo": {
-    "it": "Grancornetto",
-    "en": "Large croissant",
-    "fr": "Grand croissant",
-    "es": "Croissant grande"
-   },
-   "fmt": {
-    "it": "Peso netto 95 g · 55 pezzi per cartone",
-    "en": "Net weight 95 g · 55 pieces per carton",
-    "fr": "Poids net 95 g · 55 pièces par carton",
-    "es": "Peso neto 95 g · 55 piezas por caja"
-   },
-   "desc": {
-    "it": "Farcito con confettura di albicocche del Vesuvio, senza aromi aggiunti, rifinito con zucchero in superficie. Prelievitato surgelato, lievitato 26 ore.",
-    "en": "Filled with Vesuvius apricot jam, no added flavourings, sugar-finished on top. Pre-proofed frozen, proofed 26 hours.",
-    "fr": "Fourré à la confiture d'abricots du Vésuve, sans arômes ajoutés, fini au sucre. Surgelé pré-poussé, levé 26 heures.",
-    "es": "Relleno de mermelada de albaricoques del Vesubio, sin aromas añadidos, terminado con azúcar. Prefermentado congelado, 26 horas de fermentación."
-   },
-   "pos": {
-    "it": "Bar, prima colazione, pasticceria",
-    "en": "Bars, breakfast, pastry shops",
-    "fr": "Bar, petit-déjeuner, pâtisserie",
-    "es": "Bar, desayuno, pastelería"
-   },
-   "tags": [
-    {
-     "it": "Uova da allevamento a terra",
-     "en": "Barn-laid eggs",
-     "fr": "Œufs de poules élevées au sol",
-     "es": "Huevos de gallinas criadas en suelo"
-    },
-    {
-     "it": "Senza OGM",
-     "en": "GMO free",
-     "fr": "Sans OGM",
-     "es": "Sin OGM"
-    },
-    {
-     "it": "Senza grassi idrogenati",
-     "en": "No hydrogenated fats",
-     "fr": "Sans graisses hydrogénées",
-     "es": "Sin grasas hidrogenadas"
-    },
-    {
-     "it": "Lievito MadreCupiello",
-     "en": "MadreCupiello sourdough",
-     "fr": "Levain MadreCupiello",
-     "es": "Masa madre MadreCupiello"
-    },
-    {
-     "it": "Pronto forno",
-     "en": "Ready to bake",
-     "fr": "Prêt à enfourner",
-     "es": "Listo para hornear"
-    }
-   ],
-   "cod": "2162"
-  },
-  {
-   "img": "img/catalogo/cornetteria/14-grancornetto-vuoto.webp",
+   "img": "img/catalogo/cornetteria/01-grancornetto-vuoto.webp",
    "nome": "Grancornetto vuoto",
    "sg": false,
    "marca": "Cupiello",
@@ -764,7 +72,489 @@ window.CATALOGO.cornetteria = {
    "cod": "1811"
   },
   {
-   "img": "img/catalogo/cornetteria/15-grancornetto-cuordimadre.webp",
+   "img": "img/catalogo/cornetteria/02-grancornetto-albicocca.webp",
+   "nome": "Grancornetto confettura albicocca",
+   "sg": false,
+   "marca": "Cupiello",
+   "gruppo": "CORNETTI E GRANCORNETTI",
+   "tipo": {
+    "it": "Grancornetto",
+    "en": "Large croissant",
+    "fr": "Grand croissant",
+    "es": "Croissant grande"
+   },
+   "fmt": {
+    "it": "Peso netto 95 g · 55 pezzi per cartone",
+    "en": "Net weight 95 g · 55 pieces per carton",
+    "fr": "Poids net 95 g · 55 pièces par carton",
+    "es": "Peso neto 95 g · 55 piezas por caja"
+   },
+   "desc": {
+    "it": "Farcito con confettura di albicocche del Vesuvio, senza aromi aggiunti, rifinito con zucchero in superficie. Prelievitato surgelato, lievitato 26 ore.",
+    "en": "Filled with Vesuvius apricot jam, no added flavourings, sugar-finished on top. Pre-proofed frozen, proofed 26 hours.",
+    "fr": "Fourré à la confiture d'abricots du Vésuve, sans arômes ajoutés, fini au sucre. Surgelé pré-poussé, levé 26 heures.",
+    "es": "Relleno de mermelada de albaricoques del Vesubio, sin aromas añadidos, terminado con azúcar. Prefermentado congelado, 26 horas de fermentación."
+   },
+   "pos": {
+    "it": "Bar, prima colazione, pasticceria",
+    "en": "Bars, breakfast, pastry shops",
+    "fr": "Bar, petit-déjeuner, pâtisserie",
+    "es": "Bar, desayuno, pastelería"
+   },
+   "tags": [
+    {
+     "it": "Uova da allevamento a terra",
+     "en": "Barn-laid eggs",
+     "fr": "Œufs de poules élevées au sol",
+     "es": "Huevos de gallinas criadas en suelo"
+    },
+    {
+     "it": "Senza OGM",
+     "en": "GMO free",
+     "fr": "Sans OGM",
+     "es": "Sin OGM"
+    },
+    {
+     "it": "Senza grassi idrogenati",
+     "en": "No hydrogenated fats",
+     "fr": "Sans graisses hydrogénées",
+     "es": "Sin grasas hidrogenadas"
+    },
+    {
+     "it": "Lievito MadreCupiello",
+     "en": "MadreCupiello sourdough",
+     "fr": "Levain MadreCupiello",
+     "es": "Masa madre MadreCupiello"
+    },
+    {
+     "it": "Pronto forno",
+     "en": "Ready to bake",
+     "fr": "Prêt à enfourner",
+     "es": "Listo para hornear"
+    }
+   ],
+   "cod": "2162"
+  },
+  {
+   "img": "img/catalogo/cornetteria/03-grancornetto-crema.webp",
+   "nome": "Grancornetto crema",
+   "sg": false,
+   "marca": "Cupiello",
+   "gruppo": "CORNETTI E GRANCORNETTI",
+   "tipo": {
+    "it": "Grancornetto",
+    "en": "Large croissant",
+    "fr": "Grand croissant",
+    "es": "Croissant grande"
+   },
+   "fmt": {
+    "it": "Peso netto 95 g · 55 pezzi per cartone",
+    "en": "Net weight 95 g · 55 pieces per carton",
+    "fr": "Poids net 95 g · 55 pièces par carton",
+    "es": "Peso neto 95 g · 55 piezas por caja"
+   },
+   "desc": {
+    "it": "Grancornetto curvo farcito alla crema e rifinito con codette di zucchero. Prelievitato surgelato, pronto da cuocere, lievitato 26 ore.",
+    "en": "Large curved croissant filled with custard cream and finished with sugar strands. Pre-proofed frozen, ready to bake, proofed 26 hours.",
+    "fr": "Grand croissant courbe fourré à la crème et fini aux vermicelles de sucre. Surgelé pré-poussé, prêt à cuire, levé 26 heures.",
+    "es": "Croissant grande curvo relleno de crema y terminado con fideos de azúcar. Prefermentado congelado, listo para hornear, 26 horas de fermentación."
+   },
+   "pos": {
+    "it": "Bar, prima colazione, pasticceria",
+    "en": "Bars, breakfast, pastry shops",
+    "fr": "Bar, petit-déjeuner, pâtisserie",
+    "es": "Bar, desayuno, pastelería"
+   },
+   "tags": [
+    {
+     "it": "Uova da allevamento a terra",
+     "en": "Barn-laid eggs",
+     "fr": "Œufs de poules élevées au sol",
+     "es": "Huevos de gallinas criadas en suelo"
+    },
+    {
+     "it": "Senza OGM",
+     "en": "GMO free",
+     "fr": "Sans OGM",
+     "es": "Sin OGM"
+    },
+    {
+     "it": "Senza grassi idrogenati",
+     "en": "No hydrogenated fats",
+     "fr": "Sans graisses hydrogénées",
+     "es": "Sin grasas hidrogenadas"
+    },
+    {
+     "it": "Lievito MadreCupiello",
+     "en": "MadreCupiello sourdough",
+     "fr": "Levain MadreCupiello",
+     "es": "Masa madre MadreCupiello"
+    },
+    {
+     "it": "Pronto forno",
+     "en": "Ready to bake",
+     "fr": "Prêt à enfourner",
+     "es": "Listo para hornear"
+    }
+   ],
+   "cod": "0563"
+  },
+  {
+   "img": "img/catalogo/cornetteria/04-cornetto-recacao.webp",
+   "nome": "Cornetto ReCacao, bicolore cacao",
+   "sg": false,
+   "marca": "Cupiello",
+   "gruppo": "CORNETTI E GRANCORNETTI",
+   "tipo": {
+    "it": "Cornetto",
+    "en": "Croissant",
+    "fr": "Croissant",
+    "es": "Croissant"
+   },
+   "fmt": {
+    "it": "Peso netto 90 g · 48 pezzi per cartone",
+    "en": "Net weight 90 g · 48 pieces per carton",
+    "fr": "Poids net 90 g · 48 pièces par carton",
+    "es": "Peso neto 90 g · 48 piezas por caja"
+   },
+   "desc": {
+    "it": "Cornetto con impasto bicolore lievitato 26 ore, farcito con crema al cioccolato e lucidato con zucchero. Senza coloranti artificiali, con cacao certificato Rainforest Alliance.",
+    "en": "Two-tone croissant proofed 26 hours, filled with chocolate cream and sugar-glazed. No artificial colours, with Rainforest Alliance certified cocoa.",
+    "fr": "Croissant bicolore levé 26 heures, fourré à la crème au chocolat et nappé de sucre. Sans colorants artificiels, avec du cacao certifié Rainforest Alliance.",
+    "es": "Croissant bicolor fermentado 26 horas, relleno de crema de chocolate y abrillantado con azúcar. Sin colorantes artificiales, con cacao certificado Rainforest Alliance."
+   },
+   "pos": {
+    "it": "Bar, prima colazione, pasticceria",
+    "en": "Bars, breakfast, pastry shops",
+    "fr": "Bar, petit-déjeuner, pâtisserie",
+    "es": "Bar, desayuno, pastelería"
+   },
+   "tags": [
+    {
+     "it": "Senza OGM",
+     "en": "GMO free",
+     "fr": "Sans OGM",
+     "es": "Sin OGM"
+    },
+    {
+     "it": "Senza grassi idrogenati",
+     "en": "No hydrogenated fats",
+     "fr": "Sans graisses hydrogénées",
+     "es": "Sin grasas hidrogenadas"
+    },
+    {
+     "it": "Lievito MadreCupiello",
+     "en": "MadreCupiello sourdough",
+     "fr": "Levain MadreCupiello",
+     "es": "Masa madre MadreCupiello"
+    },
+    {
+     "it": "Senza aromi e coloranti artificiali",
+     "en": "No artificial flavours or colours",
+     "fr": "Sans arômes ni colorants artificiels",
+     "es": "Sin aromas ni colorantes artificiales"
+    },
+    {
+     "it": "Pronto forno",
+     "en": "Ready to bake",
+     "fr": "Prêt à enfourner",
+     "es": "Listo para hornear"
+    }
+   ],
+   "cod": "6012"
+  },
+  {
+   "img": "img/catalogo/cornetteria/05-cornetto-multicereali-miele.webp",
+   "nome": "Cornetto multicereali e miele",
+   "sg": false,
+   "marca": "Cupiello",
+   "gruppo": "CORNETTI E GRANCORNETTI",
+   "tipo": {
+    "it": "Cornetto",
+    "en": "Croissant",
+    "fr": "Croissant",
+    "es": "Croissant"
+   },
+   "fmt": {
+    "it": "Peso netto 90 g · 60 pezzi per cartone",
+    "en": "Net weight 90 g · 60 pieces per carton",
+    "fr": "Poids net 90 g · 60 pièces par carton",
+    "es": "Peso neto 90 g · 60 piezas por caja"
+   },
+   "desc": {
+    "it": "Cornetto multicereali farcito con preparato al miele e rifinito con fiocchi d'avena. Farina multicereali con semi di sesamo e lino, 36 ore di lievitazione naturale.",
+    "en": "Multigrain croissant filled with honey cream and finished with oat flakes. Multigrain flour with sesame and flax seeds, 36 hours of natural proofing.",
+    "fr": "Croissant multicéréales fourré au miel et fini aux flocons d'avoine. Farine multicéréales avec graines de sésame et de lin, 36 heures de levée naturelle.",
+    "es": "Croissant multicereales relleno de preparado de miel y terminado con copos de avena. Harina multicereales con semillas de sésamo y lino, 36 horas de fermentación natural."
+   },
+   "pos": {
+    "it": "Bar, prima colazione, pasticceria",
+    "en": "Bars, breakfast, pastry shops",
+    "fr": "Bar, petit-déjeuner, pâtisserie",
+    "es": "Bar, desayuno, pastelería"
+   },
+   "tags": [
+    {
+     "it": "Uova da allevamento a terra",
+     "en": "Barn-laid eggs",
+     "fr": "Œufs de poules élevées au sol",
+     "es": "Huevos de gallinas criadas en suelo"
+    },
+    {
+     "it": "Senza OGM",
+     "en": "GMO free",
+     "fr": "Sans OGM",
+     "es": "Sin OGM"
+    },
+    {
+     "it": "Senza grassi idrogenati",
+     "en": "No hydrogenated fats",
+     "fr": "Sans graisses hydrogénées",
+     "es": "Sin grasas hidrogenadas"
+    },
+    {
+     "it": "Lievito MadreCupiello",
+     "en": "MadreCupiello sourdough",
+     "fr": "Levain MadreCupiello",
+     "es": "Masa madre MadreCupiello"
+    },
+    {
+     "it": "Pronto forno",
+     "en": "Ready to bake",
+     "fr": "Prêt à enfourner",
+     "es": "Listo para hornear"
+    }
+   ],
+   "cod": "3831"
+  },
+  {
+   "img": "img/catalogo/cornetteria/06-cornetto-rebosco.webp",
+   "nome": "Cornetto ReBosco, bicolore extrafarcito ai frutti di bosco",
+   "sg": false,
+   "marca": "Cupiello",
+   "gruppo": "CORNETTI E GRANCORNETTI",
+   "tipo": {
+    "it": "Cornetto",
+    "en": "Croissant",
+    "fr": "Croissant",
+    "es": "Croissant"
+   },
+   "fmt": {
+    "it": "Peso netto 90 g · 48 pezzi per cartone",
+    "en": "Net weight 90 g · 48 pieces per carton",
+    "fr": "Poids net 90 g · 48 pièces par carton",
+    "es": "Peso neto 90 g · 48 piezas por caja"
+   },
+   "desc": {
+    "it": "Cornetto bicolore lievitato 26 ore, extra-farcito ai frutti di bosco (lamponi, fragole, mirtilli) e rifinito con zucchero in superficie.",
+    "en": "Two-tone croissant proofed 26 hours, extra-filled with wild berries (raspberries, strawberries, blueberries) and finished with sugar.",
+    "fr": "Croissant bicolore levé 26 heures, extra-garni de fruits rouges (framboises, fraises, myrtilles) et fini au sucre.",
+    "es": "Croissant bicolor fermentado 26 horas, extra de relleno de frutos del bosque (frambuesas, fresas, arándanos) y terminado con azúcar."
+   },
+   "pos": {
+    "it": "Bar, prima colazione, pasticceria",
+    "en": "Bars, breakfast, pastry shops",
+    "fr": "Bar, petit-déjeuner, pâtisserie",
+    "es": "Bar, desayuno, pastelería"
+   },
+   "tags": [
+    {
+     "it": "Senza OGM",
+     "en": "GMO free",
+     "fr": "Sans OGM",
+     "es": "Sin OGM"
+    },
+    {
+     "it": "Senza grassi idrogenati",
+     "en": "No hydrogenated fats",
+     "fr": "Sans graisses hydrogénées",
+     "es": "Sin grasas hidrogenadas"
+    },
+    {
+     "it": "Lievito MadreCupiello",
+     "en": "MadreCupiello sourdough",
+     "fr": "Levain MadreCupiello",
+     "es": "Masa madre MadreCupiello"
+    },
+    {
+     "it": "Pronto forno",
+     "en": "Ready to bake",
+     "fr": "Prêt à enfourner",
+     "es": "Listo para hornear"
+    }
+   ],
+   "cod": "5932"
+  },
+  {
+   "img": "img/catalogo/cornetteria/07-cornetto-segale-frutti-bosco.webp",
+   "nome": "Cornetto multicereali con segale e frutti di bosco",
+   "sg": false,
+   "marca": "Cupiello",
+   "gruppo": "CORNETTI E GRANCORNETTI",
+   "tipo": {
+    "it": "Cornetto",
+    "en": "Croissant",
+    "fr": "Croissant",
+    "es": "Croissant"
+   },
+   "fmt": {
+    "it": "Peso netto 89 g · 55 pezzi per cartone",
+    "en": "Net weight 89 g · 55 pieces per carton",
+    "fr": "Poids net 89 g · 55 pièces par carton",
+    "es": "Peso neto 89 g · 55 piezas por caja"
+   },
+   "desc": {
+    "it": "Cornetto multicereali con segale, farcito ai frutti di bosco e lucidato con zucchero di canna. Senza conservanti, 26 ore di lievitazione naturale.",
+    "en": "Multigrain croissant with rye, filled with wild berries and glazed with cane sugar. No preservatives, 26 hours of natural proofing.",
+    "fr": "Croissant multicéréales au seigle, fourré aux fruits rouges et nappé de sucre de canne. Sans conservateurs, 26 heures de levée naturelle.",
+    "es": "Croissant multicereales con centeno, relleno de frutos del bosque y abrillantado con azúcar de caña. Sin conservantes, 26 horas de fermentación natural."
+   },
+   "pos": {
+    "it": "Bar, prima colazione, pasticceria",
+    "en": "Bars, breakfast, pastry shops",
+    "fr": "Bar, petit-déjeuner, pâtisserie",
+    "es": "Bar, desayuno, pastelería"
+   },
+   "tags": [
+    {
+     "it": "Uova da allevamento a terra",
+     "en": "Barn-laid eggs",
+     "fr": "Œufs de poules élevées au sol",
+     "es": "Huevos de gallinas criadas en suelo"
+    },
+    {
+     "it": "Senza OGM",
+     "en": "GMO free",
+     "fr": "Sans OGM",
+     "es": "Sin OGM"
+    },
+    {
+     "it": "Senza grassi idrogenati",
+     "en": "No hydrogenated fats",
+     "fr": "Sans graisses hydrogénées",
+     "es": "Sin grasas hidrogenadas"
+    },
+    {
+     "it": "Lievito MadreCupiello",
+     "en": "MadreCupiello sourdough",
+     "fr": "Levain MadreCupiello",
+     "es": "Masa madre MadreCupiello"
+    },
+    {
+     "it": "Pronto forno",
+     "en": "Ready to bake",
+     "fr": "Prêt à enfourner",
+     "es": "Listo para hornear"
+    }
+   ],
+   "cod": "6915"
+  },
+  {
+   "img": "img/catalogo/cornetteria/08-paris-vuoto.webp",
+   "nome": "Paris, cornetto tuttoburro vuoto",
+   "sg": false,
+   "marca": "Cupiello",
+   "gruppo": "CORNETTI E GRANCORNETTI",
+   "tipo": {
+    "it": "Alta pasticceria",
+    "en": "Fine pastry",
+    "fr": "Haute pâtisserie",
+    "es": "Alta pastelería"
+   },
+   "fmt": {
+    "it": "Peso netto 80 g · 45 pezzi per cartone",
+    "en": "Net weight 80 g · 45 pieces per carton",
+    "fr": "Poids net 80 g · 45 pièces par carton",
+    "es": "Peso neto 80 g · 45 piezas por caja"
+   },
+   "desc": {
+    "it": "Croissant Madre tuttoburro con il 23% di burro: sfogliatura dorata alla francese, gusto delicato di burro belga, ideale da farcire dopo la cottura.",
+    "en": "All-butter Madre croissant with 23% butter: golden French-style layers, delicate Belgian butter taste, ideal to fill after baking.",
+    "fr": "Croissant Madre pur beurre à 23 % de beurre : feuilletage doré à la française, goût délicat de beurre belge, idéal à garnir après cuisson.",
+    "es": "Croissant Madre de mantequilla con un 23 % de mantequilla: hojaldrado dorado a la francesa, sabor delicado de mantequilla belga, ideal para rellenar tras el horneado."
+   },
+   "pos": {
+    "it": "Bar, prima colazione, pasticceria",
+    "en": "Bars, breakfast, pastry shops",
+    "fr": "Bar, petit-déjeuner, pâtisserie",
+    "es": "Bar, desayuno, pastelería"
+   },
+   "tags": [
+    {
+     "it": "Uova da allevamento a terra",
+     "en": "Barn-laid eggs",
+     "fr": "Œufs de poules élevées au sol",
+     "es": "Huevos de gallinas criadas en suelo"
+    },
+    {
+     "it": "Senza OGM",
+     "en": "GMO free",
+     "fr": "Sans OGM",
+     "es": "Sin OGM"
+    },
+    {
+     "it": "Senza grassi idrogenati",
+     "en": "No hydrogenated fats",
+     "fr": "Sans graisses hydrogénées",
+     "es": "Sin grasas hidrogenadas"
+    },
+    {
+     "it": "Lievito MadreCupiello",
+     "en": "MadreCupiello sourdough",
+     "fr": "Levain MadreCupiello",
+     "es": "Masa madre MadreCupiello"
+    },
+    {
+     "it": "Pronto forno",
+     "en": "Ready to bake",
+     "fr": "Prêt à enfourner",
+     "es": "Listo para hornear"
+    }
+   ],
+   "cod": "1436"
+  },
+  {
+   "img": "img/catalogo/cornetteria/09-ischia.webp",
+   "nome": "Ischia, cornetto doppio impasto vuoto",
+   "sg": false,
+   "marca": "Cupiello",
+   "gruppo": "CORNETTI E GRANCORNETTI",
+   "tipo": {
+    "it": "Alta pasticceria",
+    "en": "Fine pastry",
+    "fr": "Haute pâtisserie",
+    "es": "Alta pastelería"
+   },
+   "fmt": {
+    "it": "Peso netto 80 g · 40 pezzi per cartone",
+    "en": "Net weight 80 g · 40 pieces per carton",
+    "fr": "Poids net 80 g · 40 pièces par carton",
+    "es": "Peso neto 80 g · 40 piezas por caja"
+   },
+   "desc": {
+    "it": "Cornetto a doppio impasto: pasta sfoglia sovrapposta alla pasta brioche. Forma più corta e panciuta che esalta la farcitura, ideale da lucidare, decorare o farcire dopo la cottura.",
+    "en": "Double-dough croissant: puff pastry layered over brioche dough. A shorter, rounder shape that shows off the filling, ideal to glaze, decorate or fill after baking.",
+    "fr": "Croissant à double pâte : feuilletage superposé à la pâte briochée. Forme plus courte et ventrue qui met en valeur la garniture, idéal à napper, décorer ou garnir après cuisson.",
+    "es": "Croissant de doble masa: hojaldre sobre masa de brioche. Forma más corta y redondeada que realza el relleno, ideal para abrillantar, decorar o rellenar tras el horneado."
+   },
+   "pos": {
+    "it": "Bar, prima colazione, pasticceria",
+    "en": "Bars, breakfast, pastry shops",
+    "fr": "Bar, petit-déjeuner, pâtisserie",
+    "es": "Bar, desayuno, pastelería"
+   },
+   "tags": [
+    {
+     "it": "Senza aromi e coloranti artificiali",
+     "en": "No artificial flavours or colours",
+     "fr": "Sans arômes ni colorants artificiels",
+     "es": "Sin aromas ni colorantes artificiales"
+    }
+   ],
+   "cod": "1458"
+  },
+  {
+   "img": "img/catalogo/cornetteria/10-grancornetto-cuordimadre.webp",
    "nome": "Grancornetto Cuor di Madre vuoto",
    "sg": false,
    "marca": "Cupiello",
@@ -840,187 +630,7 @@ window.CATALOGO.cornetteria = {
    "cod": "6845"
   },
   {
-   "img": "img/catalogo/cornetteria/16-cornetto-dritto-vuoto.webp",
-   "nome": "Cornetto dritto vuoto",
-   "sg": false,
-   "marca": "Cupiello",
-   "gruppo": "CORNETTI E GRANCORNETTI",
-   "tipo": {
-    "it": "Cornetto",
-    "en": "Croissant",
-    "fr": "Croissant",
-    "es": "Croissant"
-   },
-   "fmt": {
-    "it": "Peso netto 47 g · 75 pezzi per cartone",
-    "en": "Net weight 47 g · 75 pieces per carton",
-    "fr": "Poids net 47 g · 75 pièces par carton",
-    "es": "Peso neto 47 g · 75 piezas por caja"
-   },
-   "desc": {
-    "it": "Cornetto dritto vuoto, lucidato con zucchero brillo.",
-    "en": "Plain straight croissant, glazed with shiny sugar.",
-    "fr": "Croissant droit nature, lustré au sucre brillant.",
-    "es": "Croissant recto sin relleno, abrillantado con azúcar."
-   },
-   "pos": {
-    "it": "Hotel, buffet colazione, bar",
-    "en": "Hotels, breakfast buffets, bars",
-    "fr": "Hôtels, buffets petit-déjeuner, bars",
-    "es": "Hoteles, bufés de desayuno, bares"
-   },
-   "tags": [
-    {
-     "it": "Senza OGM",
-     "en": "GMO free",
-     "fr": "Sans OGM",
-     "es": "Sin OGM"
-    },
-    {
-     "it": "Senza grassi idrogenati",
-     "en": "No hydrogenated fats",
-     "fr": "Sans graisses hydrogénées",
-     "es": "Sin grasas hidrogenadas"
-    },
-    {
-     "it": "Pronto forno",
-     "en": "Ready to bake",
-     "fr": "Prêt à enfourner",
-     "es": "Listo para hornear"
-    }
-   ],
-   "cod": "2199"
-  },
-  {
-   "img": "img/catalogo/cornetteria/17-cornetto-multicereali-miele.webp",
-   "nome": "Cornetto multicereali e miele",
-   "sg": false,
-   "marca": "Cupiello",
-   "gruppo": "CORNETTI E GRANCORNETTI",
-   "tipo": {
-    "it": "Cornetto",
-    "en": "Croissant",
-    "fr": "Croissant",
-    "es": "Croissant"
-   },
-   "fmt": {
-    "it": "Peso netto 90 g · 60 pezzi per cartone",
-    "en": "Net weight 90 g · 60 pieces per carton",
-    "fr": "Poids net 90 g · 60 pièces par carton",
-    "es": "Peso neto 90 g · 60 piezas por caja"
-   },
-   "desc": {
-    "it": "Cornetto multicereali farcito con preparato al miele e rifinito con fiocchi d'avena. Farina multicereali con semi di sesamo e lino, 36 ore di lievitazione naturale.",
-    "en": "Multigrain croissant filled with honey cream and finished with oat flakes. Multigrain flour with sesame and flax seeds, 36 hours of natural proofing.",
-    "fr": "Croissant multicéréales fourré au miel et fini aux flocons d'avoine. Farine multicéréales avec graines de sésame et de lin, 36 heures de levée naturelle.",
-    "es": "Croissant multicereales relleno de preparado de miel y terminado con copos de avena. Harina multicereales con semillas de sésamo y lino, 36 horas de fermentación natural."
-   },
-   "pos": {
-    "it": "Bar, prima colazione, pasticceria",
-    "en": "Bars, breakfast, pastry shops",
-    "fr": "Bar, petit-déjeuner, pâtisserie",
-    "es": "Bar, desayuno, pastelería"
-   },
-   "tags": [
-    {
-     "it": "Uova da allevamento a terra",
-     "en": "Barn-laid eggs",
-     "fr": "Œufs de poules élevées au sol",
-     "es": "Huevos de gallinas criadas en suelo"
-    },
-    {
-     "it": "Senza OGM",
-     "en": "GMO free",
-     "fr": "Sans OGM",
-     "es": "Sin OGM"
-    },
-    {
-     "it": "Senza grassi idrogenati",
-     "en": "No hydrogenated fats",
-     "fr": "Sans graisses hydrogénées",
-     "es": "Sin grasas hidrogenadas"
-    },
-    {
-     "it": "Lievito MadreCupiello",
-     "en": "MadreCupiello sourdough",
-     "fr": "Levain MadreCupiello",
-     "es": "Masa madre MadreCupiello"
-    },
-    {
-     "it": "Pronto forno",
-     "en": "Ready to bake",
-     "fr": "Prêt à enfourner",
-     "es": "Listo para hornear"
-    }
-   ],
-   "cod": "3831"
-  },
-  {
-   "img": "img/catalogo/cornetteria/18-cornetto-segale-frutti-bosco.webp",
-   "nome": "Cornetto multicereali con segale e frutti di bosco",
-   "sg": false,
-   "marca": "Cupiello",
-   "gruppo": "CORNETTI E GRANCORNETTI",
-   "tipo": {
-    "it": "Cornetto",
-    "en": "Croissant",
-    "fr": "Croissant",
-    "es": "Croissant"
-   },
-   "fmt": {
-    "it": "Peso netto 89 g · 55 pezzi per cartone",
-    "en": "Net weight 89 g · 55 pieces per carton",
-    "fr": "Poids net 89 g · 55 pièces par carton",
-    "es": "Peso neto 89 g · 55 piezas por caja"
-   },
-   "desc": {
-    "it": "Cornetto multicereali con segale, farcito ai frutti di bosco e lucidato con zucchero di canna. Senza conservanti, 26 ore di lievitazione naturale.",
-    "en": "Multigrain croissant with rye, filled with wild berries and glazed with cane sugar. No preservatives, 26 hours of natural proofing.",
-    "fr": "Croissant multicéréales au seigle, fourré aux fruits rouges et nappé de sucre de canne. Sans conservateurs, 26 heures de levée naturelle.",
-    "es": "Croissant multicereales con centeno, relleno de frutos del bosque y abrillantado con azúcar de caña. Sin conservantes, 26 horas de fermentación natural."
-   },
-   "pos": {
-    "it": "Bar, prima colazione, pasticceria",
-    "en": "Bars, breakfast, pastry shops",
-    "fr": "Bar, petit-déjeuner, pâtisserie",
-    "es": "Bar, desayuno, pastelería"
-   },
-   "tags": [
-    {
-     "it": "Uova da allevamento a terra",
-     "en": "Barn-laid eggs",
-     "fr": "Œufs de poules élevées au sol",
-     "es": "Huevos de gallinas criadas en suelo"
-    },
-    {
-     "it": "Senza OGM",
-     "en": "GMO free",
-     "fr": "Sans OGM",
-     "es": "Sin OGM"
-    },
-    {
-     "it": "Senza grassi idrogenati",
-     "en": "No hydrogenated fats",
-     "fr": "Sans graisses hydrogénées",
-     "es": "Sin grasas hidrogenadas"
-    },
-    {
-     "it": "Lievito MadreCupiello",
-     "en": "MadreCupiello sourdough",
-     "fr": "Levain MadreCupiello",
-     "es": "Masa madre MadreCupiello"
-    },
-    {
-     "it": "Pronto forno",
-     "en": "Ready to bake",
-     "fr": "Prêt à enfourner",
-     "es": "Listo para hornear"
-    }
-   ],
-   "cod": "6915"
-  },
-  {
-   "img": "img/catalogo/cornetteria/19-cornetto-multicereali-salato.webp",
+   "img": "img/catalogo/cornetteria/11-cornetto-multicereali-salato.webp",
    "nome": "Cornetto dritto salato vuoto rifinito multicereali",
    "sg": false,
    "marca": "Cupiello",
@@ -1084,8 +694,40 @@ window.CATALOGO.cornetteria = {
    "cod": "4889"
   },
   {
-   "img": "img/catalogo/cornetteria/20-cornetto-recacao.webp",
-   "nome": "Cornetto ReCacao, bicolore cacao",
+   "img": "img/catalogo/cornetteria/12-croissant-integrale.webp",
+   "nome": "Croissant integrale vuoto",
+   "sg": false,
+   "marca": "Cornetteria",
+   "gruppo": "CORNETTI E GRANCORNETTI",
+   "tipo": {
+    "it": "Cornetto",
+    "en": "Croissant",
+    "fr": "Croissant",
+    "es": "Croissant"
+   },
+   "fmt": {
+    "it": "70 g · 50 pezzi per confezione",
+    "en": "70 g · 50 pieces per pack",
+    "fr": "70 g · 50 pièces par paquet",
+    "es": "70 g · 50 piezas por paquete"
+   },
+   "desc": {
+    "it": "Croissant integrale vuoto, rifinito con zucchero.",
+    "en": "Plain wholemeal croissant finished with sugar.",
+    "fr": "Croissant complet nature, fini au sucre.",
+    "es": "Croissant integral sin relleno terminado con azúcar."
+   },
+   "pos": {
+    "it": "Bar, prima colazione, pasticceria",
+    "en": "Bars, breakfast, pastry shops",
+    "fr": "Bar, petit-déjeuner, pâtisserie",
+    "es": "Bar, desayuno, pastelería"
+   },
+   "cod": "6731"
+  },
+  {
+   "img": "img/catalogo/cornetteria/13-cornetto-dritto-vuoto.webp",
+   "nome": "Cornetto dritto vuoto",
    "sg": false,
    "marca": "Cupiello",
    "gruppo": "CORNETTI E GRANCORNETTI",
@@ -1096,22 +738,22 @@ window.CATALOGO.cornetteria = {
     "es": "Croissant"
    },
    "fmt": {
-    "it": "Peso netto 90 g · 48 pezzi per cartone",
-    "en": "Net weight 90 g · 48 pieces per carton",
-    "fr": "Poids net 90 g · 48 pièces par carton",
-    "es": "Peso neto 90 g · 48 piezas por caja"
+    "it": "Peso netto 47 g · 75 pezzi per cartone",
+    "en": "Net weight 47 g · 75 pieces per carton",
+    "fr": "Poids net 47 g · 75 pièces par carton",
+    "es": "Peso neto 47 g · 75 piezas por caja"
    },
    "desc": {
-    "it": "Cornetto con impasto bicolore lievitato 26 ore, farcito con crema al cioccolato e lucidato con zucchero. Senza coloranti artificiali, con cacao certificato Rainforest Alliance.",
-    "en": "Two-tone croissant proofed 26 hours, filled with chocolate cream and sugar-glazed. No artificial colours, with Rainforest Alliance certified cocoa.",
-    "fr": "Croissant bicolore levé 26 heures, fourré à la crème au chocolat et nappé de sucre. Sans colorants artificiels, avec du cacao certifié Rainforest Alliance.",
-    "es": "Croissant bicolor fermentado 26 horas, relleno de crema de chocolate y abrillantado con azúcar. Sin colorantes artificiales, con cacao certificado Rainforest Alliance."
+    "it": "Cornetto dritto vuoto, lucidato con zucchero brillo.",
+    "en": "Plain straight croissant, glazed with shiny sugar.",
+    "fr": "Croissant droit nature, lustré au sucre brillant.",
+    "es": "Croissant recto sin relleno, abrillantado con azúcar."
    },
    "pos": {
-    "it": "Bar, prima colazione, pasticceria",
-    "en": "Bars, breakfast, pastry shops",
-    "fr": "Bar, petit-déjeuner, pâtisserie",
-    "es": "Bar, desayuno, pastelería"
+    "it": "Hotel, buffet colazione, bar",
+    "en": "Hotels, breakfast buffets, bars",
+    "fr": "Hôtels, buffets petit-déjeuner, bars",
+    "es": "Hoteles, bufés de desayuno, bares"
    },
    "tags": [
     {
@@ -1127,86 +769,16 @@ window.CATALOGO.cornetteria = {
      "es": "Sin grasas hidrogenadas"
     },
     {
-     "it": "Lievito MadreCupiello",
-     "en": "MadreCupiello sourdough",
-     "fr": "Levain MadreCupiello",
-     "es": "Masa madre MadreCupiello"
-    },
-    {
-     "it": "Senza aromi e coloranti artificiali",
-     "en": "No artificial flavours or colours",
-     "fr": "Sans arômes ni colorants artificiels",
-     "es": "Sin aromas ni colorantes artificiales"
-    },
-    {
      "it": "Pronto forno",
      "en": "Ready to bake",
      "fr": "Prêt à enfourner",
      "es": "Listo para hornear"
     }
    ],
-   "cod": "6012"
+   "cod": "2199"
   },
   {
-   "img": "img/catalogo/cornetteria/21-cornetto-rebosco.webp",
-   "nome": "Cornetto ReBosco, bicolore extrafarcito ai frutti di bosco",
-   "sg": false,
-   "marca": "Cupiello",
-   "gruppo": "CORNETTI E GRANCORNETTI",
-   "tipo": {
-    "it": "Cornetto",
-    "en": "Croissant",
-    "fr": "Croissant",
-    "es": "Croissant"
-   },
-   "fmt": {
-    "it": "Peso netto 90 g · 48 pezzi per cartone",
-    "en": "Net weight 90 g · 48 pieces per carton",
-    "fr": "Poids net 90 g · 48 pièces par carton",
-    "es": "Peso neto 90 g · 48 piezas por caja"
-   },
-   "desc": {
-    "it": "Cornetto bicolore lievitato 26 ore, extra-farcito ai frutti di bosco (lamponi, fragole, mirtilli) e rifinito con zucchero in superficie.",
-    "en": "Two-tone croissant proofed 26 hours, extra-filled with wild berries (raspberries, strawberries, blueberries) and finished with sugar.",
-    "fr": "Croissant bicolore levé 26 heures, extra-garni de fruits rouges (framboises, fraises, myrtilles) et fini au sucre.",
-    "es": "Croissant bicolor fermentado 26 horas, extra de relleno de frutos del bosque (frambuesas, fresas, arándanos) y terminado con azúcar."
-   },
-   "pos": {
-    "it": "Bar, prima colazione, pasticceria",
-    "en": "Bars, breakfast, pastry shops",
-    "fr": "Bar, petit-déjeuner, pâtisserie",
-    "es": "Bar, desayuno, pastelería"
-   },
-   "tags": [
-    {
-     "it": "Senza OGM",
-     "en": "GMO free",
-     "fr": "Sans OGM",
-     "es": "Sin OGM"
-    },
-    {
-     "it": "Senza grassi idrogenati",
-     "en": "No hydrogenated fats",
-     "fr": "Sans graisses hydrogénées",
-     "es": "Sin grasas hidrogenadas"
-    },
-    {
-     "it": "Lievito MadreCupiello",
-     "en": "MadreCupiello sourdough",
-     "fr": "Levain MadreCupiello",
-     "es": "Masa madre MadreCupiello"
-    },
-    {
-     "it": "Pronto forno",
-     "en": "Ready to bake",
-     "fr": "Prêt à enfourner",
-     "es": "Listo para hornear"
-    }
-   ],
-   "cod": "5932"
-  },
-  {
-   "img": "img/catalogo/cornetteria/22-primini-salati.webp",
+   "img": "img/catalogo/cornetteria/14-primini-salati.webp",
    "nome": "Primini, cornetti salati vuoti",
    "sg": false,
    "marca": "Cupiello",
@@ -1270,7 +842,7 @@ window.CATALOGO.cornetteria = {
    "cod": "5776"
   },
   {
-   "img": "img/catalogo/cornetteria/23-cornetto-vegano-vuoto.webp",
+   "img": "img/catalogo/cornetteria/15-cornetto-vegano-vuoto.webp",
    "nome": "Cornetto curvo vegano vuoto",
    "sg": false,
    "marca": "Cupiello",
@@ -1340,7 +912,7 @@ window.CATALOGO.cornetteria = {
    "cod": "4404"
   },
   {
-   "img": "img/catalogo/cornetteria/24-cornetto-vegano-albicocca.webp",
+   "img": "img/catalogo/cornetteria/16-cornetto-vegano-albicocca.webp",
    "nome": "Cornetto vegano confettura albicocca",
    "sg": false,
    "marca": "Cupiello",
@@ -1410,7 +982,7 @@ window.CATALOGO.cornetteria = {
    "cod": "4476"
   },
   {
-   "img": "img/catalogo/cornetteria/25-cornetto-buonsenso.webp",
+   "img": "img/catalogo/cornetteria/17-cornetto-buonsenso.webp",
    "nome": "Cornetto Buonsenso cereali e mirtilli rossi",
    "sg": false,
    "marca": "Cupiello",
@@ -1486,7 +1058,7 @@ window.CATALOGO.cornetteria = {
    "cod": "4406"
   },
   {
-   "img": "img/catalogo/cornetteria/26-cornetto-integrale-plant-based.webp",
+   "img": "img/catalogo/cornetteria/18-cornetto-integrale-plant-based.webp",
    "nome": "Cornetto Madre integrale plant based",
    "sg": false,
    "marca": "Cupiello",
@@ -1544,28 +1116,28 @@ window.CATALOGO.cornetteria = {
    "cod": "0607"
   },
   {
-   "img": "img/catalogo/cornetteria/27-ischia.webp",
-   "nome": "Ischia, cornetto doppio impasto vuoto",
+   "img": "img/catalogo/cornetteria/19-fagottino-gianduia.webp",
+   "nome": "Fagottino gianduia",
    "sg": false,
-   "marca": "Cupiello",
-   "gruppo": "ALTA PASTICCERIA",
+   "marca": "Cornetteria",
+   "gruppo": "FAGOTTI E SFOGLIE",
    "tipo": {
-    "it": "Alta pasticceria",
-    "en": "Fine pastry",
-    "fr": "Haute pâtisserie",
-    "es": "Alta pastelería"
+    "it": "Sfoglia",
+    "en": "Puff pastry",
+    "fr": "Feuilleté",
+    "es": "Hojaldre"
    },
    "fmt": {
-    "it": "Peso netto 80 g · 40 pezzi per cartone",
-    "en": "Net weight 80 g · 40 pieces per carton",
-    "fr": "Poids net 80 g · 40 pièces par carton",
-    "es": "Peso neto 80 g · 40 piezas por caja"
+    "it": "104 g · 42 pezzi per confezione",
+    "en": "104 g · 42 pieces per pack",
+    "fr": "104 g · 42 pièces par paquet",
+    "es": "104 g · 42 piezas por paquete"
    },
    "desc": {
-    "it": "Cornetto a doppio impasto: pasta sfoglia sovrapposta alla pasta brioche. Forma più corta e panciuta che esalta la farcitura, ideale da lucidare, decorare o farcire dopo la cottura.",
-    "en": "Double-dough croissant: puff pastry layered over brioche dough. A shorter, rounder shape that shows off the filling, ideal to glaze, decorate or fill after baking.",
-    "fr": "Croissant à double pâte : feuilletage superposé à la pâte briochée. Forme plus courte et ventrue qui met en valeur la garniture, idéal à napper, décorer ou garnir après cuisson.",
-    "es": "Croissant de doble masa: hojaldre sobre masa de brioche. Forma más corta y redondeada que realza el relleno, ideal para abrillantar, decorar o rellenar tras el horneado."
+    "it": "Fagottino di sfoglia al gianduia.",
+    "en": "Puff pastry fagottino with gianduja.",
+    "fr": "Petit fagotto feuilleté au gianduja.",
+    "es": "Fagottino de hojaldre con gianduja."
    },
    "pos": {
     "it": "Bar, prima colazione, pasticceria",
@@ -1573,39 +1145,31 @@ window.CATALOGO.cornetteria = {
     "fr": "Bar, petit-déjeuner, pâtisserie",
     "es": "Bar, desayuno, pastelería"
    },
-   "tags": [
-    {
-     "it": "Senza aromi e coloranti artificiali",
-     "en": "No artificial flavours or colours",
-     "fr": "Sans arômes ni colorants artificiels",
-     "es": "Sin aromas ni colorantes artificiales"
-    }
-   ],
-   "cod": "1458"
+   "cod": "6023"
   },
   {
-   "img": "img/catalogo/cornetteria/28-paris-vuoto.webp",
-   "nome": "Paris, cornetto tuttoburro vuoto",
+   "img": "img/catalogo/cornetteria/20-gran-paffutella.webp",
+   "nome": "Gran Paffutella alla nocciola",
    "sg": false,
    "marca": "Cupiello",
-   "gruppo": "ALTA PASTICCERIA",
+   "gruppo": "FAGOTTI E SFOGLIE",
    "tipo": {
-    "it": "Alta pasticceria",
-    "en": "Fine pastry",
-    "fr": "Haute pâtisserie",
-    "es": "Alta pastelería"
+    "it": "Sfoglia",
+    "en": "Puff pastry",
+    "fr": "Feuilleté",
+    "es": "Hojaldre"
    },
    "fmt": {
-    "it": "Peso netto 80 g · 45 pezzi per cartone",
-    "en": "Net weight 80 g · 45 pieces per carton",
-    "fr": "Poids net 80 g · 45 pièces par carton",
-    "es": "Peso neto 80 g · 45 piezas por caja"
+    "it": "Peso netto 79 g · 55 pezzi per cartone",
+    "en": "Net weight 79 g · 55 pieces per carton",
+    "fr": "Poids net 79 g · 55 pièces par carton",
+    "es": "Peso neto 79 g · 55 piezas por caja"
    },
    "desc": {
-    "it": "Croissant Madre tuttoburro con il 23% di burro: sfogliatura dorata alla francese, gusto delicato di burro belga, ideale da farcire dopo la cottura.",
-    "en": "All-butter Madre croissant with 23% butter: golden French-style layers, delicate Belgian butter taste, ideal to fill after baking.",
-    "fr": "Croissant Madre pur beurre à 23 % de beurre : feuilletage doré à la française, goût délicat de beurre belge, idéal à garnir après cuisson.",
-    "es": "Croissant Madre de mantequilla con un 23 % de mantequilla: hojaldrado dorado a la francesa, sabor delicado de mantequilla belga, ideal para rellenar tras el horneado."
+    "it": "Sfoglia lievitata 26 ore con lievito MadreCupiello, farcita alla crema nocciola e lucidata con zucchero.",
+    "en": "Puff pastry proofed for 26 hours with MadreCupiello sourdough, filled with hazelnut cream and glazed with sugar.",
+    "fr": "Feuilleté levé 26 heures au levain MadreCupiello, garni de crème noisette et lustré au sucre.",
+    "es": "Hojaldre fermentado 26 horas con masa madre MadreCupiello, relleno de crema de avellana y abrillantado con azúcar."
    },
    "pos": {
     "it": "Bar, prima colazione, pasticceria",
@@ -1645,10 +1209,510 @@ window.CATALOGO.cornetteria = {
      "es": "Listo para hornear"
     }
    ],
-   "cod": "1436"
+   "cod": "3582"
   },
   {
-   "img": "img/catalogo/cornetteria/29-perla-cremalatte.webp",
+   "img": "img/catalogo/cornetteria/21-double-fagotto.webp",
+   "nome": "Double, fagotto bicolore cioccolato",
+   "sg": false,
+   "marca": "Cupiello",
+   "gruppo": "FAGOTTI E SFOGLIE",
+   "tipo": {
+    "it": "Sfoglia",
+    "en": "Puff pastry",
+    "fr": "Feuilleté",
+    "es": "Hojaldre"
+   },
+   "fmt": {
+    "it": "Peso netto 88 g · 40 pezzi per cartone",
+    "en": "Net weight 88 g · 40 pieces per carton",
+    "fr": "Poids net 88 g · 40 pièces par carton",
+    "es": "Peso neto 88 g · 40 piezas por caja"
+   },
+   "desc": {
+    "it": "Fagotto a doppio impasto bicolore, extra farcito con crema al cioccolato e gocce di cioccolato fondente.",
+    "en": "Two-tone double-dough fagotto, extra filled with chocolate cream and dark chocolate chips.",
+    "fr": "Fagotto bicolore à double pâte, extra garni de crème au chocolat et de pépites de chocolat noir.",
+    "es": "Fagotto bicolor de doble masa, extra relleno de crema de chocolate y pepitas de chocolate negro."
+   },
+   "pos": {
+    "it": "Bar, prima colazione, pasticceria",
+    "en": "Bars, breakfast, pastry shops",
+    "fr": "Bar, petit-déjeuner, pâtisserie",
+    "es": "Bar, desayuno, pastelería"
+   },
+   "tags": [
+    {
+     "it": "Senza OGM",
+     "en": "GMO free",
+     "fr": "Sans OGM",
+     "es": "Sin OGM"
+    },
+    {
+     "it": "Senza grassi idrogenati",
+     "en": "No hydrogenated fats",
+     "fr": "Sans graisses hydrogénées",
+     "es": "Sin grasas hidrogenadas"
+    },
+    {
+     "it": "Lievito MadreCupiello",
+     "en": "MadreCupiello sourdough",
+     "fr": "Levain MadreCupiello",
+     "es": "Masa madre MadreCupiello"
+    },
+    {
+     "it": "Pronto forno",
+     "en": "Ready to bake",
+     "fr": "Prêt à enfourner",
+     "es": "Listo para hornear"
+    }
+   ],
+   "cod": "0606"
+  },
+  {
+   "img": "img/catalogo/cornetteria/22-fagotto-ace.webp",
+   "nome": "Fagotto gusto ACE carote fresche e agrumi",
+   "sg": false,
+   "marca": "Cupiello",
+   "gruppo": "FAGOTTI E SFOGLIE",
+   "tipo": {
+    "it": "Sfoglia vegana",
+    "en": "Vegan puff pastry",
+    "fr": "Feuilleté vegan",
+    "es": "Hojaldre vegano"
+   },
+   "fmt": {
+    "it": "Peso netto 95 g · 60 pezzi per cartone",
+    "en": "Net weight 95 g · 60 pieces per carton",
+    "fr": "Poids net 95 g · 60 pièces par carton",
+    "es": "Peso neto 95 g · 60 piezas por caja"
+   },
+   "eti": {
+    "it": "VEGANO",
+    "en": "VEGAN",
+    "fr": "VEGAN",
+    "es": "VEGANO"
+   },
+   "desc": {
+    "it": "Fagotto vegano con carote fresche e extra-farcitura agli agrumi italiani, rifinito con zucchero di canna. Lievitato 26 ore con lievito MadreCupiello fresco.",
+    "en": "Vegan fagotto with fresh carrots and an extra filling of Italian citrus, finished with cane sugar. Proofed for 26 hours with fresh MadreCupiello sourdough.",
+    "fr": "Fagotto vegan aux carottes fraîches et extra-garniture d'agrumes italiens, finition au sucre de canne. Levé 26 heures au levain MadreCupiello frais.",
+    "es": "Fagotto vegano con zanahorias frescas y extra de relleno de cítricos italianos, terminado con azúcar de caña. Fermentado 26 horas con masa madre MadreCupiello fresca."
+   },
+   "pos": {
+    "it": "Bar, prima colazione, pasticceria",
+    "en": "Bars, breakfast, pastry shops",
+    "fr": "Bar, petit-déjeuner, pâtisserie",
+    "es": "Bar, desayuno, pastelería"
+   },
+   "tags": [
+    {
+     "it": "Senza OGM",
+     "en": "GMO free",
+     "fr": "Sans OGM",
+     "es": "Sin OGM"
+    },
+    {
+     "it": "Senza grassi idrogenati",
+     "en": "No hydrogenated fats",
+     "fr": "Sans graisses hydrogénées",
+     "es": "Sin grasas hidrogenadas"
+    },
+    {
+     "it": "Lievito MadreCupiello",
+     "en": "MadreCupiello sourdough",
+     "fr": "Levain MadreCupiello",
+     "es": "Masa madre MadreCupiello"
+    },
+    {
+     "it": "Pronto forno",
+     "en": "Ready to bake",
+     "fr": "Prêt à enfourner",
+     "es": "Listo para hornear"
+    },
+    {
+     "it": "Vegano",
+     "en": "Vegan",
+     "fr": "Vegan",
+     "es": "Vegano"
+    }
+   ],
+   "cod": "6029"
+  },
+  {
+   "img": "img/catalogo/cornetteria/23-pancannolo-nocciola.webp",
+   "nome": "Pancannolo nocciola",
+   "sg": false,
+   "marca": "Cupiello",
+   "gruppo": "FAGOTTI E SFOGLIE",
+   "tipo": {
+    "it": "Sfoglia",
+    "en": "Puff pastry",
+    "fr": "Feuilleté",
+    "es": "Hojaldre"
+   },
+   "fmt": {
+    "it": "Peso netto 93 g · 60 pezzi per cartone",
+    "en": "Net weight 93 g · 60 pieces per carton",
+    "fr": "Poids net 93 g · 60 pièces par carton",
+    "es": "Peso neto 93 g · 60 piezas por caja"
+   },
+   "desc": {
+    "it": "Sfoglia dolce farcita con crema alla nocciola e rifinita con soluzione lucidante: forma più bella, farcitura più evidente, impasto più soffice. Prodotto da forno crudo surgelato.",
+    "en": "Sweet puff pastry filled with hazelnut cream and glazed: a better shape, a more visible filling, a softer dough. Raw frozen bake-off product.",
+    "fr": "Feuilleté sucré fourré à la crème de noisette et nappé : plus belle forme, garniture plus visible, pâte plus moelleuse. Produit cru surgelé à enfourner.",
+    "es": "Hojaldre dulce relleno de crema de avellana y abrillantado: mejor forma, relleno más visible, masa más suave. Producto crudo congelado para hornear."
+   },
+   "pos": {
+    "it": "Bar, prima colazione, pasticceria",
+    "en": "Bars, breakfast, pastry shops",
+    "fr": "Bar, petit-déjeuner, pâtisserie",
+    "es": "Bar, desayuno, pastelería"
+   },
+   "tags": [
+    {
+     "it": "Uova da allevamento a terra",
+     "en": "Barn-laid eggs",
+     "fr": "Œufs de poules élevées au sol",
+     "es": "Huevos de gallinas criadas en suelo"
+    },
+    {
+     "it": "Senza OGM",
+     "en": "GMO free",
+     "fr": "Sans OGM",
+     "es": "Sin OGM"
+    },
+    {
+     "it": "Senza grassi idrogenati",
+     "en": "No hydrogenated fats",
+     "fr": "Sans graisses hydrogénées",
+     "es": "Sin grasas hidrogenadas"
+    },
+    {
+     "it": "Pronto forno",
+     "en": "Ready to bake",
+     "fr": "Prêt à enfourner",
+     "es": "Listo para hornear"
+    }
+   ],
+   "cod": "0571"
+  },
+  {
+   "img": "img/catalogo/cornetteria/24-treccia-crema.webp",
+   "nome": "Treccia crema",
+   "sg": false,
+   "marca": "Cupiello",
+   "gruppo": "FAGOTTI E SFOGLIE",
+   "tipo": {
+    "it": "Sfoglia",
+    "en": "Puff pastry",
+    "fr": "Feuilleté",
+    "es": "Hojaldre"
+   },
+   "fmt": {
+    "it": "Peso netto 89 g · 70 pezzi per cartone",
+    "en": "Net weight 89 g · 70 pieces per carton",
+    "fr": "Poids net 89 g · 70 pièces par carton",
+    "es": "Peso neto 89 g · 70 piezas por caja"
+   },
+   "desc": {
+    "it": "Treccia di pasta sfoglia farcita alla crema e rifinita con zucchero. Prodotto da forno surgelato, senza lievito.",
+    "en": "Puff pastry braid filled with custard cream and finished with sugar. Frozen bake-off product, yeast free.",
+    "fr": "Tresse de pâte feuilletée fourrée à la crème et finie au sucre. Produit surgelé à enfourner, sans levure.",
+    "es": "Trenza de hojaldre rellena de crema y terminada con azúcar. Producto congelado para hornear, sin levadura."
+   },
+   "pos": {
+    "it": "Bar, prima colazione, pasticceria",
+    "en": "Bars, breakfast, pastry shops",
+    "fr": "Bar, petit-déjeuner, pâtisserie",
+    "es": "Bar, desayuno, pastelería"
+   },
+   "tags": [
+    {
+     "it": "Uova da allevamento a terra",
+     "en": "Barn-laid eggs",
+     "fr": "Œufs de poules élevées au sol",
+     "es": "Huevos de gallinas criadas en suelo"
+    },
+    {
+     "it": "Senza OGM",
+     "en": "GMO free",
+     "fr": "Sans OGM",
+     "es": "Sin OGM"
+    },
+    {
+     "it": "Senza grassi idrogenati",
+     "en": "No hydrogenated fats",
+     "fr": "Sans graisses hydrogénées",
+     "es": "Sin grasas hidrogenadas"
+    },
+    {
+     "it": "Pronto forno",
+     "en": "Ready to bake",
+     "fr": "Prêt à enfourner",
+     "es": "Listo para hornear"
+    },
+    {
+     "it": "Senza lievito",
+     "en": "Yeast free",
+     "fr": "Sans levure",
+     "es": "Sin levadura"
+    }
+   ],
+   "cod": "1810"
+  },
+  {
+   "img": "img/catalogo/cornetteria/25-danesina-noci-pecan.webp",
+   "nome": "Danesina noci pecan",
+   "sg": false,
+   "marca": "Cornetteria",
+   "gruppo": "FAGOTTI E SFOGLIE",
+   "tipo": {
+    "it": "Sfoglia",
+    "en": "Puff pastry",
+    "fr": "Feuilleté",
+    "es": "Hojaldre"
+   },
+   "fmt": {
+    "it": "Peso netto 95 g · 48 pezzi per cartone",
+    "en": "Net weight 95 g · 48 pieces per carton",
+    "fr": "Poids net 95 g · 48 pièces par carton",
+    "es": "Peso neto 95 g · 48 piezas por caja"
+   },
+   "desc": {
+    "it": "Treccia di pasta danese con topping di noci pecan.",
+    "en": "Danish pastry braid topped with pecan nuts.",
+    "fr": "Tresse de pâte danoise garnie de noix de pécan.",
+    "es": "Trenza de masa danesa con topping de nueces pecanas."
+   },
+   "pos": {
+    "it": "Bar, prima colazione, pasticceria",
+    "en": "Bars, breakfast, pastry shops",
+    "fr": "Bar, petit-déjeuner, pâtisserie",
+    "es": "Bar, desayuno, pastelería"
+   },
+   "cod": "4730"
+  },
+  {
+   "img": "img/catalogo/cornetteria/26-bombolone.webp",
+   "nome": "Bombolone / Krapfen vuoto",
+   "sg": false,
+   "marca": "Cupiello",
+   "gruppo": "CIAMBELLE E DONUT",
+   "tipo": {
+    "it": "Bombolone",
+    "en": "Filled doughnut base",
+    "fr": "Beignet",
+    "es": "Berlina"
+   },
+   "fmt": {
+    "it": "Peso netto 55 g · 48 pezzi per cartone",
+    "en": "Net weight 55 g · 48 pieces per carton",
+    "fr": "Poids net 55 g · 48 pièces par carton",
+    "es": "Peso neto 55 g · 48 piezas por caja"
+   },
+   "desc": {
+    "it": "Bombolone vuoto già cotto, nel formato dell'assortimento hotel.",
+    "en": "Plain, pre-baked doughnut in the hotel assortment size.",
+    "fr": "Beignet nature déjà cuit, au format de l'assortiment hôtel.",
+    "es": "Berlina sin relleno ya cocida, en el formato del surtido hotel."
+   },
+   "pos": {
+    "it": "Hotel, buffet colazione, bar",
+    "en": "Hotels, breakfast buffets, bars",
+    "fr": "Hôtel, buffet petit-déjeuner, bar",
+    "es": "Hotel, bufé de desayuno, bar"
+   },
+   "tags": [
+    {
+     "it": "Già cotto",
+     "en": "Pre-baked",
+     "fr": "Déjà cuit",
+     "es": "Ya cocido"
+    }
+   ],
+   "cod": "5867"
+  },
+  {
+   "img": "img/catalogo/cornetteria/27-ciambella-donut.webp",
+   "nome": "Ciambella / Donut",
+   "sg": false,
+   "marca": "Cupiello",
+   "gruppo": "CIAMBELLE E DONUT",
+   "tipo": {
+    "it": "Ciambelle e donut",
+    "en": "Doughnuts",
+    "fr": "Beignets et donuts",
+    "es": "Donuts y berlinas"
+   },
+   "fmt": {
+    "it": "Peso netto 49 g · 36 pezzi per cartone",
+    "en": "Net weight 49 g · 36 pieces per carton",
+    "fr": "Poids net 49 g · 36 pièces par carton",
+    "es": "Peso neto 49 g · 36 piezas por caja"
+   },
+   "desc": {
+    "it": "Ciambella già cotta, rifinita con zucchero.",
+    "en": "Pre-baked doughnut finished with sugar.",
+    "fr": "Donut déjà cuit, finition au sucre.",
+    "es": "Donut ya cocido, terminado con azúcar."
+   },
+   "pos": {
+    "it": "Hotel, buffet colazione, bar",
+    "en": "Hotels, breakfast buffets, bars",
+    "fr": "Hôtel, buffet petit-déjeuner, bar",
+    "es": "Hotel, bufé de desayuno, bar"
+   },
+   "tags": [
+    {
+     "it": "Già cotto",
+     "en": "Pre-baked",
+     "fr": "Déjà cuit",
+     "es": "Ya cocido"
+    }
+   ],
+   "cod": "0415"
+  },
+  {
+   "img": "img/catalogo/cornetteria/28-ciambella-zuccherata-maxi.webp",
+   "nome": "Ciambella zuccherata maxi",
+   "sg": false,
+   "marca": "Cupiello",
+   "gruppo": "CIAMBELLE E DONUT",
+   "tipo": {
+    "it": "Ciambelle e donut",
+    "en": "Doughnuts",
+    "fr": "Beignets et donuts",
+    "es": "Donuts y berlinas"
+   },
+   "fmt": {
+    "it": "Peso netto 100 g · 36 pezzi per cartone",
+    "en": "Net weight 100 g · 36 pieces per carton",
+    "fr": "Poids net 100 g · 36 pièces par carton",
+    "es": "Peso neto 100 g · 36 piezas por caja"
+   },
+   "desc": {
+    "it": "Maxi ciambella rifinita con zucchero. Già cotta, senza olio di palma.",
+    "en": "Maxi doughnut finished with sugar. Pre-baked, palm free.",
+    "fr": "Maxi donut finition sucre. Déjà cuit, sans huile de palme.",
+    "es": "Maxi donut terminado con azúcar. Ya cocido, sin aceite de palma."
+   },
+   "pos": {
+    "it": "Bar, prima colazione, pasticceria",
+    "en": "Bars, breakfast, pastry shops",
+    "fr": "Bar, petit-déjeuner, pâtisserie",
+    "es": "Bar, desayuno, pastelería"
+   },
+   "tags": [
+    {
+     "it": "Già cotto",
+     "en": "Pre-baked",
+     "fr": "Déjà cuit",
+     "es": "Ya cocido"
+    },
+    {
+     "it": "Senza olio di palma",
+     "en": "Palm free",
+     "fr": "Sans huile de palme",
+     "es": "Sin aceite de palma"
+    }
+   ],
+   "cod": "1006"
+  },
+  {
+   "img": "img/catalogo/cornetteria/29-donut-ciok.webp",
+   "nome": "Ciambella / Donut Ciok",
+   "sg": false,
+   "marca": "Cupiello",
+   "gruppo": "CIAMBELLE E DONUT",
+   "tipo": {
+    "it": "Ciambelle e donut",
+    "en": "Doughnuts",
+    "fr": "Beignets et donuts",
+    "es": "Donuts y berlinas"
+   },
+   "fmt": {
+    "it": "Peso netto 75 g · 24 pezzi per cartone",
+    "en": "Net weight 75 g · 24 pieces per carton",
+    "fr": "Poids net 75 g · 24 pièces par carton",
+    "es": "Peso neto 75 g · 24 piezas por caja"
+   },
+   "desc": {
+    "it": "Ciambella farcita con crema al cacao e nocciola. Già cotta, senza OGM e senza grassi idrogenati.",
+    "en": "Doughnut filled with cocoa and hazelnut cream. Pre-baked, GMO free and without hydrogenated fats.",
+    "fr": "Donut fourré à la crème cacao-noisette. Déjà cuit, sans OGM ni graisses hydrogénées.",
+    "es": "Donut relleno de crema de cacao y avellana. Ya cocido, sin OGM y sin grasas hidrogenadas."
+   },
+   "pos": {
+    "it": "Bar, prima colazione, pasticceria",
+    "en": "Bars, breakfast, pastry shops",
+    "fr": "Bar, petit-déjeuner, pâtisserie",
+    "es": "Bar, desayuno, pastelería"
+   },
+   "tags": [
+    {
+     "it": "Già cotto",
+     "en": "Pre-baked",
+     "fr": "Déjà cuit",
+     "es": "Ya cocido"
+    },
+    {
+     "it": "Senza OGM",
+     "en": "GMO free",
+     "fr": "Sans OGM",
+     "es": "Sin OGM"
+    },
+    {
+     "it": "Senza grassi idrogenati",
+     "en": "No hydrogenated fats",
+     "fr": "Sans graisses hydrogénées",
+     "es": "Sin grasas hidrogenadas"
+    }
+   ],
+   "cod": "1516"
+  },
+  {
+   "img": "img/catalogo/cornetteria/30-donut-tris.webp",
+   "nome": "Ciambella / Donut Tris",
+   "sg": false,
+   "marca": "Cupiello",
+   "gruppo": "CIAMBELLE E DONUT",
+   "tipo": {
+    "it": "Ciambelle e donut",
+    "en": "Doughnuts",
+    "fr": "Beignets et donuts",
+    "es": "Donuts y berlinas"
+   },
+   "fmt": {
+    "it": "Peso netto 52 g · 36 pezzi per cartone",
+    "en": "Net weight 52 g · 36 pieces per carton",
+    "fr": "Poids net 52 g · 36 pièces par carton",
+    "es": "Peso neto 52 g · 36 piezas por caja"
+   },
+   "desc": {
+    "it": "Tre gusti assortiti: Ciok, Pinky e White. Ciambelle già cotte.",
+    "en": "Three assorted flavours: Ciok, Pinky and White. Pre-baked doughnuts.",
+    "fr": "Trois parfums assortis : Ciok, Pinky et White. Donuts déjà cuits.",
+    "es": "Tres sabores surtidos: Ciok, Pinky y White. Donuts ya cocidos."
+   },
+   "pos": {
+    "it": "Hotel, buffet colazione, bar",
+    "en": "Hotels, breakfast buffets, bars",
+    "fr": "Hôtel, buffet petit-déjeuner, bar",
+    "es": "Hotel, bufé de desayuno, bar"
+   },
+   "tags": [
+    {
+     "it": "Già cotto",
+     "en": "Pre-baked",
+     "fr": "Déjà cuit",
+     "es": "Ya cocido"
+    }
+   ],
+   "cod": "4832"
+  },
+  {
+   "img": "img/catalogo/cornetteria/31-perla-cremalatte.webp",
    "nome": "Perla cremalatte e panna",
    "sg": false,
    "marca": "Perla",
@@ -1680,7 +1744,7 @@ window.CATALOGO.cornetteria = {
    "cod": "1805"
   },
   {
-   "img": "img/catalogo/cornetteria/30-perla-nocciola.webp",
+   "img": "img/catalogo/cornetteria/32-perla-nocciola.webp",
    "nome": "Perla nocciola",
    "sg": false,
    "marca": "Perla",
@@ -1712,7 +1776,7 @@ window.CATALOGO.cornetteria = {
    "cod": "0081"
   },
   {
-   "img": "img/catalogo/cornetteria/31-rondo-nocciola.webp",
+   "img": "img/catalogo/cornetteria/33-rondo-nocciola.webp",
    "nome": "Intreccio Rondò nocciola",
    "sg": false,
    "marca": "Perla",
@@ -1744,7 +1808,7 @@ window.CATALOGO.cornetteria = {
    "cod": "1700"
   },
   {
-   "img": "img/catalogo/cornetteria/32-strudelino-xl.webp",
+   "img": "img/catalogo/cornetteria/34-strudelino-xl.webp",
    "nome": "Strudelino XL",
    "sg": false,
    "marca": "Perla",
@@ -1774,70 +1838,6 @@ window.CATALOGO.cornetteria = {
     "es": "Bar, desayuno, pastelería"
    },
    "cod": "6024"
-  },
-  {
-   "img": "img/catalogo/cornetteria/33-fagottino-gianduia.webp",
-   "nome": "Fagottino gianduia",
-   "sg": false,
-   "marca": "Cornetteria",
-   "gruppo": "ALTRE PROPOSTE",
-   "tipo": {
-    "it": "Sfoglia",
-    "en": "Puff pastry",
-    "fr": "Feuilleté",
-    "es": "Hojaldre"
-   },
-   "fmt": {
-    "it": "104 g · 42 pezzi per confezione",
-    "en": "104 g · 42 pieces per pack",
-    "fr": "104 g · 42 pièces par paquet",
-    "es": "104 g · 42 piezas por paquete"
-   },
-   "desc": {
-    "it": "Fagottino di sfoglia al gianduia.",
-    "en": "Puff pastry fagottino with gianduja.",
-    "fr": "Petit fagotto feuilleté au gianduja.",
-    "es": "Fagottino de hojaldre con gianduja."
-   },
-   "pos": {
-    "it": "Bar, prima colazione, pasticceria",
-    "en": "Bars, breakfast, pastry shops",
-    "fr": "Bar, petit-déjeuner, pâtisserie",
-    "es": "Bar, desayuno, pastelería"
-   },
-   "cod": "6023"
-  },
-  {
-   "img": "img/catalogo/cornetteria/34-croissant-integrale.webp",
-   "nome": "Croissant integrale vuoto",
-   "sg": false,
-   "marca": "Cornetteria",
-   "gruppo": "ALTRE PROPOSTE",
-   "tipo": {
-    "it": "Cornetto",
-    "en": "Croissant",
-    "fr": "Croissant",
-    "es": "Croissant"
-   },
-   "fmt": {
-    "it": "70 g · 50 pezzi per confezione",
-    "en": "70 g · 50 pieces per pack",
-    "fr": "70 g · 50 pièces par paquet",
-    "es": "70 g · 50 piezas por paquete"
-   },
-   "desc": {
-    "it": "Croissant integrale vuoto, rifinito con zucchero.",
-    "en": "Plain wholemeal croissant finished with sugar.",
-    "fr": "Croissant complet nature, fini au sucre.",
-    "es": "Croissant integral sin relleno terminado con azúcar."
-   },
-   "pos": {
-    "it": "Bar, prima colazione, pasticceria",
-    "en": "Bars, breakfast, pastry shops",
-    "fr": "Bar, petit-déjeuner, pâtisserie",
-    "es": "Bar, desayuno, pastelería"
-   },
-   "cod": "6731"
   }
  ],
  "depliant": "docs/depliant/magrini-linea-cornetteria.pdf"
