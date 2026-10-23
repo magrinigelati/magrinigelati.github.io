@@ -348,7 +348,7 @@ footer{border-top:1px solid var(--line);padding-block:26px 34px;color:var(--mute
         theme:'Tema chiaro o scuro',prev:'Pagina precedente',next:'Pagina successiva',goto:'Vai alla pagina',thumbs:'Miniature',lines:'Linee',title:'Catalogo Magrini',
         catalog:'Catalogo',intro:function(n){ return n+' referenze, con peso e pezzatura per cartone.'; },introMant:function(f,g){ return f+' formati e '+g+' gusti, con peso e disponibilità.'; },
         start:'Sfoglia il catalogo &rarr;',dep:'Scarica il dépliant',depMant:'Carta dei gusti (PDF)',
-        weight:'Peso',pz:'Pezzatura',sg:'Senza glutine',formats:'Disponibile anche nei formati',flav:'Gusti disponibili',
+        weight:'Peso',conf:'Confezione',pz:'Pezzatura',sg:'Senza glutine',formats:'Disponibile anche nei formati',flav:'Gusti disponibili',
         page:function(a,b){ return 'Pagina '+a+' di '+b; },cover:'Copertina',carta:'Carta dei gusti',cartaTitle:'La carta dei gusti',
         cartaDesc:function(n){ return 'Quasi '+n+' gusti disponibili nella vaschetta Lt 6,5 decorata.'; },
         novita:'novità',vetrina:'La vetrina del mantecato',photo:'Foto',none:'Nessun prodotto trovato.',na:'Catalogo non disponibile.',
@@ -359,7 +359,7 @@ footer{border-top:1px solid var(--line);padding-block:26px 34px;color:var(--mute
         theme:'Light or dark theme',prev:'Previous page',next:'Next page',goto:'Go to page',thumbs:'Thumbnails',lines:'Lines',title:'Magrini catalogue',
         catalog:'Catalogue',intro:function(n){ return n+' products, with weight and case size.'; },introMant:function(f,g){ return f+' formats and '+g+' flavours, with weight and availability.'; },
         start:'Browse the catalogue &rarr;',dep:'Download the leaflet',depMant:'Flavour list (PDF)',
-        weight:'Weight',pz:'Case size',sg:'Gluten-free',formats:'Also available in',flav:'Available flavours',
+        weight:'Weight',conf:'Pack',pz:'Case size',sg:'Gluten-free',formats:'Also available in',flav:'Available flavours',
         page:function(a,b){ return 'Page '+a+' of '+b; },cover:'Cover',carta:'Flavour list',cartaTitle:'Our flavours',
         cartaDesc:function(n){ return 'Almost '+n+' flavours available in the decorated 6.5 l tub.'; },
         novita:'new',vetrina:'The mantecato display',photo:'Photo',none:'No products found.',na:'Catalogue not available.',
@@ -370,7 +370,7 @@ footer{border-top:1px solid var(--line);padding-block:26px 34px;color:var(--mute
         theme:'Thème clair ou sombre',prev:'Page précédente',next:'Page suivante',goto:'Aller à la page',thumbs:'Miniatures',lines:'Lignes',title:'Catalogue Magrini',
         catalog:'Catalogue',intro:function(n){ return n+' références, avec poids et colisage.'; },introMant:function(f,g){ return f+' formats et '+g+' parfums, avec poids et disponibilité.'; },
         start:'Feuilleter le catalogue &rarr;',dep:'Télécharger le dépliant',depMant:'Carte des parfums (PDF)',
-        weight:'Poids',pz:'Colisage',sg:'Sans gluten',formats:'Existe aussi en',flav:'Parfums disponibles',
+        weight:'Poids',conf:'Conditionnement',pz:'Colisage',sg:'Sans gluten',formats:'Existe aussi en',flav:'Parfums disponibles',
         page:function(a,b){ return 'Page '+a+' sur '+b; },cover:'Couverture',carta:'Carte des parfums',cartaTitle:'La carte des parfums',
         cartaDesc:function(n){ return 'Près de '+n+' parfums disponibles en bac décoré de 6,5 l.'; },
         novita:'nouveau',vetrina:'La vitrine du mantecato',photo:'Photo',none:'Aucun produit trouvé.',na:'Catalogue indisponible.',
@@ -381,7 +381,7 @@ footer{border-top:1px solid var(--line);padding-block:26px 34px;color:var(--mute
         theme:'Tema claro u oscuro',prev:'Página anterior',next:'Página siguiente',goto:'Ir a la página',thumbs:'Miniaturas',lines:'Líneas',title:'Catálogo Magrini',
         catalog:'Catálogo',intro:function(n){ return n+' referencias, con peso y unidades por caja.'; },introMant:function(f,g){ return f+' formatos y '+g+' sabores, con peso y disponibilidad.'; },
         start:'Hojear el catálogo &rarr;',dep:'Descargar el folleto',depMant:'Carta de sabores (PDF)',
-        weight:'Peso',pz:'Unidades por caja',sg:'Sin gluten',formats:'Disponible también en',flav:'Sabores disponibles',
+        weight:'Peso',conf:'Envase',pz:'Unidades por caja',sg:'Sin gluten',formats:'Disponible también en',flav:'Sabores disponibles',
         page:function(a,b){ return 'Página '+a+' de '+b; },cover:'Portada',carta:'Carta de sabores',cartaTitle:'La carta de sabores',
         cartaDesc:function(n){ return 'Casi '+n+' sabores disponibles en la cubeta decorada de 6,5 l.'; },
         novita:'novedad',vetrina:'La vitrina del mantecato',photo:'Foto',none:'No se han encontrado productos.',na:'Catálogo no disponible.',
@@ -420,6 +420,15 @@ footer{border-top:1px solid var(--line);padding-block:26px 34px;color:var(--mute
   var cur = ids[0], list = [], page = 0;
   var $ = function(id){ return document.getElementById(id); };
   function tn(u){ return /\.webp$/.test(u || '') ? u.replace(/\.webp$/, '-t.webp') : u; }
+  function specOf(p){
+    var f = String((p.fmt && (p.fmt.it || p.fmt)) || ''), r = {};
+    var c = f.match(/\b(?:busta|confezione) da ((?:\d+ x )?[\d,]+ ?k?g)\b/i); if (c) r.conf = c[1];
+    var g = f.replace(/\b(?:busta|confezione) da (?:\d+ x )?[\d,]+ ?k?g\b/ig,'').match(/(\d+ x )?[\d,]+ ?k?g\b/); if (g) r.peso = g[0].replace(/(\d)(k?g)$/,'$1 $2');
+    if (/venduto al kg/i.test(f)) r.conf = 'al kg';
+    var rg = f.match(/da (\d+) a (\d+) ?(k?g)\b/); if (rg) r.peso = rg[1]+'-'+rg[2]+' '+rg[3];
+    var n = 0; f.replace(/(\d+)\s*(?:pezzi|tubi|mini)/g, function(m,x){ n = Math.max(n, +x); }); if (n) r.pz = n + ' pz';
+    return r;
+  }
   function L10(o){ return o == null ? '' : (typeof o === 'string' ? o : (o[lang] || o.it)); }
   function brief(o){ var d = L10(o).trim(); var m = d.match(/^.*?[.!?](?=\s|$)/); if (m) d = m[0]; if (d.length > 110) { var k = d.indexOf(':'); if (k > 30) d = d.slice(0,k) + '.'; } return d; }
   function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
@@ -470,15 +479,16 @@ footer{border-top:1px solid var(--line);padding-block:26px 34px;color:var(--mute
       } else if (p.cod || p.codF || p.lista) {
         var num = filtering() ? page + 1 : page;
         var eti = L10(p.eti), ask = './?richiesta=' + encodeURIComponent(t('askMsg')(p.nome, p.cod)) + '#dove';
+        var sp = specOf(p), hasSp = sp.peso || sp.pz || sp.conf;
         html = '<div class="leaf left dolc"><img class="main" src="'+esc(p.img)+'" alt="'+esc(p.nome)+'">' +
                (eti ? '<span class="ribbon">'+esc(eti)+'</span>' : '') +
                '<span class="folio">'+String(num*2).padStart(2,'0')+'</span></div>' +
-               '<div class="leaf right dolc"><div class="runhead"><span>'+esc(p.marca)+'</span><span>'+esc(L10(p.tipo))+' · '+num+' / '+list.length+'</span></div>' +
+               '<div class="leaf right"><div class="runhead"><span>'+esc(p.marca)+'</span><span>'+num+' / '+list.length+'</span></div>' +
                '<h2 class="pname">'+esc(p.nome)+'</h2>' +
-               '<p class="fmt">'+esc(L10(p.fmt))+'</p>' +
+               (hasSp ? '<dl class="specs">'+(sp.peso ? '<div class="spec"><dt>'+esc(t('weight'))+'</dt><dd>'+esc(sp.peso)+'</dd></div>' : '')+(sp.conf ? '<div class="spec"><dt>'+esc(t('conf'))+'</dt><dd>'+esc(sp.conf)+'</dd></div>' : '')+(sp.pz ? '<div class="spec"><dt>'+esc(t('pz'))+'</dt><dd>'+esc(un(sp.pz))+'</dd></div>' : '')+'</dl>' : '<p class="nota">'+esc(L10(p.fmt))+'</p>') +
                (p.sg && p.eti && p.eti.it !== 'SENZA GLUTINE' ? '<span class="badge-sg">'+esc(t('sg'))+'</span>' : '') +
-               (p.lista ? '<div class="formati"><h3>'+esc(L10(p.lista.t))+'</h3><ul>' + p.lista.items.map(function(r){ var inf = L10(r.info || ''); return '<li><span>'+esc(r.nome)+(inf ? ' <em>'+esc(inf)+'</em>' : '')+'</span></li>'; }).join('') + '</ul></div>' : '') +
-               (p.ricariche && p.ricariche.length ? '<div class="formati"><h3>'+esc(t('ric'))+'</h3><ul>' + p.ricariche.map(function(r){ return '<li><span>'+esc(r.nome)+' <em>'+r.pz+' '+esc(t('pcs'))+'</em></span></li>'; }).join('') + '</ul></div>' : '') +
+               (p.lista ? '<div class="formati"><h3>'+esc(L10(p.lista.t))+'</h3><ul class="chips">' + p.lista.items.map(function(r){ var inf = L10(r.info || ''); return '<li>'+esc(r.nome)+(inf ? ' · '+esc(inf) : '')+'</li>'; }).join('') + '</ul></div>' : '') +
+               (p.ricariche && p.ricariche.length ? '<div class="formati"><h3>'+esc(t('ric'))+'</h3><ul class="chips">' + p.ricariche.map(function(r){ return '<li>'+esc(r.nome)+' · '+r.pz+' '+esc(t('pcs'))+'</li>'; }).join('') + '</ul></div>' : '') +
                '<span class="folio">'+String(num*2+1).padStart(2,'0')+'</span></div>';
       } else {
         var num = filtering() ? page + 1 : page;
@@ -521,7 +531,7 @@ footer{border-top:1px solid var(--line);padding-block:26px 34px;color:var(--mute
     $('grid').innerHTML = list.length ? list.map(function(p,i){
       if (p.cod || p.codF || p.lista) {
         var head = p.gruppo !== lastG ? '<h3 class="ggroup">'+esc(p.gruppo)+'</h3>' : ''; lastG = p.gruppo;
-        return head + '<button type="button" class="gcard" data-i="'+(i+off)+'"><div class="ph"><img src="'+esc(tn(p.img))+'" alt="'+esc(p.nome)+'" loading="lazy">'+(p.eti ? '<span class="ribbon">'+esc(L10(p.eti))+'</span>' : '')+'</div><div class="tx"><span class="gmarca">'+esc(p.marca)+'</span><h3>'+esc(p.nome)+'</h3><span class="meta">'+esc(L10(p.fmt))+'</span>'+'</div></button>';
+        return head + '<button type="button" class="gcard" data-i="'+(i+off)+'"><div class="ph"><img src="'+esc(tn(p.img))+'" alt="'+esc(p.nome)+'" loading="lazy">'+(p.eti ? '<span class="ribbon">'+esc(L10(p.eti))+'</span>' : '')+'</div><div class="tx"><span class="gmarca">'+esc(p.marca)+'</span><h3>'+esc(p.nome)+'</h3><span class="meta">'+(function(){ var sp = specOf(p), a = [sp.peso || sp.conf, sp.pz && un(sp.pz)].filter(Boolean); return esc(a.length ? a.join(' · ') : L10(p.fmt)); })()+'</span>'+'</div></button>';
       }
       return '<button type="button" class="gcard" data-i="'+(i+off)+'"><div class="ph"><img src="'+esc(tn(p.img))+'" alt="'+esc(p.nome)+'" loading="lazy"></div><div class="tx"><h3>'+esc(p.nome)+'</h3><span class="meta">'+[p.peso, p.pz].filter(Boolean).map(function(x){ return esc(un(x)); }).join(' · ')+'</span>'+(p.sg ? '<span class="sg">'+esc(t('sg'))+'</span>' : '')+'</div></button>';
     }).join('') : '<p class="empty">'+esc(t('none'))+'</p>';
