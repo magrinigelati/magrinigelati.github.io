@@ -264,7 +264,65 @@ window.CATALOGO.cornetteria = {
    "cod": "6012"
   },
   {
-   "img": "img/catalogo/cornetteria/05-cornetto-multicereali-miele.webp",
+   "img": "img/catalogo/cornetteria/05-cornetto-rebosco.webp",
+   "nome": "Cornetto ReBosco, bicolore extrafarcito ai frutti di bosco",
+   "sg": false,
+   "marca": "Cupiello",
+   "gruppo": "CORNETTI E GRANCORNETTI",
+   "tipo": {
+    "it": "Cornetto",
+    "en": "Croissant",
+    "fr": "Croissant",
+    "es": "Croissant"
+   },
+   "fmt": {
+    "it": "Peso netto 90 g · 48 pezzi per cartone",
+    "en": "Net weight 90 g · 48 pieces per carton",
+    "fr": "Poids net 90 g · 48 pièces par carton",
+    "es": "Peso neto 90 g · 48 piezas por caja"
+   },
+   "desc": {
+    "it": "Cornetto bicolore lievitato 26 ore, extra-farcito ai frutti di bosco (lamponi, fragole, mirtilli) e rifinito con zucchero in superficie.",
+    "en": "Two-tone croissant proofed 26 hours, extra-filled with wild berries (raspberries, strawberries, blueberries) and finished with sugar.",
+    "fr": "Croissant bicolore levé 26 heures, extra-garni de fruits rouges (framboises, fraises, myrtilles) et fini au sucre.",
+    "es": "Croissant bicolor fermentado 26 horas, extra de relleno de frutos del bosque (frambuesas, fresas, arándanos) y terminado con azúcar."
+   },
+   "pos": {
+    "it": "Bar, prima colazione, pasticceria",
+    "en": "Bars, breakfast, pastry shops",
+    "fr": "Bar, petit-déjeuner, pâtisserie",
+    "es": "Bar, desayuno, pastelería"
+   },
+   "tags": [
+    {
+     "it": "Senza OGM",
+     "en": "GMO free",
+     "fr": "Sans OGM",
+     "es": "Sin OGM"
+    },
+    {
+     "it": "Senza grassi idrogenati",
+     "en": "No hydrogenated fats",
+     "fr": "Sans graisses hydrogénées",
+     "es": "Sin grasas hidrogenadas"
+    },
+    {
+     "it": "Lievito MadreCupiello",
+     "en": "MadreCupiello sourdough",
+     "fr": "Levain MadreCupiello",
+     "es": "Masa madre MadreCupiello"
+    },
+    {
+     "it": "Pronto forno",
+     "en": "Ready to bake",
+     "fr": "Prêt à enfourner",
+     "es": "Listo para hornear"
+    }
+   ],
+   "cod": "5932"
+  },
+  {
+   "img": "img/catalogo/cornetteria/06-cornetto-multicereali-miele.webp",
    "nome": "Cornetto multicereali e miele",
    "sg": false,
    "marca": "Cupiello",
@@ -326,64 +384,6 @@ window.CATALOGO.cornetteria = {
     }
    ],
    "cod": "3831"
-  },
-  {
-   "img": "img/catalogo/cornetteria/06-cornetto-rebosco.webp",
-   "nome": "Cornetto ReBosco, bicolore extrafarcito ai frutti di bosco",
-   "sg": false,
-   "marca": "Cupiello",
-   "gruppo": "CORNETTI E GRANCORNETTI",
-   "tipo": {
-    "it": "Cornetto",
-    "en": "Croissant",
-    "fr": "Croissant",
-    "es": "Croissant"
-   },
-   "fmt": {
-    "it": "Peso netto 90 g · 48 pezzi per cartone",
-    "en": "Net weight 90 g · 48 pieces per carton",
-    "fr": "Poids net 90 g · 48 pièces par carton",
-    "es": "Peso neto 90 g · 48 piezas por caja"
-   },
-   "desc": {
-    "it": "Cornetto bicolore lievitato 26 ore, extra-farcito ai frutti di bosco (lamponi, fragole, mirtilli) e rifinito con zucchero in superficie.",
-    "en": "Two-tone croissant proofed 26 hours, extra-filled with wild berries (raspberries, strawberries, blueberries) and finished with sugar.",
-    "fr": "Croissant bicolore levé 26 heures, extra-garni de fruits rouges (framboises, fraises, myrtilles) et fini au sucre.",
-    "es": "Croissant bicolor fermentado 26 horas, extra de relleno de frutos del bosque (frambuesas, fresas, arándanos) y terminado con azúcar."
-   },
-   "pos": {
-    "it": "Bar, prima colazione, pasticceria",
-    "en": "Bars, breakfast, pastry shops",
-    "fr": "Bar, petit-déjeuner, pâtisserie",
-    "es": "Bar, desayuno, pastelería"
-   },
-   "tags": [
-    {
-     "it": "Senza OGM",
-     "en": "GMO free",
-     "fr": "Sans OGM",
-     "es": "Sin OGM"
-    },
-    {
-     "it": "Senza grassi idrogenati",
-     "en": "No hydrogenated fats",
-     "fr": "Sans graisses hydrogénées",
-     "es": "Sin grasas hidrogenadas"
-    },
-    {
-     "it": "Lievito MadreCupiello",
-     "en": "MadreCupiello sourdough",
-     "fr": "Levain MadreCupiello",
-     "es": "Masa madre MadreCupiello"
-    },
-    {
-     "it": "Pronto forno",
-     "en": "Ready to bake",
-     "fr": "Prêt à enfourner",
-     "es": "Listo para hornear"
-    }
-   ],
-   "cod": "5932"
   },
   {
    "img": "img/catalogo/cornetteria/07-cornetto-segale-frutti-bosco.webp",
