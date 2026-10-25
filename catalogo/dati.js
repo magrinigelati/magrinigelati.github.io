@@ -964,6 +964,9 @@ window.CATALOGO = {
    },
    {
     "img": "img/catalogo/giochi/tazza-peppa-pig.webp",
+    "foto": [
+     "img/catalogo/giochi/tazza-peppa-pig-2.webp"
+    ],
     "nome": "Tazza Peppa Pig",
     "peso": "60 g",
     "pz": "12 pz",
