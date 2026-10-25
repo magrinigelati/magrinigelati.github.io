@@ -20,10 +20,10 @@ window.CATALOGO.catering = {
     "es": "Fritos y empanados"
    },
    "fmt": {
-    "it": "Surgelato, venduto al kg",
-    "en": "Frozen, sold by the kg",
-    "fr": "Surgelé, vendu au kg",
-    "es": "Congelado, se vende por kg"
+    "it": "Surgelato, busta da 1 kg",
+    "en": "Frozen, 1 kg bag",
+    "fr": "Surgelé, sachet de 1 kg",
+    "es": "Congelado, bolsa de 1 kg"
    },
    "desc": {
     "it": "L'oliva ascolana come si fa nelle Marche: polpa verde ripiena di carne, impanata e pronta da friggere.",
@@ -52,10 +52,10 @@ window.CATALOGO.catering = {
     "es": "Fritos y empanados"
    },
    "fmt": {
-    "it": "Surgelato, venduto al kg",
-    "en": "Frozen, sold by the kg",
-    "fr": "Surgelé, vendu au kg",
-    "es": "Congelado, se vende por kg"
+    "it": "Surgelato, busta da 1 kg",
+    "en": "Frozen, 1 kg bag",
+    "fr": "Surgelé, sachet de 1 kg",
+    "es": "Congelado, bolsa de 1 kg"
    },
    "desc": {
     "it": "Bocconcini di mozzarella in panatura croccante, filanti al primo morso.",
@@ -84,10 +84,10 @@ window.CATALOGO.catering = {
     "es": "Fritos y empanados"
    },
    "fmt": {
-    "it": "Surgelato, venduto al kg",
-    "en": "Frozen, sold by the kg",
-    "fr": "Surgelé, vendu au kg",
-    "es": "Congelado, se vende por kg"
+    "it": "Surgelato, busta da 1 kg",
+    "en": "Frozen, 1 kg bag",
+    "fr": "Surgelé, sachet de 1 kg",
+    "es": "Congelado, bolsa de 1 kg"
    },
    "desc": {
     "it": "Alici aperte a libro e panate, per un fritto di mare semplice da servire.",
@@ -148,10 +148,10 @@ window.CATALOGO.catering = {
     "es": "Fritos y empanados"
    },
    "fmt": {
-    "it": "Surgelato, venduto al kg",
-    "en": "Frozen, sold by the kg",
-    "fr": "Surgelé, vendu au kg",
-    "es": "Congelado, se vende por kg"
+    "it": "Surgelato, busta da 1 kg",
+    "en": "Frozen, 1 kg bag",
+    "fr": "Surgelé, sachet de 1 kg",
+    "es": "Congelado, bolsa de 1 kg"
    },
    "desc": {
     "it": "La crema fritta del fritto misto marchigiano: cubetti di crema pasticcera panati.",
@@ -180,10 +180,10 @@ window.CATALOGO.catering = {
     "es": "Fritos y empanados"
    },
    "fmt": {
-    "it": "Surgelato, venduto al kg",
-    "en": "Frozen, sold by the kg",
-    "fr": "Surgelé, vendu au kg",
-    "es": "Congelado, se vende por kg"
+    "it": "Surgelato, busta da 1 kg",
+    "en": "Frozen, 1 kg bag",
+    "fr": "Surgelé, sachet de 1 kg",
+    "es": "Congelado, bolsa de 1 kg"
    },
    "desc": {
     "it": "Mezzelune di pasta ripiene di pomodoro e mozzarella, il gusto della pizza in formato da fritto.",
@@ -212,10 +212,10 @@ window.CATALOGO.catering = {
     "es": "Fritos y empanados"
    },
    "fmt": {
-    "it": "Surgelato, venduto al kg",
-    "en": "Frozen, sold by the kg",
-    "fr": "Surgelé, vendu au kg",
-    "es": "Congelado, se vende por kg"
+    "it": "Surgelato, busta da 1 kg",
+    "en": "Frozen, 1 kg bag",
+    "fr": "Surgelé, sachet de 1 kg",
+    "es": "Congelado, bolsa de 1 kg"
    },
    "desc": {
     "it": "Asiago DOP a cubetti in panatura croccante, per un antipasto di formaggio caldo.",
@@ -244,10 +244,10 @@ window.CATALOGO.catering = {
     "es": "Fritos y empanados"
    },
    "fmt": {
-    "it": "Surgelato, venduto al kg",
-    "en": "Frozen, sold by the kg",
-    "fr": "Surgelé, vendu au kg",
-    "es": "Congelado, se vende por kg"
+    "it": "Surgelato, busta da 1 kg",
+    "en": "Frozen, 1 kg bag",
+    "fr": "Surgelé, sachet de 1 kg",
+    "es": "Congelado, bolsa de 1 kg"
    },
    "eti": {
     "it": "AL TARTUFO",
@@ -282,10 +282,10 @@ window.CATALOGO.catering = {
     "es": "Fritos y empanados"
    },
    "fmt": {
-    "it": "Surgelato, venduto al kg",
-    "en": "Frozen, sold by the kg",
-    "fr": "Surgelé, vendu au kg",
-    "es": "Congelado, se vende por kg"
+    "it": "Surgelato, busta da 1 kg",
+    "en": "Frozen, 1 kg bag",
+    "fr": "Surgelé, sachet de 1 kg",
+    "es": "Congelado, bolsa de 1 kg"
    },
    "eti": {
     "it": "AL TARTUFO",
@@ -320,10 +320,10 @@ window.CATALOGO.catering = {
     "es": "Rebozados"
    },
    "fmt": {
-    "it": "Surgelato, venduto al kg",
-    "en": "Frozen, sold by the kg",
-    "fr": "Surgelé, vendu au kg",
-    "es": "Congelado, se vende por kg"
+    "it": "Surgelato, busta da 1 kg",
+    "en": "Frozen, 1 kg bag",
+    "fr": "Surgelé, sachet de 1 kg",
+    "es": "Congelado, bolsa de 1 kg"
    },
    "desc": {
     "it": "Fagiolini interi in pastella speziata cajun, croccanti.",
@@ -352,10 +352,10 @@ window.CATALOGO.catering = {
     "es": "Rebozados"
    },
    "fmt": {
-    "it": "Surgelato, venduto al kg",
-    "en": "Frozen, sold by the kg",
-    "fr": "Surgelé, vendu au kg",
-    "es": "Congelado, se vende por kg"
+    "it": "Surgelato, busta da 1 kg",
+    "en": "Frozen, 1 kg bag",
+    "fr": "Surgelé, sachet de 1 kg",
+    "es": "Congelado, bolsa de 1 kg"
    },
    "desc": {
     "it": "Foglie di salvia in pastella leggera, il classico stuzzichino da aperitivo.",
@@ -384,10 +384,10 @@ window.CATALOGO.catering = {
     "es": "Rebozados"
    },
    "fmt": {
-    "it": "Surgelato, venduto al kg",
-    "en": "Frozen, sold by the kg",
-    "fr": "Surgelé, vendu au kg",
-    "es": "Congelado, se vende por kg"
+    "it": "Surgelato, busta da 1 kg",
+    "en": "Frozen, 1 kg bag",
+    "fr": "Surgelé, sachet de 1 kg",
+    "es": "Congelado, bolsa de 1 kg"
    },
    "desc": {
     "it": "Tre verdure in pastella già assortite, per un fritto vegetale pronto da porzionare.",
@@ -416,10 +416,10 @@ window.CATALOGO.catering = {
     "es": "Rebozados"
    },
    "fmt": {
-    "it": "Surgelato, venduto al kg",
-    "en": "Frozen, sold by the kg",
-    "fr": "Surgelé, vendu au kg",
-    "es": "Congelado, se vende por kg"
+    "it": "Surgelato, busta da 1 kg",
+    "en": "Frozen, 1 kg bag",
+    "fr": "Surgelé, sachet de 1 kg",
+    "es": "Congelado, bolsa de 1 kg"
    },
    "desc": {
     "it": "Fiori di zucca farciti con alici e mozzarella e passati in pastella, come nella tradizione romana.",
@@ -448,10 +448,10 @@ window.CATALOGO.catering = {
     "es": "Rebozados"
    },
    "fmt": {
-    "it": "Surgelato, venduto al kg",
-    "en": "Frozen, sold by the kg",
-    "fr": "Surgelé, vendu au kg",
-    "es": "Congelado, se vende por kg"
+    "it": "Surgelato, busta da 1 kg",
+    "en": "Frozen, 1 kg bag",
+    "fr": "Surgelé, sachet de 1 kg",
+    "es": "Congelado, bolsa de 1 kg"
    },
    "desc": {
     "it": "Fiori di zucca interi in pastella, senza ripieno, leggeri e croccanti.",
@@ -480,10 +480,10 @@ window.CATALOGO.catering = {
     "es": "Fritos y empanados"
    },
    "fmt": {
-    "it": "Surgelato, venduto al kg",
-    "en": "Frozen, sold by the kg",
-    "fr": "Surgelé, vendu au kg",
-    "es": "Congelado, se vende por kg"
+    "it": "Surgelato, busta da 1 kg",
+    "en": "Frozen, 1 kg bag",
+    "fr": "Surgelé, sachet de 1 kg",
+    "es": "Congelado, bolsa de 1 kg"
    },
    "desc": {
     "it": "La linea Le Originali de L'Ascolana: l'oliva ascolana nella ricetta più fedele alla tradizione.",
@@ -544,10 +544,10 @@ window.CATALOGO.catering = {
     "es": "Fritos y empanados"
    },
    "fmt": {
-    "it": "Surgelato, venduto al kg",
-    "en": "Frozen, sold by the kg",
-    "fr": "Surgelé, vendu au kg",
-    "es": "Congelado, se vende por kg"
+    "it": "Surgelato, busta da 1 kg",
+    "en": "Frozen, 1 kg bag",
+    "fr": "Surgelé, sachet de 1 kg",
+    "es": "Congelado, bolsa de 1 kg"
    },
    "desc": {
     "it": "Piccole caciotte panate dal cuore morbido di formaggio, da servire calde.",
@@ -576,10 +576,10 @@ window.CATALOGO.catering = {
     "es": "Rebozados"
    },
    "fmt": {
-    "it": "Surgelato, venduto al kg",
-    "en": "Frozen, sold by the kg",
-    "fr": "Surgelé, vendu au kg",
-    "es": "Congelado, se vende por kg"
+    "it": "Surgelato, busta da 1 kg",
+    "en": "Frozen, 1 kg bag",
+    "fr": "Surgelé, sachet de 1 kg",
+    "es": "Congelado, bolsa de 1 kg"
    },
    "desc": {
     "it": "Verdure miste in tempura, colorate e croccanti, da servire da sole o con il fritto di pesce.",
@@ -640,10 +640,10 @@ window.CATALOGO.catering = {
     "es": "Rosticceria"
    },
    "fmt": {
-    "it": "Surgelato, venduto al kg",
-    "en": "Frozen, sold by the kg",
-    "fr": "Surgelé, vendu au kg",
-    "es": "Congelado, se vende por kg"
+    "it": "Surgelato, busta da 1 kg",
+    "en": "Frozen, 1 kg bag",
+    "fr": "Surgelé, sachet de 1 kg",
+    "es": "Congelado, bolsa de 1 kg"
    },
    "desc": {
     "it": "Arancini in formato mignon con ripieno al ragù, perfetti per buffet e aperitivi.",
