@@ -954,6 +954,9 @@ window.CATALOGO = {
    },
    {
     "img": "img/catalogo/giochi/tazza-paw-patrol.webp",
+    "foto": [
+     "img/catalogo/giochi/tazza-paw-patrol-2.webp"
+    ],
     "nome": "Tazza Paw Patrol",
     "peso": "60 g",
     "pz": "12 pz",
