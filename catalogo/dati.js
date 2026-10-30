@@ -2079,7 +2079,7 @@ window.CATALOGO = {
     "sg": false
    },
    {
-    "img": "img/catalogo/natale/panettone-gelato-pistacchio.webp",
+    "img": "img/catalogo/natale/panettone-gelato-pistacchio-2026.webp",
     "nome": "Panettone Gelato Pistacchio",
     "peso": "1700 g",
     "pz": "2 pz",
