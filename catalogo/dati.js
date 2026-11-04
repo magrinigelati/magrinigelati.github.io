@@ -2069,7 +2069,7 @@ window.CATALOGO = {
  "natale": {
   "titolo": "Natale Goloso",
   "anno": "2026",
-  "copertina": "img/catalogo/natale/copertina.webp",
+  "copertina": "img/catalogo/natale/copertina-2026.webp",
   "prodotti": [
    {
     "img": "img/catalogo/natale/panettone-gelato-v2.webp",
