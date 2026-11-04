@@ -2093,7 +2093,7 @@ window.CATALOGO = {
     "sg": false
    },
    {
-    "img": "img/catalogo/natale/geltorrone.webp",
+    "img": "img/catalogo/natale/geltorrone-2026.webp",
     "nome": "Geltorrone",
     "peso": "1100 g",
     "pz": "4 pz",
