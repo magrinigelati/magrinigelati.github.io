@@ -1741,5 +1741,16 @@ var LANGS = ['it','en','fr','es'];
 var STAT_TOKEN = "9f92af2d18c74289a43939a340b2dbd0";
 if (STAT_TOKEN) { (function(){ var s = document.createElement('script'); s.defer = true; s.src = 'https://static.cloudflareinsights.com/beacon.min.js'; s.setAttribute('data-cf-beacon', JSON.stringify({ token: STAT_TOKEN, spa: true })); document.head.appendChild(s); })(); }
 </script>
+<script>
+/* link condivisi (es. /novita/): la home si apre in alto e poi scende con calma alla sezione */
+(function(){
+  var m = location.search.match(/[?&]vai=([a-z0-9-]+)/i); if (!m) return;
+  var id = m[1]; try { history.replaceState(null, '', location.pathname); } catch(e){}
+  window.scrollTo(0, 0);
+  window.addEventListener('load', function(){
+    setTimeout(function(){ var el = document.getElementById(id); if (el) el.scrollIntoView({behavior:'smooth', block:'start'}); try { history.replaceState(null, '', location.pathname + '#' + id); } catch(e){} }, 1200);
+  });
+})();
+</script>
 </body>
 </html>
