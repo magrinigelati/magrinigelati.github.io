@@ -783,7 +783,7 @@ footer .wrap{display:grid;gap:18px}
     </div>
     <div class="novita-grid">
       <article class="novita-card feat" data-reveal>
-        <div class="pic"><span>Tronchetto</span><img data-optional src="img/novita/tronchetto-card-v2.webp" alt="Tronchetto Natalizio, nuova ricetta" width="1200" height="900" loading="lazy"></div>
+        <div class="pic"><span>Tronchetto</span><img data-optional src="img/novita/tronchetto-card-v3.webp" alt="Tronchetto Natalizio, nuova ricetta" width="1200" height="900" loading="lazy"></div>
         <div class="feat-tx">
           <span class="badge-new" data-i18n="nov.newr">Nuova ricetta</span>
           <h3 data-i18n="nov.5t">Tronchetto Natalizio</h3>
@@ -1747,6 +1747,8 @@ if (STAT_TOKEN) { (function(){ var s = document.createElement('script'); s.defer
   var m = location.search.match(/[?&]vai=([a-z0-9-]+)/i); if (!m) return;
   var id = m[1]; try { history.replaceState(null, '', location.pathname); } catch(e){}
   window.scrollTo(0, 0);
+  // carica subito le foto della sezione, senza aspettare che entrino nello schermo
+  var sec = document.getElementById(id); if (sec) sec.querySelectorAll('img').forEach(function(im){ im.loading = 'eager'; im.fetchPriority = 'high'; var p = new Image(); p.src = im.currentSrc || im.src; });
   window.addEventListener('load', function(){
     setTimeout(function(){ var el = document.getElementById(id); if (el) el.scrollIntoView({behavior:'smooth', block:'start'}); try { history.replaceState(null, '', location.pathname + '#' + id); } catch(e){} }, 1200);
   });
