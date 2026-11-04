@@ -2142,7 +2142,7 @@ window.CATALOGO = {
     "sg": false
    },
    {
-    "img": "img/catalogo/natale/tronchetto-natalizio.webp",
+    "img": "img/catalogo/natale/tronchetto-natalizio-2026.webp",
     "nome": "Tronchetto Natalizio",
     "peso": "900 g",
     "pz": "1 pz",
