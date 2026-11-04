@@ -356,6 +356,10 @@ p{margin:0}
 .novita-card .pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
 .novita-card:hover .pic img{transform:scale(1.04)}
 .novita-card p{color:var(--muted);font-size:.97rem}
+.novita-card.feat{grid-column:1/-1}
+.feat-tx{display:grid;gap:12px;justify-items:start;align-self:center}
+@media (min-width:900px){.novita-card.feat{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);column-gap:clamp(24px,3vw,44px);align-items:center;align-content:center}.novita-card.feat h3{font-size:clamp(1.6rem,1.1rem + 1.2vw,2.2rem)}.novita-card.feat p{font-size:1.05rem;max-width:46ch}}
+.badge-new{justify-self:start;font:700 .78rem/1 var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:#7A0E14;background:linear-gradient(180deg,#F6D27A,#D9A441);border-radius:999px;padding:7px 12px}
 .gusti-new{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
 .gusti-new li{font-weight:600;font-size:.92rem;padding:7px 12px;border-radius:999px;background:var(--crema);color:var(--ink);border:1.5px solid var(--giallo)}
 .stay{margin-top:24px;font:500 .9rem var(--f-mono);color:var(--muted)}
@@ -778,14 +782,23 @@ footer .wrap{display:grid;gap:18px}
       <p data-reveal data-i18n="nov.p">Ogni anno nuovi gusti, prodotti stagionali ed edizioni limitate. Ecco le ultime arrivate.</p>
     </div>
     <div class="novita-grid">
-      <article class="novita-card" data-reveal>
+      <article class="novita-card feat" data-reveal>
+        <div class="pic"><span>Tronchetto</span><img data-optional src="img/novita/tronchetto-card-v2.webp" alt="Tronchetto Natalizio, nuova ricetta" width="1200" height="900" loading="lazy"></div>
+        <div class="feat-tx">
+          <span class="badge-new" data-i18n="nov.newr">Nuova ricetta</span>
+          <h3 data-i18n="nov.5t">Tronchetto Natalizio</h3>
+          <span class="fmt">g 900</span>
+          <p data-i18n="nov.5p">Rotolo di pan di Spagna farcito e ricoperto al cioccolato, decorato con foglie di agrifoglio e zucchero a velo. Il dolce delle feste in una nuova ricetta.</p>
+        </div>
+      </article>
+      <article class="novita-card" data-reveal style="--d:100ms">
         <div class="pic"><span>Oro</span><img data-optional src="img/novita/oro.webp" alt="Vaschetta di gelato mantecato Linea Oro lt 6,5" width="1200" height="900" loading="lazy"></div>
         <h3 data-i18n="nov.1t">Nuovi gusti Linea Oro</h3>
         <span class="fmt">lt 6,5 · g 3900</span>
         <p data-i18n="nov.1p">I nuovi gusti di quest'anno in vaschetta decorata, per la vetrina della gelateria:</p>
         <ul class="gusti-new"><li>Gran Croccante Amarena</li><li>Summer Fruit</li></ul>
       </article>
-      <article class="novita-card" data-reveal style="--d:100ms">
+      <article class="novita-card" data-reveal style="--d:200ms">
         <div class="pic"><span>Mimosa</span><img data-optional src="img/novita/mimosa-card-v2.webp" alt="Mimosa monoporzione" width="1200" height="900" loading="lazy"></div>
         <h3 data-i18n="nov.2t">Mimosa monoporzione</h3>
         <span class="fmt">g 100</span>
@@ -1250,7 +1263,7 @@ en: {
   "nov.2t":"Mimosa single portion","nov.2p":"Pastry single portion filled with Chantilly cream, strawberry and pineapple pieces, on layers of fruit-flavoured sponge cake.",
   "nov.3p":"Our new 8-piece multipack for take-away sales.",
   "nov.4p":"Sponge cake filled with Chantilly cream, a traditional sweet from Abruzzo in a single portion.",
-  "nov.stay":"to be continued... #staytuned",
+  "nov.stay":"to be continued... #staytuned","nov.newr":"New recipe","nov.5t":"Christmas Yule Log","nov.5p":"Sponge cake roll, filled and covered in chocolate, decorated with holly leaves and icing sugar. The holiday classic in a new recipe.",
   "ev.eyebrow":"Events","ev.title":"Come and visit us","ev.p":"Trade fairs, open days and tastings for professionals and customers.",
   "ev.badge":"5th edition","ev.date":"Dates","ev.dateV":"15 &rarr; 18 March 2026","ev.orari":"Hours","ev.dove":"Where","ev.ingresso":"Admission","ev.ingressoV":"Free, trade visitors only",
   "ev.desc":"Preview of the new products, tastings of our range and our guest partners' products, networking and guided tours of the production lines (17 and 18 March, 11.00-12.00).",
@@ -1363,7 +1376,7 @@ fr: {
   "nov.2t":"Mimosa portion individuelle","nov.2p":"Portion de pâtisserie fourrée à la crème chantilly avec morceaux de fraise et d'ananas, sur des couches de génoise aromatisée aux fruits.",
   "nov.3p":"Notre nouveau multipack de 8 pièces pour la vente à emporter.",
   "nov.4p":"Génoise fourrée à la crème chantilly, une douceur traditionnelle des Abruzzes en portion individuelle.",
-  "nov.stay":"à suivre... #staytuned",
+  "nov.stay":"à suivre... #staytuned","nov.newr":"Nouvelle recette","nov.5t":"Bûche de Noël","nov.5p":"Roulé de génoise fourré et nappé de chocolat, décoré de feuilles de houx et de sucre glace. Le dessert des fêtes dans une nouvelle recette.",
   "ev.eyebrow":"Événements","ev.title":"Rendez-vous chez nous","ev.p":"Salons professionnels, journées portes ouvertes et dégustations pour les professionnels et nos clients.",
   "ev.badge":"5e édition","ev.date":"Dates","ev.dateV":"15 &rarr; 18 mars 2026","ev.orari":"Horaires","ev.dove":"Lieu","ev.ingresso":"Entrée","ev.ingressoV":"Libre, réservée aux professionnels",
   "ev.desc":"Avant-première des nouveautés, dégustations de notre gamme et des partenaires invités, networking et visites guidées des lignes de production (17 et 18 mars, 11h00-12h00).",
@@ -1476,7 +1489,7 @@ es: {
   "nov.2t":"Mimosa porción individual","nov.2p":"Porción de pastelería rellena de crema chantilly con trozos de fresa y piña, sobre capas de bizcocho aromatizado con fruta.",
   "nov.3p":"Nuestro nuevo multipack de 8 unidades para la venta para llevar.",
   "nov.4p":"Bizcocho relleno de crema chantilly, un dulce tradicional de los Abruzos en porción individual.",
-  "nov.stay":"continuará... #staytuned",
+  "nov.stay":"continuará... #staytuned","nov.newr":"Nueva receta","nov.5t":"Tronco de Navidad","nov.5p":"Brazo de bizcocho relleno y cubierto de chocolate, decorado con hojas de acebo y azúcar glas. El dulce de las fiestas en una nueva receta.",
   "ev.eyebrow":"Eventos","ev.title":"Te esperamos en la empresa","ev.p":"Ferias del sector, jornadas de puertas abiertas y degustaciones para profesionales y clientes.",
   "ev.badge":"5.ª edición","ev.date":"Fechas","ev.dateV":"15 &rarr; 18 de marzo de 2026","ev.orari":"Horario","ev.dove":"Dónde","ev.ingresso":"Entrada","ev.ingressoV":"Libre, reservada a profesionales del sector",
   "ev.desc":"Presentación de las novedades, degustaciones de nuestra gama y de los socios invitados, networking y visitas guiadas a las líneas de producción (17 y 18 de marzo, 11:00-12:00).",
