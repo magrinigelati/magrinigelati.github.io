@@ -660,7 +660,7 @@ footer .wrap{display:grid;gap:18px}
 
 <!-- ============ FASCIA FOTO ============ -->
 <section class="band" aria-label="Stabilimento">
-  <video id="band-img" autoplay muted loop playsinline preload="metadata" poster="video/magrini-produzione-poster.webp" aria-label="Lo stabilimento Magrini e la produzione a Roseto degli Abruzzi"><source src="video/magrini-produzione-v2.webm" type="video/webm"><source src="video/magrini-produzione-v2.mp4" type="video/mp4"></video>
+  <video id="band-img" muted loop playsinline preload="none" poster="video/magrini-produzione-poster.webp" aria-label="Lo stabilimento Magrini e la produzione a Roseto degli Abruzzi"><source data-src="video/magrini-produzione-v3.webm" type="video/webm"><source data-src="video/magrini-produzione-v3.mp4" type="video/mp4"></video>
   <div class="band-cap"><div class="wrap" data-reveal><span data-i18n="band.eyebrow">Roseto degli Abruzzi</span><p data-i18n="band.p">Il nostro stabilimento, dove ogni giorno nasce il gelato Magrini.</p></div></div>
 </section>
 
@@ -753,7 +753,7 @@ footer .wrap{display:grid;gap:18px}
     <div class="depliant" id="depliant" data-reveal>
       <div class="dp-head">
         <div><h3 data-i18n="dp.title">Dépliant da scaricare</h3><p data-i18n="dp.p">I cartelli della stagione in alta qualità, da stampare, esporre o girare ai clienti.</p></div>
-        <a class="btn btn-ghost" href="docs/depliant/magrini-depliant-2026.pdf" download><span data-i18n="dp.all">Scaricali tutti</span> <span class="n mono">PDF · 13,0 MB</span></a>
+        <a class="btn btn-ghost" href="docs/depliant/magrini-depliant-2026.pdf" download><span data-i18n="dp.all">Scaricali tutti</span> <span class="n mono">PDF · 3,7 MB</span></a>
       </div>
       <ul class="dp-list">
         <li><a href="docs/depliant/magrini-linea-impulso.pdf" download><span class="th"><img src="img/depliant/impulso.webp" alt="" loading="lazy"></span><span class="tx"><b>Linea Impulso</b><span class="meta mono">PDF · 1,5 MB</span></span><svg class="ic" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19.5h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
@@ -1643,7 +1643,21 @@ var LANGS = ['it','en','fr','es'];
   var toTop = document.getElementById('to-top');
   var arch = document.querySelector('#arch .fallback');
   var bandImg = document.getElementById('band-img');
-  if (bandImg && bandImg.tagName === 'VIDEO' && reduce) { bandImg.removeAttribute('autoplay'); bandImg.pause(); }
+  /* video della fascia: si scarica solo quando ci si arriva vicino scorrendo, e mai con risparmio dati o rete lenta (resta l'immagine fissa) */
+  if (bandImg && bandImg.tagName === 'VIDEO' && !reduce) {
+    var conn = navigator.connection || {};
+    var lenta = conn.saveData || /(^|-)(2g|3g)$/.test(conn.effectiveType || '');
+    if (!lenta) {
+      var avviaVideo = function(){
+        bandImg.querySelectorAll('source[data-src]').forEach(function(s){ s.src = s.getAttribute('data-src'); });
+        bandImg.load(); var p = bandImg.play(); if (p && p.catch) p.catch(function(){});
+      };
+      if ('IntersectionObserver' in window) {
+        var ioVideo = new IntersectionObserver(function(e){ if (e[0].isIntersecting) { ioVideo.disconnect(); avviaVideo(); } }, { rootMargin: '400px 0px' });
+        ioVideo.observe(bandImg);
+      } else avviaVideo();
+    }
+  }
   var links = Array.prototype.slice.call(document.querySelectorAll('.nav a[href^="#"]'));
   var sections = links.map(function(a){ return document.querySelector(a.getAttribute('href')); });
   var ticking = false;
