@@ -1,0 +1,24 @@
+# Controllo settimanale del sito: link rotti, PDF mancanti, sito online e velocita'.
+# Se trova un errore il controllo risulta fallito e GitHub manda la mail di avviso.
+# Il resoconto si legge in Actions > Controllo sito > ultima esecuzione.
+name: Controllo sito
+
+on:
+  schedule:
+    - cron: "17 6 * * 1"   # ogni lunedi', 7:17 ora italiana (8:17 con l'ora legale)
+  workflow_dispatch:        # avvio a mano dal pulsante "Run workflow"
+
+permissions:
+  contents: read
+
+jobs:
+  controllo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Controlla link, PDF e velocita'
+        run: python3 -I .github/scripts/controllo_sito.py
