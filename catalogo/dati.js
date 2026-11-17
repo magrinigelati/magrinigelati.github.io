@@ -2093,6 +2093,13 @@ window.CATALOGO = {
     "sg": false
    },
    {
+    "img": "img/catalogo/natale/tronchetto-natalizio-2026.webp",
+    "nome": "Tronchetto Natalizio",
+    "peso": "900 g",
+    "pz": "1 pz",
+    "sg": false
+   },
+   {
     "img": "img/catalogo/natale/geltorrone-2026.webp",
     "nome": "Geltorrone",
     "peso": "1100 g",
@@ -2138,13 +2145,6 @@ window.CATALOGO = {
     "img": "img/catalogo/natale/stella-di-natale.webp",
     "nome": "Stella di Natale",
     "peso": "1000 g",
-    "pz": "1 pz",
-    "sg": false
-   },
-   {
-    "img": "img/catalogo/natale/tronchetto-natalizio-2026.webp",
-    "nome": "Tronchetto Natalizio",
-    "peso": "900 g",
     "pz": "1 pz",
     "sg": false
    }
