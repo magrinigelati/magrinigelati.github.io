@@ -692,6 +692,9 @@ window.CATALOGO = {
     "peso": "100 g",
     "pz": "6 pz",
     "sg": false,
+    "foto": [
+     "img/catalogo/sorbetteria/le-terrine-cremose.webp"
+    ],
     "gusti": [
      "Tiramisù",
      "Pistacchio e Nocciola",
