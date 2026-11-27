@@ -20,10 +20,10 @@ window.CATALOGO.cornetteria = {
     "es": "Croissant grande"
    },
    "fmt": {
-    "it": "Peso netto 80 g · 55 pezzi per cartone",
-    "en": "Net weight 80 g · 55 pieces per carton",
-    "fr": "Poids net 80 g · 55 pièces par carton",
-    "es": "Peso neto 80 g · 55 piezas por caja"
+    "it": "Peso netto 82 g · 55 pezzi per cartone",
+    "en": "Net weight 82 g · 55 pieces per carton",
+    "fr": "Poids net 82 g · 55 pièces par carton",
+    "es": "Peso neto 82 g · 55 piezas por caja"
    },
    "desc": {
     "it": "Grancornetto curvo vuoto, rifinito con zucchero carrare. Prelievitato surgelato, lievitato 26 ore con lievito MadreCupiello fresco.",
@@ -84,10 +84,10 @@ window.CATALOGO.cornetteria = {
     "es": "Croissant grande"
    },
    "fmt": {
-    "it": "Peso netto 95 g · 55 pezzi per cartone",
-    "en": "Net weight 95 g · 55 pieces per carton",
-    "fr": "Poids net 95 g · 55 pièces par carton",
-    "es": "Peso neto 95 g · 55 piezas por caja"
+    "it": "Peso netto 98 g · 55 pezzi per cartone",
+    "en": "Net weight 98 g · 55 pieces per carton",
+    "fr": "Poids net 98 g · 55 pièces par carton",
+    "es": "Peso neto 98 g · 55 piezas por caja"
    },
    "desc": {
     "it": "Farcito con confettura di albicocche del Vesuvio, senza aromi aggiunti, rifinito con zucchero in superficie. Prelievitato surgelato, lievitato 26 ore.",
@@ -148,10 +148,10 @@ window.CATALOGO.cornetteria = {
     "es": "Croissant grande"
    },
    "fmt": {
-    "it": "Peso netto 95 g · 55 pezzi per cartone",
-    "en": "Net weight 95 g · 55 pieces per carton",
-    "fr": "Poids net 95 g · 55 pièces par carton",
-    "es": "Peso neto 95 g · 55 piezas por caja"
+    "it": "Peso netto 98 g · 55 pezzi per cartone",
+    "en": "Net weight 98 g · 55 pieces per carton",
+    "fr": "Poids net 98 g · 55 pièces par carton",
+    "es": "Peso neto 98 g · 55 piezas por caja"
    },
    "desc": {
     "it": "Grancornetto curvo farcito alla crema e rifinito con codette di zucchero. Prelievitato surgelato, pronto da cuocere, lievitato 26 ore.",
@@ -1846,10 +1846,10 @@ window.CATALOGO.cornetteria = {
     "es": "Hojaldre en forma de concha"
    },
    "fmt": {
-    "it": "90 g · 48 pezzi per confezione",
-    "en": "90 g · 48 pieces per pack",
-    "fr": "90 g · 48 pièces par paquet",
-    "es": "90 g · 48 piezas por paquete"
+    "it": "90 g · 60 pezzi per confezione",
+    "en": "90 g · 60 pieces per pack",
+    "fr": "90 g · 60 pièces par paquet",
+    "es": "90 g · 60 piezas por paquete"
    },
    "desc": {
     "it": "La sfoglia a forma di conchiglia di San Giacomo, farcita in ogni sua parte con cremalatte e panna e ricoperta da uno zucchero speciale. Cottura 22/26 minuti a 190 °C.",
