@@ -380,6 +380,70 @@ window.CATALOGO.cornetteria = {
    "cod": "5932"
   },
   {
+   "img": "img/catalogo/cornetteria/05b-croissant-dubai.webp",
+   "nome": "Croissant Dubai bicolore",
+   "sg": false,
+   "marca": "Cupiello",
+   "gruppo": "CORNETTI E GRANCORNETTI",
+   "tipo": {
+    "it": "Cornetto",
+    "en": "Croissant",
+    "fr": "Croissant",
+    "es": "Croissant"
+   },
+   "fmt": {
+    "it": "Peso netto 88 g · 48 pezzi per cartone",
+    "en": "Net weight 88 g · 48 pieces per carton",
+    "fr": "Poids net 88 g · 48 pièces par carton",
+    "es": "Peso neto 88 g · 48 piezas por caja"
+   },
+   "desc": {
+    "it": "Croissant bicolore con lievito MadreCupiello fresco, lievitato 26 ore, farcito con crema al pistacchio e pasta kataifi e con crema al cioccolato. Prelievitato surgelato, pronto da cuocere.",
+    "en": "Two-tone croissant made with fresh MadreCupiello sourdough, proofed 26 hours, filled with pistachio cream with kataifi pastry and chocolate cream. Pre-proofed frozen, ready to bake.",
+    "fr": "Croissant bicolore au levain MadreCupiello frais, levé 26 heures, fourré à la crème de pistache avec pâte kataïf et à la crème au chocolat. Surgelé pré-poussé, prêt à cuire.",
+    "es": "Croissant bicolor con masa madre MadreCupiello fresca, 26 horas de fermentación, relleno de crema de pistacho con masa kataifi y crema de chocolate. Prefermentado congelado, listo para hornear."
+   },
+   "pos": {
+    "it": "Bar, prima colazione, pasticceria",
+    "en": "Bars, breakfast, pastry shops",
+    "fr": "Bar, petit-déjeuner, pâtisserie",
+    "es": "Bar, desayuno, pastelería"
+   },
+   "tags": [
+    {
+     "it": "Uova da allevamento a terra",
+     "en": "Barn-laid eggs",
+     "fr": "Œufs de poules élevées au sol",
+     "es": "Huevos de gallinas criadas en suelo"
+    },
+    {
+     "it": "Senza OGM",
+     "en": "GMO free",
+     "fr": "Sans OGM",
+     "es": "Sin OGM"
+    },
+    {
+     "it": "Senza grassi idrogenati",
+     "en": "No hydrogenated fats",
+     "fr": "Sans graisses hydrogénées",
+     "es": "Sin grasas hidrogenadas"
+    },
+    {
+     "it": "Lievito MadreCupiello",
+     "en": "MadreCupiello sourdough",
+     "fr": "Levain MadreCupiello",
+     "es": "Masa madre MadreCupiello"
+    },
+    {
+     "it": "Pronto forno",
+     "en": "Ready to bake",
+     "fr": "Prêt à enfourner",
+     "es": "Listo para hornear"
+    }
+   ],
+   "cod": "0605"
+  },
+  {
    "img": "img/catalogo/cornetteria/06-cornetto-multicereali-miele.webp",
    "nome": "Cornetto multicereali e miele",
    "sg": false,
