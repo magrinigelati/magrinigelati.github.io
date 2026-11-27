@@ -200,6 +200,64 @@ window.CATALOGO.cornetteria = {
    "cod": "0563"
   },
   {
+   "img": "img/catalogo/cornetteria/03b-cornetto-pistacchio.webp",
+   "nome": "Cornetto curvo extra crema pistacchio",
+   "sg": false,
+   "marca": "Cupiello",
+   "gruppo": "CORNETTI E GRANCORNETTI",
+   "tipo": {
+    "it": "Cornetto",
+    "en": "Croissant",
+    "fr": "Croissant",
+    "es": "Croissant"
+   },
+   "fmt": {
+    "it": "Peso netto 91 g · 54 pezzi per cartone",
+    "en": "Net weight 91 g · 54 pieces per carton",
+    "fr": "Poids net 91 g · 54 pièces par carton",
+    "es": "Peso neto 91 g · 54 piezas por caja"
+   },
+   "desc": {
+    "it": "Cornetto curvo extrafarcito con crema al pistacchio, con lievito MadreCupiello fresco, lievitato 26 ore. Prelievitato surgelato, pronto da cuocere.",
+    "en": "Curved croissant extra-filled with pistachio cream, made with fresh MadreCupiello sourdough, proofed 26 hours. Pre-proofed frozen, ready to bake.",
+    "fr": "Croissant courbe extra-fourré à la crème de pistache, au levain MadreCupiello frais, levé 26 heures. Surgelé pré-poussé, prêt à cuire.",
+    "es": "Croissant curvo extrarrelleno de crema de pistacho, con masa madre MadreCupiello fresca, 26 horas de fermentación. Prefermentado congelado, listo para hornear."
+   },
+   "pos": {
+    "it": "Bar, prima colazione, pasticceria",
+    "en": "Bars, breakfast, pastry shops",
+    "fr": "Bar, petit-déjeuner, pâtisserie",
+    "es": "Bar, desayuno, pastelería"
+   },
+   "tags": [
+    {
+     "it": "Uova da allevamento a terra",
+     "en": "Barn-laid eggs",
+     "fr": "Œufs de poules élevées au sol",
+     "es": "Huevos de gallinas criadas en suelo"
+    },
+    {
+     "it": "Senza grassi idrogenati",
+     "en": "No hydrogenated fats",
+     "fr": "Sans graisses hydrogénées",
+     "es": "Sin grasas hidrogenadas"
+    },
+    {
+     "it": "Lievito MadreCupiello",
+     "en": "MadreCupiello sourdough",
+     "fr": "Levain MadreCupiello",
+     "es": "Masa madre MadreCupiello"
+    },
+    {
+     "it": "Pronto forno",
+     "en": "Ready to bake",
+     "fr": "Prêt à enfourner",
+     "es": "Listo para hornear"
+    }
+   ],
+   "cod": "0809"
+  },
+  {
    "img": "img/catalogo/cornetteria/04-cornetto-recacao.webp",
    "nome": "Cornetto ReCacao, bicolore cacao",
    "sg": false,
